@@ -1,0 +1,15 @@
+环境安装与复现边界
+
+1. 解压生产测试包。推荐Python 3.13（原批量3.13.5）、Node.js 24（原批量24.19.0）、LibreOffice，能够查看PDF/PNG的6-astra智能体环境。模型与账户凭据由朋友自己配置，本包不含密钥。
+2. 在生产测试包根目录执行：
+   python3 -m venv .venv
+   .venv/bin/python -m pip install -r runtime/requirements.lock.txt
+   （Windows使用 .venv\Scripts\python.exe 对应替换以下命令。）
+3. LibreOffice安装举例：macOS为 brew install --cask libreoffice；Ubuntu为 sudo apt-get install libreoffice。这些仅为供操作者执行的说明，不会由包自动安装系统软件。Windows安装官方LibreOffice后把soffice.exe路径填入配置。
+4. 复制 runtime/runtime.example.json 为 runtime/runtime.local.json，改成本机绝对路径：node、soffice、artifact_tool_entry、presentations_skill。后两者必须来自朋友环境中合法提供的组件。
+5. 本包不分发@oai/artifact-tool、其原生模块、OpenAI内部skill源文件、系统字体或整个虚拟环境。该依赖的许可证禁止向第三方分发，其当前本机native module为macOS ARM64，不能把本机二进制直接当跨平台环境。需要已有许可覆盖实际使用的依赖；缺少时doctor会记录运行阻塞。不承诺公有npm能安装该私有包。不能悄悄改为另一PPTX作者后端。
+6. 原批量artifact-tool为2.8.91，presentation技能26.1009.11318；另需对应技能的API文档和机械导出检查工具。由runtime.local.json引用自己安装的技能。版本不同必须记录条件变化，不冒称同条件复现。
+7. Arial与Times New Roman需由操作者系统合法提供。不打包系统字体。缺字体可安装自己许可的字体；若采用替代字体需单独标记环境差异。最终从真实PDF读取实际字体，特别说明数学符号回退。
+8. 执行环境自检和合同测试（命令见COMMANDS）。自检仅验证机械环境，不证明科学质量。先用一个真实样本完成原生作者→PPTX→真实LO渲染→模型像素审查→编辑探针→冻结，确认链路，再批量。
+
+此兼容层是2026-10-12新建的可移植机械适配，不是008原始环境。恢复的四指南已核验原始SHA；执行器来自后来v2冻结候选，精确008时点源码未证明。所有原始v2.5/v3.5文件未修改。

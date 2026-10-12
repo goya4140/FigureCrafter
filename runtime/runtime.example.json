@@ -1,0 +1,11 @@
+{
+  "node": "/absolute/path/to/node",
+  "soffice": "/absolute/path/to/soffice",
+  "artifact_tool_entry": "/your/legally-provided/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs",
+  "presentations_skill": "/your/installed/presentations/SKILL-directory",
+  "expected_artifact_tool_version": "2.8.91",
+  "expected_skill_version": "26.1009.11318",
+  "expected_python": "3.13.5",
+  "font_policy": "Arial + Times New Roman; record actual PDF glyph fallbacks",
+  "license_note": "Private dependencies and system font binaries not redistributed; configure your own permitted environment"
+}

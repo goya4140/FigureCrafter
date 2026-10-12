@@ -1,0 +1,30 @@
+从生产包根目录运行（不自动调用模型）：
+
+python3 -m venv .venv
+.venv/bin/python -m pip install -r runtime/requirements.lock.txt
+.venv/bin/python runtime/portable.py verify
+.venv/bin/python runtime/portable.py list
+.venv/bin/python runtime/portable.py doctor --report environment-check.json
+.venv/bin/python runtime/portable.py test
+macOS如需让LO看见系统字体（Linux/Windows换成本机合法字体目录）：
+.venv/bin/python runtime/configure-fonts.py --font-dir /System/Library/Fonts/Supplemental
+.venv/bin/python runtime/smoke.py --out ../astra-workspaces/environment-smoke-1
+实际查看冒烟输出native-render与roundtrip-render的全图/出版图及smoke-result中的字体；这只是通用环境探针，不是科研样本生成或科学质量证明。
+
+准备独立样本，工作目录必须不存在：
+.venv/bin/python runtime/portable.py prepare 001 --workspace ../astra-workspaces/001-attempt-1 --model 6-astra --reasoning record-at-launch
+然后让新6-astra会话的工作根目录固定为该样本目录，仅提供START-HERE.txt。98项每项独立新上下文。重试改为attempt-2，不覆盖旧目录。prepare会复制同一份PDF、三PNG和本次对应安全指南，再调用原始prepare；不会生成图或访问目标原图。
+
+在样本工作目录中，使用生产包.venv的Python绝对路径替换PYTHON：
+PYTHON runtime/portable.py harness identity
+PYTHON runtime/portable.py harness drawing --help
+PYTHON runtime/portable.py harness drawing execute --root run --builder work/builder.mjs --argv '["node","{builder}","{output}"]' --decision work/model-decision.md --model-evidence understanding=work/model-understanding.md --model-evidence representation=work/model-representation.md
+builder必须把单页主图输出为{output}/candidate.pptx。node未在PATH时将JSON首项替换为runtime.local.json中的实际Node路径。模型编写builder，使用runtime/load-artifact.mjs读取合法作者依赖；作者API和finalization工具从自己安装的技能读取。
+模型查看生成的run/iterations/000/render/slide-01.png与slide-01-publication.png并写审核记录后：
+PYTHON runtime/portable.py harness drawing review --root run --iteration 000 --review work/review-000.txt
+需要修订时再次execute产生001、002等，保留失败记录，不覆盖迭代。模型明确选定迭代（下面000仅示例）：
+PYTHON runtime/portable.py harness drawing deliver --root run --iteration 000 --out delivery --caption work/figure-caption.txt
+完成字体/来源/代表编辑实际核验，将记录保存work；最后冻结：
+PYTHON runtime/freeze.py --workspace . --delivery delivery --iteration 000
+
+注意：framework/run.py原样保存，其prepare默认固定framework/harness的指南。生产总包不附完整原始四指南（防目标teacher暴露）；应使用portable.py prepare生成独立工作目录，里面才有该样本实际允许的四指南。不要在总包直接调用原始prepare。

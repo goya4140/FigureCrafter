@@ -1,0 +1,2849 @@
+{
+  "version": "v2.5",
+  "recovered_date": "2026-10-11",
+  "anchor": "model-led-isolated-093-v2/008",
+  "complete_timepoint_source_recovery_proven": false,
+  "files": [
+    {
+      "path": "harness/MODEL_LED_DRAWING.zh-CN.md",
+      "category": "original_verified",
+      "source": "experiments/model-led-isolated-093-v2/model-instructions.md",
+      "sha256": "0d20c9302d587a78f4f5d5293da94117d46170fda9d145f5a0152cdcdb06c168",
+      "historical_hash_verified": true,
+      "note": "当次生产实际指南快照，按隔离协议SHA256核验"
+    },
+    {
+      "path": "harness/OBJECT_COMPOSITION.zh-CN.md",
+      "category": "original_verified",
+      "source": "experiments/model-led-isolated-093-v2/OBJECT_COMPOSITION.zh-CN.md",
+      "sha256": "4a0a513d1307b2b87b3d9fe05a65c5e370bbf27e581d3ef1840b52c1624c21a4",
+      "historical_hash_verified": true,
+      "note": "当次生产实际指南快照，按隔离协议SHA256核验"
+    },
+    {
+      "path": "harness/STYLE_LEARNING.zh-CN.md",
+      "category": "original_verified",
+      "source": "experiments/model-led-isolated-093-v2/STYLE_LEARNING.zh-CN.md",
+      "sha256": "584579572ab015d92a47009e2359764a2397447032807b049d7c0045dd6d8877",
+      "historical_hash_verified": true,
+      "note": "当次生产实际指南快照，按隔离协议SHA256核验"
+    },
+    {
+      "path": "harness/REFERENCE_JOINT_LEARNING.zh-CN.md",
+      "category": "original_verified",
+      "source": "experiments/model-led-isolated-093-v2/REFERENCE_JOINT_LEARNING.zh-CN.md",
+      "sha256": "406c359bbcce00037602ac1338ec64aa77a24aefda786406ad71938dad9373b2",
+      "historical_hash_verified": true,
+      "note": "当次生产实际指南快照，按隔离协议SHA256核验"
+    },
+    {
+      "path": "harness/model_led_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/model_led_drawing.py",
+      "sha256": "e9da0add390d43a68424db5ae47757a511a27eaf6a0e5e3151be6466f3d168cf",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/__init__.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/__init__.py",
+      "sha256": "e4c2940a170f33dc437fabd7cc4f6613793fa78d33a4036cfacea0540d3f00b4",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "scripts/pptx_object_evidence.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/pptx_object_evidence.py",
+      "sha256": "f5deaca8d1f8a7a68017cf7aae881725ad0493db657bdbdb13c226a97620565b",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/requirements.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/requirements.txt",
+      "sha256": "4d1132373c97b8d488f4446933d97c210f3848245884043113dda6c0278c7b43",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/requirements.lock.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/requirements.lock.txt",
+      "sha256": "dac63e306e320fe920de83eecaa439780d338aa04b923edf6718b288c24685bf",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/tests/test_model_led_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_model_led_drawing.py",
+      "sha256": "97c2214e0528c557a1a9ceacf62d81f42eb0bc7016e13397b1b9775b5a51fb45",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "category": "reconstructed",
+      "source": null,
+      "sha256": "ed432ccf8e903a4bdc2b74a53a6064b5fdefed081994cb354e7181505e46c6d6",
+      "historical_hash_verified": false,
+      "note": "新建本地package标记，不增加科学判断"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/DESIGN.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/DESIGN.zh-CN.md",
+      "sha256": "cd24d313e34da8b3b6a5e6b87bacdb429188ac0116cffee402ac2005807a0e07",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/DRAWING_REFINEMENT.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/DRAWING_REFINEMENT.zh-CN.md",
+      "sha256": "aca2b45537d79e845db3d6a734491cdbf977678dc0eaea0f431c7464ed3e2772",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/DRAWING_REFINEMENT_V2.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/DRAWING_REFINEMENT_V2.zh-CN.md",
+      "sha256": "711572c88080cbb62f12f01e0fb74ebb06f7b7c92e7872f99e3cbf004b50abed",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/EVOLVING_CONTROLLER.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/EVOLVING_CONTROLLER.zh-CN.md",
+      "sha256": "440d36354cdebf4274c7a9cd12b4847a92e8dc690088b72a1cb5a8f4cb991125",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/EVOLVING_HARNESS.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/EVOLVING_HARNESS.zh-CN.md",
+      "sha256": "107d5c3bcd5a9050b4b4e66158b99059a70624570f85e1ff73766870d982cfd1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/EVOLVING_HARNESS_V3.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/EVOLVING_HARNESS_V3.zh-CN.md",
+      "sha256": "879649833f442e846b0f37404d61deee70c5e22ff33c4d274358f8cdb735e799",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/HUMAN_LOOP_EVOLUTION.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/HUMAN_LOOP_EVOLUTION.zh-CN.md",
+      "sha256": "cbee1fb584447255dbc707ea53ae7d73fd5fd15e1fd72828cfca06373a74dca9",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/MODEL_LED_DRAWING.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/MODEL_LED_DRAWING.zh-CN.md",
+      "sha256": "f6fe96d7fe618662747757515974301fca9d5f5a928410d2bd3dd61dbc7740ef",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/NARRATIVE_COMPOSITION.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/NARRATIVE_COMPOSITION.zh-CN.md",
+      "sha256": "14f5ecb03fe43089ed2bca998207da45d1a67ab321a28ebaf3d2e1bad4c0b861",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/NARRATIVE_COMPOSITION_V2.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/NARRATIVE_COMPOSITION_V2.zh-CN.md",
+      "sha256": "35b0b47abc3250fca6f97e2e6cf0885cff8fb1731989055285fa11bb1b086e86",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/NATIVE_GROUP_COMPILER.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/NATIVE_GROUP_COMPILER.zh-CN.md",
+      "sha256": "e7773d6ec006a6fa6a30b12cf28714c037e6532131b6c01bbae0578c71b50f9d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/OBJECT_COMPOSITION.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/OBJECT_COMPOSITION.zh-CN.md",
+      "sha256": "db9deb9cb4b28dd6609c1b0835d5942170b93be42f1543703941c652295b961a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/README.history-2026-10-10.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/README.history-2026-10-10.md",
+      "sha256": "80da5d8f5afd3803a5851ae069ea83e8ad619e3837c754195190b5a3ec70ab79",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/README.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/README.md",
+      "sha256": "4bb24c54883f52b72694471aea5178445c8ad65704616cdd5eef8f21174ca2e3",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/REFERENCE_JOINT_LEARNING.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/REFERENCE_JOINT_LEARNING.zh-CN.md",
+      "sha256": "c128d559fe40e590c74be09e01f85f122846d2aa86d2b05d8084fd3cb9888d17",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/SCIENTIFIC_NARRATIVE_V1.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/SCIENTIFIC_NARRATIVE_V1.zh-CN.md",
+      "sha256": "8818a3677accc2d1fe9accb5cd1aadbe274a6c377430b122caefaf99987edbb3",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/SCIENTIFIC_NARRATIVE_V2.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/SCIENTIFIC_NARRATIVE_V2.zh-CN.md",
+      "sha256": "a0e0744d60016cd002ccd140f5ff5f2cd18eb2a2a461f3e694b290c2cf5db1d3",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/STYLE_LEARNING.zh-CN.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/STYLE_LEARNING.zh-CN.md",
+      "sha256": "62acc378391531579a6bebaef2f8db799da08a496ae6a73a2f5e4851b1087639",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/__init__.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/__init__.py",
+      "sha256": "e4c2940a170f33dc437fabd7cc4f6613793fa78d33a4036cfacea0540d3f00b4",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/adaptive_scene_layout.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/adaptive_scene_layout.py",
+      "sha256": "61e545ee83a5e3d9df47741364041922a96e588e259d0846266c9ec52529954b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/adaptive_scene_layout_v4.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/adaptive_scene_layout_v4.py",
+      "sha256": "b7920b604a81f6007a402e9b374f81691315d9920dfa0f9df7f76dff06ee7007",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/adaptive_scene_layout_v5.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/adaptive_scene_layout_v5.py",
+      "sha256": "7dab1bf7f6c86d0cc156c041bfbdd9d12c0aaa4bd2a51f90382448f59ea9d0b5",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/adaptive_scene_layout_v6.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/adaptive_scene_layout_v6.py",
+      "sha256": "0be9baf0f02864800ff192c276fab81e16ce1c577a39cb3f075e6af585c89605",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/artifact_episode.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/artifact_episode.py",
+      "sha256": "9bcf8c60cba512889c7d3ca1984a02249f8c73db4f30741633093f49380de7e6",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/candidate_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/candidate_review.py",
+      "sha256": "1c1616e702964e557c74f9c849dec2ab81910fd4be888fea30ebee0c5458f67e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_native_inspection.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_native_inspection.py",
+      "sha256": "ce9b86941c4fffaafe4e7c7e079b900d639f590b826c716c003f5abefe263136",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_preflight.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_preflight.py",
+      "sha256": "729c232f3f64382b55db3d76317b3be0a27d2828a819b8336555ebd1688cf882",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_repairs.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_repairs.py",
+      "sha256": "0a49858e942a36403197ff559d0a06af28020236efccd9fd34cb95cad27eecd3",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_repairs_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_repairs_v2.py",
+      "sha256": "3615906dd3970596dd820e24c1b9032709bf2c9ba31004c877402369df7f688e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_repairs_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_repairs_v3.py",
+      "sha256": "0e52f19e340cefe9d27076c65ea9b5621d3e389041cd6a18247875592cfbadcc",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_repairs_v4.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_repairs_v4.py",
+      "sha256": "f365c21b84f56b6e3ab7bf60fe1baed99da2cabeffeae1bfbd1b2e0c43524cff",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/canvas_training_pipeline.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/canvas_training_pipeline.py",
+      "sha256": "25bf6c04dc4b957b792972023b2779feaf6615a1cd9bf8c8b679db99ce57d958",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/capability_learning_v1.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/capability_learning_v1.md",
+      "sha256": "37c885a1bb8d0b47ec59f0449631be20afe9052007d6677e835978e8cd32a59c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/capability_learning_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/capability_learning_v1.py",
+      "sha256": "878653a169fd56447d9e815b32a4aec513f771c794a5eeb889ab9c3609cdd92e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/cli.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/cli.py",
+      "sha256": "0902a6626f61e13430371ac0e85fd7caac1606899162ae1df03f2439f6c01197",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/compiler_feedback.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/compiler_feedback.py",
+      "sha256": "16e64a4884ce96bc4d8045a3d31c71c1fd89136d0fb5756b89dd6dd0d5a3d5b1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_audited_authoring.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_audited_authoring.md",
+      "sha256": "a007aa05f68249eb1ac0ab9333713132a8f5aaaa2fe82f9d6b235c57c0536c64",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_audited_authoring.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_audited_authoring.py",
+      "sha256": "c4949a7f7a3f5bc65eb7cddfbaf53a22b0babadf6379021983f097a389963c35",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_authoring.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_authoring.py",
+      "sha256": "4a6f1d0edbe797d3506d69421d431d47377c905941bd6823c2911cc5b02aae71",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_experiments.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_experiments.py",
+      "sha256": "42a0363be200f1713c9d735e1b6c38e6ea5c3c73a86bf5c9acb014cda2a4d595",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_route_feedback.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_route_feedback.py",
+      "sha256": "36bcd40dd948ab59bb5418cdcdef3a59700c792f33db7e6dd6f89b7e54e4fc24",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_stage_authoring.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_stage_authoring.md",
+      "sha256": "e32a2035c08bc7b771ec17c00a559038e087a1be010340cc0a36e8aa692ff39b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_stage_authoring.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_stage_authoring.py",
+      "sha256": "5b9a3f4d6c99cf8621ecb607d935557ea96b73c2873d238ba1d57bd525da560c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_state_authoring.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_state_authoring.md",
+      "sha256": "0efb8672cb3e0367382d9daa8d6c391c50efd6cb18880cbf94588d9ba891bf39",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/component_state_authoring.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/component_state_authoring.py",
+      "sha256": "04154cefe9dbbc30f3abb64e0e3cee6e5d11b7f334bb924a6582ab5dbad23a78",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/authoring_preflight_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/authoring_preflight_v1.mjs",
+      "sha256": "f23de949862b3f4feddaa6e7adec72ca8883b86d0aadaf44322da1a5d7398788",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/authoring_preflight_v2.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/authoring_preflight_v2.md",
+      "sha256": "39d6bc3ce749b7f023ea56366f850ba0287859d1fbe7c80f4aac08780a791917",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/authoring_preflight_v2.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/authoring_preflight_v2.mjs",
+      "sha256": "d3ea17c70f9cb36bd8b1924eb1e89f58be8a3a4d7f6472d42be11946aa458fea",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/layer_composition_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/layer_composition_v1.mjs",
+      "sha256": "afa90b0b0f1acc4b02803951d62aee0c3aab873645da318a27a24c47a7dcb7f9",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/narrative_composition_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/narrative_composition_v1.mjs",
+      "sha256": "9d628477484920ae7344a945bc0a646df3ca1d60af0e8035685c9543be888c33",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/narrative_composition_v2.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/narrative_composition_v2.mjs",
+      "sha256": "b9bed3c8ead4a405b3e39df0f1bd70b56f3c69df71c0ba8c3e4146e64236da38",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/parallel_paths_layout_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/parallel_paths_layout_v1.mjs",
+      "sha256": "4b1fa04989cca4f3139eca22e7c3de0dd369ecd4bc45ff68c3dabed55714580a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/port_routes_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/port_routes_v1.mjs",
+      "sha256": "6626ee5538583dd3e5f8a0e894228ec8133993cdf97d5766936512ddff248ceb",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/rule_tree_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/rule_tree_v1.mjs",
+      "sha256": "4356ca336c5c1bce7510486e33d5f16fdef4162c12e152c8133cc3cec0c580fc",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/source_bound_artist_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/source_bound_artist_v1.mjs",
+      "sha256": "d19f14063f8a01b34adcf5e602d2c2b13dac2e69a1098e9cef7850033a424fa2",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/stage_result_v1.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/stage_result_v1.md",
+      "sha256": "6a4cffae71867653e3b53e22088bc8771f5928635a12bc5599686a292e1a8020",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/stage_result_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/stage_result_v1.mjs",
+      "sha256": "88719c24ddd54f28343d9be0b2eb5e3956d34fce9d45a6b061bd1e80d5c620c5",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/state_encoding_v1.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/state_encoding_v1.md",
+      "sha256": "1b143ef192ca60405ce7d767c16af05e75774104a8d701092b03109caa181d11",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/components/state_encoding_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/components/state_encoding_v1.mjs",
+      "sha256": "a2ba552a23539a39ad23f52eabc7fa1b50d96065338e93b827fc408394efd9ab",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_reviews.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_reviews.py",
+      "sha256": "27b95cac1a0fe99f0f2bc93efaccc61bffff2845d809237647f7c63bef35fdb2",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_rounds.py",
+      "sha256": "13c58326a803dcd1a32cbcd3d0537d759e86e98c31d9dfe92ad88121f801a5ae",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_scene.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_scene.py",
+      "sha256": "765ddc57ea2e96ea9346c30d4deb887602266d31fdc6981bf80222e95411b837",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_scene_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_scene_v2.py",
+      "sha256": "6c13e1a176b1c1bf1d19686d771ae469049bfd9bd089f5667ef0ae87313e731d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_scene_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_scene_v3.py",
+      "sha256": "38596db494fe3dd6be38d9d32e0a8371289e76eed264d6a32fee30b540a425b6",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_scene_v4.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_scene_v4.py",
+      "sha256": "186a1eeb7afde2f7ada3f31429ad3384caeaf88f18e27355dcd16866fccf665d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_scene_v5.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_scene_v5.py",
+      "sha256": "0fe7b830e56f3e50b419944d5f6622708c7fddf9834a4f3456685e7938591a30",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_scene_v6.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_scene_v6.py",
+      "sha256": "a55638ee9466442caa4b7b2e7a7cea517c560545d75489bee0c61566c094fae8",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_workflow.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_workflow.py",
+      "sha256": "b30014539b7b8e961c81af5519adeba7cf591a50d14b4159ec1ddc08191f4b69",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/composite_workflow_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/composite_workflow_v3.py",
+      "sha256": "6f5470dfe3f4fd16fbe24c2600a7d60bfdb2e2e6560c515526973fc429a8105b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/dataset.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/dataset.py",
+      "sha256": "6831de38e3c80de71d53df3e3de96f177eefd6a0a54fbe01d3fc4c17873ed09f",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/dataset_figure_request.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/dataset_figure_request.py",
+      "sha256": "be18872654db9228d5b6445966580481efbbe49e189125389cafc0c3496a4c3c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/design_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/design_rounds.py",
+      "sha256": "a88e264704b80e350e73121e5e92075a7e4cb197e1b828c36df00afd81758bca",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/design_rounds_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/design_rounds_v2.py",
+      "sha256": "b3db726bc524f3f92cf2c2c747d0cd3c004ef1a2a5e4878ed01ba47bccd6a3b0",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing.py",
+      "sha256": "11b88465292db8236ec2f61031982533f7045e1a697612a0d1e6f5110c95a5d0",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_artist_authoring_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_artist_authoring_v1.mjs",
+      "sha256": "3b93c06cc304ea4f789b7f9967dfb6be581a6436e59cec3b4c1af65f751037a9",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_artist_task_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_artist_task_v1.py",
+      "sha256": "b783102e948e16ace6b6121022c952e54ce379dd8863a13b42e0caf90d693c54",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_narrative_authoring_v1.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_narrative_authoring_v1.mjs",
+      "sha256": "8ee7262acb143d4d0d4e48247d3167e50c84615dcc41b47d881ff4bb296861bb",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_narrative_authoring_v2.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_narrative_authoring_v2.mjs",
+      "sha256": "97ceac9ec6b95d35171e1a6047b4b9447845b2cd669226f0bfb87706e67039a4",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_narrative_task_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_narrative_task_v1.py",
+      "sha256": "6cedd6ea8ff684ec745994dfc3e4440fad1e7e8a556ae132d9d0975f272efbee",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_narrative_task_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_narrative_task_v2.py",
+      "sha256": "80a470e31944474e45c832ac4b78a8b1128a6c31c1b7e850504375d17abb8742",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_refinement.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_refinement.py",
+      "sha256": "05287a74eccf6ef33ac7b929d29e6476c608ae7e9243376f6efad2456d0711c1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_refinement_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_refinement_v2.py",
+      "sha256": "87e3319204280c8f64d32d07309217b3961419ad684b77bd5fa76d7b086e4364",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/drawing_task_authoring_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/drawing_task_authoring_v2.py",
+      "sha256": "bc6daa011c116e946036dbd461eea3356d8b12e74862a443c29999cadd93fd58",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/evolution.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/evolution.py",
+      "sha256": "869158b3ffc5911cb91942af9e9acdcf53022767a2c1e53b726ee694b9cb0e67",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/evolution_candidates.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/evolution_candidates.py",
+      "sha256": "cb5aa7a8ef65a7e9c7d8c789ffc225ee29aa5d4eca2f6db3fadba9a982d68bab",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/evolution_feedback.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/evolution_feedback.py",
+      "sha256": "d6508c67298440b0ab9b008f660a3433a12d7b786063c051f4b3d297e6789be3",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/evolving_controller.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/evolving_controller.py",
+      "sha256": "c7f7fb679b5b70b3c4e93dea13045c773fc587f6c1d6f1cc3f649b13ac1fd705",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/evolving_harness.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/evolving_harness.py",
+      "sha256": "22c0374e299b2f6e1ba2546a615f2271383c60a0ac58733b71cd7b914ae492cf",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/evolving_harness_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/evolving_harness_v3.py",
+      "sha256": "dfe76c9c02ffb9090e255bb52e1283877b724f4a5466f9feb8b10c15c204bdfc",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/experiment.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/experiment.py",
+      "sha256": "af7f4a2d51be78aba13e920ea3c2b8e9b2e2c25e2d7b1dffc0a95ad78e18b6e0",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/experiment_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/experiment_review.py",
+      "sha256": "6026979c8ce0f990f62d937f7e710de8d0d46fd277d7a4f44756266f0cedf09d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/experiment_runner.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/experiment_runner.py",
+      "sha256": "2e7edb8f251669007909d618bcd29cea747f56e7add56de185905cf0b8cd6e7f",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/experiment_selection.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/experiment_selection.py",
+      "sha256": "6d0db443ad583f2f01c246c7f922966a3fe2797a78b650c0a299db1d92b3d2d8",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/figure_scope_planning.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/figure_scope_planning.py",
+      "sha256": "1415e64f109fb7a9ba2862ca7d24b7e14d97fb2d5f52ee7275c2633f21b86fd0",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/framework_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/framework_rounds.py",
+      "sha256": "75aeac19246fb2bd466938cdc5ea5b0298f663ea543b6f0d6baf14ee8805797c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/framework_rounds_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/framework_rounds_v2.py",
+      "sha256": "5e9877eeace6723458e29418563aad5b92c149b486d7949b71c71af37fa249b7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/h3_reviews.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/h3_reviews.py",
+      "sha256": "8a934096810593c3faacd379f94e0b0fd82075baecf39be361096401e3d2ca2a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/h3_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/h3_rounds.py",
+      "sha256": "666d5ca109a2456b9dce7d307717a1aa1f2591fcd01dc125bce377ccd933c0c1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/layout.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/layout.py",
+      "sha256": "45cfefa333833af51a3602297eacaefcc1bd166e2ca25d7996c9041e1e8124b9",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/model_led_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/model_led_drawing.py",
+      "sha256": "e9da0add390d43a68424db5ae47757a511a27eaf6a0e5e3151be6466f3d168cf",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_canvas.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_canvas.py",
+      "sha256": "d0685d628cf1f7a7f8ce9e1bd5f4da8638b24f82346fd29e93924b9c416033c2",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_canvas_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_canvas_v2.py",
+      "sha256": "c2ef3e33f80bec14bdb97e2bfb797c2e468103d3dda929f66221ecf35383e91b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_canvas_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_canvas_v3.py",
+      "sha256": "13e98abf0d15025ab2d12a476997a4339e6f7795bc4a8556e601c277b43c9b87",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_claim_bindings.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_claim_bindings.py",
+      "sha256": "81bfc11b006a2e10ecbefb2dcdf690b19d4d29c70d03a3be83e02f688a4738ce",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_group_authoring_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_group_authoring_v1.py",
+      "sha256": "34938c71751015bc9242213da9fed5ceb036d9a77958bf2793c39a4d60db3438",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_group_compiler_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_group_compiler_v1.py",
+      "sha256": "b54454a1aa92e93b4abdb8d86efbfc56c48334097631e50de744f9038e471841",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_ports.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_ports.py",
+      "sha256": "c9c7edd8761168e2e1b774f25f4fe84ee22a68010fef3580191fa803cc2f7df8",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_primitives.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_primitives.py",
+      "sha256": "80ab9e6cde9618badc8fc8fce6da9048be0e557af278fcb57a3ea6b5fd29a9a7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_primitives_v6.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_primitives_v6.py",
+      "sha256": "d0085de8c780f9b89d1d9cdb1cd8378b54cc2b28a8b3b644f74a8dfb51407ccf",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_route_audit.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_route_audit.py",
+      "sha256": "28f22f0ead06d73b72cc3d3c6ef80277008f15244d7291ba672bbaf6fc25d837",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_route_audit_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_route_audit_v2.py",
+      "sha256": "1aaa1c7213b9dedc76168be0339941858cdace8ac469d168df5f7d3f88544ca7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_stage_result_audit_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_stage_result_audit_v1.py",
+      "sha256": "2567c55f1c017526bc1e4baf7b33e1bbbdad3df54dc2045184c4278f6615b313",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/native_state_encoding_audit_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/native_state_encoding_audit_v1.py",
+      "sha256": "bf587dafe09ea669270d2d92d87b0cee186658669d23c1821851d99d41bb2937",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/pdf_input.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/pdf_input.py",
+      "sha256": "6b8c9a1e821d9dc3ef4566a16572bb8382480614ba1443ce3f15d72923ba3c84",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/pdf_localization.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/pdf_localization.py",
+      "sha256": "6c5668bf9ff58dc1a31ef1ae58549d2f139a48e6eef969485817063a84ad72bf",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/planning.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/planning.py",
+      "sha256": "b267436d86b3c8496b43105d7161bfa9bcbcbb9d840a1eafb5cde939e1d5272b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/prospective_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/prospective_rounds.py",
+      "sha256": "e9ed733c792f815e78cd09fa40586716da203d8f1228d66b54a76244267cbfed",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/publication_artifact_audit.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/publication_artifact_audit.py",
+      "sha256": "50b92d69b7832fc39c83a918546439b3d52f670db433aa34ef45d6c199a110bd",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/publication_layout.mjs",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/publication_layout.mjs",
+      "sha256": "676a42b694716732abee6a717a5ea932c7636ee8233ac60429da1d057089b7ee",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/publication_review_views.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/publication_review_views.py",
+      "sha256": "e285249ac56c1d4fe4659604ee3980e0ea7679cdfd997038b5649bf1aa9f33b1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/reference_diagnostics.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/reference_diagnostics.py",
+      "sha256": "0cd6b046512adb1eb0ca796a99c7b29119a4e8faa2989f3a9af4f4b3366bec93",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/reference_learning.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/reference_learning.py",
+      "sha256": "93e959d98caf653667a3e88990b6f4b4fad90017b7b182fef9c0458beeb14132",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/render_presence_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/render_presence_v3.py",
+      "sha256": "c06f2f900d0e92c7e7ac3723976fb5169963e7386f8dd4ab563cb6f568024a66",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/render_text_bounds_v1.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/render_text_bounds_v1.md",
+      "sha256": "c27693ae872f35358fc96b96e062b36c7737f240b1b5eb098e5cc5c020bfcc6f",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/render_text_bounds_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/render_text_bounds_v1.py",
+      "sha256": "b8b80ab826f758cfa08b52719dc338ce4c28fd9c7af95dc0412ba099d974a382",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/render_typography.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/render_typography.py",
+      "sha256": "842d6307fdc201a258608799ad1646de133007c223ca68ec3e8a502250ecf5b2",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/rendering.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/rendering.py",
+      "sha256": "76dec286cd788a209ead563376f65492fded3a170995514bce5750b0efbb4583",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/requirements.lock.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/requirements.lock.txt",
+      "sha256": "dac63e306e320fe920de83eecaa439780d338aa04b923edf6718b288c24685bf",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/requirements.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/requirements.txt",
+      "sha256": "4d1132373c97b8d488f4446933d97c210f3848245884043113dda6c0278c7b43",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/scene_routing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/scene_routing.py",
+      "sha256": "5db4015ff9292178d98999eac4054a06488b37f0d58fe5bf5fd80abac6039f72",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/scene_routing_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/scene_routing_v2.py",
+      "sha256": "4e788d3c1d13a0f920eee332fa01379fab43b7a117d8aef758611a9b36fc0d0c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/scene_routing_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/scene_routing_v3.py",
+      "sha256": "69a681f2374e71d5608a810ba2a9b74f20e530f4b933395d24a1feb25f278b35",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/scientific_narrative_v1.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/scientific_narrative_v1.py",
+      "sha256": "bae569c93e8efa644de1a9f086a3ed995eca74a2f3044d357cd5d50d0ce869b1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/scientific_narrative_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/scientific_narrative_v2.py",
+      "sha256": "d656736da2b60c39217c2d523e7492b957463c1d1a2ddd0624d1409f33e9529c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/source_bound_artist_v1.md",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/source_bound_artist_v1.md",
+      "sha256": "d7253fa9996deacf401176219945d10c2d129823c0e7d69abf61972e7dc354e7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/specs/evolving-085-v3.example.json",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/specs/evolving-085-v3.example.json",
+      "sha256": "23fb581ea57c9100690799dd923ea8174bb03b5ade13db05893b684530440e00",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/specs/evolving-097.example.json",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/specs/evolving-097.example.json",
+      "sha256": "660f6fbf7343316c8059861e35a217f4de97ba364730461403fa8d512fac00ad",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/specs/evolving-v3-flow.example.json",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/specs/evolving-v3-flow.example.json",
+      "sha256": "c48470f4e18181b14ca82f038a2e3518d4425f1f212b1d2e126f55574ffd583d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/structured_feedback.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/structured_feedback.py",
+      "sha256": "9d3d1de21a3501fd86ad50b194949a41315b0470ae3f048f7b1738182a2fb68b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/target_evidence.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/target_evidence.py",
+      "sha256": "93b3e7a0dcff3f93537f04a6cb28aae3f9c289c7c73670801b2cbd4c31653b83",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/fixtures/composite_scene.json",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/fixtures/composite_scene.json",
+      "sha256": "8538870a2656ca317eb2ecd14b1fbde6771eec9d9f31377aba87dcf853cacaa2",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_adaptive_scene_layout.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_adaptive_scene_layout.py",
+      "sha256": "677d7812f185fb8db5d1b10456266158e931c442d73cf10e8978160868543ec1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_composite_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_composite_rounds.py",
+      "sha256": "7aeba88504e4230dcf5f1594d32d4908e6a257abdaedca70094543710d865713",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_composite_scene.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_composite_scene.py",
+      "sha256": "df6b4e74cdfdd3432b8e72ce88b3a1d812aaa560ce26f706c6878beb6d7da862",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_composite_workflow.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_composite_workflow.py",
+      "sha256": "546f885d7073fb5a885fa6b6ab83f32d8d0bb117933e0ee78abee504617b45f5",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_contracts.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_contracts.py",
+      "sha256": "803f27ccf6a93aec2e3e9ce1d8c866a901454fbafd86f0a72029006c67678cae",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_evolution_candidates.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_evolution_candidates.py",
+      "sha256": "f055c9079e17d035a0e20010854025e95323fd16385df9585c7b54d986b45530",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_evolving_controller.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_evolving_controller.py",
+      "sha256": "816c3de7cbe319e39aa304820152d4808d175c484912ede805875ec90e867968",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_evolving_harness.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_evolving_harness.py",
+      "sha256": "93f77c9a34cc4e4e2edfbeb33ea7af06b062aaa2fe3f89617e34df03eaeae57b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_evolving_harness_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_evolving_harness_v3.py",
+      "sha256": "93c3cc86afbb4a2ff168cfa7e042204ca6bc3b18e057ce13c1aedbd42a240521",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_experiment.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_experiment.py",
+      "sha256": "68c64b9f2125e001aa1b54e30e706ed3465cd9b9d3ed072a23c665613b20c09a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_intrinsic_scene_layout.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_intrinsic_scene_layout.py",
+      "sha256": "68f0f3e143764f41fbefce343b9e9a14f5cd1e626a70ea264843b8b7d410fae4",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_model_led_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_model_led_drawing.py",
+      "sha256": "97c2214e0528c557a1a9ceacf62d81f42eb0bc7016e13397b1b9775b5a51fb45",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_native_ports.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_native_ports.py",
+      "sha256": "8bea2d9d4ad87ad830b3a6206a48aa264bb48cd901c883ebbd57067c07e935cc",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_native_primitives.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_native_primitives.py",
+      "sha256": "050bea66dfefaa0a619c4e732dbaf89ec337af665f8dc045fcbec4f3e2cc9532",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_oriented_primitives.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_oriented_primitives.py",
+      "sha256": "29789cf55d2a3270073622efd4d00c71f9c086aa51df63ffbedc2ffccbb8760d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_pdf_localization.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_pdf_localization.py",
+      "sha256": "ffa5c6db69d8675428bee2108ca48b14d6b47495e5895198359692ece4b7417e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_prospective_rounds.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_prospective_rounds.py",
+      "sha256": "454519e6f0410854926f3ebae128a84796bc20c24a042bd7143e8d6848400c5e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_reference_learning.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_reference_learning.py",
+      "sha256": "f853b884506e53ddd2e267a12d91e0cb48277627b493e415467495615a4b4609",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_render_presence_v3.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_render_presence_v3.py",
+      "sha256": "34ecd00782119a79ae9a1dee0d1892b5b027322c11220312b5fec3b69261ca50",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_render_typography.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_render_typography.py",
+      "sha256": "81180b4da0bbc533ed7abe1863083836d3e1d3848da67b21da6c0f4b295de3a7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/harness/tests/test_target_evidence.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_target_evidence.py",
+      "sha256": "3980fe824893c6cdf83c4bc3d75d2757c80942e8b370943a23346a62ede41b4b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_and_prepare_preflight_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_and_prepare_preflight_review.py",
+      "sha256": "ac294c230ff65e5adb74a919cb9bb8a700dd18cf13120a0d21f386d87eb84f4c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_design_round.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_design_round.py",
+      "sha256": "eee9ad40a8262b6a435b44b1fc04d81163fa7a7df09f7ecddf1169d552432c1e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_design_round_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_design_round_v2.py",
+      "sha256": "3f0605dd3ce216692394366dfb054fd8b2dd51f6d69731bd8e8e88d900feb6d7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_drawing_dataset.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_drawing_dataset.py",
+      "sha256": "a553065a38bec26e6aa274efccd645f7037cad6159aeba5d9d1cf48d7212239e",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_drawing_difficulty.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_drawing_difficulty.py",
+      "sha256": "b873320bb6088c790435f434e2550733088c460d216f10bcc5494fd23e7b4418",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_h3_cohort.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_h3_cohort.py",
+      "sha256": "63ceaa694a6b8ecc8b66b56a11661b1a5cdba17c9ae93e87d3dd17e26e03865a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/audit_independent_h2_cohort.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/audit_independent_h2_cohort.py",
+      "sha256": "5f1302e649d65355ff8ed7bedf5accce77693f8b3e2ffccf4e607e1754003a1d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/build_drawing_difficulty.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/build_drawing_difficulty.py",
+      "sha256": "228ace3e0f7324dafd72bb9301b3fa79d864ba5b51cd2df147ed14c9f997060f",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/build_drawing_review_queue.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/build_drawing_review_queue.py",
+      "sha256": "f83ef0a45f3ff5ef7c5d313949d4a7d06391e04be1d458554051cfbff0f37f5d",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/crosscheck_pdf_renderers.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/crosscheck_pdf_renderers.py",
+      "sha256": "36ab97134a38a029d40b9f5dc4b63e0b9f5c81a510d5fad0eff2cdcd2567dead",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/execute_canvas_case.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/execute_canvas_case.py",
+      "sha256": "9dd8e043a40b899311589b7791654917833ee695cc41f10a8d8b3b48191f11cc",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/execute_canvas_replay.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/execute_canvas_replay.py",
+      "sha256": "6f05676a53220f6d01d6014deabffff3c1c5b6169e5d44114c82df4e054736b1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/execute_independent_h2_batch.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/execute_independent_h2_batch.py",
+      "sha256": "3afaa5f84a2805dc00446acab8347ec8aec0efe761e78f697f8078003e9a400f",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/execute_independent_h3_batch.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/execute_independent_h3_batch.py",
+      "sha256": "01097de6ea21950444c623f981b81b921492b6148d2402941494e3bf511e11f6",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_canvas_pilot.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_canvas_pilot.py",
+      "sha256": "f6b072297430ad2660640713cf7c3fa4ef2c674eb65965f79ae080798304fb12",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_current_drawing_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_current_drawing_review.py",
+      "sha256": "17eb282b1b11175eebb47d93093dc8eb66b534199b8f15e78c4b230923f48270",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_design_review_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_design_review_v2.py",
+      "sha256": "cec7cabc77aaa59131abbcb83cbb57d47f565d9096d851206fc8b65d631e20b3",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_full24_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_full24_drawing.py",
+      "sha256": "f19b22b29f7f00f582e161d00366f8152f6b20ba5d1db2fa20760a73e9b3d4fd",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_full24_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_full24_review.py",
+      "sha256": "902f5950df396477453adf6b9c1150c888b25d980a01cc6ef50269b322b22f57",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_h3_execution.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_h3_execution.py",
+      "sha256": "e24a1e06da63b28df978f9dbda60f0aa234f1e39ac7858817f9f5a7052f9d117",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/finalize_preflight_round.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/finalize_preflight_round.py",
+      "sha256": "52500672fa394fc0f66262607372abaf8d9ee20d8b012a3fada78e4ab557f53c",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/fix_sample_010_embedded_form.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/fix_sample_010_embedded_form.py",
+      "sha256": "d9fc3a0329f50b469cc46910b4f9086f7707bbcfcb0caf3eaa94758da35b6e71",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/pptx_object_evidence.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/pptx_object_evidence.py",
+      "sha256": "f5deaca8d1f8a7a68017cf7aae881725ad0493db657bdbdb13c226a97620565b",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_canvas_pilot.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_canvas_pilot.py",
+      "sha256": "85c2be5796f77e28dd7ea392eede35d6966a0a96801a580ed04f36612d46fe78",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_canvas_pilot_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_canvas_pilot_review.py",
+      "sha256": "580ce54521129ae1b5c6568f1339a16c70aac19bf99b71d870a8208bdd0f211f",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_canvas_review_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_canvas_review_v2.py",
+      "sha256": "0e71776ac20f15c8d745700a5190b6a89de0861aa4cc06f5a1cf26401a668668",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_design_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_design_review.py",
+      "sha256": "d60a0e680d7a2af584817313bba606f8cf742810f8e0fd7b694f29eda5e0d260",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_design_review_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_design_review_v2.py",
+      "sha256": "75f21ebd23a91ecc6315fa2c4d35b9c2ebc4f5a370296b8ea64b0d7be25fa916",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_full24_design_review.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_full24_design_review.py",
+      "sha256": "2ca6cca0b7cac69861efb9252a85320adc9af692da6a80466bece1d18f1841ee",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_full24_feedback_evolution.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_full24_feedback_evolution.py",
+      "sha256": "ecfa66e4431c20380f17a0c23f84af515fe10178bec543869a9f99ea50517b54",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_matched_feedback.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_matched_feedback.py",
+      "sha256": "08843da271f2ece69085c62302eaa847f8015f1f3e06fbca3fc95ee0c9fc1bc1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/prepare_matched_learning.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/prepare_matched_learning.py",
+      "sha256": "6da444ebdcbe3f9ef702bf8f689a7d5e810ee22d6be2a9010f031cfc04bdccf7",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/probe_adaptive_compiler.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/probe_adaptive_compiler.py",
+      "sha256": "09c69ee8773190271ea63f928e9b41c514cce7690c2ce0751cd8a6330b1f5c54",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/process_drawing_dataset.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/process_drawing_dataset.py",
+      "sha256": "3a696762f5570127bfa5e4379af764925677e3cfbb4d041dde9837b9c19f3e20",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/reassemble_redacted_pdfs.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/reassemble_redacted_pdfs.py",
+      "sha256": "c429f04882ab234bf418ec6de0c2ef48d9f7c17ebb42c8fd223e176713f88592",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/reassemble_with_pypdf.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/reassemble_with_pypdf.py",
+      "sha256": "d435d63f7e145cedad3a387400ce74e30fe11fcaa23f0de4ebb80a7d118525df",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/record_design_dispatch.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/record_design_dispatch.py",
+      "sha256": "381717f2d00405aed759b877666aa1ae6a8748ac9268794eaa48638458b385d8",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/record_h3_dispatch.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/record_h3_dispatch.py",
+      "sha256": "b6b13f8ad03d5e093b2c4ad23eb5eb4022b2518c97e5bc473ad3a7ace6c0251a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/record_paired_source_audits.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/record_paired_source_audits.py",
+      "sha256": "6a3e6d478c179b38fa94389f51294726014ba7568a3baafbc04c62a86aeae2e1",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/replay_canvas_preflight.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/replay_canvas_preflight.py",
+      "sha256": "7f52e837a347f6c655efc3d579e069df83fbe98d4d72577348326ffbb8578caa",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/replay_canvas_preflight_v2.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/replay_canvas_preflight_v2.py",
+      "sha256": "08ab5d7771fd4f0e13afd43d42c32d2031f7d8b34bbb1c0ceffe795a97a1ea86",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/replay_design_round.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/replay_design_round.py",
+      "sha256": "9f76d2dc48d7e329cf4e31fc075b95a641a610b026cbdbc51788ec43d2165eec",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/requirements-drawing-dataset.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/requirements-drawing-dataset.txt",
+      "sha256": "b24d353021c35c6103f0bc7e620081665c1a48a17fd70a9dcf7137c461223540",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/restore_direct_redactions.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/restore_direct_redactions.py",
+      "sha256": "5a20ad229fda62dbc521681f1a4f12a8c3deb3eadd81f13e3b523bbecff52410",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/review_primitive_probes.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/review_primitive_probes.py",
+      "sha256": "8ce4f0a22880f3e460e6b40e043c7fc80e85479a3b00fa91aea666f815914e3a",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/verify_reassembled_pdfs.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/verify_reassembled_pdfs.py",
+      "sha256": "5317d07b305ad9d9530ef713b937d4665bbace7817999e5588e74cba790752ae",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/scripts/verify_rendered_pdfs.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/verify_rendered_pdfs.py",
+      "sha256": "6c26ae51e6df0ebe64277309a2dd321b09836a05b0f3394f1a9334b482a1fa55",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "archive/later-v2-frozen/version-manifest.json",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/version-manifest.json",
+      "sha256": "95bb02f62dccdd3ce5d27340b471a726ebacae12505455472106e107dcacc1fc",
+      "historical_hash_verified": false,
+      "note": "后来的完整冻结源码保留供追溯；不是008时点的逐文件证明，不作为默认执行入口"
+    },
+    {
+      "path": "evidence/experiment/OBJECT_COMPOSITION.zh-CN.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/OBJECT_COMPOSITION.zh-CN.md",
+      "sha256": "4a0a513d1307b2b87b3d9fe05a65c5e370bbf27e581d3ef1840b52c1624c21a4",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/REFERENCE_JOINT_LEARNING.zh-CN.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/REFERENCE_JOINT_LEARNING.zh-CN.md",
+      "sha256": "406c359bbcce00037602ac1338ec64aa77a24aefda786406ad71938dad9373b2",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/STYLE_LEARNING.zh-CN.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/STYLE_LEARNING.zh-CN.md",
+      "sha256": "584579572ab015d92a47009e2359764a2397447032807b049d7c0045dd6d8877",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/access-ledger.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/access-ledger.md",
+      "sha256": "3153436c55c3c561f1046788aaddaaafaf0bf5072a83cdec13c0f520e9f4ab19",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/dependency-evidence/fonts.conf",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/dependency-evidence/fonts.conf",
+      "sha256": "62d6bea9b157e4683a625bbc6a7f89803a6f96c03b0bbd1113cec50881947c80",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/dependency-evidence/math-baselines.py",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/dependency-evidence/math-baselines.py",
+      "sha256": "ef9fa148ac602e084fcb6a38eb8eef87dc7bcf49128a03fccf69366405edd7ca",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/freeze.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/freeze.json",
+      "sha256": "be1a8052a75b9c6fb59f2d12ddda4473da83ea974ee34a07314654922ee045dc",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/input-evidence.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/input-evidence.json",
+      "sha256": "5c34f055e516274b91735f07cc61c156d7502509b4b3d4a0f30a60c3e1d4d34e",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs/paper-text.txt",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs/paper-text.txt",
+      "sha256": "9964eb263938b34ceeb15d638891701c01b25fe2bfb4952ce1b2f2244e87d028",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs/paper-without-main-figure.pdf",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs/paper-without-main-figure.pdf",
+      "sha256": "848872907d2d77af32c752cec977a2761f21681d36189eb821de25c220135fe6",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs/request.txt",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs/request.txt",
+      "sha256": "ffb7a6a837d84ab71b4cef2182f6566edb442d423e6cbbcdff9ccbb0b5f31f48",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs/style-reference-01.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs/style-reference-01.png",
+      "sha256": "090a9dd1d15e160e1259762af952c425c2840cc3e8773594367e2d7c1bb13629",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs/style-reference-02.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs/style-reference-02.png",
+      "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs/style-reference-03.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs/style-reference-03.png",
+      "sha256": "fa084f974113bc4e4b1c91322701747d94eefafbea51f753adb78c2a6f12b270",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/inputs.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/inputs.json",
+      "sha256": "aa0a4d3aaf06ec001df74554a38a698a0d3abd6a112b0ada02c827d5ce247e48",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/build.mjs",
+      "sha256": "8eac96ceb7c938bdacb190765f685655c98ad7e0150e33f9e9880e129dd56931",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/execution.json",
+      "sha256": "ee400765f8628f19357632995731e5a760ee18e8189dbc4444bd51752f6d647c",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/failure.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/failure.json",
+      "sha256": "bef6ff635c0b75aa126d53bc9ac7d854e2eaf4148da8af2d9d33b4b8846fef7c",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/launch.json",
+      "sha256": "02fb21f863d5b02f9cf7597c9ef6ea5119c9a5d455aece12cb00d54bcd4e19b2",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/model-decision.md",
+      "sha256": "92a4c22c6520768a250ee043fc6554e7948f46179f286cdd834e174d9377eb56",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/000/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/000/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/build.mjs",
+      "sha256": "8eac96ceb7c938bdacb190765f685655c98ad7e0150e33f9e9880e129dd56931",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/execution.json",
+      "sha256": "2f6d80c4839fd916f91248e30a69a71ec9718f9dbb9950073cd19e77e6add332",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/failure.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/failure.json",
+      "sha256": "bef6ff635c0b75aa126d53bc9ac7d854e2eaf4148da8af2d9d33b4b8846fef7c",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/launch.json",
+      "sha256": "d2da55f5b17995badce032df12645c05203b60c31eb1900233dbdc5d116e6071",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/model-decision.md",
+      "sha256": "92a4c22c6520768a250ee043fc6554e7948f46179f286cdd834e174d9377eb56",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/001/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/001/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/build.mjs",
+      "sha256": "9fde08033c0cae296737573e9f31b4cf9b5e096dd641e1b240b35d3a4a94817e",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/draft.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/draft.pptx",
+      "sha256": "88cac01f32226ba1fd0631bece0cc32a9c7d391b96f1f8c5bfd6749a22930714",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/draft.pptx.inspect.ndjson",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/draft.pptx.inspect.ndjson",
+      "sha256": "453e02e8e882ef0883b727e56d1dfa17376d80a5fe4c9282bb9d4e6e9a47d4e7",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/execution.json",
+      "sha256": "78856eea462ae4ff1855ab56e730936b8646da7901b6c6797825beeed99c4072",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/failure.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/failure.json",
+      "sha256": "bef6ff635c0b75aa126d53bc9ac7d854e2eaf4148da8af2d9d33b4b8846fef7c",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/launch.json",
+      "sha256": "1b862bbd2d291d11dfb6df24edef74b9924aac1eb85c25ecc69bedc8e61cd7e9",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/model-decision.md",
+      "sha256": "92a4c22c6520768a250ee043fc6554e7948f46179f286cdd834e174d9377eb56",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/002/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/002/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/build.mjs",
+      "sha256": "760ddc8ff80addcbb1100b665aef5fb60e1fccc81724cfd85d5f5b0e56f6fb06",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/draft.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/draft.pptx",
+      "sha256": "0741173614c9a8f394d30d5771a9af2b001ee344577150d4e6f0b38878b6a89f",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/draft.pptx.inspect.ndjson",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/draft.pptx.inspect.ndjson",
+      "sha256": "3dc259eae134dff466e0d27edf6704cad8eedcb10ccfc4500f2e8411fa42d788",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/execution.json",
+      "sha256": "ad3325a370ff9caf4657cf365bfd5cb240e91c6f9aed8899822bcc1eec1a9439",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/failure.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/failure.json",
+      "sha256": "bef6ff635c0b75aa126d53bc9ac7d854e2eaf4148da8af2d9d33b4b8846fef7c",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/launch.json",
+      "sha256": "7bc72ac49633bc349bd1b5d7885d706f72ff60cb91305abfdbcec3daf9ada58d",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/model-decision.md",
+      "sha256": "92a4c22c6520768a250ee043fc6554e7948f46179f286cdd834e174d9377eb56",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/003/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/003/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/build.mjs",
+      "sha256": "c7a983f9ae25ef3984c223a7b678a5b733c1533fa5556f3fc80cd0f6f556db0a",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/candidate.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/candidate.json",
+      "sha256": "1cb8f0bbf2b39916338fbf62b1e78867e0f2c96851b25957eac472cdc87fd38c",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/candidate.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/candidate.pptx",
+      "sha256": "1261db0f4544b1b5eaeaf06554eaa772f8e4af820dd917e89c60eb2c99d11afe",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/draft.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/draft.pptx",
+      "sha256": "1261db0f4544b1b5eaeaf06554eaa772f8e4af820dd917e89c60eb2c99d11afe",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/draft.pptx.inspect.ndjson",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/draft.pptx.inspect.ndjson",
+      "sha256": "579b79cc2d916b2a64f27f93e2e0279656a340b70f27b5d44fe8872067bcae17",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/execution.json",
+      "sha256": "d78e1094e2258fa24df2d0219c845e6df181cb0a404e2ba8c1f40dad5c175157",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/launch.json",
+      "sha256": "93d57baff0cca1cb9e3aa30d2da29796487553f8be42f7884d14a6285fa79e3b",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/model-decision.md",
+      "sha256": "92a4c22c6520768a250ee043fc6554e7948f46179f286cdd834e174d9377eb56",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/model-review.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/model-review.md",
+      "sha256": "589e27cbed32d3be769595ee85113a4ca14f7a043fb3df6e482c02f577a6109f",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/native-objects.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/native-objects.json",
+      "sha256": "f11dbd5528b3e9cb299c5f3679752a205ec2e968d857c3f59749c83c77d2550a",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/object-evidence.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/object-evidence.json",
+      "sha256": "8219049d0292d735706a83bd22e5090b5d83cc228691602d2b78ddd5f88a750a",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/render/candidate.pdf",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/render/candidate.pdf",
+      "sha256": "cc8d96c1f8c90b15e35d59dfd4406c1b069426ff528a5f98f5f90a172e9e97b5",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/render/conversion.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/render/conversion.json",
+      "sha256": "2fd65f2856a18bed15226afe1bd7c904bff50c8b27bb84b19f6a69252c38b152",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/render/slide-01-publication.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/render/slide-01-publication.png",
+      "sha256": "25394f50a9a77bb896a24b21469def6853f9f24a09c865f0e523008e8b0a0878",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/render/slide-01.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/render/slide-01.png",
+      "sha256": "1a3c55b4cb5742308360090fed0ef38b7f78bc13fc396fc91102fc0779d92871",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004/review-record.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004/review-record.json",
+      "sha256": "21c4cb77e4f023d4bee034d413e182aefa518f20f13dab87d37d0663994350ee",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/004-validation.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/004-validation.json",
+      "sha256": "76bde3525fa96db88ad02d13bdf04975f18eb2d0e5bfaa83627373403365d3f2",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/build.mjs",
+      "sha256": "4d9b01245ac66ed7b34d28b8cdbf6e1852fda83a60ce9b1ff449a4af966ab92a",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/candidate.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/candidate.json",
+      "sha256": "3ecc9b63222b48104d05584dcaf249223e971e63494e77d0ce57091ad70086db",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/candidate.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/candidate.pptx",
+      "sha256": "263534754162096ab76b001f213c81800ea63e3f93682228197c388000f323c6",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/draft.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/draft.pptx",
+      "sha256": "263534754162096ab76b001f213c81800ea63e3f93682228197c388000f323c6",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/draft.pptx.inspect.ndjson",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/draft.pptx.inspect.ndjson",
+      "sha256": "c9484e1b3bc3910e0d4cb12d53906ff6b54f7ccb030c19960977154477e345af",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/execution.json",
+      "sha256": "84b51dd76e2d243cd7b09e5277a0f59cb4cd1d63283e819abd83fdc0e6705cdc",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/launch.json",
+      "sha256": "e7070b49e436d69eeab0b64d22e0a1e8755ee3fb0045ec20e7f31ee04200ae20",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/model-decision.md",
+      "sha256": "95e83813564cb3d6afb543c450c56404fdcb333f79881859bf910b5729e9bab3",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/native-objects.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/native-objects.json",
+      "sha256": "9a4587f360af68837a2a132e96dd51c72b2b26da3a46698a4a9839df92b2b10a",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/object-evidence.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/object-evidence.json",
+      "sha256": "e539b42ef64a36bed9829b459a6cd43d9fdb580fc282d099f11bab4542ae79e4",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/render/candidate.pdf",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/render/candidate.pdf",
+      "sha256": "8b43bd05f25b321730fec02abaa91e4d9875356972bac56a6fbcde8a41807670",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/render/conversion.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/render/conversion.json",
+      "sha256": "c5acf5a709232a3b61d6395fc66598877de441fb4ae3e31b4c262c5ed1063e55",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/render/slide-01-publication.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/render/slide-01-publication.png",
+      "sha256": "6f588924b54732f8c9c019b8889e7d66e310c014b4971a0073162096af3f9400",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006/render/slide-01.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006/render/slide-01.png",
+      "sha256": "b30712579875a6a8f51296b76b4d582f11f021083ab0478bda0ea5246da1c8e6",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/006-validation.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/006-validation.json",
+      "sha256": "7f3aaf5eb22b9dfcc539400306757dbc54f8935f489b5e62e55960a837796c2b",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/build.mjs",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/build.mjs",
+      "sha256": "1465af697e857e7fcecda5d4048c5dee70e376efb5ed3d0d007005cca3e04e74",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/candidate.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/candidate.json",
+      "sha256": "7becae93a091213269c079afdc53e028fb386f2aaa7f2b0226643c6190f7948d",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/candidate.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/candidate.pptx",
+      "sha256": "ff2ba3011714244b67ccf5f395c7f401aeca05137c5986648e74985fdcfca184",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/draft.pptx",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/draft.pptx",
+      "sha256": "ff2ba3011714244b67ccf5f395c7f401aeca05137c5986648e74985fdcfca184",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/draft.pptx.inspect.ndjson",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/draft.pptx.inspect.ndjson",
+      "sha256": "9858859a896c23204cd0d6d4d10010e5c612ebfb91b5e95da789f5eb69c0afac",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/execution.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/execution.json",
+      "sha256": "7cc48f18d177a906990e1ac06aba7ad4ed6a01ce839be0d3283f574a0b587d25",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/launch.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/launch.json",
+      "sha256": "5a8ac7561791c92fbc7378ab682d15434580a2d20c7f6293cc067c4f01899be6",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/model-decision.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/model-decision.md",
+      "sha256": "834b966a6d2d1448766c118a868438a719e5f043f7f602ed15fea83abb143c95",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/model-representation.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/model-review.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/model-review.md",
+      "sha256": "75e80cdc0a3d48778ac88c3bdc204453b30d646c0c5ac675c30489c0851d499b",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/model-understanding.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/native-objects.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/native-objects.json",
+      "sha256": "c2b4f5f53188ad4a1f58386d04b623493ea4ed9a40c0ddc55b584641f76487ee",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/object-evidence.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/object-evidence.json",
+      "sha256": "69eb81287915dd725a99d494838acdbe2787463f849fb5e1f30f484a5fb9f610",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/render/candidate.pdf",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/render/candidate.pdf",
+      "sha256": "e7e0af3a7daf041343e84bcb56a05fd1fd280720596a7dc0a0053200ec8b1122",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/render/conversion.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/render/conversion.json",
+      "sha256": "45a03067aede97de07848c0a2bf1a8635b4b6ea7f1b38cc1b41abcb13eccbed4",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/render/slide-01-publication.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/render/slide-01-publication.png",
+      "sha256": "a745b2fdac148e54052c4f0647a7d7b12829c97644ddde20c4b1b9826501e846",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/render/slide-01.png",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/render/slide-01.png",
+      "sha256": "c95b1fccb48a0e760eb0bec6c8f78c0c86bc5c066c4a8d5c9b361ac82ea0cbbe",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008/review-record.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008/review-record.json",
+      "sha256": "3f661c752a9d9659120d0b6ed902a0b0647baf3e12533f3f1def1707c115798b",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/iterations/008-validation.json",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/iterations/008-validation.json",
+      "sha256": "f1d31d3373345810f197efa17c53594b6bcc6f208c84e61070ef07cbcfbba081",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/experiment/model-instructions.md",
+      "category": "original_preserved",
+      "source": "experiments/model-led-isolated-093-v2/model-instructions.md",
+      "sha256": "0d20c9302d587a78f4f5d5293da94117d46170fda9d145f5a0152cdcdb06c168",
+      "historical_hash_verified": false,
+      "note": "当次完整实验原文件逐字节复制；其中源码与输入另按历史记录核验"
+    },
+    {
+      "path": "evidence/delivery/access-ledger.md",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/access-ledger.md",
+      "sha256": "3153436c55c3c561f1046788aaddaaafaf0bf5072a83cdec13c0f520e9f4ab19",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/delivery.json",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/delivery.json",
+      "sha256": "37e31fc57a5596a6b05aed51b50de8e478991c93f2307e2274ca3dfc87d59709",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/design-evidence.md",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/design-evidence.md",
+      "sha256": "834b966a6d2d1448766c118a868438a719e5f043f7f602ed15fea83abb143c95",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/figure-caption.md",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/figure-caption.md",
+      "sha256": "37ac465f9a41218ab0594d804d9fe405cdc82b9b236166557f394db1d393f8d8",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/freeze.json",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/freeze.json",
+      "sha256": "be1a8052a75b9c6fb59f2d12ddda4473da83ea974ee34a07314654922ee045dc",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/isolation-protocol.json",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/isolation-protocol.json",
+      "sha256": "415ab985048e731b0b1c9e1b5328199d693e62bf2b529de6b67d96dad6c44080",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/main-figure.pdf",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/main-figure.pdf",
+      "sha256": "e7e0af3a7daf041343e84bcb56a05fd1fd280720596a7dc0a0053200ec8b1122",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/main-figure.png",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/main-figure.png",
+      "sha256": "c95b1fccb48a0e760eb0bec6c8f78c0c86bc5c066c4a8d5c9b361ac82ea0cbbe",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/main-figure.pptx",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/main-figure.pptx",
+      "sha256": "ff2ba3011714244b67ccf5f395c7f401aeca05137c5986648e74985fdcfca184",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/model-representation.md",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/model-representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/model-understanding.md",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/model-understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/publication-preview.png",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/publication-preview.png",
+      "sha256": "a745b2fdac148e54052c4f0647a7d7b12829c97644ddde20c4b1b9826501e846",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/delivery/visual-review.md",
+      "category": "original_preserved",
+      "source": "output/model-led-isolated-093-v2/visual-review.md",
+      "sha256": "75e80cdc0a3d48778ac88c3bdc204453b30d646c0c5ac675c30489c0851d499b",
+      "historical_hash_verified": false,
+      "note": "008交付原文件逐字节复制"
+    },
+    {
+      "path": "evidence/author-support/source-face.png",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/source-face.png",
+      "sha256": "441ab21670ca799a26eeb15f574a5516153b3c30bcbff9d6110038307693b83b",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/math-baselines.py",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/math-baselines.py",
+      "sha256": "ef9fa148ac602e084fcb6a38eb8eef87dc7bcf49128a03fccf69366405edd7ca",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/fonts.conf",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/fonts.conf",
+      "sha256": "62d6bea9b157e4683a625bbc6a7f89803a6f96c03b0bbd1113cec50881947c80",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/understanding.md",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/understanding.md",
+      "sha256": "00959d98641aeeb085290809090fa1da0ceb4468c97d1131ae87d64082cc48aa",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/representation.md",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/representation.md",
+      "sha256": "afbb88eec8cff6167fee131f82f7a6c481f7a2fa79e72b23ba0c6b40801b0c69",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/decision.md",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/decision.md",
+      "sha256": "834b966a6d2d1448766c118a868438a719e5f043f7f602ed15fea83abb143c95",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/review-final.md",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/review-final.md",
+      "sha256": "75e80cdc0a3d48778ac88c3bdc204453b30d646c0c5ac675c30489c0851d499b",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/author-support/caption.md",
+      "category": "original_preserved",
+      "source": "tmp/model-led-isolated-093-v2/caption.md",
+      "sha256": "37ac465f9a41218ab0594d804d9fe405cdc82b9b236166557f394db1d393f8d8",
+      "historical_hash_verified": false,
+      "note": "当次保留的作者辅助文件；没有独立历史哈希记录，不宣称依赖密封"
+    },
+    {
+      "path": "evidence/isolation-protocol.json",
+      "category": "original_preserved",
+      "source": "tmp/isolated-093-v2-protocol.json",
+      "sha256": "415ab985048e731b0b1c9e1b5328199d693e62bf2b529de6b67d96dad6c44080",
+      "historical_hash_verified": false,
+      "note": "当次隔离协议"
+    },
+    {
+      "path": "run.py",
+      "category": "reconstructed",
+      "source": null,
+      "sha256": "8fb8ee836b5b3e1f121b56a366271034f352d65c1bfbab6accdbfbe100f009f4",
+      "historical_hash_verified": false,
+      "note": "新建隔离入口；固定恢复指南与人工外层，防止加载v3.5；不包含模型自动绘图"
+    }
+  ],
+  "limitations": [
+    "008没有记录执行器源码哈希；使用后来v2冻结快照作为候选，不用v3.5源码补齐",
+    "Git没有提交，无法从Git恢复精确时点",
+    "第三方artifact runtime、技能26.1007.11041、Python/字体/系统工具没有密封；历史技能路径现已缺失",
+    "模型会话内部状态不在文件快照中，重跑不保证相同生成结果"
+  ],
+  "verification": {
+    "builder_sha256": "1465af697e857e7fcecda5d4048c5dee70e376efb5ed3d0d007005cca3e04e74",
+    "guides_verified": 4,
+    "inputs_verified": 4,
+    "delivery_hashes_verified": 9,
+    "files_hash_checked": 347,
+    "identity_cli_passed": true,
+    "prepare_smoke_passed": true,
+    "prepare_guides_match_restored": true,
+    "v3_5_framework_source_unchanged": true,
+    "v3_5_whole_tree_unchanged": false,
+    "concurrent_nonframework_changes": {
+      "changed": [
+        "runs/098-spatial-organization-20261011/work/decision.md",
+        "offline-library/batch-100-20261011/sources/039/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/009/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/076/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/100/evidence/current.json",
+        "scripts/component_collection_pipeline.py",
+        "offline-library/batch-100-20261011/sources/013/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/003/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/005/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/024/evidence/current.json",
+        "scripts/__pycache__/component_collection_pipeline.cpython-313.pyc",
+        "offline-library/batch-100-20261011/sources/031/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/007/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/008/evidence/current.json",
+        "offline-library/.DS_Store",
+        "runs/098-spatial-organization-20261011/work/author.mjs",
+        "scripts/verify_generalized_component_import.py",
+        "offline-library/batch-100-20261011/sources/006/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/004/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/073/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/001/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/010/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/012/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/011/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/002/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/086/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/015/evidence/current.json",
+        "offline-library/batch-100-20261011/sources/014/evidence/current.json"
+      ],
+      "added_count": 272,
+      "removed": []
+    },
+    "restoration_writes_scope": "framework_versions/drawing-v2.5 only",
+    "no_new_drawing_generated": true,
+    "mechanical_contract_tests": {
+      "passed": 23,
+      "failed": 0,
+      "command": "../../.venv/bin/python -m unittest discover -s harness/tests -p test_model_led_drawing.py",
+      "cwd": "framework_versions/drawing-v2.5"
+    }
+  },
+  "new_recovery_records": [
+    "README.zh-CN.md",
+    "recovery-manifest.json",
+    "verification/prepare-smoke/"
+  ]
+}

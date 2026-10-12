@@ -1,0 +1,77 @@
+{
+  "framework": "v2.5",
+  "anchor": "model-led-isolated-093-v2/008",
+  "original_executor_exact_timepoint_proven": false,
+  "files": [
+    {
+      "path": "harness/model_led_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/model_led_drawing.py",
+      "sha256": "e9da0add390d43a68424db5ae47757a511a27eaf6a0e5e3151be6466f3d168cf",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/__init__.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/__init__.py",
+      "sha256": "e4c2940a170f33dc437fabd7cc4f6613793fa78d33a4036cfacea0540d3f00b4",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "scripts/pptx_object_evidence.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/scripts/pptx_object_evidence.py",
+      "sha256": "f5deaca8d1f8a7a68017cf7aae881725ad0493db657bdbdb13c226a97620565b",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/requirements.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/requirements.txt",
+      "sha256": "4d1132373c97b8d488f4446933d97c210f3848245884043113dda6c0278c7b43",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/requirements.lock.txt",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/requirements.lock.txt",
+      "sha256": "dac63e306e320fe920de83eecaa439780d338aa04b923edf6718b288c24685bf",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "harness/tests/test_model_led_drawing.py",
+      "category": "historical_candidate",
+      "source": "framework_versions/drawing-v2-frozen-20261010/harness/tests/test_model_led_drawing.py",
+      "sha256": "97c2214e0528c557a1a9ceacf62d81f42eb0bc7016e13397b1b9775b5a51fb45",
+      "historical_hash_verified": true,
+      "note": "来自后来v2冻结快照；其快照哈希可核验，但008未记录执行器源码哈希，无法确认精确时点"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "category": "reconstructed",
+      "source": null,
+      "sha256": "ed432ccf8e903a4bdc2b74a53a6064b5fdefed081994cb354e7181505e46c6d6",
+      "historical_hash_verified": false,
+      "note": "新建本地package标记，不增加科学判断"
+    },
+    {
+      "path": "run.py",
+      "category": "reconstructed",
+      "source": null,
+      "sha256": "8fb8ee836b5b3e1f121b56a366271034f352d65c1bfbab6accdbfbe100f009f4",
+      "historical_hash_verified": false,
+      "note": "新建隔离入口；固定恢复指南与人工外层，防止加载v3.5；不包含模型自动绘图"
+    }
+  ],
+  "new_portable_files": [
+    "runtime/portable.py",
+    "runtime/load-artifact.mjs"
+  ],
+  "original_four_guides": "Full forensic copies are in evaluation/recovery-evidence; generation uses per-sample approved snapshots",
+  "private_runtime_distributed": false
+}

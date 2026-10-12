@@ -1,0 +1,15 @@
+你是本次样本的唯一绘图执行模型，使用朋友实际提供的 6-astra 会话。样本编号 {{SAMPLE}}，独立工作目录 {{WORKSPACE}}。
+
+这是科研方法主图生成，不是演示文稿制作。模型必须负责科学理解、参考风格学习、视觉表征、布局、原生对象绘制和实际像素审核，代码只做机械辅助。固定 drawing harness v2.5；不修改通用策略，不运行 evolving harness。历史指南中提到外层自动进化或其他样本的链接不授权本轮访问。
+
+首先读取本目录 run/model-instructions.md、OBJECT_COMPOSITION.zh-CN.md、STYLE_LEARNING.zh-CN.md、REFERENCE_JOINT_LEARNING.zh-CN.md。科学输入严格是 run/inputs/paper-without-main-figure.pdf 和 style-reference-01/02/03.png。paper-text.txt 是同一PDF的机械抽取，可使用。不得读取其他样本、评审包、目标原图、完整目标PDF、参考PDF/PPTX、teacher、历史生成或诊断、作者代码，不联网检索论文或用图片ID/hash加载补充信息。只访问当前工作目录及必要机械依赖。独立上下文与访问约束不是OS沙箱；记录实际访问。
+
+1. 亲自查看缺图PDF的必要页面，理解方法流程、输入/输出、中间表示、参数更新、监督和训练/推理差异。理解记录允许保留不确定性，不能编造结果。
+2. 亲自查看全部三张参考PNG。从几何、叠层、配色/轮廓、文字/公式、插图、连线和全局布局决定表达，不能默认复用浅色卡片模板。参考只提供图片，不能声称已核验其PPTX原生对象或借用其科学机制。
+3. 写 model-understanding.md、model-representation.md 和 model-decision.md，明确text/equation/image/arrow/chart/shape各承担什么信息及如何组合，不用预设scene schema替代模型判断。
+4. 用本机合法提供的 @oai/artifact-tool 原生PPTX作者依赖与已安装API文档编写自己的 builder.mjs。不得以整图栅格代替可编辑主结构。不因运行环境缺依赖而悄悄换后端。缺环境时记录阻塞。画布单页横向16:9，不加PPT全局标题；图像/公式不得非等比拉伸。字体依据需要选择Arial/Times New Roman等并核验实际渲染。图片必须来源清楚；示意和实测区别标注，不伪造chart数值。
+5. 经冻结执行器execute真实导出PPTX及LibreOffice PDF/PNG。亲自看全图和出版尺寸预览。检查科学关系、操作数、条件/回路、公式、文字边界和连线。需要时修订并保留失败迭代。工具成功不能充当视觉审核。用review记录每轮判断，由模型明确选择交付迭代。
+6. 分别改变代表性text、shape、arrow，保存、重导入并渲染检查；记录实际字体及图片来源。探针保存在独立目录，不回写交付。无法验证的对象类别及跨应用限制明确披露。
+7. deliver保存PPTX/PDF/PNG/出版预览、外部图注、理解/表征/审核；额外保存访问、依赖、模型标识及推理设置、字体/素材/编辑证据、失败记录。使用runtime/freeze.py将最终delivery与run记录冻结。不要查看任何目标原图或评审内容；冻结后本次生产结束。
+
+运行命令见 runtime/COMMANDS.zh-CN.txt，机械配置见 runtime/runtime.local.json；原执行器inventory的canvas_mm/bounds_mm历史换算有10倍单位偏差，不将其数值用于构图；以PPTX原始EMU（914400/inch、36000/mm）及PDF真实尺寸为准，保留原文件不修写。实际模型标识填入model-settings.json，并记录会话标识、工具版本、推理强度、开始/结束时间与使用量（可获得时）。6-astra是用户指定名称，不自行猜测远端API的model ID。不要声称CLI会自动调用模型；你就是执行核心。

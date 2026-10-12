@@ -1,0 +1,2162 @@
+{
+  "schema": "fixed-batch-scientific-inputs.v1",
+  "samples": [
+    {
+      "sample": "001",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "828bb840568b05d273a76aef074fd9eabdd193086900badb20ccb6e5202e6245"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa64f86be87c7f73ef7efbfe9b78e8c43f191ed5ba8427887afdf15421a19874"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "809c1749b785223eeb5153895347648706014aa8dcf2edd22dddbf14aedbd059"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "002",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "9c5eb39cee7107da156a1ec29aea6f01a08877933f87b9dce75d3e04410c4a5b"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5174ad0e61ce3ef40e88880ae909a20eaac41753beabeb24be645873383a8a73"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d1df28ca89635f3dc92bbeae989b982c9db5087e676c7e173e507359b18649bd"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a6d0c86c39115db03b80197d7cb41bdf09df92474f0562544b22d72e8f2193e9"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "003",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "083c06c86a068cb54a1ee8eef9645552283fda7c73d0ca1b18762f5e6a28cab0"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ab28cba03e61542a58f7732801848a45cef71d638ba8b1e25de13c6a298d300d"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "1bc28bf85de541bdcc1ebd7bb27122b2c22a4e22e3487e0a2e386ccb3678da9d"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "004",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "03cd7b4d363993fe0e4ddb5a0cdf9949b5834feab35351df2f42bdb4eb4fdd8a"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "1bc28bf85de541bdcc1ebd7bb27122b2c22a4e22e3487e0a2e386ccb3678da9d"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7b83a5cf62ef082f55beda6f036bf5949d36b4bc8fda9127627a08a4b2ce1a2f"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a6d1aa43ac9fd11549b0427721b0fcb05c7cb3ac431b0c1effc0a21ff8a9529e"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "005",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "88accb6fc9e8cd6ca59a7b19840c28e1086d818c8d89893b25485166e43755a7"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "7b83a5cf62ef082f55beda6f036bf5949d36b4bc8fda9127627a08a4b2ce1a2f"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "006",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "911855b762b5eef7a64f4b6b3836d6f134fcc5b449235f66360b71d294aad26c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "e173c88dbe0ece998fc80c61f07051cad5b771e787bec707dc24b6d26790b7ba"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "007",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "83d479832eddd3f403d462f1428c48f630853257f37505249cfbc3748d21285b"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d02f26d56652dcee3d50352998576de297e997b75a41fb3495199bd68544f0d1"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "008",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "0aa6a1e05ce8bb194f5ad4e9890533cde44c28879e2933ceefcf6bb128335b9f"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ee9f119e1ec7f450d3f00a87ed36c056ab5265e1b2b002ad266721f3300cb2f8"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "02695b43e42a7162ad83fe35e8eeef9b132632f47093099713eb7db3f9af85cb"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d8e25977539c0202e29b51cad067fa57d279e89900e6d7449355b8f043a1f7f5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "009",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "4e18ac4e6bf8fb584a557cbac79ccca44f1db773c3aa753310f487efc38a22d6"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "1bc28bf85de541bdcc1ebd7bb27122b2c22a4e22e3487e0a2e386ccb3678da9d"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a6d0c86c39115db03b80197d7cb41bdf09df92474f0562544b22d72e8f2193e9"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "010",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "42c7c0845e2475c4032d507ae2435b3a4b8f48fa02a6021f2bd7071266dc2133"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "011",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "f5a18c2957248c8d3daa9f351f83eb3790563f4d8f791a4fd4ba9a598ce5b608"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ec52a48fa45ed8893dcda1f6db0f2fd401f586fb13e72dbd1b1f3d92245d2141"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "fb09e4b301b02f30da278ba61adf5d49ba8c3c9a1e9982d6982fc8e7735e1623"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d8e25977539c0202e29b51cad067fa57d279e89900e6d7449355b8f043a1f7f5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "012",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "2432babb09b09555a78710335bdb4500600d44097e6f199259a630444f136118"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "809c1749b785223eeb5153895347648706014aa8dcf2edd22dddbf14aedbd059"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "094d0517293ba2de1c04ec63b9c918882f1aa4d4d4de5a3b6c5e7a40d114b6c5"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d299976f30cb2e9f4b700839353020d60b99faddd4df20f116fa20e4c535457c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "013",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "1f6404e2e21b1532591fbea50807492aebf52481cef692b13570e8f28cca104e"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "014",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "4657a8fb38fbf43060d6ac7fbcf52a942d40e7b2820e0a32c482e81e517b1ef3"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "094d0517293ba2de1c04ec63b9c918882f1aa4d4d4de5a3b6c5e7a40d114b6c5"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3c34ba0d0f4ecc2a188ccc43e33579f753d08005b7ff8b28681eadd98bccf328"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "84fda40936423edfa2ebba0a6c8488d349528048fed49b0112245cded86faa73"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "015",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "6ed880779a9d442019518b24d70af4a373ac14fd22e4d633954d13d5242cecd3"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "bb0900744f8bab638cb0a5bde8134e3444ea83e8537e01c6c04af3b558fcc024"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "ec52a48fa45ed8893dcda1f6db0f2fd401f586fb13e72dbd1b1f3d92245d2141"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "39e0175c3064fe4d0b9d3c67e81d0037e670d9d168a4d4d1cb468828fb3d113b"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "016",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "3fcb93312314b9933f9603cbd5255c506ea4fa036398c1ead8f573f91bdb5a13"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5174ad0e61ce3ef40e88880ae909a20eaac41753beabeb24be645873383a8a73"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "5a19a5c74a56342f3eead54af640ee2ce89b36896e0580c7b1239c5140681438"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "fa084f974113bc4e4b1c91322701747d94eefafbea51f753adb78c2a6f12b270"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "017",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "e0846c55dfe619f367c22a87258a5254a23f57f9efc57f42f85e4189fe0db9ab"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "d299976f30cb2e9f4b700839353020d60b99faddd4df20f116fa20e4c535457c"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "e8972e07e593b16048e00c3537d9cc8c70feddcbf9c65c3ea3c11aa6f1a3b177"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5c5109aa99e8238951e58150606ae2e0320a832a457a689071d3ae6f6ab91f94"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "018",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "669e1339d54dab2cf0d556da39a8100dec020d030b60945a589c32c1300d6eab"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "809c1749b785223eeb5153895347648706014aa8dcf2edd22dddbf14aedbd059"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5c5109aa99e8238951e58150606ae2e0320a832a457a689071d3ae6f6ab91f94"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "019",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "6b31753ad0171122629a95c0b74623752890981a25fb52225b07bb5a93c00c96"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "2f058305b8856e4d02e316d0f4a12367713f29854e82e1e808eb10d6b523a479"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d47ac386280ad9fa99b573fe92deecb0a3e6d05d6c9f236ce4cec155d6ef3aea"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "020",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "22aae879e6f25b567a2025ede87de59480a7cb3df9899c18fcbdae5a2a907f82"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3c34ba0d0f4ecc2a188ccc43e33579f753d08005b7ff8b28681eadd98bccf328"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "094d0517293ba2de1c04ec63b9c918882f1aa4d4d4de5a3b6c5e7a40d114b6c5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "021",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "5f17ddad7755997f352c48008a180ff5b01ec9ce3592d8992ecd8a135ec66c83"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "809c1749b785223eeb5153895347648706014aa8dcf2edd22dddbf14aedbd059"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "84fda40936423edfa2ebba0a6c8488d349528048fed49b0112245cded86faa73"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "022",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "a6d47f265ef09cfbbd8aeaa3a6e0ad47703ab35dc8647856a1f35c993bd94a46"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "449b734fbf18bbeb9e15fbf86b1291f4db4660b7fa81955a5c364946af9604d9"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "edda3bf62bfc56407804395cccd16c66ea76e84cf8bcc4d9f1b6aebd07cfdff6"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "023",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "8ea0893cb05b306d88ce5a2fe2d2a01307de9319f4f7f132e209bb85d8be0be3"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "f32cea6543d167479cd9976033a856aa97bcc5ff4c4da8ea5088d504f9bf03d3"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9c7602a5a849068b547102ca89c3444c217eceeb54dd5e5cd2e91875734416a1"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "c3aa19dec3ce7141dffd070dc30a0cbc954d8a3fd05023188b9507d3c72bbc14"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "024",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "d5579ba82e3903817d1285b6c6faff8822fe5132d5b6e7742ec69f43a967a772"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "66055b65a050eea2898e7624e608fed865738e8ba601985815835b5bd0c9ad39"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7c9e5f2539a4ded9188bc117e70127a16277431f58fbba4f0c11fd6bbdbffb15"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "03729a9a0a7b0bd2f453dc7c4c9a328e7890a50cb0dc7ea3516222d88c2f0579"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "025",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "ac34e3f2654971b97690e39f7c69899f62c4f1f489dc31449dea82adf2f2cb65"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c436984c11a2d8b64abb511a49c7f8abcfd44786e9e93208c24292843e573878"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "8794ff50f863355ee357dd17c3f8155b8211c6ff469a8cf25698f85dc9034f47"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "026",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "783bf82d4723d09187876b8c271f6f5f2885c24126b0dcff064a91a2df70c616"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "016fc9c4314bd243df3dbfa48531ec3e495c4cea9cd3608505d787f1cfd8a413"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "027",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "f3dd6a81a8bd1a7ed71626799373e7d0715882e88876b86485cc96f64aa6cc70"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "7d0dca1e7c8983975c4da2879d51eae2aba2aa2adc4a54eb83eb7a7dbc7252ef"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "094d0517293ba2de1c04ec63b9c918882f1aa4d4d4de5a3b6c5e7a40d114b6c5"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "f32cea6543d167479cd9976033a856aa97bcc5ff4c4da8ea5088d504f9bf03d3"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "028",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "b9f7664262ba0b2837779d9dc4783fd1bd72755f29ea114ed5ae79ea482c2600"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "98f4e37444ec2d8be6c5d75209610fef0c6ab7590cb5e21b76f4bedb34938bf4"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "c3aa19dec3ce7141dffd070dc30a0cbc954d8a3fd05023188b9507d3c72bbc14"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9c7602a5a849068b547102ca89c3444c217eceeb54dd5e5cd2e91875734416a1"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "029",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "e752ae58979debabcb906566b64b18bf3a33e0050969a2f1b870a8ce2830b8a8"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "809c1749b785223eeb5153895347648706014aa8dcf2edd22dddbf14aedbd059"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "030",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "7b9b94d2376aafae88b323ff082ac87e3c4a7d601e44fea121070ae5a1920e6d"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c578f60a3f51e60e43f02bfcef40daeb7febe10243ca3a197b665b83a594931f"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "6d6542b39ac0faf36335365e3ee2260f2e39822b327df5ba1fe8c0d4f3deda1c"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "031",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "702350f64db80e741cfd0e479c59e767f270e95eb9b5e221f8baab265eb1673a"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "cce49822c37341ad98c8c6bf72399c78d2541388704fe390985a088d4b79b510"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "edda3bf62bfc56407804395cccd16c66ea76e84cf8bcc4d9f1b6aebd07cfdff6"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "032",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "eeadee805a06273e811c44d4aaca64158964e69660b49df9dbff55eb46f8d1bd"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "c9b94391e7365abd7374e8914c390b6a41f924dd4105ad7a16aa1de36471944c"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "671bdba60302a335d21b45179b13d00c948f70e51dc6f38e7d530049ff878724"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "033",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "557081354b1fca10cbe05a233412472d2de2a20eebc30f71f15e458760f0a9e2"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa64f86be87c7f73ef7efbfe9b78e8c43f191ed5ba8427887afdf15421a19874"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "5e8e78d7ee379591a61e26bd2860adcba8c377b8b41addefc46d7f47778db51d"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "034",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "de06be531f8b5c4f37db50bd7d44946d5c5fca1073cb217c30e5119b6657a2e2"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "f32cea6543d167479cd9976033a856aa97bcc5ff4c4da8ea5088d504f9bf03d3"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5e8e78d7ee379591a61e26bd2860adcba8c377b8b41addefc46d7f47778db51d"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "035",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "73f7e847a65184c67cdcf72d5ac919552deaee7b112cc4ce3de45554e008360c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "449b734fbf18bbeb9e15fbf86b1291f4db4660b7fa81955a5c364946af9604d9"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "036",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "02aec5f73abc7b8b2a9c0d4655c70ab48989ba845e2aefc040a9d0a3f391fb8c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "7ea553ae01bda6cde6ad0bb118016c52f4149d8e7eec237b588c4f3db6a44355"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "2f058305b8856e4d02e316d0f4a12367713f29854e82e1e808eb10d6b523a479"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "aa64f86be87c7f73ef7efbfe9b78e8c43f191ed5ba8427887afdf15421a19874"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "037",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "135b680c0790d7bafcfed92abb8f9d0eddeed3287780bbcde81932a9b9c71c97"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "e8972e07e593b16048e00c3537d9cc8c70feddcbf9c65c3ea3c11aa6f1a3b177"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "c3aa19dec3ce7141dffd070dc30a0cbc954d8a3fd05023188b9507d3c72bbc14"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d299976f30cb2e9f4b700839353020d60b99faddd4df20f116fa20e4c535457c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "038",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "f5ccbdc6dd637359f2cd6668290b41cfb4d4ecc9cc6c68c3ead8139d21b939bc"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "2f058305b8856e4d02e316d0f4a12367713f29854e82e1e808eb10d6b523a479"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "361483ffdd841828b630f8570bb4c2f474831df28eb4c573cf93856edb668ce1"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "6d6542b39ac0faf36335365e3ee2260f2e39822b327df5ba1fe8c0d4f3deda1c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "039",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "6f393dc1840ec72cdf2d3a4f57fd0de991d2a88a7008221d81baac3e067c062b"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "39552cd15acbc2f01a697279d576cf2bac424e7711cc32c7e07c47b9c9ec05f6"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "5c6119dc86cc122a954dd01a17aa14baf27e54ba020b277f3b4e65a0d3a3502e"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5c5109aa99e8238951e58150606ae2e0320a832a457a689071d3ae6f6ab91f94"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "040",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "d91f1f9f5621c1a5bc1e9fdbd48fefee71f2958adb06614ce6b32c67255b51ee"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "edda3bf62bfc56407804395cccd16c66ea76e84cf8bcc4d9f1b6aebd07cfdff6"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "449b734fbf18bbeb9e15fbf86b1291f4db4660b7fa81955a5c364946af9604d9"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "041",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "ab521fd8e51ce8e926876447aee2076fa5e295b0ac75fde772f1d7e5aff27b4e"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5c6119dc86cc122a954dd01a17aa14baf27e54ba020b277f3b4e65a0d3a3502e"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "5c5109aa99e8238951e58150606ae2e0320a832a457a689071d3ae6f6ab91f94"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "2f058305b8856e4d02e316d0f4a12367713f29854e82e1e808eb10d6b523a479"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "042",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "9e471d863725b6876929133152544aabba975be2f4021d6cd038db897c2cb6ea"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "ee9f119e1ec7f450d3f00a87ed36c056ab5265e1b2b002ad266721f3300cb2f8"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "043",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "fecf710769a90a6a0617a7fcba9c970ea253cf30e521bc2220d743f73ffe9dbc"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c10e80c1c5e689610f4aaccf7aaf71d45dbcd3f0ea30146d2ec64bac7476e6f8"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "671bdba60302a335d21b45179b13d00c948f70e51dc6f38e7d530049ff878724"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "6d6542b39ac0faf36335365e3ee2260f2e39822b327df5ba1fe8c0d4f3deda1c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "044",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "e38f017715e8292df6346a6438927405c8d2dd3b10a7325bf93cbc69da87f770"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ab75d2e9fbef9b5184429a7d955a94890cc74e0a0b34f048c1ca2f0e525cd2fc"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7c9e5f2539a4ded9188bc117e70127a16277431f58fbba4f0c11fd6bbdbffb15"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "ee9f119e1ec7f450d3f00a87ed36c056ab5265e1b2b002ad266721f3300cb2f8"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "045",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "884791ec37b7c81e58ad84ab2bce5087bad21b634b790e365efcb107acd7626c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "3c34ba0d0f4ecc2a188ccc43e33579f753d08005b7ff8b28681eadd98bccf328"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "03729a9a0a7b0bd2f453dc7c4c9a328e7890a50cb0dc7ea3516222d88c2f0579"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "046",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "62d0e559c2742ecd665b8a7279562f059c08eb16dea0d9f4fa8c3115d633fa18"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c9b94391e7365abd7374e8914c390b6a41f924dd4105ad7a16aa1de36471944c"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "361483ffdd841828b630f8570bb4c2f474831df28eb4c573cf93856edb668ce1"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "6d6542b39ac0faf36335365e3ee2260f2e39822b327df5ba1fe8c0d4f3deda1c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "047",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "1a87a55a0a727d202307ee7c8c28ebea36bbc2bcfeb74f9bb900eefb8b7015ea"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3a1287c84394b9c4e662e1a9d036bf6b70b089e18c84fff2c37c91643dbd0ed4"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "049",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "e9be4116e08f5bc72e5166c1ddf8df1917b8a67cd2f31e53d0e05a99ff427f6b"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "7d0dca1e7c8983975c4da2879d51eae2aba2aa2adc4a54eb83eb7a7dbc7252ef"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "f32cea6543d167479cd9976033a856aa97bcc5ff4c4da8ea5088d504f9bf03d3"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "050",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "ab6c1686fec96200f3e29b1cdbe74ab87ca892f6ca2e0d3cc2e0b2528fae6b8e"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c9b94391e7365abd7374e8914c390b6a41f924dd4105ad7a16aa1de36471944c"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "671bdba60302a335d21b45179b13d00c948f70e51dc6f38e7d530049ff878724"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "051",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "bc84043205aa03434cf37224b960f70f1ac83cbbb2437813863ca5bab41a6ce0"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "7d0dca1e7c8983975c4da2879d51eae2aba2aa2adc4a54eb83eb7a7dbc7252ef"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5e8e78d7ee379591a61e26bd2860adcba8c377b8b41addefc46d7f47778db51d"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "052",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "81718e73050f61de6d9daf6f6a55e5cab9760fc3a88a933253def21c1b0c7c09"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c9b94391e7365abd7374e8914c390b6a41f924dd4105ad7a16aa1de36471944c"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "6d6542b39ac0faf36335365e3ee2260f2e39822b327df5ba1fe8c0d4f3deda1c"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "053",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "f8f970345bf5398428c9454f3c0af2a4fec6c128e96c46dcfae8d3e5282c6d61"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5c6119dc86cc122a954dd01a17aa14baf27e54ba020b277f3b4e65a0d3a3502e"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "054",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "9cbf616ea1300d31decc4cc69ce68ab56c1313e825653fee53f2da9258e33fe6"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ab75d2e9fbef9b5184429a7d955a94890cc74e0a0b34f048c1ca2f0e525cd2fc"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7c9e5f2539a4ded9188bc117e70127a16277431f58fbba4f0c11fd6bbdbffb15"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5e8e78d7ee379591a61e26bd2860adcba8c377b8b41addefc46d7f47778db51d"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "056",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "9967231d7b555e443589f0b4cf52b05d0984027dc1d1cb6d95632371d438028c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "361483ffdd841828b630f8570bb4c2f474831df28eb4c573cf93856edb668ce1"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "7c9e5f2539a4ded9188bc117e70127a16277431f58fbba4f0c11fd6bbdbffb15"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "057",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "3475e71ea7774bfd6f2fdc64c739eded58cbf9dc052722b048db72598d054f00"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "9d7ea5e2fc0d2cf77a96c34100d0871177211e2d1adfe0feee3d6086cc166297"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "c3aa19dec3ce7141dffd070dc30a0cbc954d8a3fd05023188b9507d3c72bbc14"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "058",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "a7b5ef0a0217c18b27cf3ac4bcf08542538cef77d14a71b4886b29e1e66e242c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "7ea553ae01bda6cde6ad0bb118016c52f4149d8e7eec237b588c4f3db6a44355"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "6d6542b39ac0faf36335365e3ee2260f2e39822b327df5ba1fe8c0d4f3deda1c"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "c10e80c1c5e689610f4aaccf7aaf71d45dbcd3f0ea30146d2ec64bac7476e6f8"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "059",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "00760889046d08dfbac067ae69348a1d8d2abbdd999ea5102e7c6171533a4aa8"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "c3aa19dec3ce7141dffd070dc30a0cbc954d8a3fd05023188b9507d3c72bbc14"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "e8972e07e593b16048e00c3537d9cc8c70feddcbf9c65c3ea3c11aa6f1a3b177"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "060",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "3aea7e5f0d2267f95dc36dba4bd029ef30e5dee095c2b692665cb67a2d4183b5"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "449b734fbf18bbeb9e15fbf86b1291f4db4660b7fa81955a5c364946af9604d9"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "021a92701d81d2b4406e9df5f3ea9a6c38dfd9495df448687a03ad5ec06d5312"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "061",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "970e85ffaa73613e047192af2f40207aea820d401591715657a540bab7fb4f04"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "a6d0c86c39115db03b80197d7cb41bdf09df92474f0562544b22d72e8f2193e9"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "062",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "4ed27bce8d93f920346928fcf620c21bd3b9e0dc3401776c12dc538d36a0102b"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "063",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "f699cd413221fe09a537c5ebbec19c308675bc3705590e64c903d75419b17ee1"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "b021a95385c6917b98479c045119ba1b93a4e18d85c6bb310d7c0a4f966b2c45"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "f32cea6543d167479cd9976033a856aa97bcc5ff4c4da8ea5088d504f9bf03d3"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5e8e78d7ee379591a61e26bd2860adcba8c377b8b41addefc46d7f47778db51d"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "064",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "82d55b06c505f0dcf015f40d8603c6cb73254485e1d798f8378f10a47dd13464"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "03729a9a0a7b0bd2f453dc7c4c9a328e7890a50cb0dc7ea3516222d88c2f0579"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "ee9f119e1ec7f450d3f00a87ed36c056ab5265e1b2b002ad266721f3300cb2f8"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "065",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "ff6d517e9385423ea0e97bdc627f5a18c193b7d132fae9d85b78c38f853468ef"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "33c883a2f0b69ab1b6bd7f06c22b24597f0a3af702fdc15bca03e210438e5fc7"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a6d0c86c39115db03b80197d7cb41bdf09df92474f0562544b22d72e8f2193e9"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "066",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "10a7024c551f3a9e3a0b80dae65ab7b765b73e0826a46cf74c42a92e5655b369"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "39552cd15acbc2f01a697279d576cf2bac424e7711cc32c7e07c47b9c9ec05f6"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "33c883a2f0b69ab1b6bd7f06c22b24597f0a3af702fdc15bca03e210438e5fc7"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "016fc9c4314bd243df3dbfa48531ec3e495c4cea9cd3608505d787f1cfd8a413"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "067",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "3654b127752c6a73dfd22daa8131bab4ec7b55e0dd4798814feebcce79936f65"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5c5109aa99e8238951e58150606ae2e0320a832a457a689071d3ae6f6ab91f94"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d02f26d56652dcee3d50352998576de297e997b75a41fb3495199bd68544f0d1"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "98f4e37444ec2d8be6c5d75209610fef0c6ab7590cb5e21b76f4bedb34938bf4"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "068",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "b286707c09fa4adff35596bb237fbdcef295baa0250d097ed3314943ef1f7b3e"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5fed0909c0770f0f78a6fcbab710a171b68909367fc61eebaf8010df508e08bd"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "84fda40936423edfa2ebba0a6c8488d349528048fed49b0112245cded86faa73"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a1423d5d59cb8dfe07578373acd1416e1b0233246365e594984f4ccb4dd7508c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "069",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "6200bf0684982f7b31966f556b9abb91ea5ff9807fc4bb43935bb9efc794987c"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "03729a9a0a7b0bd2f453dc7c4c9a328e7890a50cb0dc7ea3516222d88c2f0579"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "66055b65a050eea2898e7624e608fed865738e8ba601985815835b5bd0c9ad39"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d8e25977539c0202e29b51cad067fa57d279e89900e6d7449355b8f043a1f7f5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "070",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "9f0ec1f488442a3d10616f55c362cef6de665c0ac6d6ac417ebbf384de8dbc29"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "39e0175c3064fe4d0b9d3c67e81d0037e670d9d168a4d4d1cb468828fb3d113b"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "0d6c3a58373b046e27eb648e46abcb7c59713c1ae980d1fccc7a3f0f5a51728e"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "071",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "ea5ede8d5f20812b0d484558887d095ff2bf66d820545465c97fbcb426bc0b69"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "83b19d560921d7dd8a52cbe326b28df233ebdcacd2a63844ce02a46851e6007e"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "072",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "7bc977bb675feece596af8fcab55709e11e4c8465a04eb835103569e1e467cef"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "15fad0de00792afbe1ee7560b70c85b378ccc2a1de2b622ce0a0ae71e5553145"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "ab28cba03e61542a58f7732801848a45cef71d638ba8b1e25de13c6a298d300d"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "1bc28bf85de541bdcc1ebd7bb27122b2c22a4e22e3487e0a2e386ccb3678da9d"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "073",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "fb305b62ba4d3d19ef6e45fe509f49c32274409e5e09cffffc59b942dad10396"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "65c9107a28b90957c800cf3944e5f69dbc7f92dd8a9914552fd3a136f6e98f02"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "fa084f974113bc4e4b1c91322701747d94eefafbea51f753adb78c2a6f12b270"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5a19a5c74a56342f3eead54af640ee2ce89b36896e0580c7b1239c5140681438"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "074",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "2402ee53493c39ac9b50f7df343a3986748680131140ef9e00d119850fac2f2e"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "b021a95385c6917b98479c045119ba1b93a4e18d85c6bb310d7c0a4f966b2c45"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5fed0909c0770f0f78a6fcbab710a171b68909367fc61eebaf8010df508e08bd"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "075",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "2755fe2585a7089cd0e8c17daaee75880c9674b5286a4f438ec3e21ff645699f"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "a6d0c86c39115db03b80197d7cb41bdf09df92474f0562544b22d72e8f2193e9"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "5a19a5c74a56342f3eead54af640ee2ce89b36896e0580c7b1239c5140681438"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5fed0909c0770f0f78a6fcbab710a171b68909367fc61eebaf8010df508e08bd"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "076",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "700b2dea5b3a9bf75f30d7816b343e456c1073fee7a6bdca0e2de9b1d2c8354f"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5c5109aa99e8238951e58150606ae2e0320a832a457a689071d3ae6f6ab91f94"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7ae7e246339b0bf9a0f0efded4376524338064c5715d3504bb77cc6dd91a3eaf"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "077",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "3eb7ce09f3d89925cab7b6d1972b6a9cd538eae46b7965c87c2e2766e62a0638"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "65c9107a28b90957c800cf3944e5f69dbc7f92dd8a9914552fd3a136f6e98f02"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "a6d1aa43ac9fd11549b0427721b0fcb05c7cb3ac431b0c1effc0a21ff8a9529e"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "b0d93d33f0f5e486fca1beb922a5a2267b53992785b5713076fd1c86d16c16aa"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "078",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "72f16291fc40f46eecb6783dfb41079702006620cf8155dac38373299a71c108"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "bb0900744f8bab638cb0a5bde8134e3444ea83e8537e01c6c04af3b558fcc024"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "39e0175c3064fe4d0b9d3c67e81d0037e670d9d168a4d4d1cb468828fb3d113b"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "ee54a0616f497d7c873a48d301260e82941417a6fe6beb9baa9b6125d921576b"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "079",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "1635e615073a48847a263b901efa94574283cf2bae7068ab20c2a40642369741"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5c6119dc86cc122a954dd01a17aa14baf27e54ba020b277f3b4e65a0d3a3502e"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "bcccd172b6e71d52ad1455e97382efaf590fb81f14c2bd757df40e24ab821597"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "e8972e07e593b16048e00c3537d9cc8c70feddcbf9c65c3ea3c11aa6f1a3b177"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "080",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "27d311739aaf25f0e5319ceebb5f1633d791a94438594e71144444bf7599a207"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "6340868b129111e6c99dc7dfa3733560e1850a1bc7880860e9f4ad492252e0de"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "a6d1aa43ac9fd11549b0427721b0fcb05c7cb3ac431b0c1effc0a21ff8a9529e"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "65c9107a28b90957c800cf3944e5f69dbc7f92dd8a9914552fd3a136f6e98f02"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "081",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "c1f12c7042bef58665d11124114cc1ebf6a65f65e25532eae50855f216076920"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "39552cd15acbc2f01a697279d576cf2bac424e7711cc32c7e07c47b9c9ec05f6"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "809c1749b785223eeb5153895347648706014aa8dcf2edd22dddbf14aedbd059"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "082",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "04d1323072054f9e8561c750d29cfbf4737de2cc8f75ea78bd108d3346428960"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "84fda40936423edfa2ebba0a6c8488d349528048fed49b0112245cded86faa73"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "094d0517293ba2de1c04ec63b9c918882f1aa4d4d4de5a3b6c5e7a40d114b6c5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "083",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "283c8ab7b012827c962dd3e51963975a4f5d7fc894769e6bb5d980040aa233ce"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5174ad0e61ce3ef40e88880ae909a20eaac41753beabeb24be645873383a8a73"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "0d6c3a58373b046e27eb648e46abcb7c59713c1ae980d1fccc7a3f0f5a51728e"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "016fc9c4314bd243df3dbfa48531ec3e495c4cea9cd3608505d787f1cfd8a413"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "084",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "1b72313a3e9d44800a370aeda6f10bb1773dd2b806b739ea2e2414ccf7daaf1d"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "02695b43e42a7162ad83fe35e8eeef9b132632f47093099713eb7db3f9af85cb"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "03729a9a0a7b0bd2f453dc7c4c9a328e7890a50cb0dc7ea3516222d88c2f0579"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "085",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "b717f0462ee1aacd3a3ecde5a59416f9bd3d63c207b80387c3416d767184c4ae"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "1bc28bf85de541bdcc1ebd7bb27122b2c22a4e22e3487e0a2e386ccb3678da9d"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "7b83a5cf62ef082f55beda6f036bf5949d36b4bc8fda9127627a08a4b2ce1a2f"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "0d6c3a58373b046e27eb648e46abcb7c59713c1ae980d1fccc7a3f0f5a51728e"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "086",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "b39ce1501c2716b2aa9a39537e5b6935080e8d365b26a24a83636d9251c4303f"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5a19a5c74a56342f3eead54af640ee2ce89b36896e0580c7b1239c5140681438"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d1df28ca89635f3dc92bbeae989b982c9db5087e676c7e173e507359b18649bd"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "016fc9c4314bd243df3dbfa48531ec3e495c4cea9cd3608505d787f1cfd8a413"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "087",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "d58d336960a30c64a25206bdc6ccb0ea24fc991e9dcfcde5f5d1b5e4cb4ab222"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "088",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "cd49782a9454d58fcafc114f3b7d44456ca2c8aa3dd51ec3f35f903713c37076"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5fed0909c0770f0f78a6fcbab710a171b68909367fc61eebaf8010df508e08bd"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "bcccd172b6e71d52ad1455e97382efaf590fb81f14c2bd757df40e24ab821597"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "66055b65a050eea2898e7624e608fed865738e8ba601985815835b5bd0c9ad39"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "089",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "11f5e9188d97375b5d7a75e44c861721d7569b943154bc3ac86f7f9ffc96e2e7"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "5c6119dc86cc122a954dd01a17aa14baf27e54ba020b277f3b4e65a0d3a3502e"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a1423d5d59cb8dfe07578373acd1416e1b0233246365e594984f4ccb4dd7508c"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "090",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "bd49f10c22933202fe79d78aa53ebe6d18113424e72fa08fe7f8e62ac765ed71"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "e8972e07e593b16048e00c3537d9cc8c70feddcbf9c65c3ea3c11aa6f1a3b177"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "84fda40936423edfa2ebba0a6c8488d349528048fed49b0112245cded86faa73"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "094d0517293ba2de1c04ec63b9c918882f1aa4d4d4de5a3b6c5e7a40d114b6c5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "091",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "b17b74848f8669a7b39966a6bda9f3b7c1ff070ce89bb7d33f3282416e76c278"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "a1423d5d59cb8dfe07578373acd1416e1b0233246365e594984f4ccb4dd7508c"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "33c883a2f0b69ab1b6bd7f06c22b24597f0a3af702fdc15bca03e210438e5fc7"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "65c9107a28b90957c800cf3944e5f69dbc7f92dd8a9914552fd3a136f6e98f02"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "092",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "77ea70699e9c2b9e443a2586b9641910bbbd71ff8737c74b091f4c212d6da61b"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "9bfc7cda5ff2b7a954b0ba572607624322acb00a572bb1cae2513873bae54252"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "093",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "848872907d2d77af32c752cec977a2761f21681d36189eb821de25c220135fe6"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "33c883a2f0b69ab1b6bd7f06c22b24597f0a3af702fdc15bca03e210438e5fc7"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "fa084f974113bc4e4b1c91322701747d94eefafbea51f753adb78c2a6f12b270"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "a6d1aa43ac9fd11549b0427721b0fcb05c7cb3ac431b0c1effc0a21ff8a9529e"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "094",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "46c2caf371feb5edacf49edc2df838409d1951c8a351de31385a150c2b8f9e9d"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "a6d0c86c39115db03b80197d7cb41bdf09df92474f0562544b22d72e8f2193e9"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d1df28ca89635f3dc92bbeae989b982c9db5087e676c7e173e507359b18649bd"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5174ad0e61ce3ef40e88880ae909a20eaac41753beabeb24be645873383a8a73"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "095",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "be36340934e88ffd0c9a1c94db06ce234541b7254639d504dab607e51d6652e2"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "fa084f974113bc4e4b1c91322701747d94eefafbea51f753adb78c2a6f12b270"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "3a05d8512672264a0940fe66e74026e481c49fc6f2b9d785b903aea82c55eaea"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "5a19a5c74a56342f3eead54af640ee2ce89b36896e0580c7b1239c5140681438"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "096",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "4961c8a642077b529cc6797fd2b1dbbb493eb9fca9167324905c4f612b07c041"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "7b83a5cf62ef082f55beda6f036bf5949d36b4bc8fda9127627a08a4b2ce1a2f"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "097",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "0f9d8a31c9a87f716b42fb2fcbc7392777b4ae9dbe7af7f33177f6327281b097"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "e8972e07e593b16048e00c3537d9cc8c70feddcbf9c65c3ea3c11aa6f1a3b177"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d299976f30cb2e9f4b700839353020d60b99faddd4df20f116fa20e4c535457c"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "e1dae9f6c0b668ff45cf6ee12649fba49afcd2e330cdfaf96ed4c05de799793f"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "098",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "4597bb5526776755faa67d32661a7aa702644070c8f18190dbeaba5f4991e3eb"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "03729a9a0a7b0bd2f453dc7c4c9a328e7890a50cb0dc7ea3516222d88c2f0579"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "02695b43e42a7162ad83fe35e8eeef9b132632f47093099713eb7db3f9af85cb"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "d8e25977539c0202e29b51cad067fa57d279e89900e6d7449355b8f043a1f7f5"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "099",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "be999776dfeabb6d6abd8bfab6c1c826c7bcc6310e0eeada69ef1869fd35e122"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "0884db731ecc18cb54b42d01414ae21ad47009cbf8f525059bf084440cae05ee"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "ec52a48fa45ed8893dcda1f6db0f2fd401f586fb13e72dbd1b1f3d92245d2141"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "aa6ca1a28b6b7ed1f52449ea45c13bce802ca81ae9ba967162fa2d9118c34a1a"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    },
+    {
+      "sample": "100",
+      "scientific_inputs": [
+        {
+          "file": "paper-without-main-figure.pdf",
+          "sha256": "bb83a3432165e5cc92ea3f29393f97f1f2d46e378a4fadb51bcb845af086502d"
+        },
+        {
+          "file": "reference-01.png",
+          "sha256": "02695b43e42a7162ad83fe35e8eeef9b132632f47093099713eb7db3f9af85cb"
+        },
+        {
+          "file": "reference-02.png",
+          "sha256": "d8e25977539c0202e29b51cad067fa57d279e89900e6d7449355b8f043a1f7f5"
+        },
+        {
+          "file": "reference-03.png",
+          "sha256": "ee9f119e1ec7f450d3f00a87ed36c056ab5265e1b2b002ad266721f3300cb2f8"
+        }
+      ],
+      "isolation": "fresh model context and access constraint, not OS sandbox"
+    }
+  ],
+  "scope": "98 exact four-file scientific inputs; data distributed separately, not in Git"
+}

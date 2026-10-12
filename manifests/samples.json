@@ -1,0 +1,808 @@
+{
+  "schema": "astra-production-samples.v1",
+  "total": 100,
+  "eligible": 98,
+  "blocked": 2,
+  "items": [
+    {
+      "number": "001",
+      "status": "eligible",
+      "input_directory": "production-inputs/001",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "002",
+      "status": "eligible",
+      "input_directory": "production-inputs/002",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "003",
+      "status": "eligible",
+      "input_directory": "production-inputs/003",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "004",
+      "status": "eligible",
+      "input_directory": "production-inputs/004",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "005",
+      "status": "eligible",
+      "input_directory": "production-inputs/005",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "006",
+      "status": "eligible",
+      "input_directory": "production-inputs/006",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "007",
+      "status": "eligible",
+      "input_directory": "production-inputs/007",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "008",
+      "status": "eligible",
+      "input_directory": "production-inputs/008",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "009",
+      "status": "eligible",
+      "input_directory": "production-inputs/009",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "010",
+      "status": "eligible",
+      "input_directory": "production-inputs/010",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "011",
+      "status": "eligible",
+      "input_directory": "production-inputs/011",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "012",
+      "status": "eligible",
+      "input_directory": "production-inputs/012",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "013",
+      "status": "eligible",
+      "input_directory": "production-inputs/013",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "014",
+      "status": "eligible",
+      "input_directory": "production-inputs/014",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "015",
+      "status": "eligible",
+      "input_directory": "production-inputs/015",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "016",
+      "status": "eligible",
+      "input_directory": "production-inputs/016",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "017",
+      "status": "eligible",
+      "input_directory": "production-inputs/017",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "018",
+      "status": "eligible",
+      "input_directory": "production-inputs/018",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "019",
+      "status": "eligible",
+      "input_directory": "production-inputs/019",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "020",
+      "status": "eligible",
+      "input_directory": "production-inputs/020",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "021",
+      "status": "eligible",
+      "input_directory": "production-inputs/021",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "022",
+      "status": "eligible",
+      "input_directory": "production-inputs/022",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "023",
+      "status": "eligible",
+      "input_directory": "production-inputs/023",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "024",
+      "status": "eligible",
+      "input_directory": "production-inputs/024",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "025",
+      "status": "eligible",
+      "input_directory": "production-inputs/025",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "026",
+      "status": "eligible",
+      "input_directory": "production-inputs/026",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "027",
+      "status": "eligible",
+      "input_directory": "production-inputs/027",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "028",
+      "status": "eligible",
+      "input_directory": "production-inputs/028",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "029",
+      "status": "eligible",
+      "input_directory": "production-inputs/029",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "030",
+      "status": "eligible",
+      "input_directory": "production-inputs/030",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "031",
+      "status": "eligible",
+      "input_directory": "production-inputs/031",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "032",
+      "status": "eligible",
+      "input_directory": "production-inputs/032",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "033",
+      "status": "eligible",
+      "input_directory": "production-inputs/033",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "034",
+      "status": "eligible",
+      "input_directory": "production-inputs/034",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "035",
+      "status": "eligible",
+      "input_directory": "production-inputs/035",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "036",
+      "status": "eligible",
+      "input_directory": "production-inputs/036",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "037",
+      "status": "eligible",
+      "input_directory": "production-inputs/037",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "038",
+      "status": "eligible",
+      "input_directory": "production-inputs/038",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "039",
+      "status": "eligible",
+      "input_directory": "production-inputs/039",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "040",
+      "status": "eligible",
+      "input_directory": "production-inputs/040",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "041",
+      "status": "eligible",
+      "input_directory": "production-inputs/041",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "042",
+      "status": "eligible",
+      "input_directory": "production-inputs/042",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "043",
+      "status": "eligible",
+      "input_directory": "production-inputs/043",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "044",
+      "status": "eligible",
+      "input_directory": "production-inputs/044",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "045",
+      "status": "eligible",
+      "input_directory": "production-inputs/045",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "046",
+      "status": "eligible",
+      "input_directory": "production-inputs/046",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "047",
+      "status": "eligible",
+      "input_directory": "production-inputs/047",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "048",
+      "status": "blocked",
+      "input_directory": null,
+      "blocker": "当前参考是附录通用VLM处理示意，不符合方法主图；正文候选亦为现象/变量说明，无法从现有原论文提取满足合同的主架构。",
+      "scientific_input_count": 0,
+      "fresh_context_required": true
+    },
+    {
+      "number": "049",
+      "status": "eligible",
+      "input_directory": "production-inputs/049",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "050",
+      "status": "eligible",
+      "input_directory": "production-inputs/050",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "051",
+      "status": "eligible",
+      "input_directory": "production-inputs/051",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "052",
+      "status": "eligible",
+      "input_directory": "production-inputs/052",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "053",
+      "status": "eligible",
+      "input_directory": "production-inputs/053",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "054",
+      "status": "eligible",
+      "input_directory": "production-inputs/054",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "055",
+      "status": "blocked",
+      "input_directory": null,
+      "blocker": "该论文现有图没有提出方法的主流程/框架；不可把现象示例或附录界面冒充方法主图。",
+      "scientific_input_count": 0,
+      "fresh_context_required": true
+    },
+    {
+      "number": "056",
+      "status": "eligible",
+      "input_directory": "production-inputs/056",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "057",
+      "status": "eligible",
+      "input_directory": "production-inputs/057",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "058",
+      "status": "eligible",
+      "input_directory": "production-inputs/058",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "059",
+      "status": "eligible",
+      "input_directory": "production-inputs/059",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "060",
+      "status": "eligible",
+      "input_directory": "production-inputs/060",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "061",
+      "status": "eligible",
+      "input_directory": "production-inputs/061",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "062",
+      "status": "eligible",
+      "input_directory": "production-inputs/062",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "063",
+      "status": "eligible",
+      "input_directory": "production-inputs/063",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "064",
+      "status": "eligible",
+      "input_directory": "production-inputs/064",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "065",
+      "status": "eligible",
+      "input_directory": "production-inputs/065",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "066",
+      "status": "eligible",
+      "input_directory": "production-inputs/066",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "067",
+      "status": "eligible",
+      "input_directory": "production-inputs/067",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "068",
+      "status": "eligible",
+      "input_directory": "production-inputs/068",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "069",
+      "status": "eligible",
+      "input_directory": "production-inputs/069",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "070",
+      "status": "eligible",
+      "input_directory": "production-inputs/070",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "071",
+      "status": "eligible",
+      "input_directory": "production-inputs/071",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "072",
+      "status": "eligible",
+      "input_directory": "production-inputs/072",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "073",
+      "status": "eligible",
+      "input_directory": "production-inputs/073",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "074",
+      "status": "eligible",
+      "input_directory": "production-inputs/074",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "075",
+      "status": "eligible",
+      "input_directory": "production-inputs/075",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "076",
+      "status": "eligible",
+      "input_directory": "production-inputs/076",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "077",
+      "status": "eligible",
+      "input_directory": "production-inputs/077",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "078",
+      "status": "eligible",
+      "input_directory": "production-inputs/078",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "079",
+      "status": "eligible",
+      "input_directory": "production-inputs/079",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "080",
+      "status": "eligible",
+      "input_directory": "production-inputs/080",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "081",
+      "status": "eligible",
+      "input_directory": "production-inputs/081",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "082",
+      "status": "eligible",
+      "input_directory": "production-inputs/082",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "083",
+      "status": "eligible",
+      "input_directory": "production-inputs/083",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "084",
+      "status": "eligible",
+      "input_directory": "production-inputs/084",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "085",
+      "status": "eligible",
+      "input_directory": "production-inputs/085",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "086",
+      "status": "eligible",
+      "input_directory": "production-inputs/086",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "087",
+      "status": "eligible",
+      "input_directory": "production-inputs/087",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "088",
+      "status": "eligible",
+      "input_directory": "production-inputs/088",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "089",
+      "status": "eligible",
+      "input_directory": "production-inputs/089",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "090",
+      "status": "eligible",
+      "input_directory": "production-inputs/090",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "091",
+      "status": "eligible",
+      "input_directory": "production-inputs/091",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "092",
+      "status": "eligible",
+      "input_directory": "production-inputs/092",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "093",
+      "status": "eligible",
+      "input_directory": "production-inputs/093",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "094",
+      "status": "eligible",
+      "input_directory": "production-inputs/094",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "095",
+      "status": "eligible",
+      "input_directory": "production-inputs/095",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "096",
+      "status": "eligible",
+      "input_directory": "production-inputs/096",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "097",
+      "status": "eligible",
+      "input_directory": "production-inputs/097",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "098",
+      "status": "eligible",
+      "input_directory": "production-inputs/098",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "099",
+      "status": "eligible",
+      "input_directory": "production-inputs/099",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    },
+    {
+      "number": "100",
+      "status": "eligible",
+      "input_directory": "production-inputs/100",
+      "blocker": null,
+      "scientific_input_count": 4,
+      "fresh_context_required": true
+    }
+  ]
+}
