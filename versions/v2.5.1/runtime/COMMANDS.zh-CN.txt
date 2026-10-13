@@ -1,0 +1,29 @@
+Git仓库使用：先在versions/v2.5.1目录执行runtime/import-inputs.py --production-package /path/to/production-test，导入独立生产包的固定数据。请先读README.rst。
+
+在生产包根目录：
+python3 -m venv .venv
+.venv/bin/python -m pip install -r framework/requirements.lock.txt
+.venv/bin/python runtime/batch.py verify
+.venv/bin/python runtime/batch.py doctor
+.venv/bin/python runtime/batch.py test
+.venv/bin/python runtime/batch.py list
+
+准备宿主6-astra桥接模式的单样本（目录必须不存在）：
+.venv/bin/python runtime/batch.py prepare 001 --workspace ../astra-workspaces/001-attempt-1 --model 6-astra
+给全新6-astra上下文该目录START-HERE.txt，把工作根目录固定在那里，并提供生产包.venv的Python绝对路径。不要提供评审包。在样本根目录：
+PYTHON framework/run.py tools
+PYTHON framework/run.py call --workspace session --json REQUEST.json
+工具JSON例如{"name":"list_files","arguments":{}}；各绘图字段以tools输出为准。模型查看image_path所指PNG后继续下一步，finish自动冻结。
+回到生产包根目录验证：
+.venv/bin/python runtime/batch.py verify-frozen --workspace ../astra-workspaces/001-attempt-1
+
+可选：真实HTTP模型独立批量执行。
+把framework/examples/openai-compatible.json或gemini.json复制到包外配置文件，填真实模型ID/接口/密钥环境变量名。不要把私密key值放配置中。设置相应环境变量后：
+.venv/bin/python runtime/batch.py batch --workspaces ../astra-http-first --config ../model-config.json --samples 001 --max-turns 120
+确认单例像素和冻结后，再98项（每项独立进程、对话、目录）：
+.venv/bin/python runtime/batch.py batch --workspaces ../astra-http-batch --config ../model-config.json --max-turns 120
+默认排除048/055。冻结且verify通过的项会跳过，遇首次失败停止，保留日志；失败重试请新--workspaces目录并--samples指定未完成编号。不是自动构图或自动精修。
+
+冻结后评审（另解压评审包并另开评审上下文）：
+python3 runtime/import_frozen.py 001 --session ../astra-workspaces/001-attempt-1/session --out ../astra-reviews/001-attempt-1
+此命令在评审包根目录执行；先核验冻结所有文件及本样本四输入SHA，再复制到新评审目录。评审输出写在frozen-result之外。评审提示词见review-protocol/6-astra-review-prompt.txt。

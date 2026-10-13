@@ -1,0 +1,8 @@
+安装公开运行环境（无Codex skill、无私有组件）
+推荐Python3.13，已验证3.13.5；依赖锁见framework/requirements.lock.txt。
+python3 -m venv .venv
+.venv/bin/python -m pip install -r framework/requirements.lock.txt
+另安装官方LibreOffice：https://www.libreoffice.org/download/download-libreoffice/ 。把soffice放PATH或设置DRAWING_SOFFICE为本机可执行文件路径（macOS可为/Applications/LibreOffice.app/Contents/MacOS/soffice）。Windows使用.venv\Scripts\python.exe替换命令中的Python。
+字体由本机合法提供，不打包系统字体。模型可选Times New Roman等；从真实PDF核验实际字体和数学符号回退。不要把替代字体冒称相同条件。
+模型接入默认可通过Codex通用文件/代码/图像工具接口执行，但框架独立于Codex。其他Qwen/DeepSeek/GPT兼容接口或Gemini见framework/examples；填写实际视觉及工具模型ID、endpoint、api_key_env。密钥只放环境变量，不放JSON、不发送给他人。本包不提供账号、密钥，不猜测6-astra的API ID。实际宿主有6-astra时选它并记录真实标识；CLI不会凭名称获得模型账户权限。
+HTTP接口应提供图像输入和函数调用；各服务具体兼容性需真实验证。本机已做通用接口测试和CAFE当前模型验证，尚未做朋友6-astra真实批量测试。OS访问隔离由宿主负责，工作区路径检查不限制任意Python代码读取宿主其他文件。
