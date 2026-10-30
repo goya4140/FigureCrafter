@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-math-markup-rendered-as-plain-text",
+  "owner_stage": "representation",
+  "mechanism": "math-markup-rendered-as-plain-text",
+  "status": "candidate",
+  "evidence_ids": [
+    "98baf540010e96c814c6ae68",
+    "6676be9aaca5e9046882e775"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 1,
+  "strategies": [
+    "Observed failure: a single formula run patch can duplicate a separately owned superscript and alter neighboring script ink. Inspect every text fragment in the formula owner, preserve its exact source partition, and verify the exported render and neighboring ink; retain rollback when visual acceptance fails.",
+    "Observed narrow success: source-preserving native runs repaired loss_stage2; do not infer that other formulas or combining hats are fixed. Inspect every formula and its exported baseline separately."
+  ]
+}

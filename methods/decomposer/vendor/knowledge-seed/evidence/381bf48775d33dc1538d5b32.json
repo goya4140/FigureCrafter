@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250614580-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-line-spacing-underestimation",
+  "label_ids": [
+    "output1"
+  ],
+  "primitive_ids": [
+    "output1/text"
+  ],
+  "field": "runs.style.line_spacing",
+  "region": [
+    2400,
+    884,
+    800,
+    442
+  ],
+  "summary": "In the rendered output tile, Output Sentence 1 has compressed line spacing: its first line aligns with the reference, but subsequent lines finish too high. Adjust the local text runs' line spacing.",
+  "strategy": "Compare first and last text baselines against the reference; when drift accumulates across lines, correct local line spacing while preserving placement and font size.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.883703,
+      "edge_iou": 0.189224
+    },
+    "after_local": {
+      "pixel_similarity": 0.883703,
+      "edge_iou": 0.189224
+    },
+    "before_global": {
+      "pixel_similarity": 0.912391,
+      "edge_iou": 0.217799
+    },
+    "after_global": {
+      "pixel_similarity": 0.912391,
+      "edge_iou": 0.217799
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      2400,
+      884,
+      800,
+      442
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250614580-fig2/refinement/round-002/decision.json",
+      "sha256": "686eac04b8b94cceb34fa7de327a1909a2d401f73db5ba6fce0ca4c14e0c5161"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250614580-fig2/refinement/round-002/assessment.json",
+      "sha256": "af07142b2c896ae0d0d5ba2d210580d51259e6c1832ef95414488c7b413cf120"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250614580-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "b06ba943eb316633ae492fb5ee662d9428562df57dcdd0236940be54c72aa8d2"
+    }
+  ],
+  "evidence_id": "381bf48775d33dc1538d5b32"
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-path-local-origin-translation-loss",
+  "memory_id": "compiler-path-local-origin-translation-loss",
+  "status": "candidate",
+  "instructions": [
+    "Apply each path primitive's local bbox origin exactly once when converting its numeric coordinates to DrawingML, and verify alignment with colocated native rectangles in the rendered export."
+  ],
+  "evidence_ids": [
+    "1d281007b0c351e9f9483f12"
+  ]
+}

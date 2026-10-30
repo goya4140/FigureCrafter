@@ -1,0 +1,148 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "same-manuscript-template-20261011",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "decorative-stroke-has-arrowhead",
+  "label_ids": [
+    "check_badge"
+  ],
+  "primitive_ids": [
+    "check_badge/check"
+  ],
+  "field": "arrow_end",
+  "region": [
+    1456,
+    404,
+    486,
+    202
+  ],
+  "summary": "The rendered teal badge has a malformed white check tip compared with the reference. The local check polyline incorrectly requests arrow_end=true; provenance confirms that the exporter faithfully emitted a triangle endpoint. Remove that endpoint decoration while preserving the check geometry.",
+  "strategy": "Keep decorative check strokes free of connector arrowheads, and verify their endpoint appearance in the exported render.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.941186,
+      "edge_iou": 0.386239
+    },
+    "after_local": {
+      "pixel_similarity": 0.941407,
+      "edge_iou": 0.387222
+    },
+    "before_global": {
+      "pixel_similarity": 0.947975,
+      "edge_iou": 0.377301
+    },
+    "after_global": {
+      "pixel_similarity": 0.947988,
+      "edge_iou": 0.377398
+    },
+    "local_pixel_delta": 0.000221,
+    "local_edge_delta": 0.000983,
+    "global_pixel_delta": 1.3e-05,
+    "evaluation_region": [
+      1456,
+      404,
+      486,
+      202
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "bf4b2d533e8589e62370bca0f7bb09f5002c14bc7d0bb2c628a80d7998dacbfc",
+      "representation": "0717a3f5ac89d1d5837e9d535d37278f4d51d0e51be66486dd8dbf194771afa4",
+      "layout": "8f9b5b7d18e69debf7aa704813635c093069f68bc786272e56b99e3875fde1b6",
+      "pptx": "2ec46b4c5c2521b1546de084c3b940333cf5fbbb0feb513bbe8419d029b9098c"
+    },
+    "canonical_after_hashes": {
+      "recognition": "bf4b2d533e8589e62370bca0f7bb09f5002c14bc7d0bb2c628a80d7998dacbfc",
+      "representation": "0717a3f5ac89d1d5837e9d535d37278f4d51d0e51be66486dd8dbf194771afa4",
+      "layout": "8f9b5b7d18e69debf7aa704813635c093069f68bc786272e56b99e3875fde1b6",
+      "pptx": "2ec46b4c5c2521b1546de084c3b940333cf5fbbb0feb513bbe8419d029b9098c"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-text-box-vertical-offset",
+      "representation-container-corner-radius-overestimation"
+    ],
+    "retrieved_skill_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-text-box-vertical-offset",
+      "representation-container-corner-radius-overestimation"
+    ],
+    "retrieved_statuses": {
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-text-box-vertical-offset": "candidate",
+      "representation-container-corner-radius-overestimation": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-002/decision.json",
+      "sha256": "cb50ec691718aa1c4c36e749603900ee81ba01982d59988090e4733c7ba94b51"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-002/assessment.json",
+      "sha256": "1bc1622efbcf5a1ee389de2870f06266a48f56b815602f9696cd3e03182fe88a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "3489f83d89cf57cc775912711bdc7975f59213976bdfebbc31c6d0bd7fb5b17e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-002/before-preview.png",
+      "sha256": "ed968b4d3f1c01be26bff4d5ca02b0dc6dbcdea757ea60bc685cae9b02f5fb88"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-002/output/preview.png",
+      "sha256": "844bbc28568b22c3f19f8eb3d36c10607ef32d7eeb7f71c18999b9b3b6c71ddf"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-002/output/editable.pptx",
+      "sha256": "2c116339f758d9db0f2b1afdf68ab756b16f23831fbbaab96d9d8005c5d88ed2"
+    }
+  ],
+  "evidence_id": "9db2a0bdb23eca060f918f53"
+}

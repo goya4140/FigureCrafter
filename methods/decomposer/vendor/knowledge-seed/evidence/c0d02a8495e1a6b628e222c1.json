@@ -1,0 +1,73 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250220785-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "object-rotation-omission",
+  "label_ids": [
+    "g_tallbirds"
+  ],
+  "primitive_ids": [
+    "g_tallbirds/s",
+    "g_tallbirds/t"
+  ],
+  "field": "rotation_deg",
+  "region": [
+    800,
+    585,
+    800,
+    292
+  ],
+  "summary": "In tile-2-1, the Tall Birds node is horizontal in the render but tilts upward to the right in the reference. Its layout rotation is incorrectly zero.",
+  "strategy": "Preserve each node's reference orientation, rotating its outline and label together rather than defaulting all graph nodes to horizontal.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.916094,
+      "edge_iou": 0.273108
+    },
+    "after_local": {
+      "pixel_similarity": 0.910385,
+      "edge_iou": 0.249039
+    },
+    "before_global": {
+      "pixel_similarity": 0.925653,
+      "edge_iou": 0.261372
+    },
+    "after_global": {
+      "pixel_similarity": 0.925296,
+      "edge_iou": 0.259778
+    },
+    "local_pixel_delta": -0.005709,
+    "local_edge_delta": -0.024069,
+    "global_pixel_delta": -0.000357,
+    "evaluation_region": [
+      800,
+      585,
+      800,
+      292
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250220785-fig2/refinement/round-002/decision.json",
+      "sha256": "8c29679c4592041c062e87a52a57f4ebf2a8cfff3075f270ec2445c3ac3f471f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250220785-fig2/refinement/round-002/assessment.json",
+      "sha256": "4dc54454225729d8addb9cd0523bfabb55195a0131e165baef4b91c2503ea4e7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250220785-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "60c57349d330e069a954dc9efe7c304d22fd983f59a76ce6eda83f0c061b361e"
+    }
+  ],
+  "evidence_id": "c0d02a8495e1a6b628e222c1"
+}

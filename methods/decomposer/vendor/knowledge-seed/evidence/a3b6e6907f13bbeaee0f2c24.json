@@ -1,0 +1,73 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "baseline",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "recognition",
+  "mechanism": "repeated-semantic-instance-omission",
+  "label_ids": [
+    "panel_middle"
+  ],
+  "primitive_ids": [
+    "panel_middle/assembler"
+  ],
+  "field": "objects",
+  "region": [
+    554,
+    1311,
+    554,
+    656
+  ],
+  "summary": "The selected tile shows an empty middle-panel answer assembler where the reference contains output and conflict-check content. Recognition describes repeated content but supplies only top-panel instances; representation and OOXML consequently lack the middle-panel objects. This is an upstream omission detected in the render. The supported operations cannot add the missing semantic instances.",
+  "strategy": "Recognize each repeated semantic instance separately with its own bounds and relationships, and verify content coverage within every repeated panel before generating primitives.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-excessive-corner-rounding",
+      "representation-literal-math-markup-in-text-primitive"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-excessive-corner-rounding",
+      "representation-literal-math-markup-in-text-primitive"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-condensed-font-width-mismatch": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/baseline/refinement/round-001/decision.json",
+      "sha256": "f816080922f974e73306a93ea6bf8eac8c77e576bc6ed23547ad86ed3456964c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/baseline/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "4f7e57856dc1130f25328f07e6a773f9311f2bf4db9581623f6557025d8333be"
+    }
+  ],
+  "evidence_id": "a3b6e6907f13bbeaee0f2c24"
+}

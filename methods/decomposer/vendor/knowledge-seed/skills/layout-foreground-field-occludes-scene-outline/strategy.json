@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-foreground-field-occludes-scene-outline",
+  "memory_id": "layout-foreground-field-occludes-scene-outline",
+  "status": "candidate",
+  "instructions": [
+    "Place viewing fields behind scene geometry so opaque field primitives do not obscure object outlines."
+  ],
+  "evidence_ids": [
+    "62283a41508f4a1ea55987c7"
+  ]
+}

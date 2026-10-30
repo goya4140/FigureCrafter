@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-decorative-stroke-has-arrowhead",
+  "memory_id": "representation-decorative-stroke-has-arrowhead",
+  "status": "candidate",
+  "instructions": [
+    "Keep decorative check strokes free of connector arrowheads, and verify their endpoint appearance in the exported render."
+  ],
+  "evidence_ids": [
+    "9db2a0bdb23eca060f918f53"
+  ]
+}

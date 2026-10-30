@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-241015017-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-scale-mismatch",
+  "label_ids": [
+    "transcript"
+  ],
+  "primitive_ids": [
+    "transcript/label"
+  ],
+  "field": null,
+  "region": [
+    702,
+    0,
+    703,
+    304
+  ],
+  "summary": "The rendered x′ above the ASR-to-LM arrow is nearly illegible compared with the reference. Detection is in the rendered tile; ownership remains uncertain because its representation specifies 92-unit bold text and layout font_scale=1, while provenance omits exported font sizes and autofit settings.",
+  "strategy": "Compare effective exported font sizes and autofit settings with representation and layout values before patching unexpectedly small text.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241015017-fig2/refinement/round-001/decision.json",
+      "sha256": "307571c7e0a8dbab734eb5d89b0799a67cc184ac60e3d3080fca8e857261a064"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241015017-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "cdc3ac74631d1ed260a8bd44b4d69c2ef2fdba019281b22d37d4d9c36e94979a"
+    }
+  ],
+  "evidence_id": "215542d875e2b36faed4e4f1"
+}

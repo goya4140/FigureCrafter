@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250220785-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "decorative-line-arrowhead-inheritance",
+  "label_ids": [
+    "verification_title"
+  ],
+  "primitive_ids": [
+    "verification_title/u"
+  ],
+  "field": "arrow_end",
+  "region": [
+    2400,
+    0,
+    800,
+    292
+  ],
+  "summary": "In the verification heading, the underline ends in an unintended arrow tip. The representation requests this endpoint and OOXML preserves it; the reference uses a plain underline.",
+  "strategy": "Assign arrowheads only to directional connectors; explicitly disable both endpoints on decorative underlines.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.896858,
+      "edge_iou": 0.306142
+    },
+    "after_local": {
+      "pixel_similarity": 0.896913,
+      "edge_iou": 0.306066
+    },
+    "before_global": {
+      "pixel_similarity": 0.925653,
+      "edge_iou": 0.261372
+    },
+    "after_global": {
+      "pixel_similarity": 0.925656,
+      "edge_iou": 0.261366
+    },
+    "local_pixel_delta": 5.5e-05,
+    "local_edge_delta": -7.6e-05,
+    "global_pixel_delta": 3e-06,
+    "evaluation_region": [
+      2400,
+      0,
+      800,
+      292
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250220785-fig2/refinement/round-001/decision.json",
+      "sha256": "80c568bbbaf1ba72c58df47ca01e9b423c4ade8cceeaa541d01df2e4190775c3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250220785-fig2/refinement/round-001/assessment.json",
+      "sha256": "98076d7c1d0fb029d06392ecd68404a5dd1ca9bb200ce69d98f003921a7c533d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250220785-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "60c57349d330e069a954dc9efe7c304d22fd983f59a76ce6eda83f0c061b361e"
+    }
+  ],
+  "evidence_id": "f8ec1d199d6ad8d7baa2ccd3"
+}

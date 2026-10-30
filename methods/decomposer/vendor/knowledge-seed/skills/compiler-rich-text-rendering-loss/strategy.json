@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-rich-text-rendering-loss",
+  "memory_id": "compiler-rich-text-rendering-loss",
+  "status": "candidate",
+  "instructions": [
+    "Validate rich-text export with rendered visibility checks as well as OOXML content checks; preserve run styling and line breaks through the renderer."
+  ],
+  "evidence_ids": [
+    "5a9f7f8fbd6bd89a56ee2690"
+  ]
+}

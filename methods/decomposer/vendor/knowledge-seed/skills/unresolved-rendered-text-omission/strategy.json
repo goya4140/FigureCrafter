@@ -1,0 +1,14 @@
+{
+  "skill_id": "unresolved-rendered-text-omission",
+  "memory_id": "unresolved-rendered-text-omission",
+  "status": "candidate",
+  "instructions": [
+    "Verify exported text bounds, font sizes, autofit, and run visibility against the canonical scene before changing geometry for missing mathematical labels.",
+    "Verify exported text bounds, font metrics, fitting, and visibility when labels disappear despite remaining present in canonical primitives and OOXML; establish ownership before patching."
+  ],
+  "evidence_ids": [
+    "645cbcad1e81e942fadd5d34",
+    "8a8399c75eb1e119aa431f7e",
+    "07aad63f09d8b5fcd3249c19"
+  ]
+}

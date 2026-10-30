@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240403654-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "subscript-font-size-mismatch",
+  "label_ids": [
+    "reconstruction_loss"
+  ],
+  "primitive_ids": [
+    "reconstruction_loss/text"
+  ],
+  "field": "runs",
+  "region": [
+    2400,
+    0,
+    800,
+    276
+  ],
+  "summary": "In tile-0-3, the reconstruction-loss subscript is oversized relative to the reference. The local text runs assign rec the same nominal font size as ℒ; OOXML correctly preserves its subscript baseline.",
+  "strategy": "Size mathematical subscripts relative to the reference glyph proportions, accounting for the renderer's script scaling separately from baseline placement.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.945564,
+      "edge_iou": 0.271593
+    },
+    "after_local": {
+      "pixel_similarity": 0.945974,
+      "edge_iou": 0.271714
+    },
+    "before_global": {
+      "pixel_similarity": 0.954103,
+      "edge_iou": 0.247376
+    },
+    "after_global": {
+      "pixel_similarity": 0.954116,
+      "edge_iou": 0.247372
+    },
+    "local_pixel_delta": 0.00041,
+    "local_edge_delta": 0.000121,
+    "global_pixel_delta": 1.3e-05,
+    "evaluation_region": [
+      2400,
+      0,
+      800,
+      276
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240403654-fig2/refinement/round-001/decision.json",
+      "sha256": "118e0f289d06999239724f064aa43751559afb2d1d8dfdbe8c7e7348b2ce2175"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240403654-fig2/refinement/round-001/assessment.json",
+      "sha256": "ba48fa210bd1976195cb4b6821fe8b48a5c8d090ae18aef6c2a2dbd7170648fa"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240403654-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "3970c41cb609f8978023ba9a81ac3e370bef093c654072a3abc2a174ea320c72"
+    }
+  ],
+  "evidence_id": "d401d2dc409cf139b29a720a"
+}

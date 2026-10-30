@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-photograph-replaced-by-vector-approximation",
+  "owner_stage": "representation",
+  "mechanism": "photograph-replaced-by-vector-approximation",
+  "status": "candidate",
+  "evidence_ids": [
+    "9f924fcf2fa5ed63bb5913d9"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Preserve recognized photographic regions as source image assets, with independently editable annotations layered above them; do not substitute schematic vector approximations."
+  ]
+}

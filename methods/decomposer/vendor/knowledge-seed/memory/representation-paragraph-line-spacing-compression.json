@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-paragraph-line-spacing-compression",
+  "owner_stage": "representation",
+  "mechanism": "paragraph-line-spacing-compression",
+  "status": "candidate",
+  "evidence_ids": [
+    "c6b86de55005fa34923b3d2b"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare first and last text baselines against the reference; correct accumulated baseline drift through line spacing independently of font size."
+  ]
+}

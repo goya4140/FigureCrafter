@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-subscript-font-double-reduction",
+  "memory_id": "representation-subscript-font-double-reduction",
+  "status": "candidate",
+  "instructions": [
+    "When subscript formatting already reduces glyph size, use the parent font size for the run and verify the rendered subscript against the reference.",
+    "Use the base equation font size for subscript runs when export already applies script scaling, avoiding double reduction."
+  ],
+  "evidence_ids": [
+    "7d56b3a00340c77afb695b55",
+    "7aefed5073b004b79b2609f0"
+  ]
+}

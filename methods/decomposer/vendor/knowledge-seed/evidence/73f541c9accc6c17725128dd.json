@@ -1,0 +1,176 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-compact-colorfix-replay",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "grid-lines-exceed-projected-face",
+  "label_ids": [
+    "identification_cube"
+  ],
+  "primitive_ids": [
+    "identification_cube/grid"
+  ],
+  "field": "path",
+  "region": [
+    3072,
+    0,
+    1024,
+    485
+  ],
+  "summary": "The rendered cube has vertical grid lines protruding above its top face. The local grid path starts three front-face dividers at y=11,22,33 instead of their projected top-edge intersections near y=72,82,93. Correct these endpoints while preserving the cube placement and remaining geometry.",
+  "strategy": "Validate projected grid endpoints against their owning face edges before export; internal dividers must terminate on the face boundary.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.900559,
+      "edge_iou": 0.125961
+    },
+    "after_local": {
+      "pixel_similarity": 0.900729,
+      "edge_iou": 0.126019
+    },
+    "before_global": {
+      "pixel_similarity": 0.921056,
+      "edge_iou": 0.152426
+    },
+    "after_global": {
+      "pixel_similarity": 0.921072,
+      "edge_iou": 0.15245
+    },
+    "local_pixel_delta": 0.00017,
+    "local_edge_delta": 5.8e-05,
+    "global_pixel_delta": 1.6e-05,
+    "evaluation_region": [
+      3072,
+      0,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "f224edf05190586e34ceea067c85c833af4dc9d6b1cbb76e088027d925899762",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "6924c165876f8a4e87720e29876ee7aa8adbfd8ed3ec99f6721cf1d10d825cb3"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "f224edf05190586e34ceea067c85c833af4dc9d6b1cbb76e088027d925899762",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "6924c165876f8a4e87720e29876ee7aa8adbfd8ed3ec99f6721cf1d10d825cb3"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-001/decision.json",
+      "sha256": "5081dd6346fc5a71532012e2d8eb47fb3d357a092a997ac1e2e8986645f80112"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-001/assessment.json",
+      "sha256": "0072227ffd5c2f9d68b507a77c8624beec909b17bf71615a1e6f341b828fcd19"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "cad0a72f983b9ac7d01e1357c24cdf97522ee91738738e6076be2c6974e29a54"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-001/before-preview.png",
+      "sha256": "8ea769fac2df6e74e8be3f62bb7f03e71c83faf3985e5794ce363fe813280cd3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-001/output/preview.png",
+      "sha256": "2bd28feeabde7e17e2bbfd90d5c4ce8adb6ae097dbb011f65846b80dc63721a3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-001/output/editable.pptx",
+      "sha256": "d3956a50aae709fd26dc1ec0a67b373ac8db8c6e0cf57f83da4bf4848eaa0369"
+    }
+  ],
+  "evidence_id": "73f541c9accc6c17725128dd"
+}

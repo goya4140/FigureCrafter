@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309513-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "inference_caption"
+  ],
+  "primitive_ids": [
+    "inference_caption/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    2094,
+    1044,
+    698,
+    349
+  ],
+  "summary": "In tile-3-3, the rendered inference caption is visibly smaller than the reference. Its placement matches; increase the layout text scale.",
+  "strategy": "Validate rendered caption glyph size against the reference independently of its bounding box, and adjust layout text scale when placement already matches.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.957932,
+      "edge_iou": 0.221418
+    },
+    "after_local": {
+      "pixel_similarity": 0.960906,
+      "edge_iou": 0.211379
+    },
+    "before_global": {
+      "pixel_similarity": 0.967118,
+      "edge_iou": 0.247819
+    },
+    "after_global": {
+      "pixel_similarity": 0.967304,
+      "edge_iou": 0.247357
+    },
+    "local_pixel_delta": 0.002974,
+    "local_edge_delta": -0.010039,
+    "global_pixel_delta": 0.000186,
+    "evaluation_region": [
+      2094,
+      1044,
+      698,
+      349
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309513-fig2/refinement/round-003/decision.json",
+      "sha256": "a65dd6a2217f81793d404cbf1388b787cf3e00da97edc043c03310ab8d5144cd"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309513-fig2/refinement/round-003/assessment.json",
+      "sha256": "2f9946c4e89771218416b83e1969f2747e8f9bb9242159419e7ad0500eb1d7ee"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309513-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "af54cb5efa5f43c89d65c3c3a0a7ec2264472bf4db5f18a5c1a304dcdc2568e1"
+    }
+  ],
+  "evidence_id": "83c41b75d359c4c305f64901"
+}

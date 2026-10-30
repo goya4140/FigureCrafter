@@ -1,0 +1,181 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards3-r1-unicode-replay",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "chart-lines-misclassified-as-arrows",
+  "label_ids": [
+    "clip_opinion_chart"
+  ],
+  "primitive_ids": [
+    "clip_opinion_chart/edges",
+    "clip_opinion_chart/vertical",
+    "clip_opinion_chart/guides",
+    "clip_opinion_chart/leader"
+  ],
+  "field": "arrow_end",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "The rendered clip-opinion tetrahedron has arrowheads on its structural edges, internal guide, and point leader; the reference uses plain lines. These endpoints are requested by the local primitives and preserved in OOXML, so representation owns the error.",
+  "strategy": "Distinguish chart construction lines and point leaders from directional connectors; assign arrowheads only where visible in the reference.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.883348,
+      "edge_iou": 0.134357
+    },
+    "after_local": {
+      "pixel_similarity": 0.883372,
+      "edge_iou": 0.134229
+    },
+    "before_global": {
+      "pixel_similarity": 0.923185,
+      "edge_iou": 0.168327
+    },
+    "after_global": {
+      "pixel_similarity": 0.923187,
+      "edge_iou": 0.168317
+    },
+    "local_pixel_delta": 2.4e-05,
+    "local_edge_delta": -0.000128,
+    "global_pixel_delta": 2e-06,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "ac6c0def4bb53efd3ef786ff035bdbe6b3bb78e45defb3515891d2c20c4233d6",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "21e9e5e521491bb02f719df087f4012628659f1a381a82e0acc09249618d62d8"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "ac6c0def4bb53efd3ef786ff035bdbe6b3bb78e45defb3515891d2c20c4233d6",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "21e9e5e521491bb02f719df087f4012628659f1a381a82e0acc09249618d62d8"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_statuses": {
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-multiline-text-alignment-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "referenced_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1-unicode-replay/refinement/round-003/decision.json",
+      "sha256": "ed1f4e4dad7cbb0ea98e066235a159c55f5bbbae18148e2a815bb3db93b5a5b6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1-unicode-replay/refinement/round-003/assessment.json",
+      "sha256": "cce853599b7d1d42ce7893b44ef0b4d109cbe65c2c35fcb21231a323c8e96c5d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1-unicode-replay/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "b5ffa4ca02b8d594a2891ab3a676fbcc0b55bc3b54c66817d1e75544ca212688"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1-unicode-replay/refinement/round-003/before-preview.png",
+      "sha256": "f6a181f253f710def999a912fec6768c6fe22cb8ac1a70b92effd024c802ef44"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1-unicode-replay/refinement/round-003/output/preview.png",
+      "sha256": "371e315a3d03c81033e1980635fe344fbcad4c36334e688d180fe25b6de08931"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1-unicode-replay/refinement/round-003/output/editable.pptx",
+      "sha256": "c144e4c21c223e4301dd1ff5e66d76255753315427dead6d57a6f93673867d8e"
+    }
+  ],
+  "evidence_id": "dc77af5e8f6783e441bbc0a5"
+}

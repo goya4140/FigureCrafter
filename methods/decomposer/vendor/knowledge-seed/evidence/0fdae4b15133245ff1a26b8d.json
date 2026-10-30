@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250316096-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "multiline-text-export-scale-collapse",
+  "label_ids": [
+    "stable_sequence"
+  ],
+  "primitive_ids": [
+    "stable_sequence/text"
+  ],
+  "field": null,
+  "region": [
+    876,
+    213,
+    438,
+    107
+  ],
+  "summary": "Detected in tile-2-2: stable_sequence renders as tiny, nearly illegible text. Its representation specifies 20-pixel text, appropriate bounds, and layout font_scale=1; OOXML retains all seven lines. The size collapse occurs downstream during export or rendering, rather than in the supplied visual fields.",
+  "strategy": "Validate exported multiline font sizing, line-spacing units, and autofit behavior against scene styles; correct downstream scale collapse without compensating through layout or primitive font enlargement.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250316096-fig2/refinement/round-001/decision.json",
+      "sha256": "64fdab235c2e1370467c560467425f7dbc9c570a95961f32703d81b3a6048616"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250316096-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "97230d410d6d2e8a7cdc5e24dd5fe5be454a22c85e58fe936d350d89e6c78437"
+    }
+  ],
+  "evidence_id": "0fdae4b15133245ff1a26b8d"
+}

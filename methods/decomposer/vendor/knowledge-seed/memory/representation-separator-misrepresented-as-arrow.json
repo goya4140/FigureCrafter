@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-separator-misrepresented-as-arrow",
+  "owner_stage": "representation",
+  "mechanism": "separator-misrepresented-as-arrow",
+  "status": "candidate",
+  "evidence_ids": [
+    "51cae8eee9b9f2ffb19ae436"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Distinguish internal row separators from flow connectors; assign line style and arrowheads from visible evidence independently of the outer border."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240609272-fig8",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "inference_label"
+  ],
+  "primitive_ids": [
+    "inference_label/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    0,
+    709,
+    800,
+    237
+  ],
+  "summary": "The rendered Inference heading is dramatically smaller than the reference. Its local text box is only 62 units high for 72-unit bold text, leaving insufficient font-metric clearance. Enlarge the local box around its existing center to prevent excessive text shrinking.",
+  "strategy": "Size editable text boxes using the font's full line metrics, preserving the intended text center and checking that autofit does not shrink prominent headings.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.914565,
+      "edge_iou": 0.20732
+    },
+    "after_local": {
+      "pixel_similarity": 0.914565,
+      "edge_iou": 0.20732
+    },
+    "before_global": {
+      "pixel_similarity": 0.947308,
+      "edge_iou": 0.253248
+    },
+    "after_global": {
+      "pixel_similarity": 0.947308,
+      "edge_iou": 0.253248
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      0,
+      709,
+      800,
+      237
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240609272-fig8/refinement/round-001/decision.json",
+      "sha256": "7aff48280634e838870a12bd6c2ebc8b256716ba547e286cc5f86f96e3353c52"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240609272-fig8/refinement/round-001/assessment.json",
+      "sha256": "7128f54ae4e8f50bebd559d4bb34a49e945a80f2db6e2a4d0ff4f6f219f9c838"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240609272-fig8/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "2c794e1f00db8bd4e016ba42d084f17347023331c3f11e9c03e710681ce83fb8"
+    }
+  ],
+  "evidence_id": "f5b0f273d286fa2b69244933"
+}

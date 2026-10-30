@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250306951-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "p2_no_contradiction"
+  ],
+  "primitive_ids": [
+    "p2_no_contradiction/t"
+  ],
+  "field": "bbox",
+  "region": [
+    554,
+    1311,
+    554,
+    656
+  ],
+  "summary": "In the current render, the green “if no / contradiction” condition is reduced to nearly illegible marks. Its local text box cannot comfortably fit the specified font and line spacing. Enlarge that text box while preserving its center and editable content.",
+  "strategy": "Size multiline text primitives for the full font metrics and configured line spacing before export, preventing automatic shrinkage from making condition labels illegible.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.926044,
+      "edge_iou": 0.300242
+    },
+    "after_local": {
+      "pixel_similarity": 0.926044,
+      "edge_iou": 0.300242
+    },
+    "before_global": {
+      "pixel_similarity": 0.930319,
+      "edge_iou": 0.256986
+    },
+    "after_global": {
+      "pixel_similarity": 0.930319,
+      "edge_iou": 0.256986
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      554,
+      1311,
+      554,
+      656
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250306951-fig2/refinement/round-002/decision.json",
+      "sha256": "64cf8b1344cbb986565124246256110697609249cdecc92f762bb0515d0d1bb8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250306951-fig2/refinement/round-002/assessment.json",
+      "sha256": "ea92697f614d2e3ea6cc0dafbb9601253a4de5926e2a45074d9d81e7615149ec"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250306951-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "3d043fda6cf4bd63fc3d54efde365635802df92a96dfabb77b01894c93b4527f"
+    }
+  ],
+  "evidence_id": "02245ea951d16627f4ceae77"
+}

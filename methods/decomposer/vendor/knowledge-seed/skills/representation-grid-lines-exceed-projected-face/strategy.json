@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-grid-lines-exceed-projected-face",
+  "memory_id": "representation-grid-lines-exceed-projected-face",
+  "status": "candidate",
+  "instructions": [
+    "Validate projected grid endpoints against their owning face edges before export; internal dividers must terminate on the face boundary."
+  ],
+  "evidence_ids": [
+    "73f541c9accc6c17725128dd"
+  ]
+}

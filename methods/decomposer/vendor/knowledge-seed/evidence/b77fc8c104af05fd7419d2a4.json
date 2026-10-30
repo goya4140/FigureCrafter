@@ -1,0 +1,38 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250307358-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "code-text-metric-mismatch",
+  "label_ids": [
+    "test_code",
+    "sandbox_code"
+  ],
+  "primitive_ids": [
+    "test_code/text",
+    "sandbox_code/text"
+  ],
+  "field": null,
+  "region": [
+    1600,
+    0,
+    800,
+    199
+  ],
+  "summary": "In the selected tile, the rendered code appears smaller and lighter than the reference. The supplied artifacts do not establish whether local text metrics, automatic fitting, or font substitution causes the discrepancy; ownership remains uncertain.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250307358-fig2/refinement/round-001/decision.json",
+      "sha256": "575539c6e0cd9ea93889dcd537d1aa0c13eb7cdd03e4ed164066310c52531514"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250307358-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "34da79738f58a4b425bb8b4dc2f0120c8eec76f8d41ce0c0f295aa04e02c5f4f"
+    }
+  ],
+  "evidence_id": "b77fc8c104af05fd7419d2a4"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240312965-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rotated-text-sizing-disagreement",
+  "label_ids": [
+    "sca_text7"
+  ],
+  "primitive_ids": [
+    "sca_text7/text"
+  ],
+  "field": null,
+  "region": [
+    1126,
+    573,
+    563,
+    286
+  ],
+  "summary": "The current render shows the seventh SCA label much smaller than the reference. Both prior bounding-box repairs were rejected. The supplied provenance confirms text presence but does not expose exported rotation or autofit settings, so ownership cannot be established confidently.",
+  "strategy": "Inspect exported text rotation, dimensions, and autofit settings against the scene before retrying geometry changes for undersized rotated labels.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-003/decision.json",
+      "sha256": "0d376fc20ebbf22cdcd7241a700799c6d0c472c9703973f552b5299c2fcbda77"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "07323bd410ef5114e547c9d9d5318c9d081b1afb704c76d611e066c32471567f"
+    }
+  ],
+  "evidence_id": "b0d2ab9ebce15b0d3761dcde"
+}

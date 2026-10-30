@@ -1,0 +1,4 @@
+-r methods/drawing-v2.5.1/requirements.lock.txt
+requests>=2.32
+numpy>=1.26
+pytest>=8

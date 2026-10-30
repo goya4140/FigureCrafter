@@ -1,0 +1,19 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-container-corner-rounding-excess",
+  "owner_stage": "representation",
+  "mechanism": "container-corner-rounding-excess",
+  "status": "candidate",
+  "evidence_ids": [
+    "06d4941e920c9cf232e6d683",
+    "17365225daf86c71955cdf7c",
+    "4409cbc81f319c4307f1db1c"
+  ],
+  "accepted_count": 2,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare exported container corner curvature with the reference; use rectangular geometry when native rounding intrudes substantially into a nearly square boundary.",
+    "Compare rendered container corners with the reference at full panel scale; avoid rounded presets whose radius grows excessively with container dimensions.",
+    "Compare exported enclosure curvature with the reference at final scale; use rectangular geometry when preset rounding substantially exceeds a nearly square source boundary, then validate the render."
+  ]
+}

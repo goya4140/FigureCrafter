@@ -1,0 +1,27 @@
+{
+  "model": {
+    "backend": "external-json",
+    "name": "DEEPSEEK_MODEL",
+    "command": ["python3", "adapters/openai_compatible_vision.py"],
+    "arguments": [
+      "--stage", "{stage}",
+      "--schema", "{schema_file}",
+      "--image", "{image_file}",
+      "--base-url-env", "DEEPSEEK_BASE_URL",
+      "--api-key-env", "DEEPSEEK_API_KEY",
+      "--model-env", "DEEPSEEK_MODEL",
+      "--response-mode", "json_object",
+      "--reasoning-effort", "high",
+      "--max-tokens", "65536",
+      "--image-detail", "original",
+      "--empty-content-retries", "1"
+    ],
+    "environment_allowlist": ["DEEPSEEK_BASE_URL", "DEEPSEEK_API_KEY", "DEEPSEEK_MODEL"],
+    "timeout_seconds": 1800,
+    "adapter_version": "deepseek-v4.1-chat-v1",
+    "response_mode": "json_object",
+    "reasoning_effort": "high",
+    "max_tokens": 65536,
+    "image_detail": "original"
+  }
+}

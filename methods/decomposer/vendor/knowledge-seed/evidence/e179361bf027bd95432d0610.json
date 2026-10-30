@@ -1,0 +1,74 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240903634-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-mismatch",
+  "label_ids": [
+    "view_legend",
+    "feature_legend"
+  ],
+  "primitive_ids": [
+    "view_legend/text",
+    "feature_legend/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    1600,
+    810,
+    800,
+    270
+  ],
+  "summary": "In the rendered legend, “View direction” and “Image Feature” appear smaller than in the reference. Increase their text scale while preserving placement.",
+  "strategy": "Compare rendered legend text height and width against the reference and calibrate text scale consistently across adjacent entries.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.941729,
+      "edge_iou": 0.295058
+    },
+    "after_local": {
+      "pixel_similarity": 0.944189,
+      "edge_iou": 0.269673
+    },
+    "before_global": {
+      "pixel_similarity": 0.967411,
+      "edge_iou": 0.355694
+    },
+    "after_global": {
+      "pixel_similarity": 0.967565,
+      "edge_iou": 0.353944
+    },
+    "local_pixel_delta": 0.00246,
+    "local_edge_delta": -0.025385,
+    "global_pixel_delta": 0.000154,
+    "evaluation_region": [
+      1600,
+      810,
+      800,
+      270
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-001/decision.json",
+      "sha256": "13e3190629a6cc087fced3d770da7bb5295b78057ba197007bddceafa80f6b2a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-001/assessment.json",
+      "sha256": "62773b8a0639393a8dd94885793f6b46ea4a5cdeacff7b0fd0cad383827e0b00"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "8da18cb499871d9449810b7507d05529ba7972e4e18a91f0fce48f0a5676af51"
+    }
+  ],
+  "evidence_id": "e179361bf027bd95432d0610"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-separator-lines-overlap-heading",
+  "owner_stage": "representation",
+  "mechanism": "separator-lines-overlap-heading",
+  "status": "candidate",
+  "evidence_ids": [
+    "31c86d97cf000166a7b34dfb",
+    "d02c78b168e218b0ac136afb"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 2,
+  "strategies": [
+    "Place heading separator endpoints outside the text bounds with a clear gap; verify that neither rule intersects the heading.",
+    "Represent heading separators as separate segments outside the text bounds, with explicit gaps; verify that neither segment intersects the heading."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards2-r1",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "trailing-newline-in-short-math-label",
+  "label_ids": [
+    "frame_opinion_chart"
+  ],
+  "primitive_ids": [
+    "frame_opinion_chart/u",
+    "frame_opinion_chart/b1",
+    "frame_opinion_chart/b2",
+    "frame_opinion_chart/b3"
+  ],
+  "field": "text",
+  "region": [
+    3072,
+    485,
+    1024,
+    485
+  ],
+  "summary": "The current render loses the frame opinion diagram's vertex annotations visible in the reference. Its four short text primitives contain trailing newlines, while the visible M annotation does not. Remove those extra line breaks; retain the existing mathematical runs and geometry.",
+  "strategy": "Remove unintended trailing paragraph breaks from compact mathematical annotations before generating editable runs, and verify all vertex labels in the exported render.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "error": "AssertionError: styled text source identity mismatch for frame_opinion_chart/u",
+    "rejection_reason": "patch_execution_or_validation_failed",
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "20807f79cb7c1379d933e4fb8430973e5ca695688c24e0c8a115c765bcf56ac1",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "6ca7cd15c3de4838f4d92ab6391a5304bfe579fbb146bc881b575fccdd29fc72"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_skill_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_statuses": {
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-r1/refinement/round-003/decision.json",
+      "sha256": "edf67b6645f5399f42dda1e00b31c79d972bfba43ee0bc84059f74f902b4d564"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-r1/refinement/round-003/assessment.json",
+      "sha256": "a65e4415bd625a369ea4cea8cf115ec65c46af54250fead2295d4abbd86e7ab5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-r1/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "7fd398efa2c70fdefe947909fd1333e774659c8c726af21e0f96bcb87d7596d3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-r1/refinement/round-003/before-preview.png",
+      "sha256": "d4a40a12e4903045aae60d07da5867094759a5134914fdf3d1a2036beb44e821"
+    }
+  ],
+  "evidence_id": "77cab14bae8d0134ac82c59c"
+}

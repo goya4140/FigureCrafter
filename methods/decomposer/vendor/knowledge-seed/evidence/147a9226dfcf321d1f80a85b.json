@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-231200837-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "displacement_estimator_label"
+  ],
+  "primitive_ids": [
+    "displacement_estimator_label/label"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    800,
+    444,
+    800,
+    444
+  ],
+  "summary": "In the rendered tile, the displacement-estimator caption is vertically compressed relative to the reference. Its local text box needs additional height to accommodate two lines and the subscript without shrinking.",
+  "strategy": "Size multiline scientific captions using full line and subscript extents before applying text fitting.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.946613,
+      "edge_iou": 0.237091
+    },
+    "after_local": {
+      "pixel_similarity": 0.946613,
+      "edge_iou": 0.237091
+    },
+    "before_global": {
+      "pixel_similarity": 0.973906,
+      "edge_iou": 0.265743
+    },
+    "after_global": {
+      "pixel_similarity": 0.973906,
+      "edge_iou": 0.265743
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      800,
+      444,
+      800,
+      444
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231200837-fig2/refinement/round-002/decision.json",
+      "sha256": "9ae3dc26f7159022f1eadb287af29d816baa6ead1b1cfaaa5c2d7e26eb174f59"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231200837-fig2/refinement/round-002/assessment.json",
+      "sha256": "265f1a6f8aecd8fd8747bd3c75b4ddada8b4e1b79d76a8acacb337eed0807ff3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231200837-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "95045327c88154a06518764ba2c4a053d6be5f83f193923a06669c1c19c7bd12"
+    }
+  ],
+  "evidence_id": "147a9226dfcf321d1f80a85b"
+}

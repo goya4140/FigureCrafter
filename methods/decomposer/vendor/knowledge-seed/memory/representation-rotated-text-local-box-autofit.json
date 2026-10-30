@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-rotated-text-local-box-autofit",
+  "owner_stage": "representation",
+  "mechanism": "rotated-text-local-box-autofit",
+  "status": "candidate",
+  "evidence_ids": [
+    "f54f1d650c9c834bdd79cca8"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Size rotated text primitives for their unrotated text flow, preserving their center, and verify rendered glyph size after rotation."
+  ]
+}

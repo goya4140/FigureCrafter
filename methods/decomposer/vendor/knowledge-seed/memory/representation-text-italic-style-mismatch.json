@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-text-italic-style-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "text-italic-style-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "0a88c8bc6f5ca8a8cd69b9d5"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare annotation letter slant against the reference independently of text content, alignment, and placement before assigning italic styling."
+  ]
+}

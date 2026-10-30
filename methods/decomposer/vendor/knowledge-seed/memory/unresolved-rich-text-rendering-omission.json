@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-rich-text-rendering-omission",
+  "owner_stage": "unresolved",
+  "mechanism": "rich-text-rendering-omission",
+  "status": "candidate",
+  "evidence_ids": [
+    "ab7a6d2417b0b74d1ff3d30a"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Verify rich-text run visibility and exported color inheritance before modifying correctly retained content or placement."
+  ]
+}

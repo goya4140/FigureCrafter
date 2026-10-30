@@ -1,0 +1,42 @@
+{
+  "detectors": {
+    "sam": {
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "YOUR_DETECTOR_SERVER",
+        "python /YOUR_RUNTIME/sam.py"
+      ],
+      "timeout_seconds": 600,
+      "options": {
+        "device": "cuda:1",
+        "threshold": 0.25,
+        "prompts": [
+          "arrow",
+          "border",
+          "content box",
+          "diagram",
+          "icon",
+          "picture"
+        ],
+        "checkpoint": "/YOUR_WEIGHTS/sam3.pt",
+        "bpe": "/YOUR_WEIGHTS/bpe_simple_vocab_16e6.txt.gz"
+      }
+    },
+    "ocr": {
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "YOUR_DETECTOR_SERVER",
+        "python /YOUR_RUNTIME/ocr.py"
+      ],
+      "timeout_seconds": 600,
+      "options": {
+        "device": "gpu:1",
+        "model_root": "/YOUR_WEIGHTS/paddlex/official_models"
+      }
+    }
+  }
+}

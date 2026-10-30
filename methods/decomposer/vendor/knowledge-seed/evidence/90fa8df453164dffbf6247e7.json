@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309500-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "rotated-text-scale-mismatch",
+  "label_ids": [
+    "linear_label"
+  ],
+  "primitive_ids": [
+    "linear_label/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    585,
+    503,
+    292,
+    168
+  ],
+  "summary": "In tile-3-2, the vertical Linear label is visibly smaller than the reference. Increase its text scale while preserving its position and rotation.",
+  "strategy": "Compare rotated labels against reference glyph height and occupied length, and adjust text scale independently of the enclosing module.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.956596,
+      "edge_iou": 0.553458
+    },
+    "after_local": {
+      "pixel_similarity": 0.956456,
+      "edge_iou": 0.544142
+    },
+    "before_global": {
+      "pixel_similarity": 0.965483,
+      "edge_iou": 0.458226
+    },
+    "after_global": {
+      "pixel_similarity": 0.965474,
+      "edge_iou": 0.457443
+    },
+    "local_pixel_delta": -0.00014,
+    "local_edge_delta": -0.009316,
+    "global_pixel_delta": -9e-06,
+    "evaluation_region": [
+      585,
+      503,
+      292,
+      168
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309500-fig2/refinement/round-002/decision.json",
+      "sha256": "115057a39a72b516802e1f655483b7a2073caa269185ff0a0b74ab762e33cd3d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309500-fig2/refinement/round-002/assessment.json",
+      "sha256": "5259cd67b6e85081c432c9f1eede2b62979d5100536701fbfb45cdeb5a20ac54"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309500-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "8518a5304f023b0597fdf6d27ddebd58963f703dae1b191b2174e3e4835b5031"
+    }
+  ],
+  "evidence_id": "90fa8df453164dffbf6247e7"
+}

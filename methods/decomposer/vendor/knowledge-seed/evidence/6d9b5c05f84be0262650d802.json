@@ -1,0 +1,40 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241115138-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "native-text-rendering-loss",
+  "label_ids": [
+    "roughness_label",
+    "bump_label",
+    "refiner_label"
+  ],
+  "primitive_ids": [
+    "roughness_label/text",
+    "bump_label/text",
+    "refiner_label/text"
+  ],
+  "field": null,
+  "region": [
+    1600,
+    226,
+    800,
+    226
+  ],
+  "summary": "The PowerPoint render omits the Roughness & Metallic, Bump, and Material Refiner labels in the selected tile. Their editable text, visible placements, and OOXML text records are present. The disappearance occurs during export or rendering; visual geometry patches are inappropriate.",
+  "strategy": "Verify native text visibility in rendered output against scene and OOXML records; investigate export text properties and renderer font configuration when correctly populated text shapes disappear.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241115138-fig1/refinement/round-001/decision.json",
+      "sha256": "e817cf7723d38842629e3b8957023a42125c3e55ade42b0825383a56c0951031"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241115138-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "d6f6b0cd13175ee7f9e5de0fc19a525799d88120dfafb8877054d5e14d266bfe"
+    }
+  ],
+  "evidence_id": "6d9b5c05f84be0262650d802"
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "baseline",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "path-local-origin-translation-loss",
+  "label_ids": [
+    "adjacency_matrix"
+  ],
+  "primitive_ids": [
+    "adjacency_matrix/green_cells",
+    "adjacency_matrix/orange_cells",
+    "adjacency_matrix/grid"
+  ],
+  "field": null,
+  "region": [
+    785,
+    597,
+    786,
+    299
+  ],
+  "summary": "Detected in the rendered adjacency matrix: colored cells and grid are shifted approximately 142 canvas units left and 124 up, overlapping the title. Their canonical primitive and scene bounds correctly include that inset; the exported paths appear anchored at the component origin. Fix path-coordinate translation during export, without compensating in representation or layout.",
+  "strategy": "Apply each path primitive's local bbox origin exactly once when converting its numeric coordinates to DrawingML, and verify alignment with colocated native rectangles in the rendered export.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-container-corner-rounding",
+      "layout-foreground-title-occluded-by-chart",
+      "representation-container-corner-rounding-excess"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-container-corner-rounding",
+      "layout-foreground-title-occluded-by-chart",
+      "representation-container-corner-rounding-excess"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-object-rotation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "representation-container-corner-rounding-excess": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/baseline/refinement/round-001/decision.json",
+      "sha256": "ceec58cae9b13c4ebd62e37911311540293ef69ba45aebcdb4d1a37310ca209a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/baseline/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "06c9a6c321f584d0a8de36e82c8633cc46cfb3842cae100e3c26eac10eea2555"
+    }
+  ],
+  "evidence_id": "1d281007b0c351e9f9483f12"
+}

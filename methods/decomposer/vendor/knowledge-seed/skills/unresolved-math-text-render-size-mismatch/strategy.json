@@ -1,0 +1,12 @@
+{
+  "skill_id": "unresolved-math-text-render-size-mismatch",
+  "memory_id": "unresolved-math-text-render-size-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare rendered equation glyph extents with canonical font sizes and text-box bounds before assigning ownership or changing geometry; verify any repair in the exported render."
+  ],
+  "evidence_ids": [
+    "3ff8e23561d40d0b43a1def5",
+    "7e433f7354357ff61f9f3769"
+  ]
+}

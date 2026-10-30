@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-ellipsis-glyph-metric-mismatch",
+  "memory_id": "representation-ellipsis-glyph-metric-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Match ellipsis glyph size and spacing to the reference, using consistent editable dot sequences when a single mathematical ellipsis has incompatible font metrics."
+  ],
+  "evidence_ids": [
+    "5b02e7d8ffc605d9b2f7d8dc"
+  ]
+}

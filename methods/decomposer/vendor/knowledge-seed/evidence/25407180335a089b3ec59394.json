@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colt-2025-250523683-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "mixed-script-text-vertical-offset",
+  "label_ids": [
+    "layer1_attention_label"
+  ],
+  "primitive_ids": [
+    "layer1_attention_label/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    0,
+    482,
+    800,
+    482
+  ],
+  "summary": "In tile-1-0, the layer-1 attention annotation renders above its reference baseline. Its global placement matches recognition; the local text box needs the same downward baseline correction already validated for the later-layer annotation.",
+  "strategy": "Align mixed-script annotations using rendered baselines and ink bounds, accounting for superscript and subscript extents within local text boxes.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.952309,
+      "edge_iou": 0.217737
+    },
+    "after_local": {
+      "pixel_similarity": 0.955797,
+      "edge_iou": 0.234699
+    },
+    "before_global": {
+      "pixel_similarity": 0.965959,
+      "edge_iou": 0.207341
+    },
+    "after_global": {
+      "pixel_similarity": 0.966177,
+      "edge_iou": 0.208826
+    },
+    "local_pixel_delta": 0.003488,
+    "local_edge_delta": 0.016962,
+    "global_pixel_delta": 0.000218,
+    "evaluation_region": [
+      0,
+      482,
+      800,
+      482
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colt-2025-250523683-fig2/refinement/round-003/decision.json",
+      "sha256": "7b0b62646b1044b40779fba6219dd8ab9c49446eca0de96de16cf972042e32a0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colt-2025-250523683-fig2/refinement/round-003/assessment.json",
+      "sha256": "0b8dc056dafbd14a32b8fe07a77ca401cbfaea90c0bf230829b7e3cbeef2a99c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colt-2025-250523683-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "52486183e6cb2434e44adcda7c94705bf6c8b797ded71e3db4afef7ec1f2e8c3"
+    }
+  ],
+  "evidence_id": "25407180335a089b3ec59394"
+}

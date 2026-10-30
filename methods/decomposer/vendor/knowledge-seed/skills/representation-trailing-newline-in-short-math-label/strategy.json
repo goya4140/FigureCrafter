@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-trailing-newline-in-short-math-label",
+  "memory_id": "representation-trailing-newline-in-short-math-label",
+  "status": "candidate",
+  "instructions": [
+    "Remove unintended trailing paragraph breaks from compact mathematical annotations before generating editable runs, and verify all vertex labels in the exported render."
+  ],
+  "evidence_ids": [
+    "77cab14bae8d0134ac82c59c"
+  ]
+}

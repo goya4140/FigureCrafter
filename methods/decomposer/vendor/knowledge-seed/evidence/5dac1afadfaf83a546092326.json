@@ -1,0 +1,91 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "smoke-iclr-2025-250205780-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "editable-glyph-not-visible",
+  "label_ids": [
+    "trainable_legend_icon"
+  ],
+  "primitive_ids": [
+    "trainable_legend_icon/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    336,
+    304,
+    112
+  ],
+  "summary": "The reference flame beside “Trainable Model” is absent in the current render. Recognition, representation, layout visibility, and OOXML all retain the flame character. The supplied evidence cannot distinguish font/rendering failure from text-box clipping, so a visual workaround is not justified.",
+  "strategy": "Verify missing glyphs against editable text and export provenance, then establish font support and clipping behavior before changing geometry or styling.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "representation-math-script-size-inflates-text-width",
+      "recognition-text-punctuation-omission",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "representation-math-script-size-inflates-text-width",
+      "recognition-text-punctuation-omission",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "representation-math-script-size-inflates-text-width": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-object-rotation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "representation-math-script-size-inflates-text-width",
+      "recognition-text-punctuation-omission",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "representation-math-script-size-inflates-text-width",
+      "recognition-text-punctuation-omission",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/smoke-iclr-2025-250205780-fig1/refinement/round-001/decision.json",
+      "sha256": "6ae6392b8ce73374757a04bec5dae77d72e3405d4edfc2daa754fa931239d55c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/smoke-iclr-2025-250205780-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "222a6d2f46b154957aa6c7cfbec3cc1b136adf78982c63fcd6af379054dccc44"
+    }
+  ],
+  "evidence_id": "5dac1afadfaf83a546092326"
+}

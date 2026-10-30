@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "recognition-text-punctuation-omission",
+  "owner_stage": "recognition",
+  "mechanism": "text-punctuation-omission",
+  "status": "candidate",
+  "evidence_ids": [
+    "ee9555ae0244ae7a3bca0ec2"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Verify paired punctuation against the reference when transcribing compact legend labels before generating editable text."
+  ]
+}

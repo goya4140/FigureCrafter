@@ -1,0 +1,19 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-text-color-set-to-none",
+  "owner_stage": "representation",
+  "mechanism": "text-color-set-to-none",
+  "status": "candidate",
+  "evidence_ids": [
+    "271f77671dcf9b20de958ae0",
+    "d7c995041d1b29d0b99429dc",
+    "a402f91153677ea485be7be1"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 3,
+  "strategies": [
+    "Require an explicit visible foreground color for editable text and verify caption visibility in the exported render before adjusting text metrics.",
+    "Preserve explicit visible foreground colors when converting recognized text into editable primitives, and verify text visibility after export.",
+    "Preserve explicit visible foreground colors when constructing editable text primitives, then verify caption visibility in the exported render."
+  ]
+}

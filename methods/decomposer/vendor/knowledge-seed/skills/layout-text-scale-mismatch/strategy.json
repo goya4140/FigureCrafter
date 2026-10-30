@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-text-scale-mismatch",
+  "memory_id": "layout-text-scale-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare rendered legend text height and width against the reference and calibrate text scale consistently across adjacent entries."
+  ],
+  "evidence_ids": [
+    "e179361bf027bd95432d0610"
+  ]
+}

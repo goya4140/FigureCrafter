@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-text-line-spacing-underestimation",
+  "owner_stage": "representation",
+  "mechanism": "text-line-spacing-underestimation",
+  "status": "candidate",
+  "evidence_ids": [
+    "381bf48775d33dc1538d5b32"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare first and last text baselines against the reference; when drift accumulates across lines, correct local line spacing while preserving placement and font size."
+  ]
+}

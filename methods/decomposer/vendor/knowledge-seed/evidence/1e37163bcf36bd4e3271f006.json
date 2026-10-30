@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-240611643-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-line-spacing-overflow",
+  "label_ids": [
+    "txt_mask_module"
+  ],
+  "primitive_ids": [
+    "txt_mask_module/text"
+  ],
+  "field": "style.line_spacing",
+  "region": [
+    564,
+    924,
+    564,
+    309
+  ],
+  "summary": "The current render omits “Mask Module” inside its module. Recognition and OOXML preserve the text, but its 32-unit font with 1.4 line spacing exceeds the 75-unit local text box for two lines. Reduce local line spacing to fit.",
+  "strategy": "Fit multiline editable text using font size, line spacing, and available box height; verify all lines remain visible after export.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.942479,
+      "edge_iou": 0.311273
+    },
+    "after_local": {
+      "pixel_similarity": 0.942479,
+      "edge_iou": 0.311273
+    },
+    "before_global": {
+      "pixel_similarity": 0.964439,
+      "edge_iou": 0.36628
+    },
+    "after_global": {
+      "pixel_similarity": 0.964439,
+      "edge_iou": 0.36628
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      564,
+      924,
+      564,
+      309
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240611643-fig2/refinement/round-001/decision.json",
+      "sha256": "d3ef71155ff07b5e82db5af59ad8b31f58bc612cedd59c6310417bfc72bfebaa"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240611643-fig2/refinement/round-001/assessment.json",
+      "sha256": "588a42213d8275d75b1ae761fa3b097e8a5b92bd9fe8bd303d4f2e3f4a1c2848"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240611643-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "c86b38ee65094e0e9829c1fbdd9f4930e6162bb9071416cc1173ef58c4472716"
+    }
+  ],
+  "evidence_id": "1e37163bcf36bd4e3271f006"
+}

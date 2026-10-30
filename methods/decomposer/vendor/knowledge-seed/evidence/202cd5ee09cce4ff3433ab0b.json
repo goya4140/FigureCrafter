@@ -1,0 +1,141 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "ground_truth",
+    "mixed_domain"
+  ],
+  "primitive_ids": [
+    "ground_truth/t",
+    "mixed_domain/t"
+  ],
+  "field": "font_scale",
+  "region": [
+    364,
+    391,
+    364,
+    391
+  ],
+  "summary": "In the current render, the two item captions are approximately 25% narrower and shorter than the reference despite matching surrounding box geometry. Increase their text scale while preserving placement and wording.",
+  "strategy": "Compare caption ink widths and glyph heights against the reference independently of container geometry; calibrate text scale and verify that captions remain unwrapped and separated.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.933218,
+      "edge_iou": 0.269816
+    },
+    "after_local": {
+      "pixel_similarity": 0.935068,
+      "edge_iou": 0.242731
+    },
+    "before_global": {
+      "pixel_similarity": 0.972948,
+      "edge_iou": 0.286163
+    },
+    "after_global": {
+      "pixel_similarity": 0.973144,
+      "edge_iou": 0.282011
+    },
+    "local_pixel_delta": 0.00185,
+    "local_edge_delta": -0.027085,
+    "global_pixel_delta": 0.000196,
+    "evaluation_region": [
+      364,
+      391,
+      364,
+      391
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "e807a35051e9d1f10338362dc9d041cf92d65cca060d195b4e99285cef03dbb4",
+      "representation": "0a4729660fe7145912d54bbcc1b4b8e778b52a97f61f2862cceafe4f7975678d",
+      "layout": "b12e1c2f930d3d89c76cfc7db537fd094bb66f786a6d62d5a4a1fd73c2b226f7",
+      "pptx": "8a32654e820a01d67e663dd486f9b7f90578245d624d4d1377c58afc40a8f306"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-mixed-script-text-vertical-offset",
+      "representation-text-box-font-metric-overflow",
+      "representation-literal-math-markup-in-text-primitive",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-explicit-text-rotation-hint",
+      "representation-text-box-vertical-offset",
+      "representation-rotated-text-box-line-wrap"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-mixed-script-text-vertical-offset",
+      "representation-text-box-font-metric-overflow",
+      "representation-literal-math-markup-in-text-primitive",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-explicit-text-rotation-hint",
+      "representation-text-box-vertical-offset",
+      "representation-rotated-text-box-line-wrap"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-mixed-script-text-vertical-offset": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-explicit-text-rotation-hint": "downstreamed",
+      "representation-text-box-vertical-offset": "candidate",
+      "representation-rotated-text-box-line-wrap": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-001/decision.json",
+      "sha256": "4f2ec79f909b68ea5ea0cef7227ca67dd6af9e668472d8815f213dcc7071f340"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-001/assessment.json",
+      "sha256": "85d72653c91b96f1b2e0ce0532518be67e1333aa8b96ef026301cb4465e86da3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "4a24edc5e517eb0fcfe8cf12883826bcec059eae620fb6f58b171a150d23b8a1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-001/before-preview.png",
+      "sha256": "9167148b0b52bab8a764721a0f266c73a3bdfd397eb6b1c983e9b6d43fa18250"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-001/output/preview.png",
+      "sha256": "737f0a30b516d38a6ffd06510d7465a3d4ea5ad096818305dffaa17d28657627"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-001/output/editable.pptx",
+      "sha256": "3371b5c768dcf2241662aa8792d1dcac76d7ab22173dbfdccd9ab407d74f8e0c"
+    }
+  ],
+  "evidence_id": "202cd5ee09cce4ff3433ab0b"
+}

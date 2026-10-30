@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-text-box-line-spacing-overflow",
+  "owner_stage": "representation",
+  "mechanism": "text-box-line-spacing-overflow",
+  "status": "candidate",
+  "evidence_ids": [
+    "1e37163bcf36bd4e3271f006"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Fit multiline editable text using font size, line spacing, and available box height; verify all lines remain visible after export."
+  ]
+}

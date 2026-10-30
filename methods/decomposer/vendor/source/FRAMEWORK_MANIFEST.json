@@ -1,0 +1,37 @@
+{
+  "schema_version": "figure2pptx.method-framework.v1",
+  "framework_version": "1.1.0-refinement-memory",
+  "source_code_snapshot": "Decomposer-v0625-stage5-baseline",
+  "source_knowledge_snapshot": "experiments/decomposer-v20-v0625-stage5-baseline-011-failures/knowledge",
+  "sample_reference": "experiments/v6-first100-server-20260917/manifest.json",
+  "model_backends": ["codex-cli", "external-json"],
+  "knowledge": {
+    "memory_count": 79,
+    "skill_count": 79,
+    "candidate_count": 72,
+    "downstreamed_count": 7,
+    "currently_eligible_count": 0
+  },
+  "quality_thresholds": {
+    "minimum_pixel_similarity": 0.94,
+    "minimum_edge_iou": 0.2,
+    "refinement_max_rounds": 3
+  },
+  "knowledge_policy": {
+    "recognition": "disabled",
+    "representation": "disabled",
+    "layout": "disabled",
+    "refinement": {
+      "enabled": true,
+      "maximum_records": 8,
+      "allowed_statuses": ["candidate_imported", "candidate", "verified", "active", "downstreamed"],
+      "excluded_statuses": ["superseded"],
+      "measured_acceptance_required": true
+    }
+  },
+  "server_ocr": {
+    "implementation": "PP-OCRv5-server-det+rec",
+    "config": "config.server.json",
+    "implementation_sha256": "e12b23d207e40ffd3ec68a6d12f8fe00c3736ab9e8c0273711977c73ce0e13f5"
+  }
+}

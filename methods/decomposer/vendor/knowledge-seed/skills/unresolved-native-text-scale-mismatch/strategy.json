@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-native-text-scale-mismatch",
+  "memory_id": "unresolved-native-text-scale-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare scene font sizes with exported run sizes and autofit settings before changing geometry for unexpectedly small native text."
+  ],
+  "evidence_ids": [
+    "5a20d448b6a468a16e799e50"
+  ]
+}

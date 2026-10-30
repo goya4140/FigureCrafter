@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-241218811-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "multiline-text-box-autofit-shrink",
+  "label_ids": [
+    "lower_initial"
+  ],
+  "primitive_ids": [
+    "lower_initial/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    661,
+    558,
+    661,
+    279
+  ],
+  "summary": "In tile-2-1, the red factors in lower_initial render smaller and more tightly packed than the reference. Its local text box leaves insufficient height for four lines at the specified font size and spacing; enlarge that box within the existing panel.",
+  "strategy": "Allow sufficient local text-box height for multiline font metrics and line spacing before export, avoiding automatic shrinkage within correctly sized panels.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.941592,
+      "edge_iou": 0.230383
+    },
+    "after_local": {
+      "pixel_similarity": 0.941921,
+      "edge_iou": 0.229733
+    },
+    "before_global": {
+      "pixel_similarity": 0.963843,
+      "edge_iou": 0.280075
+    },
+    "after_global": {
+      "pixel_similarity": 0.963864,
+      "edge_iou": 0.280016
+    },
+    "local_pixel_delta": 0.000329,
+    "local_edge_delta": -0.00065,
+    "global_pixel_delta": 2.1e-05,
+    "evaluation_region": [
+      661,
+      558,
+      661,
+      279
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-003/decision.json",
+      "sha256": "0759fe7b8eccd0d59c85d29dcd8132428fee23889852f7c6386cbe429cc723c2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-003/assessment.json",
+      "sha256": "b938a5e061cd2d66572ab908bee27b03ed2b49308cd6bef75cab8ca2eba234bf"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "6bd1346011ff91a6257d9b5a8a22a4132dbc6bba576a37d9e723b2be49864916"
+    }
+  ],
+  "evidence_id": "46c48277798344609cc287b2"
+}

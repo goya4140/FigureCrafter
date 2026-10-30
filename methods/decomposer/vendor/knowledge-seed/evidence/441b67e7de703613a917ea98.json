@@ -1,0 +1,91 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast-fidelity",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "recognition",
+  "mechanism": "missing-workflow-object-decomposition",
+  "label_ids": [
+    "top_execution",
+    "subquestions",
+    "evidence"
+  ],
+  "primitive_ids": [],
+  "field": "recognition.objects",
+  "region": [
+    554,
+    0,
+    554,
+    655
+  ],
+  "summary": "The current render omits the agent modules, item cards, and connecting workflow inside this tile, leaving isolated text within the execution border. Recognition contains the enclosing region and text labels but lacks the corresponding semantic nodes and connectors; representation and export reflect those omissions. Repair requires adding recognized objects, which the supported patch operations cannot express.",
+  "strategy": "Check each workflow region for complete node and connector coverage before generating primitives; recognizing a container and its text does not account for its internal semantic objects.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-excessive-panel-corner-rounding",
+      "representation-mixed-script-text-vertical-offset"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-excessive-panel-corner-rounding",
+      "representation-mixed-script-text-vertical-offset"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-condensed-font-width-mismatch": "candidate",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-mixed-script-text-vertical-offset": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-excessive-panel-corner-rounding",
+      "representation-mixed-script-text-vertical-offset"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-excessive-panel-corner-rounding",
+      "representation-mixed-script-text-vertical-offset"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/representation-fast-fidelity/refinement/round-001/decision.json",
+      "sha256": "2fc07da712c53de735a3853968add27719c882fb2eac081d9555cc63e4c28e31"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/representation-fast-fidelity/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "c15075c3631018f9cb9f266ce08afd1db05d95738f092f74301f66c84e337bae"
+    }
+  ],
+  "evidence_id": "441b67e7de703613a917ea98"
+}

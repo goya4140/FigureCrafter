@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-multiline-text-scale-collapse",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-scale-collapse",
+  "status": "candidate",
+  "evidence_ids": [
+    "40c8c11e74e4ee280f2f56ff"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Validate exported font sizes, line-spacing units, and autofit behavior for multiline text before applying visual font-scale compensation."
+  ]
+}

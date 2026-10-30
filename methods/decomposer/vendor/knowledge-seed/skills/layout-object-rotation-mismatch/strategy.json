@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-object-rotation-mismatch",
+  "memory_id": "layout-object-rotation-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Preserve each node's observed orientation by rotating its shape and text together during layout."
+  ],
+  "evidence_ids": [
+    "5001f6add83ac16c13bb3060"
+  ]
+}

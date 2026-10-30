@@ -1,0 +1,91 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-240404913-fig1",
+  "round_id": "category-drift-structural-ablation-v0621",
+  "detected_in": "controlled_structural_ablation",
+  "owner_stage": "representation",
+  "mechanism": "text-bearing-object-category-drift",
+  "label_ids": [
+    "conv1"
+  ],
+  "primitive_ids": [
+    "conv1/text"
+  ],
+  "field": "category/primitives[].text",
+  "region": [
+    1286,
+    38,
+    70,
+    319
+  ],
+  "summary": "One editable text identity failure becomes zero while the non-text outline is unchanged.",
+  "strategy": "For every non-equation object with nonempty Recognition text, preserve exact native editable text independent of object category; retain its non-text geometry.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.915298,
+      "edge_iou": 0.143121
+    },
+    "after_local": {
+      "pixel_similarity": 0.873878,
+      "edge_iou": 0.145185
+    },
+    "before_global": {
+      "pixel_similarity": 0.958065,
+      "edge_iou": 0.270737
+    },
+    "after_global": {
+      "pixel_similarity": 0.957719,
+      "edge_iou": 0.270054
+    },
+    "local_pixel_delta": -0.04142,
+    "local_edge_delta": 0.002064,
+    "global_pixel_delta": -0.000346,
+    "measurement_type": "structural_hard_gate",
+    "hard_gate": {
+      "name": "exact_editable_text_identity",
+      "failures_before": 1,
+      "failures_after": 0
+    },
+    "visual_thresholds": {
+      "minimum_pixel_similarity": 0.94,
+      "minimum_edge_iou": 0.2
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-category-drift-memory-reattest/attestation.json",
+      "sha256": "3824b3f620db53d222814b92768ea56b1007df743822f8d5025c12837c2a559e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-category-drift-memory-reattest/probe-report.json",
+      "sha256": "7d44f1ce85538014b82cde31a9009a39ffb24f94725c5cbbef32763e821393af"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0618-stage-01-cumulative-regression/sample-002-audit.json",
+      "sha256": "901405b4e6231c73919c07e58ff668d67ebbbea024466ab62faac07b673f7bbb"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v12-composite-text-proof-20260920/recognition/recognition.json",
+      "sha256": "3a673b323d319edd76b186eaa15d39920ee10cf6189b0b026dc55adc4cdf24ea"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v12-composite-text-proof-20260920/output/scene.json",
+      "sha256": "e389c5aa94bba0ec452ae6ce505c1b8f3f86084c8bbc362300c8577dfc861b2f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0618-stage-01-cumulative-regression/runs/aaai-2025-240404913-fig1/input/normalized.png",
+      "sha256": "15729059255463b3ea78d68d71f4b569057162d0cde2daebbdb308be35ecc059"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-category-drift-memory-reattest/native_text/editable.pptx",
+      "sha256": "c1ff4e770e1481d5222a68b56cdfe0d814448bbd330faa050b431bb4821eeb13"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-category-drift-memory-reattest/removed_text_ablation/editable.pptx",
+      "sha256": "1c18614f231591da5631c665045221d66d6f6996241d37d277d7146a29759cff"
+    }
+  ],
+  "evidence_id": "95ec74d0f344305c0bd6e63a"
+}

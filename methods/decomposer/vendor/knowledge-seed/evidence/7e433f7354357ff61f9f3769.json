@@ -1,0 +1,93 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-representation-fast-r2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "math-text-render-size-mismatch",
+  "label_ids": [
+    "clip_opinion_equation",
+    "output_opinion_equation"
+  ],
+  "primitive_ids": [
+    "clip_opinion_equation/text",
+    "output_opinion_equation/text"
+  ],
+  "field": null,
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "In the current render, the clip and aggregated opinion equations are visibly smaller and less legible than in the reference. Their text, scripted runs, and placements are present in the canonical artifacts. The supplied sheet does not establish whether local text-box fitting or export font metrics causes the reduction, so no speculative geometry or font patch is proposed.",
+  "strategy": "Compare rendered equation glyph extents with canonical font sizes and text-box bounds before assigning ownership or changing geometry; verify any repair in the exported render.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-italic-style-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-annotation-font-style-mismatch",
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "retrieved_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-italic-style-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-annotation-font-style-mismatch",
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "retrieved_statuses": {
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-italic-style-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-annotation-font-style-mismatch": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-italic-style-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-annotation-font-style-mismatch",
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "referenced_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-italic-style-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-annotation-font-style-mismatch",
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r2/refinement/round-003/decision.json",
+      "sha256": "41aa8a124b6d1ab0fd23a6b1339d7aba13664d749a1309928c4887ec43098431"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "65425f1a539f0319fde69ea96917d60cc232f52aecda3cc76daf053cf379ebe9"
+    }
+  ],
+  "evidence_id": "7e433f7354357ff61f9f3769"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-rotated-text-sizing-disagreement",
+  "owner_stage": "unresolved",
+  "mechanism": "rotated-text-sizing-disagreement",
+  "status": "candidate",
+  "evidence_ids": [
+    "b0d2ab9ebce15b0d3761dcde"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Inspect exported text rotation, dimensions, and autofit settings against the scene before retrying geometry changes for undersized rotated labels."
+  ]
+}

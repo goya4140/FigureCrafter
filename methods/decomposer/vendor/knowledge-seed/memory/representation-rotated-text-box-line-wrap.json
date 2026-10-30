@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-rotated-text-box-line-wrap",
+  "owner_stage": "representation",
+  "mechanism": "rotated-text-box-line-wrap",
+  "status": "candidate",
+  "evidence_ids": [
+    "3cbcc6cb536592d79b63a02f"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Size rotated text in its unrotated local coordinate system to fit the intended line count before applying rotation."
+  ]
+}

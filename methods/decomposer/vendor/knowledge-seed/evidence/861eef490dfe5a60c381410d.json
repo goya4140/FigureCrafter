@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240705342-fig1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "tick10"
+  ],
+  "primitive_ids": [
+    "tick10/t"
+  ],
+  "field": "bbox",
+  "region": [
+    628,
+    1222,
+    628,
+    408
+  ],
+  "summary": "In the rendered chart tile, the 10 tick label is nearly illegible compared with the reference. Its local text box is too tight for the specified font; enlarge it while preserving its center.",
+  "strategy": "Give editable tick labels sufficient text-box padding for font metrics and verify their rendered size against the reference.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.959515,
+      "edge_iou": 0.265847
+    },
+    "after_local": {
+      "pixel_similarity": 0.959515,
+      "edge_iou": 0.265847
+    },
+    "before_global": {
+      "pixel_similarity": 0.965183,
+      "edge_iou": 0.264191
+    },
+    "after_global": {
+      "pixel_similarity": 0.965183,
+      "edge_iou": 0.264191
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      628,
+      1222,
+      628,
+      408
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-002/decision.json",
+      "sha256": "9311947f898d05f835d0de1837bd1dae4758621ccb5d24806b3187f78fee4924"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-002/assessment.json",
+      "sha256": "17856ebb77cee0d83e35404265a1f0a4eb73eded80550c374d06acad78f3ac65"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "403c6358d8bd40b35d41b3f636bffb5088b54e573f137fddab6d6572784dbcd7"
+    }
+  ],
+  "evidence_id": "861eef490dfe5a60c381410d"
+}

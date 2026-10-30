@@ -1,0 +1,69 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250416060-fig11",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "separator-lines-overlap-heading",
+  "label_ids": [
+    "level2_title"
+  ],
+  "primitive_ids": [
+    "level2_title/left_rule",
+    "level2_title/right_rule"
+  ],
+  "field": "points",
+  "region": [
+    1600,
+    322,
+    800,
+    323
+  ],
+  "summary": "The render shows dashed lines crossing the Level 2 heading. Both local rule primitives span the text instead of flanking it; recognition and global placement are correct.",
+  "strategy": "Represent heading separators as separate segments outside the text bounds, with explicit gaps; verify that neither segment intersects the heading.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.89698,
+      "edge_iou": 0.263237
+    },
+    "after_local": {
+      "pixel_similarity": 0.897503,
+      "edge_iou": 0.264217
+    },
+    "before_global": {
+      "pixel_similarity": 0.923648,
+      "edge_iou": 0.218358
+    },
+    "after_global": {
+      "pixel_similarity": 0.923722,
+      "edge_iou": 0.21845
+    },
+    "local_pixel_delta": 0.000523,
+    "local_edge_delta": 0.00098,
+    "global_pixel_delta": 7.4e-05,
+    "evaluation_region": [
+      1600,
+      322,
+      800,
+      323
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-002/decision.json",
+      "sha256": "9bbbaa21be1cc29dafce60da5505f0bf86d86026c225b55364be3808db4345e7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-002/assessment.json",
+      "sha256": "cdafe0550f6426ed9055d37b7f5a9ab49accece166ea84596292d610507203c4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "5f6fbddaf5730479dff316bc044da89a49a60948a6aa7afe36ba870cddd59019"
+    }
+  ],
+  "evidence_id": "d02c78b168e218b0ac136afb"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-text-coordinate-export-mismatch",
+  "owner_stage": "compiler",
+  "mechanism": "text-coordinate-export-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "2ae261c7aed502b48972f4dd"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Verify exported text transforms and rendered ink positions against scene bounds; repair coordinate conversion or renderer handling when native text exists but renders outside its assigned boxes."
+  ]
+}

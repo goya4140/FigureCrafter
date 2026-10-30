@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-raster-source-crop-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "raster-source-crop-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "d137dd9f89273f806c21de65"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Extract rectangular image assets from their full recognized image bounds; validate source-crop bounds against destination bounds before scaling."
+  ]
+}

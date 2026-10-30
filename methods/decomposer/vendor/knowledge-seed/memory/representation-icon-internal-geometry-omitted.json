@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-icon-internal-geometry-omitted",
+  "owner_stage": "representation",
+  "mechanism": "icon-internal-geometry-omitted",
+  "status": "candidate",
+  "evidence_ids": [
+    "4eb6554bf932daf7658c3c3b"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Preserve distinguishing internal strokes when reconstructing small icons as editable paths; verify their silhouettes and internal details against the reference."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-emoji-glyph-contrast-mismatch",
+  "memory_id": "representation-emoji-glyph-contrast-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Use ordinary text glyphs for monochrome diagram symbols; avoid emoji whose inherent appearance overrides the intended text color."
+  ],
+  "evidence_ids": [
+    "7fbd3d9664b5733d47d241b0"
+  ]
+}

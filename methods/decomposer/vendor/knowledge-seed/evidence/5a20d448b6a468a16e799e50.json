@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250413820-fig1",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "native-text-scale-mismatch",
+  "label_ids": [
+    "legend_context_label"
+  ],
+  "primitive_ids": [
+    "legend_context_label/text"
+  ],
+  "field": null,
+  "region": [
+    2400,
+    1026,
+    800,
+    513
+  ],
+  "summary": "In tile-2-3, the rendered context encoder legend label is substantially smaller than the reference. Recognition, representation, and layout retain the intended text and scale; provenance confirms text export but omits exported font sizes and autofit settings. The earlier bbox patch produced no measured change, so ownership cannot be established reliably.",
+  "strategy": "Compare scene font sizes with exported run sizes and autofit settings before changing geometry for unexpectedly small native text.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250413820-fig1/refinement/round-003/decision.json",
+      "sha256": "d55d2265601ca669ef7f56a3c935e8f31d8958d4384275fe26339ba1eebe43dd"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250413820-fig1/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "0dc4e10a80ddd61c80058b7b731b45d3969b8c79734777a1c4e43c44e1d36e66"
+    }
+  ],
+  "evidence_id": "5a20d448b6a468a16e799e50"
+}

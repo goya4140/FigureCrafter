@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-math-markup-rendered-literally",
+  "owner_stage": "representation",
+  "mechanism": "math-markup-rendered-literally",
+  "status": "candidate",
+  "evidence_ids": [
+    "d38c8468a5fc1196932436d6",
+    "a9e8a63869de2ad2f6219a8a"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 2,
+  "strategies": [
+    "Convert mathematical source markup into editable styled runs while preserving exact source-text concatenation and validating superscript and subscript baselines in the exported render.",
+    "Represent mathematical identifiers with editable styled runs whose source_text preserves the recognized source while visible text uses native subscript and superscript formatting; validate script baselines in the exported render."
+  ]
+}

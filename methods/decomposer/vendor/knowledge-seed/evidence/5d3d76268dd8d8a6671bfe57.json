@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-240917993-fig4",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "text-missing-in-render",
+  "label_ids": [
+    "title_c"
+  ],
+  "primitive_ids": [
+    "title_c/text"
+  ],
+  "field": null,
+  "region": [
+    2400,
+    0,
+    800,
+    294
+  ],
+  "summary": "The current render omits the two-line panel (c) title visible in the reference. Recognition, representation, layout, and OOXML provenance all retain its text and expected placement; the supplied evidence does not establish why it disappears.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240917993-fig4/refinement/round-001/decision.json",
+      "sha256": "51c2006897ab2e93a4545b0c72a52f5ac3788d6c6a963dc92bc465ffc22fa389"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240917993-fig4/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "dbf14899d539fa1c9a18514a5157fb4296be565245b56162d76e47d2b66f3e2f"
+    }
+  ],
+  "evidence_id": "5d3d76268dd8d8a6671bfe57"
+}

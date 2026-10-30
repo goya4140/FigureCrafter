@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-rounded-corner-geometry-mismatch",
+  "memory_id": "unresolved-rounded-corner-geometry-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Preserve explicit corner radii for rounded shapes and record exported geometry adjustments so radius mismatches can be attributed and repaired without changing shape families."
+  ],
+  "evidence_ids": [
+    "e318e52eeff18030a2b0e635"
+  ]
+}

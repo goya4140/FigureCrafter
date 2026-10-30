@@ -1,0 +1,9 @@
+{
+  "skill_id": "unresolved-math-annotation-size-mismatch",
+  "memory_id": "unresolved-math-annotation-size-mismatch",
+  "status": "candidate",
+  "instructions": [],
+  "evidence_ids": [
+    "cb881589c1676399585c9569"
+  ]
+}

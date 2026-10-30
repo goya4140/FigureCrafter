@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-mixed-script-text-vertical-offset",
+  "memory_id": "representation-mixed-script-text-vertical-offset",
+  "status": "candidate",
+  "instructions": [
+    "Align mixed-script annotations using their rendered baseline and ink bounds rather than relying solely on text-box centering.",
+    "Align mixed-script annotations using rendered baselines and ink bounds, accounting for superscript and subscript extents within local text boxes."
+  ],
+  "evidence_ids": [
+    "acef76828c5bcf0081d1921b",
+    "25407180335a089b3ec59394"
+  ]
+}

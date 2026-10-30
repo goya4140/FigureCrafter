@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-241020716-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "foreground-background-order-inversion",
+  "label_ids": [
+    "pixel_sampling_astronaut"
+  ],
+  "primitive_ids": [
+    "pixel_sampling_astronaut/content"
+  ],
+  "field": "component_order",
+  "region": [
+    1600,
+    0,
+    800,
+    352
+  ],
+  "summary": "In tile-0-2, the thick sampling arrow covers the small astronaut's torso. The reference places the astronaut in front. Layout component_order incorrectly places pixel_sampling_arrow after pixel_sampling_astronaut.",
+  "strategy": "Preserve reference occlusion relationships by placing foreground illustrations above overlapping background connectors.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.95065,
+      "edge_iou": 0.305371
+    },
+    "after_local": {
+      "pixel_similarity": 0.953898,
+      "edge_iou": 0.310264
+    },
+    "before_global": {
+      "pixel_similarity": 0.962683,
+      "edge_iou": 0.295486
+    },
+    "after_global": {
+      "pixel_similarity": 0.962886,
+      "edge_iou": 0.295904
+    },
+    "local_pixel_delta": 0.003248,
+    "local_edge_delta": 0.004893,
+    "global_pixel_delta": 0.000203,
+    "evaluation_region": [
+      1600,
+      0,
+      800,
+      352
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-241020716-fig3/refinement/round-001/decision.json",
+      "sha256": "31bea731d832f51a6251573540e02040ebc315a2b1294a3401f690b909324978"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-241020716-fig3/refinement/round-001/assessment.json",
+      "sha256": "4dfa401aa2630492155e3da8802a3b784a044177af619679b90ad008eff11bd6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-241020716-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "ff032d8f3ddbf02a31d2a28bf4d0cc158266bb7e15820e4d0816e94df2dcd923"
+    }
+  ],
+  "evidence_id": "a21488f7d6d38dd6d0072591"
+}

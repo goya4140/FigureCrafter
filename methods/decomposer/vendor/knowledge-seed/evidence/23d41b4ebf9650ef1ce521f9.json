@@ -1,0 +1,42 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250309491-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "local-text-orientation-missing",
+  "label_ids": [
+    "uni_encoder_1",
+    "uni_encoder_2"
+  ],
+  "primitive_ids": [
+    "uni_encoder_1/label1",
+    "uni_encoder_1/label2",
+    "uni_encoder_1/label3",
+    "uni_encoder_2/label1",
+    "uni_encoder_2/label2",
+    "uni_encoder_2/label3"
+  ],
+  "field": null,
+  "region": [
+    593,
+    326,
+    593,
+    326
+  ],
+  "summary": "In the current render, encoder labels wrap horizontally into fragments instead of reading as rotated words. Recognition describes vertical labels, but the supplied primitives lack local text rotation. The supported global rotation would also rotate encoder geometry; a safe local rotation patch cannot be expressed with the supplied operations.",
+  "strategy": "Preserve text orientation independently within composite objects and provide a local editable text rotation field before attempting orientation repairs.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250309491-fig2/refinement/round-001/decision.json",
+      "sha256": "b7176d44224ff2533b7dd3f34fa60828ffd6b16721fe9997732eec60fd64e1f1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250309491-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "f04593e9539d9954012f12cab8613a239e2a5ff42d70ac9e698d82aee163df67"
+    }
+  ],
+  "evidence_id": "23d41b4ebf9650ef1ce521f9"
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-separator-misrepresented-as-arrow",
+  "memory_id": "representation-separator-misrepresented-as-arrow",
+  "status": "candidate",
+  "instructions": [
+    "Distinguish internal row separators from flow connectors; assign line style and arrowheads from visible evidence independently of the outer border."
+  ],
+  "evidence_ids": [
+    "51cae8eee9b9f2ffb19ae436"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-dotted-border-rendering-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "dotted-border-rendering-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "ad08fdc4ee92926bd969823d"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

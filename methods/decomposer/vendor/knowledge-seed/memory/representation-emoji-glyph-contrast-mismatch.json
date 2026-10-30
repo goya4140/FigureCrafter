@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-emoji-glyph-contrast-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "emoji-glyph-contrast-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "7fbd3d9664b5733d47d241b0"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Use ordinary text glyphs for monochrome diagram symbols; avoid emoji whose inherent appearance overrides the intended text color."
+  ]
+}

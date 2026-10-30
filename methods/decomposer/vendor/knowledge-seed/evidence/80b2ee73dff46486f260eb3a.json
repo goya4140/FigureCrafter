@@ -1,0 +1,70 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250308147-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "node-text-local-placement-offset",
+  "label_ids": [
+    "vision",
+    "motion"
+  ],
+  "primitive_ids": [
+    "vision/text",
+    "motion/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    800,
+    353,
+    800,
+    353
+  ],
+  "summary": "The render places LLM-Vision and Motion Detector text near their nodes' upper edges instead of vertically centered beside the icons. Global node bounds match recognition; the incorrect fields are the local text primitive bounds.",
+  "strategy": "Give text inside composite nodes explicit local bounds aligned with the reference text baseline and reserved icon area, rather than reusing the entire node rectangle.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.924524,
+      "edge_iou": 0.160358
+    },
+    "after_local": {
+      "pixel_similarity": 0.929374,
+      "edge_iou": 0.198973
+    },
+    "before_global": {
+      "pixel_similarity": 0.956723,
+      "edge_iou": 0.170006
+    },
+    "after_global": {
+      "pixel_similarity": 0.957136,
+      "edge_iou": 0.173465
+    },
+    "local_pixel_delta": 0.00485,
+    "local_edge_delta": 0.038615,
+    "global_pixel_delta": 0.000413,
+    "evaluation_region": [
+      800,
+      353,
+      800,
+      353
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250308147-fig2/refinement/round-002/decision.json",
+      "sha256": "2c77827aa9c14e3d72cec6fef0da2cd954252038bd9a7a7a07f3cbb8a4386585"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250308147-fig2/refinement/round-002/assessment.json",
+      "sha256": "600332c25be08cae1f1eb90a9ffa56336cc6ab836507ee32cbdda386774bd9e4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250308147-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "59a687e588ce24c5a0982e4309ef37f07f5868742e25b7b632ddce40c92db929"
+    }
+  ],
+  "evidence_id": "80b2ee73dff46486f260eb3a"
+}

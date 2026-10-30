@@ -1,0 +1,140 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "axis-tick-label-placement-offset",
+  "label_ids": [
+    "embedding_chart"
+  ],
+  "primitive_ids": [
+    "embedding_chart/y_ticks"
+  ],
+  "field": "bbox",
+  "region": [
+    2357,
+    298,
+    786,
+    299
+  ],
+  "summary": "The current render places the vertical-axis tick labels inside the embedding plot; the reference places them left of the axis. The local y_ticks textbox starts at the axis itself. Move that textbox left while preserving the chart placement and text.",
+  "strategy": "Position axis tick-label textboxes outside the plotting area and verify their rendered separation from the axis independently of chart placement.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.920866,
+      "edge_iou": 0.142754
+    },
+    "after_local": {
+      "pixel_similarity": 0.920866,
+      "edge_iou": 0.142754
+    },
+    "before_global": {
+      "pixel_similarity": 0.932898,
+      "edge_iou": 0.113867
+    },
+    "after_global": {
+      "pixel_similarity": 0.932898,
+      "edge_iou": 0.113867
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      2357,
+      298,
+      786,
+      299
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "925fd9a4fd5d2ae1a65c7c942ff1aafb5408fa60d095b5e33e958d2cdf1aca0f",
+      "representation": "4a79605245beccc987e0be2a7ef32fcfa63e72e61c6d7013cafffb2ed65b7935",
+      "layout": "284608afe4b96913aa7cb8abe6e90fcf7c925e5ac386e9b88460c303499a1e10",
+      "pptx": "14f592af54deba34ba358843031354f6b713f1112ef3a499da79423e420d6cfe"
+    },
+    "canonical_after_hashes": {
+      "recognition": "925fd9a4fd5d2ae1a65c7c942ff1aafb5408fa60d095b5e33e958d2cdf1aca0f",
+      "representation": "4a79605245beccc987e0be2a7ef32fcfa63e72e61c6d7013cafffb2ed65b7935",
+      "layout": "284608afe4b96913aa7cb8abe6e90fcf7c925e5ac386e9b88460c303499a1e10",
+      "pptx": "14f592af54deba34ba358843031354f6b713f1112ef3a499da79423e420d6cfe"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-rotated-text-scale-mismatch",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-explicit-text-rotation-hint",
+      "layout-rotated-text-box-dimension-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-rotated-text-scale-mismatch",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-explicit-text-rotation-hint",
+      "layout-rotated-text-box-dimension-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-explicit-text-rotation-hint": "downstreamed",
+      "layout-rotated-text-box-dimension-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-002/decision.json",
+      "sha256": "5a88fa58da85898bcdf24c8b73354de68b5626def40e9105e2e73420145bba96"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-002/assessment.json",
+      "sha256": "274eb6aad3d3d66099b0673715ccc77e066d7fbd66b38c90a2bf5eb3bfc3737d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "65b84f327f73eb6a3f8914f713ac38bf6b6a527f21dd6a4d8c863abb34a267d6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-002/before-preview.png",
+      "sha256": "1a0abc9f108f8734323ee702e1686d5b0eda2c6dbd6e4bac4c7da696d0f0440c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-002/output/preview.png",
+      "sha256": "1a0abc9f108f8734323ee702e1686d5b0eda2c6dbd6e4bac4c7da696d0f0440c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-002/output/editable.pptx",
+      "sha256": "cc945a04ef94a3d2b9c3b95d223b52cdc7744a7d2364e95d6ca422a7c04d2bd3"
+    }
+  ],
+  "evidence_id": "8517420294fd2d98affcc57b"
+}

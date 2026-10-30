@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309513-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "initial_prompt_label"
+  ],
+  "primitive_ids": [
+    "initial_prompt_label/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    698,
+    0,
+    698,
+    348
+  ],
+  "summary": "In tile-0-1, the initial defense prompt text renders smaller than the reference. Increase its layout text scale while preserving its box and mixed italic formatting.",
+  "strategy": "Compare rendered glyph size against the reference independently of text-box bounds, and calibrate layout text scale while preserving run formatting.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.947347,
+      "edge_iou": 0.248298
+    },
+    "after_local": {
+      "pixel_similarity": 0.946301,
+      "edge_iou": 0.244268
+    },
+    "before_global": {
+      "pixel_similarity": 0.967118,
+      "edge_iou": 0.247819
+    },
+    "after_global": {
+      "pixel_similarity": 0.967044,
+      "edge_iou": 0.247397
+    },
+    "local_pixel_delta": -0.001046,
+    "local_edge_delta": -0.00403,
+    "global_pixel_delta": -7.4e-05,
+    "evaluation_region": [
+      698,
+      0,
+      698,
+      348
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309513-fig2/refinement/round-002/decision.json",
+      "sha256": "e3bed073bc82fb13d0a2b03a586dad717c14392a404c73e5cd1d9e4c97a8cc90"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309513-fig2/refinement/round-002/assessment.json",
+      "sha256": "36c30f6e876eb5a24931501a6bb6ace3d2e0831fec1edcbdf0be2ac4979d931b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309513-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "af54cb5efa5f43c89d65c3c3a0a7ec2264472bf4db5f18a5c1a304dcdc2568e1"
+    }
+  ],
+  "evidence_id": "d51c2b8b3168cf7fef91ae17"
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240903634-fig3",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "text-size-collapse",
+  "label_ids": [
+    "view_legend",
+    "feature_legend"
+  ],
+  "primitive_ids": [
+    "view_legend/text",
+    "feature_legend/text"
+  ],
+  "field": null,
+  "region": [
+    1600,
+    810,
+    800,
+    270
+  ],
+  "summary": "The rendered “View direction” and “Image Feature” legend labels remain much smaller than the reference. Recognition and primitive font sizes are consistent with the neighboring legend text, and layout already enlarges these labels. The supplied provenance lacks exported font sizes and autofit settings, so the owning stage cannot be established; the rejected bbox patch should not be repeated.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-003/decision.json",
+      "sha256": "e33f112296c58ec09504bfeb181e7ab7b74dc4c4a2ff70d435b677935ed7d3e8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "c6a71284f790274027166cbde5f565506ac7bfdb7394f8f401559deecc28395a"
+    }
+  ],
+  "evidence_id": "676b384a3103de841bcc3180"
+}

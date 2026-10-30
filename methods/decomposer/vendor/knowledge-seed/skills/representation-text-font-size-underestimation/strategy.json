@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-text-font-size-underestimation",
+  "memory_id": "representation-text-font-size-underestimation",
+  "status": "candidate",
+  "instructions": [
+    "Compare rendered glyph height and line extent with the reference when calibrating text styles; if resizing the text box has no effect, correct the local font size.",
+    "Match heading glyph height and occupied width to the reference independently of the text-box dimensions."
+  ],
+  "evidence_ids": [
+    "1bcf752af77931e7629defb2",
+    "f0a65fa0a0560a6f69d1eb18"
+  ]
+}

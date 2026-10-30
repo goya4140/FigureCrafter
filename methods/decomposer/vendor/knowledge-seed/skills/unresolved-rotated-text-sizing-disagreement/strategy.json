@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-rotated-text-sizing-disagreement",
+  "memory_id": "unresolved-rotated-text-sizing-disagreement",
+  "status": "candidate",
+  "instructions": [
+    "Inspect exported text rotation, dimensions, and autofit settings against the scene before retrying geometry changes for undersized rotated labels."
+  ],
+  "evidence_ids": [
+    "b0d2ab9ebce15b0d3761dcde"
+  ]
+}

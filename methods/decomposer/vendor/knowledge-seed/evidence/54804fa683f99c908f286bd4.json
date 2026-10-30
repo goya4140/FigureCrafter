@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240306417-fig4",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "equation-glyph-visibility-mismatch",
+  "label_ids": [
+    "sample_operator"
+  ],
+  "primitive_ids": [
+    "sample_operator/text"
+  ],
+  "field": null,
+  "region": [
+    456,
+    104,
+    457,
+    105
+  ],
+  "summary": "The sampling multiplication symbol is visible in the reference but indistinct in the current render. Provenance retains the correct ⊗ text, and the previous text-box adjustment produced no measured improvement. The supplied evidence does not establish whether local text styling or rendering owns the discrepancy.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240306417-fig4/refinement/round-002/decision.json",
+      "sha256": "531671a52a1310f19deb24fc5d12b807207b01fe06caae048a06f98c1af5debd"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240306417-fig4/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "fb14767fbe2681d1183d03e677f3135775025686916c13dc1d42e3583710778b"
+    }
+  ],
+  "evidence_id": "54804fa683f99c908f286bd4"
+}

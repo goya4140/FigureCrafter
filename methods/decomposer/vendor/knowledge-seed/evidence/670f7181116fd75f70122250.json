@@ -1,0 +1,134 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-240702252-fig12",
+  "round_id": "controlled-fontconfig-proof",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "bundled-libreoffice-fontconfig-cache",
+  "label_ids": [
+    "prompt",
+    "cropped_glyphs",
+    "rendered_glyphs"
+  ],
+  "primitive_ids": [
+    "prompt/text",
+    "cropped_glyphs/chinese",
+    "rendered_glyphs/chinese"
+  ],
+  "field": "runtime.font_environment",
+  "region": [
+    46.0,
+    548.0,
+    354.0,
+    497.0
+  ],
+  "summary": "Bundled headless LibreOffice silently omitted CJK glyphs because its Fontconfig configuration had no isolated writable cache; editable PPTX text and font routes were already correct.",
+  "strategy": "When rendering with the bundled LibreOfficeDev.app, pass its packaged FONTCONFIG_FILE and a per-render writable XDG_CACHE_HOME; keep CJK text native and validate the renderer environment before visual refinement.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.939794,
+      "edge_iou": 0.340586
+    },
+    "after_local": {
+      "pixel_similarity": 0.937836,
+      "edge_iou": 0.36137
+    },
+    "before_global": {
+      "pixel_similarity": 0.969003,
+      "edge_iou": 0.359961
+    },
+    "after_global": {
+      "pixel_similarity": 0.969023,
+      "edge_iou": 0.361975
+    },
+    "local_pixel_delta": -0.001958,
+    "local_edge_delta": 0.020784,
+    "global_pixel_delta": 2e-05,
+    "region": [
+      46.0,
+      548.0,
+      354.0,
+      497.0
+    ],
+    "affected_primitive_ids": [
+      "cropped_glyphs/chinese",
+      "prompt/text",
+      "rendered_glyphs/chinese"
+    ],
+    "per_primitive": {
+      "prompt/text": {
+        "bbox": [
+          105.0,
+          548.0,
+          295.0,
+          79.0
+        ],
+        "before": {
+          "pixel_similarity": 0.843179,
+          "edge_iou": 0.251728
+        },
+        "after": {
+          "pixel_similarity": 0.825691,
+          "edge_iou": 0.29731
+        }
+      },
+      "cropped_glyphs/chinese": {
+        "bbox": [
+          46.0,
+          890.0,
+          89.0,
+          48.0
+        ],
+        "before": {
+          "pixel_similarity": 0.73306,
+          "edge_iou": 0.256904
+        },
+        "after": {
+          "pixel_similarity": 0.754953,
+          "edge_iou": 0.348152
+        }
+      },
+      "rendered_glyphs/chinese": {
+        "bbox": [
+          188.0,
+          1005.0,
+          102.0,
+          40.0
+        ],
+        "before": {
+          "pixel_similarity": 0.878667,
+          "edge_iou": 0.268714
+        },
+        "after": {
+          "pixel_similarity": 0.861528,
+          "edge_iou": 0.383889
+        }
+      }
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "../experiments/decomposer-v15-first100-sam-v15/runs/aaai-2025-240702252-fig12/output/preview.png",
+      "sha256": "d656c4977df8273d7ef1252e82c7eb88a7539b3e9a62f437192e308821309c23"
+    },
+    {
+      "path": "../experiments/decomposer-v16-cjk-font-proof-20260920/new-fontconfig/preview.png",
+      "sha256": "efd357d19a9965bb307252295e6382308644d1fee2d255b287a849fd78d2fbf8"
+    },
+    {
+      "path": "../experiments/decomposer-v16-cjk-font-proof-20260920/fontconfig-assessment.json",
+      "sha256": "43e7b2318f04aa4f20f3fac04ce02fd5693873f3ed66b513b94845d19378b5b7"
+    },
+    {
+      "path": "../experiments/decomposer-v16-cjk-font-proof-20260920/sample-005-fixed/output/editable.pptx",
+      "sha256": "69a3e87d37f1e5a0939db34d9830a81cb761cf612af1d571f8e40b6909b70c4b"
+    },
+    {
+      "path": "../experiments/decomposer-v16-cjk-font-proof-20260920/sample-005-fixed/output/validation.json",
+      "sha256": "e1e292f245bc699a825a3f8400d6a874ee2cddd9d60e6973f0f109cca3c4c1e3"
+    }
+  ],
+  "evidence_id": "670f7181116fd75f70122250"
+}

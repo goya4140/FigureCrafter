@@ -1,0 +1,164 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards4-crop-r1",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "decorative-line-arrowhead-misattribution",
+  "label_ids": [
+    "clip_opinion_chart"
+  ],
+  "primitive_ids": [
+    "clip_opinion_chart/edges",
+    "clip_opinion_chart/guide1",
+    "clip_opinion_chart/guide2",
+    "clip_opinion_chart/guide3",
+    "clip_opinion_chart/leader"
+  ],
+  "field": "arrow_end",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "Detected in the rendered clip opinion diagram: geometric edges, dotted guides, and the opinion-point leader have arrow tips absent from the reference. Their local primitives explicitly request these tips, and OOXML preserves them; representation owns the error.",
+  "strategy": "Distinguish geometric edges, construction guides, and point leaders from directed connectors; assign arrowheads only where the reference visibly indicates direction.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.887265,
+      "edge_iou": 0.162377
+    },
+    "after_local": {
+      "pixel_similarity": 0.887305,
+      "edge_iou": 0.162531
+    },
+    "before_global": {
+      "pixel_similarity": 0.926705,
+      "edge_iou": 0.187662
+    },
+    "after_global": {
+      "pixel_similarity": 0.926708,
+      "edge_iou": 0.187686
+    },
+    "local_pixel_delta": 4e-05,
+    "local_edge_delta": 0.000154,
+    "global_pixel_delta": 3e-06,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "b9b4d0b294da2eef826815eef74aaa6edd35b63e0fdb7ae97e9bccbbb9f57df1",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "5401c773065c798c7ded0bc770154b92b98ada8a7db8affca5394810f3b9c50d"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "b9b4d0b294da2eef826815eef74aaa6edd35b63e0fdb7ae97e9bccbbb9f57df1",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "5401c773065c798c7ded0bc770154b92b98ada8a7db8affca5394810f3b9c50d"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_statuses": {
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-multiline-text-alignment-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-crop-r1/refinement/round-003/decision.json",
+      "sha256": "1116f73b64c7183db471a9b35e35a0e6d5c645c6a4fdadce2208c4b909fb10fd"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-crop-r1/refinement/round-003/assessment.json",
+      "sha256": "63f8cf062e05d55a400b0c980a174bc34030289ef287f9751ba4de45989a7308"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-crop-r1/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "ede66dc6a6caf8656249153c1acc13fb5e65d44a2065d4b2ee898f18a389af0e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-crop-r1/refinement/round-003/before-preview.png",
+      "sha256": "7f3fb40fa9606dce20aeef7e6c79447d5f90a9bd449447f9be987a8f94ce02b8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-crop-r1/refinement/round-003/output/preview.png",
+      "sha256": "4a733c231c20b9511b9f804d9d069a5ae7c60feac706c09e0e9fee278a842088"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-crop-r1/refinement/round-003/output/editable.pptx",
+      "sha256": "66ec15d43d49ace711d6df57bdde4b4d9ab5732838b9b87e4e4272c5ee3d9c82"
+    }
+  ],
+  "evidence_id": "d10309eccef488e89219050b"
+}

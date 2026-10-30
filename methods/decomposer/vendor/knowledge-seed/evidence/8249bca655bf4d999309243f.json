@@ -1,0 +1,162 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-astra-fast-r1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "aggregated_label"
+  ],
+  "primitive_ids": [
+    "aggregated_label/t"
+  ],
+  "field": "font_scale",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "In the rendered tile, the two-line aggregated opinion annotation is visibly smaller than the reference: approximately 36 versus 45 pixels wide on the diagnostic sheet. Its position and line breaks match; increase its text scale by 25%.",
+  "strategy": "Compare rendered multiline annotation width and glyph height with the reference independently of placement, then calibrate text scale while preserving line breaks.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.880941,
+      "edge_iou": 0.133268
+    },
+    "after_local": {
+      "pixel_similarity": 0.877703,
+      "edge_iou": 0.131281
+    },
+    "before_global": {
+      "pixel_similarity": 0.924725,
+      "edge_iou": 0.165553
+    },
+    "after_global": {
+      "pixel_similarity": 0.924523,
+      "edge_iou": 0.165391
+    },
+    "local_pixel_delta": -0.003238,
+    "local_edge_delta": -0.001987,
+    "global_pixel_delta": -0.000202,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "7c1d0e5f590d9624b49fc195a405b0fd368d79220b1d02281d96d4775d4ca8d3",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "1b37f2eb40994b6df18f17b12b115729b41f4839b47e9b5764edc079b58725ed"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "7c1d0e5f590d9624b49fc195a405b0fd368d79220b1d02281d96d4775d4ca8d3",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "1b37f2eb40994b6df18f17b12b115729b41f4839b47e9b5764edc079b58725ed"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-001/decision.json",
+      "sha256": "fc440e79c2cc86d0f2216c16fd7f9a6860f9d98c6ad6ea13e72854644b965f0f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-001/assessment.json",
+      "sha256": "7cfe53ec7094c845b2f5697d07ddaa0cdc2be949580e81101ba3b363a06b0797"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "3b4a0a2620ffd6611ac9eb370a411157786077407f14c24ad1a617876fcdd1c0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-001/before-preview.png",
+      "sha256": "7d572eb644be43a7fded1b12f81a5cbcfe419b06244647313a2e1b13641b75df"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-001/output/preview.png",
+      "sha256": "47b9be7e1db649bc0cbb28c257aaef3723580ec9ea150ab8e987a125b7ffa683"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-001/output/editable.pptx",
+      "sha256": "4b44fb41a3b724cb4712629c35276785799802279ae1604c18470f57b7f14b55"
+    }
+  ],
+  "evidence_id": "8249bca655bf4d999309243f"
+}

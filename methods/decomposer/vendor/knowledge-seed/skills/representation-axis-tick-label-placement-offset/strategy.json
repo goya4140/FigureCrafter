@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-axis-tick-label-placement-offset",
+  "memory_id": "representation-axis-tick-label-placement-offset",
+  "status": "candidate",
+  "instructions": [
+    "Position axis tick-label textboxes outside the plotting area and verify their rendered separation from the axis independently of chart placement."
+  ],
+  "evidence_ids": [
+    "8517420294fd2d98affcc57b"
+  ]
+}

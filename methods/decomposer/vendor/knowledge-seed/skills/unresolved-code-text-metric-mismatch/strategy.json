@@ -1,0 +1,9 @@
+{
+  "skill_id": "unresolved-code-text-metric-mismatch",
+  "memory_id": "unresolved-code-text-metric-mismatch",
+  "status": "candidate",
+  "instructions": [],
+  "evidence_ids": [
+    "b77fc8c104af05fd7419d2a4"
+  ]
+}

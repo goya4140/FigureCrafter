@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241112915-fig6",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "output_report_heading"
+  ],
+  "primitive_ids": [
+    "output_report_heading/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    1912,
+    835,
+    638,
+    279
+  ],
+  "summary": "In the report-output tile, the rendered “Report Generation” heading is visibly smaller and narrower than the reference. Increase only its text scale while preserving its placement.",
+  "strategy": "Compare rendered heading ink dimensions with the reference and calibrate text scale independently of container placement.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.943875,
+      "edge_iou": 0.268295
+    },
+    "after_local": {
+      "pixel_similarity": 0.945517,
+      "edge_iou": 0.278763
+    },
+    "before_global": {
+      "pixel_similarity": 0.967041,
+      "edge_iou": 0.329324
+    },
+    "after_global": {
+      "pixel_similarity": 0.967144,
+      "edge_iou": 0.330248
+    },
+    "local_pixel_delta": 0.001642,
+    "local_edge_delta": 0.010468,
+    "global_pixel_delta": 0.000103,
+    "evaluation_region": [
+      1912,
+      835,
+      638,
+      279
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241112915-fig6/refinement/round-002/decision.json",
+      "sha256": "e008323016990d7e347cd61423b4eaa75cd30463645c3afba7b382c07f10231b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241112915-fig6/refinement/round-002/assessment.json",
+      "sha256": "c6bf034edf95b60a807bd6cb5c5fe6d5c7247b6812d079b501c29c1d30af88b1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241112915-fig6/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "e96b89887c909e9ef233440a1ea74571bc23657230d60cea9d58148f7c14cd5a"
+    }
+  ],
+  "evidence_id": "e735f90d317ec9d26f7c3718"
+}

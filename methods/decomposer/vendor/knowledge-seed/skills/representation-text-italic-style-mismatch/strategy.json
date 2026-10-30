@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-text-italic-style-mismatch",
+  "memory_id": "representation-text-italic-style-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare annotation letter slant against the reference independently of text content, alignment, and placement before assigning italic styling."
+  ],
+  "evidence_ids": [
+    "0a88c8bc6f5ca8a8cd69b9d5"
+  ]
+}

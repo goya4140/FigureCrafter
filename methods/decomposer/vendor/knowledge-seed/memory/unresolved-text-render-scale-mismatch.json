@@ -1,0 +1,16 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-text-render-scale-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "text-render-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "c04487f43e873ccd55a1a251",
+    "b2ced058445347cc7bf06233"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "When rendered text is unexpectedly small and geometry edits have no effect, compare scene font sizes with exported run sizes and autofit settings before assigning ownership or applying further visual patches."
+  ]
+}

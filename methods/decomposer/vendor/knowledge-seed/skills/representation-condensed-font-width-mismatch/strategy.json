@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-condensed-font-width-mismatch",
+  "memory_id": "representation-condensed-font-width-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Match text face and glyph proportions to the reference before adjusting placement or scaling; do not substitute condensed fonts merely to fit existing bounds.",
+    "Match explanatory text font proportions independently of section titles, checking rendered line widths against the reference before choosing a condensed face."
+  ],
+  "evidence_ids": [
+    "c0b1bdc843459bede9008bf1",
+    "70d1d9865ea08168e6a1b3eb"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-matching-band-geometry-overexpansion",
+  "memory_id": "representation-matching-band-geometry-overexpansion",
+  "status": "candidate",
+  "instructions": [
+    "Construct matching bands around their associated connector endpoints and verify that their filled area preserves the surrounding graph background and other bands."
+  ],
+  "evidence_ids": [
+    "5ece4e12d8f32594a81769e0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-math-label-render-size-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "math-label-render-size-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "3f3e44ea0c3322597e8cbcf6"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

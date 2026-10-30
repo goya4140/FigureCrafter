@@ -1,0 +1,137 @@
+{
+  "model": {
+    "backend": "codex-cli",
+    "command": "/Users/wlh/.local/bin/codex",
+    "timeout_seconds": 1800,
+    "name": "gpt-6-astra",
+    "effort": "medium"
+  },
+  "detectors": {
+    "sam": {
+      "command": null,
+      "timeout_seconds": 600,
+      "options": {
+        "return_masks": true,
+        "max_recursion_depth": 2,
+        "split_area_ratio": 0.35,
+        "whole_canvas_ratio": 0.85,
+        "prompts": [
+          {
+            "text": "panel",
+            "role": "content_box",
+            "confidence_threshold": 0.2,
+            "max_masks": 60
+          },
+          {
+            "text": "diagram",
+            "role": "diagram",
+            "confidence_threshold": 0.2,
+            "max_masks": 60
+          },
+          {
+            "text": "chart or plot",
+            "role": "chart",
+            "confidence_threshold": 0.25,
+            "max_masks": 60
+          },
+          {
+            "text": "small icon",
+            "role": "icon",
+            "confidence_threshold": 0.3,
+            "max_masks": 100
+          },
+          {
+            "text": "photograph",
+            "role": "picture",
+            "confidence_threshold": 0.3,
+            "max_masks": 80
+          },
+          {
+            "text": "illustration",
+            "role": "illustration",
+            "confidence_threshold": 0.3,
+            "max_masks": 80
+          },
+          {
+            "text": "logo",
+            "role": "logo",
+            "confidence_threshold": 0.3,
+            "max_masks": 60
+          },
+          {
+            "text": "arrow or connector",
+            "role": "arrow",
+            "confidence_threshold": 0.3,
+            "max_masks": 100
+          },
+          {
+            "text": "border",
+            "role": "border",
+            "confidence_threshold": 0.3,
+            "max_masks": 80
+          }
+        ]
+      }
+    },
+    "ocr": {
+      "command": [
+        "python3",
+        "tools/apple_vision_ocr.py"
+      ],
+      "timeout_seconds": 600,
+      "options": {}
+    }
+  },
+  "evidence": {
+    "duplicate_iou": 0.9,
+    "containment_threshold": 0.98,
+    "overlap_iou": 0.1,
+    "split_area_ratio": 0.35,
+    "whole_canvas_ratio": 0.85,
+    "crop_candidate_roles": [
+      "picture",
+      "photo",
+      "photograph",
+      "icon",
+      "illustration",
+      "logo",
+      "rendered_object"
+    ]
+  },
+  "asset_policy": {
+    "allowed_roles": [
+      "picture",
+      "photo",
+      "photograph",
+      "icon",
+      "illustration",
+      "logo",
+      "rendered_object"
+    ],
+    "max_area_ratio": 0.35,
+    "max_ocr_coverage": 0.12,
+    "allow_recognition_bbox_fallback": true,
+    "minimum_recognition_confidence": 0.9
+  },
+  "runtime": {
+    "node": "node",
+    "soffice": "soffice",
+    "pdftoppm": "pdftoppm",
+    "timeout_seconds": 180,
+    "diagnostic_allow_full_canvas_raster": false
+  },
+  "refinement": {
+    "max_rounds": 3,
+    "global_regression_tolerance": 0.002,
+    "knowledge_path": "../knowledge"
+  },
+  "validation": {
+    "minimum_pixel_similarity": 0.94,
+    "minimum_edge_iou": 0.2
+  },
+  "representation": {
+    "strategy": "parallel_shards",
+    "shards": 3,
+    "max_concurrency": 3
+  }
+}

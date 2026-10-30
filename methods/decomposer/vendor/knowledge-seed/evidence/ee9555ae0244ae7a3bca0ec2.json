@@ -1,0 +1,43 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250308147-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "recognition",
+  "mechanism": "text-punctuation-omission",
+  "label_ids": [
+    "legend_notation_label"
+  ],
+  "primitive_ids": [
+    "legend_notation_label/text"
+  ],
+  "field": "text",
+  "region": [
+    2400,
+    1059,
+    800,
+    353
+  ],
+  "summary": "The rendered legend reads “MusicNotation)” instead of the reference’s “Music(Notation)”. The missing opening parenthesis originates in Recognition text and is preserved downstream.",
+  "strategy": "Verify paired punctuation against the reference when transcribing compact legend labels before generating editable text.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "error": "AssertionError: exact recognition text identity mismatch for legend_notation_label"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250308147-fig2/refinement/round-001/decision.json",
+      "sha256": "e81337089cd88994576132a8103daa62045653f3d489cb62db7118e9de4230b7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250308147-fig2/refinement/round-001/assessment.json",
+      "sha256": "a581e34032cc5af9fc12777200d31f9ba29a224cebba322eb8c81043a70790df"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250308147-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "945962bd68328153e7738937ef1433e35d6c7702d838c906fcdde5204a93e9db"
+    }
+  ],
+  "evidence_id": "ee9555ae0244ae7a3bca0ec2"
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-5.6-sol-r1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "math-markup-rendered-literally",
+  "label_ids": [
+    "clip_opinion_equation"
+  ],
+  "primitive_ids": [
+    "clip_opinion_equation/t"
+  ],
+  "field": "runs",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "The clip-opinion equation visibly exposes source markup characters such as carets, underscores, and braces instead of rendering its indices as editable superscripts and subscripts.",
+  "strategy": "Convert mathematical source markup into editable styled runs while preserving exact source-text concatenation and validating superscript and subscript baselines in the exported render.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.871099,
+      "edge_iou": 0.135565
+    },
+    "after_local": {
+      "pixel_similarity": 0.871613,
+      "edge_iou": 0.133519
+    },
+    "before_global": {
+      "pixel_similarity": 0.909455,
+      "edge_iou": 0.122818
+    },
+    "after_global": {
+      "pixel_similarity": 0.909487,
+      "edge_iou": 0.122644
+    },
+    "local_pixel_delta": 0.000514,
+    "local_edge_delta": -0.002046,
+    "global_pixel_delta": 3.2e-05,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "692d593452e0a44bad060650d570c511ba561b7289f8f9f31a6e7826a57adc67",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "f1ea72d6624ea2326dabb19ae67789d9046024297b60cb3735e4ad2d479304fd"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "692d593452e0a44bad060650d570c511ba561b7289f8f9f31a6e7826a57adc67",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "f1ea72d6624ea2326dabb19ae67789d9046024297b60cb3735e4ad2d479304fd"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "representation-separator-misrepresented-as-arrow",
+      "recognition-text-punctuation-omission",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-excessive-corner-rounding"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "representation-separator-misrepresented-as-arrow",
+      "recognition-text-punctuation-omission",
+      "layout-object-rotation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-excessive-corner-rounding"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "representation-separator-misrepresented-as-arrow": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-object-rotation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-001/decision.json",
+      "sha256": "82f0bd7d7eb13cb6f87872ef1fc016188df2e205f426c74d46108dd5bd5abf2f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-001/assessment.json",
+      "sha256": "1a2297335e4c68abad1a51cef357a1b4cf559dcd525af35d19156b45f0c03c44"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "917f8bd90ddf8c1ac81a9919f2eecf7f6dfdaae2bd13e57b10a6890fe8af05ca"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-001/before-preview.png",
+      "sha256": "15546dd4eb44a5f2ab4b56385c4e34bf5c3d2b855123973771dec3a50ce997f2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-001/output/preview.png",
+      "sha256": "4e8cbbdee6a95a30625b906861f41ffae61a4ad3bddf2a053ab549ccd5c59eb5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-001/output/editable.pptx",
+      "sha256": "c7faa0ed35269c7f2a26738d9ae203fd6100078f13f955aee01b2f25ac9fe658"
+    }
+  ],
+  "evidence_id": "d38c8468a5fc1196932436d6"
+}

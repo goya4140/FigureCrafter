@@ -1,0 +1,47 @@
+{
+  "skill_id": "representation-split-math-source-identity-loss",
+  "memory_id": "representation-split-math-source-identity-loss",
+  "status": "downstreamed",
+  "instructions": [
+    "For a native math owner, validate the concatenation of all run source_text fragments against exact recognized text. Only when it forms an exact partition, normalize each op text to its own run-source fragment; retain geometry, glyphs and styles. Reject missing, duplicated or conflicting source claims with owner IDs for bounded repair, and never silently discard invalid runs. This structural fix does not prove font fidelity or correct hat rendering."
+  ],
+  "evidence_ids": [
+    "1cb448b7d3b279a0cd487288",
+    "220b8a954ed7094cf9650349"
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "version": "1.2.0-rc1c",
+    "evidence_id": "220b8a954ed7094cf9650349",
+    "scope": "Exact native text source partition preservation only. Deterministic normalization is integrated in rc1e recipes; missing/duplicate/conflicting runs rejected. Does not establish all equation geometry or all formula syntaxes.",
+    "counterexamples": [
+      "Missing ME token must reject",
+      "Changed ME to MC must reject",
+      "Duplicated superscript must reject",
+      "Ordinary model_name prose stays literal",
+      "Combining hat font fallback still fails"
+    ],
+    "artifact_refs": [
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/identity-structural-assessment.json",
+        "sha256": "9da9cd6444e0ac2c9ba2bed8235f180bf00c5c84bec35cb36d7e54ca89155e5a"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/tests.log",
+        "sha256": "0f96cef34d87b403b81fa6cb6c32b9d07db505fd7c41a38d22380f96eb85e773"
+      }
+    ],
+    "code_artifact": {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/01_methods/final_method/post_submission_202610/experiments/unified_v12rc1e_math_20261022/source/decomposer/representation_recipes.py",
+      "sha256": "d38a0d849cb0042b0908d47989a70e014b38ba0bf1ad0cec4961cc9b3e50e220"
+    },
+    "canonicalization_code_artifact": {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/01_methods/final_method/post_submission_202610/experiments/unified_v12rc1e_math_20261022/source/decomposer/representation.py",
+      "sha256": "bdf330924f8ee6d483586b858897763457c4005d39ce86ff6c5ff8faa3eb2d51"
+    },
+    "regression_test_artifact": {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/01_methods/final_method/post_submission_202610/experiments/unified_v12rc1e_math_20261022/source/tests/test_math_source_contract.py",
+      "sha256": "62f614ac2b8f1aac5e47725464c8f97dc40b4d4856b74da27ba4eac08e1f020c"
+    }
+  }
+}

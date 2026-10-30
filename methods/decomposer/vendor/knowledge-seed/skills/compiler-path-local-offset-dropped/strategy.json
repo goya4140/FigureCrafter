@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-path-local-offset-dropped",
+  "memory_id": "compiler-path-local-offset-dropped",
+  "status": "candidate",
+  "instructions": [
+    "Validate exported path origins against scene bounds, applying both component placement and primitive-local translation exactly once; compare paths with neighboring native rectangles in the rendered output."
+  ],
+  "evidence_ids": [
+    "04ce4613948593b9f552baa7"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-object-rotation-omission",
+  "owner_stage": "layout",
+  "mechanism": "object-rotation-omission",
+  "status": "candidate",
+  "evidence_ids": [
+    "c0d02a8495e1a6b628e222c1"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Preserve each node's reference orientation, rotating its outline and label together rather than defaulting all graph nodes to horizontal."
+  ]
+}

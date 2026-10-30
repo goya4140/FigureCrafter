@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-node-text-local-placement-offset",
+  "memory_id": "representation-node-text-local-placement-offset",
+  "status": "candidate",
+  "instructions": [
+    "Give text inside composite nodes explicit local bounds aligned with the reference text baseline and reserved icon area, rather than reusing the entire node rectangle."
+  ],
+  "evidence_ids": [
+    "80b2ee73dff46486f260eb3a"
+  ]
+}

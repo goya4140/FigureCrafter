@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240403654-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "partial-object-source-crop",
+  "label_ids": [
+    "high_images"
+  ],
+  "primitive_ids": [
+    "high_images/content"
+  ],
+  "field": "assets.source_bbox",
+  "region": [
+    2400,
+    552,
+    800,
+    276
+  ],
+  "summary": "The rendered high-quality patches show one enlarged image instead of overlapping cards. Recognition bounds cover the stack, but the representation asset crops only the front card and stretches it across those bounds. Repair requires regenerating the localized image asset; no supported operation edits asset crop bounds.",
+  "strategy": "Validate that localized raster crops cover the complete recognized object before fitting them to its bounds; reject single-part crops for composite image stacks.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240403654-fig2/refinement/round-002/decision.json",
+      "sha256": "d5fc622d801bd4d5363cb2d6975a76838ebcf685eb37fd86e9e9e7f1c4371fa1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240403654-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "3970c41cb609f8978023ba9a81ac3e370bef093c654072a3abc2a174ea320c72"
+    }
+  ],
+  "evidence_id": "bb48517c688b28e7f0c9a5a7"
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-multiline-text-export-scale-collapse",
+  "memory_id": "compiler-multiline-text-export-scale-collapse",
+  "status": "candidate",
+  "instructions": [
+    "Validate exported multiline font sizing, line-spacing units, and autofit behavior against scene styles; correct downstream scale collapse without compensating through layout or primitive font enlargement."
+  ],
+  "evidence_ids": [
+    "0fdae4b15133245ff1a26b8d"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-rotated-text-box-line-wrap",
+  "memory_id": "representation-rotated-text-box-line-wrap",
+  "status": "candidate",
+  "instructions": [
+    "Size rotated text in its unrotated local coordinate system to fit the intended line count before applying rotation."
+  ],
+  "evidence_ids": [
+    "3cbcc6cb536592d79b63a02f"
+  ]
+}

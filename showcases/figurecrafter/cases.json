@@ -1,0 +1,115 @@
+{
+  "sample_id": "paperbanana-diagram-ref-231",
+  "display_name": "RoboScape",
+  "reasoning_model": "gpt-6.1-sol",
+  "image_backend": "Codex built-in image model (historical case)",
+  "comparison_scope": "Workflow illustrations, NOT a matched controlled three-method comparison. Native uses PDF; Image/Hybrid use Method; Image and Hybrid have independent generated proposals.",
+  "image": {
+    "edits": 3,
+    "accepted": false,
+    "limitations": [
+      "加权CE存在负号/时间索引错误",
+      "关键点公式的token索引仍不可靠",
+      "token CE保留来自解码图像的箭头及局部歧义",
+      "仅栅格候选，无原生可编辑PPTX"
+    ]
+  },
+  "hybrid": {
+    "accepted_by_author_model": true,
+    "human_acceptance": "pending",
+    "limitations": [
+      "中间Decomposer保真未达原阈值：0.937014 < 0.94，最终科学/视觉复审单独记录",
+      "密集公式需全宽查看；原生数学为逐字形定位的文本与线条组合，不是OfficeMath语义公式",
+      "27个局部图像资产内部仍为栅格，包括照片中的轨迹图案",
+      "生成场景是示意，不能当作实测深度或实际模型预测结果",
+      "已实际LibreOffice渲染；未作PowerPoint/WPS现场交互验证"
+    ],
+    "decomposer_version": "v1.2-rc1h1-method2.2",
+    "decomposer_visual_threshold_passed": false,
+    "retained_atomic_image_bytes": 27,
+    "new_or_reencoded_images": 0,
+    "retained_object_identities": 363
+  },
+  "files": [
+    {
+      "file": "roboscape/native.png",
+      "stage": "Native",
+      "input_condition": "Historical missing-figure PDF + three references",
+      "quality_status": "model_selected; user visually confirmed in conversation",
+      "sha256": "5b71ba24de297b8c8f6410c2573aa6c43aac364bb7709a21ab38f1737e6b4298",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/native-v251-roboscape-gpt61sol-20261025/session/delivery/main-figure.png"
+    },
+    {
+      "file": "roboscape/native.pptx",
+      "stage": "Native",
+      "input_condition": "Historical missing-figure PDF + three references",
+      "quality_status": "model_selected; user visually confirmed in conversation",
+      "sha256": "fd38d7ff8073ff6f6689888d1285bda1d6b0b708175d992202757a2a51806847",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/native-v251-roboscape-gpt61sol-20261025/session/delivery/main-figure.pptx"
+    },
+    {
+      "file": "roboscape/native.pdf",
+      "stage": "Native",
+      "input_condition": "Historical missing-figure PDF + three references",
+      "quality_status": "model_selected; user visually confirmed in conversation",
+      "sha256": "5ec45157ab226f9d5738fd15cad9367e16afef24a0021a25feeb68d53acc0d96",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/native-v251-roboscape-gpt61sol-20261025/session/delivery/main-figure.pdf"
+    },
+    {
+      "file": "roboscape/image.png",
+      "stage": "Image",
+      "input_condition": "Dataset Method text + three references; built-in image model; initial + 3 edits",
+      "quality_status": "needs_edit; not accepted",
+      "sha256": "bc57ea8d88942ca05c58e8095df12f58c3fcefac660d269d033065c309a69e01",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/comparison/image.png"
+    },
+    {
+      "file": "roboscape/hybrid-source.png",
+      "stage": "Hybrid visual proposal",
+      "input_condition": "Dataset Method text + three references; independent from Image branch",
+      "quality_status": "intermediate_needs_native_repair",
+      "sha256": "22ea51bcfeb3ca19aaf2cc368debf121b75d43609dc9aa1e241b01febe82d98b",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/comparison/hybrid-source-image.png"
+    },
+    {
+      "file": "roboscape/decomposer.png",
+      "stage": "Decomposer",
+      "input_condition": "Reconstruct this Hybrid visual proposal",
+      "quality_status": "complete; fidelity threshold not passed",
+      "sha256": "42e42dbba9dbc421045b0e09d1a04e4f4450f75ac4f7eb27481c9464fa2c9722",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/hybrid-handoff/preview.png"
+    },
+    {
+      "file": "roboscape/decomposer.pptx",
+      "stage": "Decomposer",
+      "input_condition": "Reconstruct this Hybrid visual proposal",
+      "quality_status": "complete; fidelity threshold not passed",
+      "sha256": "5ff42fe005b21430b027c1dc19b9ecf6d9fc6cd1bc9fa7a8f2434d3d74e2fa9b",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/hybrid-handoff/editable.pptx"
+    },
+    {
+      "file": "roboscape/hybrid.png",
+      "stage": "Hybrid final",
+      "input_condition": "Dataset Method; Decomposer → native FigureCrafter continuation",
+      "quality_status": "author_model_review_pass; human acceptance pending",
+      "sha256": "8f36f004d35fb2cff773e4ba7743bad5abc0b34e5efdd23e3f4cda2edcd135c8",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/hybrid-native/delivery/main-figure.png"
+    },
+    {
+      "file": "roboscape/hybrid.pptx",
+      "stage": "Hybrid final",
+      "input_condition": "Dataset Method; Decomposer → native FigureCrafter continuation",
+      "quality_status": "author_model_review_pass; human acceptance pending",
+      "sha256": "a7ba5436d9ed64f1da67d2a6e83910a46e27298671a5a6bf01c00baaa87a0ee4",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/hybrid-native/delivery/main-figure.pptx"
+    },
+    {
+      "file": "roboscape/hybrid.pdf",
+      "stage": "Hybrid final",
+      "input_condition": "Dataset Method; Decomposer → native FigureCrafter continuation",
+      "quality_status": "author_model_review_pass; human acceptance pending",
+      "sha256": "5b8db0bf77a1b709da56b94def95dfb4bebed5c6ee7af1c224d4218e6290764c",
+      "source_experiment": "4_Experiments/4_Extensions_and_Ablations/image-hybrid-v251-roboscape-datasetmethod-gpt61sol-20261025/hybrid-native/delivery/main-figure.pdf"
+    }
+  ]
+}

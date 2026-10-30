@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "math-script-size-inflates-text-width",
+  "label_ids": [
+    "loss_stage1"
+  ],
+  "primitive_ids": [
+    "loss_stage1/text"
+  ],
+  "field": "runs",
+  "region": [
+    944,
+    0,
+    472,
+    144
+  ],
+  "summary": "The rendered first loss equation is visibly undersized. Its local runs assign subscripts and superscripts the same font size as base symbols, inflating the text width and compressing the equation to fit. Reduce script sizes while preserving editable notation and placement.",
+  "strategy": "Size mathematical script runs independently of base symbols, then verify rendered equation ink dimensions within the original bounds.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.917753,
+      "edge_iou": 0.33643
+    },
+    "after_local": {
+      "pixel_similarity": 0.918,
+      "edge_iou": 0.331236
+    },
+    "before_global": {
+      "pixel_similarity": 0.954131,
+      "edge_iou": 0.336101
+    },
+    "after_global": {
+      "pixel_similarity": 0.954154,
+      "edge_iou": 0.335636
+    },
+    "local_pixel_delta": 0.000247,
+    "local_edge_delta": -0.005194,
+    "global_pixel_delta": 2.3e-05,
+    "evaluation_region": [
+      944,
+      0,
+      472,
+      144
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250318421-fig2/refinement/round-001/decision.json",
+      "sha256": "1ee6628382a061201439750165ac0845f9d0d8b1bf3ee0d6975e02b70b77f98d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250318421-fig2/refinement/round-001/assessment.json",
+      "sha256": "ddab1e35864e3bca7ffd633ec915368ab679ce6e70adbfc5805979b1a8aa4e17"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250318421-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "69da784e45045e34e1c0d8786dfe22c3690fe784c6da0db0fffb4d63228103ac"
+    }
+  ],
+  "evidence_id": "fd4706d94dcb74e50640fc4c"
+}

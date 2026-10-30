@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250215027-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "question_text"
+  ],
+  "primitive_ids": [
+    "question_text/text"
+  ],
+  "field": "bbox",
+  "region": [
+    0,
+    253,
+    434,
+    253
+  ],
+  "summary": "The rendered question text is visibly smaller than the reference. Its local text box is too short for two lines at the specified 42-unit spacing, causing fitting shrinkage.",
+  "strategy": "Size multiline text boxes to accommodate the specified line spacing and font metrics before export, avoiding automatic font shrinkage.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.912908,
+      "edge_iou": 0.287619
+    },
+    "after_local": {
+      "pixel_similarity": 0.912908,
+      "edge_iou": 0.287619
+    },
+    "before_global": {
+      "pixel_similarity": 0.93023,
+      "edge_iou": 0.293119
+    },
+    "after_global": {
+      "pixel_similarity": 0.93023,
+      "edge_iou": 0.293119
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      0,
+      253,
+      434,
+      253
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-001/decision.json",
+      "sha256": "53ab552d717ae278f413d23683d0958e28fdefec8b4fb58134d03867bba31682"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-001/assessment.json",
+      "sha256": "8e71576bdfcf39fb68ad85e9e62aecd318ffaf987cc1a16177cb696400383c3b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "06c19813cf26958930f868189dd37caf95969ee1768536ac9b2e1c66ad9e3df1"
+    }
+  ],
+  "evidence_id": "b432b292d2db68d0be0c5ce3"
+}

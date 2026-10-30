@@ -1,0 +1,63 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-240714078-fig1",
+  "round_id": "styled-text-runs-v0.5.6",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "literal-math-markup-in-text-primitive",
+  "label_ids": [
+    "title1",
+    "title2"
+  ],
+  "primitive_ids": [
+    "title1/text",
+    "title2/text"
+  ],
+  "field": "runs",
+  "region": [
+    0.0,
+    0.0,
+    2270.0,
+    132.0
+  ],
+  "summary": "Mixed prose and mathematical identifiers rendered literal underscore markup because the representation lacked editable styled text runs.",
+  "strategy": "Represent mixed prose and mathematical identifiers with editable styled text runs whose source_text preserves Recognition identity while visible text uses native italic and subscript/superscript properties; verify exported OOXML text and baselines.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.929731,
+      "edge_iou": 0.261004
+    },
+    "after_local": {
+      "pixel_similarity": 0.932003,
+      "edge_iou": 0.253414
+    },
+    "before_global": {
+      "pixel_similarity": 0.952108,
+      "edge_iou": 0.247087
+    },
+    "after_global": {
+      "pixel_similarity": 0.952161,
+      "edge_iou": 0.246793
+    },
+    "local_pixel_delta": 0.002272,
+    "local_edge_delta": -0.00759,
+    "global_pixel_delta": 5.3e-05
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v18-styled-text-runs-proof-v2-20260920/sample-006-fixed/proof.json",
+      "sha256": "c33768eafea60b51f0240527f383790630631d94c13ae0f47130ff67046d987e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v18-styled-text-runs-proof-v2-20260920/sample-006-fixed/output/editable.pptx",
+      "sha256": "8c37910c22e8eb76534db30acb52d7eefdeccf6ceeb8a38453e8b406e81a2b3a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v18-styled-text-runs-proof-v2-20260920/sample-006-fixed/output/validation.json",
+      "sha256": "48dc82c598a3860c68dd94c9b8d4ecd550190cedbaed4dea638bfa0fe715e4b9"
+    }
+  ],
+  "evidence_id": "b90e9f8e0cde399e97dff549"
+}

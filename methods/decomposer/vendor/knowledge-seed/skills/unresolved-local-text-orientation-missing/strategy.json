@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-local-text-orientation-missing",
+  "memory_id": "unresolved-local-text-orientation-missing",
+  "status": "candidate",
+  "instructions": [
+    "Preserve text orientation independently within composite objects and provide a local editable text rotation field before attempting orientation repairs."
+  ],
+  "evidence_ids": [
+    "23d41b4ebf9650ef1ce521f9"
+  ]
+}

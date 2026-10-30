@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250310149-figx",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-not-visible",
+  "label_ids": [
+    "registration_text"
+  ],
+  "primitive_ids": [
+    "registration_text/text"
+  ],
+  "field": null,
+  "region": [
+    1692,
+    163,
+    564,
+    163
+  ],
+  "summary": "The current render shows a blank registration module where the reference reads “Point Matching & Registration.” Recognition, representation, layout, and OOXML provenance all retain this text at the expected location. The supplied evidence does not establish why it fails to appear, so a visual patch would be speculative.",
+  "strategy": "When text is absent from a render but preserved in scene and OOXML records, verify exported paragraph formatting and renderer behavior before changing visual geometry or text styling.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250310149-figx/refinement/round-001/decision.json",
+      "sha256": "de52d6d7df8f96fc2e4624feb0486576a750a67b47df03c93b0de0f15a50e5c0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250310149-figx/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "5d19bb13631783cc73b382e315245cc028f9194f7fd021f81e1122fb23dc56b9"
+    }
+  ],
+  "evidence_id": "ad6158d9fd6a56c113c306ab"
+}

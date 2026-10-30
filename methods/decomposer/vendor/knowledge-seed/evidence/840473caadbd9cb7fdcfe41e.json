@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240408031-fig4",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "math-label-text-scale-mismatch",
+  "label_ids": [
+    "hu"
+  ],
+  "primitive_ids": [
+    "hu/t"
+  ],
+  "field": "font_scale",
+  "region": [
+    1799,
+    221,
+    600,
+    221
+  ],
+  "summary": "In tile-1-3, the unsafe embedding label is visibly smaller than the reference. Increase its text scale while preserving its position and editable subscript runs.",
+  "strategy": "Compare mathematical labels with reference glyph heights and adjust object text scale independently of neighboring vectors and connectors.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.943631,
+      "edge_iou": 0.281675
+    },
+    "after_local": {
+      "pixel_similarity": 0.944171,
+      "edge_iou": 0.280006
+    },
+    "before_global": {
+      "pixel_similarity": 0.960944,
+      "edge_iou": 0.295298
+    },
+    "after_global": {
+      "pixel_similarity": 0.960997,
+      "edge_iou": 0.295257
+    },
+    "local_pixel_delta": 0.00054,
+    "local_edge_delta": -0.001669,
+    "global_pixel_delta": 5.3e-05,
+    "evaluation_region": [
+      1799,
+      221,
+      600,
+      221
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-003/decision.json",
+      "sha256": "032c8b425f2fdf79fa5217f6860d67567fd46af448c8bf5ea4e6e4be7d96705f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-003/assessment.json",
+      "sha256": "8b9c88937896a8c60d67c5eb1e23ace6e443be18e5e61a38cc3c66cc319b504c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "103960a3133f15274caa8983767f792caf70507b0c1e0fd8cba4ef9c326db89d"
+    }
+  ],
+  "evidence_id": "840473caadbd9cb7fdcfe41e"
+}

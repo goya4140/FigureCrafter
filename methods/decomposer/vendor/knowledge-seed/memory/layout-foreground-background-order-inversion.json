@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-foreground-background-order-inversion",
+  "owner_stage": "layout",
+  "mechanism": "foreground-background-order-inversion",
+  "status": "candidate",
+  "evidence_ids": [
+    "a21488f7d6d38dd6d0072591"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Preserve reference occlusion relationships by placing foreground illustrations above overlapping background connectors."
+  ]
+}

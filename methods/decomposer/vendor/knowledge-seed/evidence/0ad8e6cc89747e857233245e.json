@@ -1,0 +1,89 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "baseline",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "recognition",
+  "mechanism": "repeated-semantic-instance-omission",
+  "label_ids": [
+    "panel_middle"
+  ],
+  "primitive_ids": [],
+  "field": "objects",
+  "region": [
+    554,
+    1311,
+    554,
+    656
+  ],
+  "summary": "The selected tile shows an empty middle-panel answer-assembler region where the reference contains an agent title, final-answer output, and feedback workflow. Recognition records repeated content only at its top-panel location; representation and OOXML faithfully export the resulting omission. Repair requires adding distinct semantic instances, which the supplied patch operations cannot express.",
+  "strategy": "Recognize each repeated panel's semantic contents as distinct positioned instances; verify instance coverage before generating primitives.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-trailing-newline-math-label-overflow",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-trailing-newline-math-label-overflow",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-condensed-font-width-mismatch": "candidate",
+      "representation-trailing-newline-math-label-overflow": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-trailing-newline-math-label-overflow",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "representation-trailing-newline-math-label-overflow",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/repeats/emnlp-2025-250306951-fig2/baseline/refinement/round-001/decision.json",
+      "sha256": "4531970037bd947e615cdef3e85b9aec27f92508a7c9150befd781f50c1be297"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/repeats/emnlp-2025-250306951-fig2/baseline/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "781f9d7591b3156f5f9b67dc9d4e40d88789a0c95e79b78d27089e16b4de8a11"
+    }
+  ],
+  "evidence_id": "0ad8e6cc89747e857233245e"
+}

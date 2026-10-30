@@ -1,0 +1,61 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-230606272-fig14",
+  "round_id": "controlled-kind-patch-proof",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-corner-rounding",
+  "label_ids": [
+    "search"
+  ],
+  "primitive_ids": [
+    "search/box"
+  ],
+  "field": "kind",
+  "region": [
+    1425,
+    206,
+    475,
+    206
+  ],
+  "summary": "The search enclosure has excessive corner rounding.",
+  "strategy": "Match enclosure corner geometry to the reference instead of defaulting containers to rounded rectangles.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.954859,
+      "edge_iou": 0.295238
+    },
+    "after_local": {
+      "pixel_similarity": 0.957587,
+      "edge_iou": 0.317733
+    },
+    "before_global": {
+      "pixel_similarity": 0.964406,
+      "edge_iou": 0.350025
+    },
+    "after_global": {
+      "pixel_similarity": 0.964709,
+      "edge_iou": 0.353457
+    },
+    "local_pixel_delta": 0.002728,
+    "local_edge_delta": 0.022495,
+    "global_pixel_delta": 0.000303
+  },
+  "artifact_refs": [
+    {
+      "path": "experiments/decomposer-v7-kind-patch-proof-20260920/proof.json",
+      "sha256": "6fbdc0fed6d9da765cc98187a607089e80c0bba22c229af01421b45d07866538"
+    },
+    {
+      "path": "experiments/decomposer-v7-kind-patch-proof-20260920/preview.png",
+      "sha256": "e401948eb7fb6ba41f9a18cb3aace9eba9a419970f350b992238294ca67e16c9"
+    },
+    {
+      "path": "experiments/decomposer-v7-kind-patch-proof-20260920/editable.pptx",
+      "sha256": "70ed4b9f0f5272d9e95569ae577e920d173d4f19d035ba04f162933d54cd27ca"
+    }
+  ],
+  "evidence_id": "8276db7fb97c70d4b4acbee6"
+}

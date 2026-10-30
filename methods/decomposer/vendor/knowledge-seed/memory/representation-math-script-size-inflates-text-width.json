@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-math-script-size-inflates-text-width",
+  "owner_stage": "representation",
+  "mechanism": "math-script-size-inflates-text-width",
+  "status": "candidate",
+  "evidence_ids": [
+    "fd4706d94dcb74e50640fc4c"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Size mathematical script runs independently of base symbols, then verify rendered equation ink dimensions within the original bounds."
+  ]
+}

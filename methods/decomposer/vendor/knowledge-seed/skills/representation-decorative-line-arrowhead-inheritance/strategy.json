@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-decorative-line-arrowhead-inheritance",
+  "memory_id": "representation-decorative-line-arrowhead-inheritance",
+  "status": "candidate",
+  "instructions": [
+    "Assign arrowheads only to directional connectors; explicitly disable both endpoints on decorative underlines."
+  ],
+  "evidence_ids": [
+    "f8ec1d199d6ad8d7baa2ccd3"
+  ]
+}

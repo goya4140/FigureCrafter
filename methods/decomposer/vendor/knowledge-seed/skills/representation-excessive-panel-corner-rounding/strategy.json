@@ -1,0 +1,23 @@
+{
+  "skill_id": "representation-excessive-panel-corner-rounding",
+  "memory_id": "representation-excessive-panel-corner-rounding",
+  "status": "candidate",
+  "instructions": [
+    "Match panel corner geometry to the reference; avoid default rounded rectangles when their corner radius visibly exceeds the source.",
+    "Match panel corner geometry to the reference; avoid default rounded rectangles when their radius visibly removes background area.",
+    "Compare rendered panel corner curvature with the reference; use rectangular geometry when default rounding materially exceeds the source radius.",
+    "Match enclosure corner geometry to the reference at rendered scale; use rectangular geometry when default rounded-rectangle curvature materially exceeds the visible radius.",
+    "Compare enclosure corner curvature at matched render scale and avoid default rounded rectangles when their radius materially exceeds the reference.",
+    "Compare nested enclosure corners at matched render scale; use rectangular primitives when preset rounding substantially exceeds the reference curvature, then validate the exported render.",
+    "Compare enclosure corners at matched render scale; replace preset rounding with rectangular geometry when the reference curvature is negligible, then validate the exported render."
+  ],
+  "evidence_ids": [
+    "5b7263771513609dc6dbba21",
+    "7915bd2a743cf82db1c36ba4",
+    "f8d2231054b00f4500090a09",
+    "c69b7c15308b97f4cd53af24",
+    "eeefcaa46df8068cf0dd7a91",
+    "0760bbccea3c71e04c20a3b0",
+    "d19e921a19fd94b96b154c87"
+  ]
+}

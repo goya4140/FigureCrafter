@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240705342-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "zscl_clip_text"
+  ],
+  "primitive_ids": [
+    "zscl_clip_text/t"
+  ],
+  "field": "bbox",
+  "region": [
+    1884,
+    0,
+    629,
+    407
+  ],
+  "summary": "In the rendered ZSCL panel, CLIP is drastically smaller than in the reference. Its local text box is shorter than the specified font size; enlarge the box around its existing center to accommodate the font metrics.",
+  "strategy": "Size editable text boxes using font metrics and sufficient vertical clearance to prevent unintended automatic shrinking.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.946625,
+      "edge_iou": 0.261843
+    },
+    "after_local": {
+      "pixel_similarity": 0.946625,
+      "edge_iou": 0.261843
+    },
+    "before_global": {
+      "pixel_similarity": 0.965183,
+      "edge_iou": 0.264191
+    },
+    "after_global": {
+      "pixel_similarity": 0.965183,
+      "edge_iou": 0.264191
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      1884,
+      0,
+      629,
+      407
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-001/decision.json",
+      "sha256": "60e330d62ba82046f8e0973cae1c78b305d867852ae161dee031b40bcce7f503"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-001/assessment.json",
+      "sha256": "47748a451623be405c77d8ebc5720685d6c881c065312fb978e23289b32f7ac5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "403c6358d8bd40b35d41b3f636bffb5088b54e573f137fddab6d6572784dbcd7"
+    }
+  ],
+  "evidence_id": "35bc72fbfbc9236aec59c0ec"
+}

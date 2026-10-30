@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-rendered-text-size-mismatch",
+  "memory_id": "unresolved-rendered-text-size-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "When rendered text size contradicts canonical font settings and bbox edits have no effect, inspect exported run sizes and autofit settings before assigning ownership or applying further scaling."
+  ],
+  "evidence_ids": [
+    "c04b695db59e01f33444e233"
+  ]
+}

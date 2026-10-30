@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-native-text-rendering-loss",
+  "owner_stage": "compiler",
+  "mechanism": "native-text-rendering-loss",
+  "status": "candidate",
+  "evidence_ids": [
+    "194339297cbe9590fbc8b103",
+    "6d9b5c05f84be0262650d802"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Verify that native text preserved in OOXML remains visible in the rendered output; investigate export and renderer text properties before changing correct scene content or geometry.",
+    "Verify native text visibility in rendered output against scene and OOXML records; investigate export text properties and renderer font configuration when correctly populated text shapes disappear."
+  ]
+}

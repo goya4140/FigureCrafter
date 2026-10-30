@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-chart-lines-misclassified-as-arrows",
+  "memory_id": "representation-chart-lines-misclassified-as-arrows",
+  "status": "candidate",
+  "instructions": [
+    "Distinguish chart construction lines and point leaders from directional connectors; assign arrowheads only where visible in the reference."
+  ],
+  "evidence_ids": [
+    "dc77af5e8f6783e441bbc0a5"
+  ]
+}

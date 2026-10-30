@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-code-text-metric-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "code-text-metric-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "b77fc8c104af05fd7419d2a4"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

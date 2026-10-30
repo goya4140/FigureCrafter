@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240710373-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rounded-corner-radius-mismatch",
+  "label_ids": [
+    "bottom_reverb"
+  ],
+  "primitive_ids": [
+    "bottom_reverb/box"
+  ],
+  "field": null,
+  "region": [
+    326,
+    253,
+    326,
+    127
+  ],
+  "summary": "The bottom yellow processing box has nearly square corners in the current render, whereas the reference has strongly rounded ends. The representation specifies round_rect but exposes no corner radius, and provenance omits exported shape adjustments, so ownership between local geometry and export defaults cannot be established.",
+  "strategy": "Preserve explicit corner-radius geometry for rounded shapes and record exported shape adjustments so rendering discrepancies can be attributed and repaired.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240710373-fig2/refinement/round-001/decision.json",
+      "sha256": "91f564e91a81a56f729afb9b9acab8a6148211727a51faf3a92f0141c762472c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240710373-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "e921f2859c6b7bc21ebd27e13aa23e36dcb0f32d4a7b9c3378b2f5d103b1ba86"
+    }
+  ],
+  "evidence_id": "5dca93a4639b1e389ce509b9"
+}

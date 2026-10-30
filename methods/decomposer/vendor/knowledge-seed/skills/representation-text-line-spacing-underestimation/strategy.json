@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-text-line-spacing-underestimation",
+  "memory_id": "representation-text-line-spacing-underestimation",
+  "status": "candidate",
+  "instructions": [
+    "Compare first and last text baselines against the reference; when drift accumulates across lines, correct local line spacing while preserving placement and font size."
+  ],
+  "evidence_ids": [
+    "381bf48775d33dc1538d5b32"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-multiline-text-export-scale-collapse",
+  "owner_stage": "compiler",
+  "mechanism": "multiline-text-export-scale-collapse",
+  "status": "candidate",
+  "evidence_ids": [
+    "0fdae4b15133245ff1a26b8d"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Validate exported multiline font sizing, line-spacing units, and autofit behavior against scene styles; correct downstream scale collapse without compensating through layout or primitive font enlargement."
+  ]
+}

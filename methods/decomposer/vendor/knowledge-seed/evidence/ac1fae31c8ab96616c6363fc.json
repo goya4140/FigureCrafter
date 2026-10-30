@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250308147-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "heading-font-family-mismatch",
+  "label_ids": [
+    "stage1_title"
+  ],
+  "primitive_ids": [
+    "stage1_title/text"
+  ],
+  "field": "style",
+  "region": [
+    800,
+    0,
+    800,
+    353
+  ],
+  "summary": "The rendered stage-one heading uses bold serif lettering, while the reference uses regular sans-serif lettering. Detected in tile-0-1; the incorrect font belongs to the local text primitive.",
+  "strategy": "Match heading font family and weight to reference letterforms independently of heading placement and container styling.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.943907,
+      "edge_iou": 0.255564
+    },
+    "after_local": {
+      "pixel_similarity": 0.943704,
+      "edge_iou": 0.25489
+    },
+    "before_global": {
+      "pixel_similarity": 0.962867,
+      "edge_iou": 0.24803
+    },
+    "after_global": {
+      "pixel_similarity": 0.962851,
+      "edge_iou": 0.248
+    },
+    "local_pixel_delta": -0.000203,
+    "local_edge_delta": -0.000674,
+    "global_pixel_delta": -1.6e-05,
+    "evaluation_region": [
+      800,
+      0,
+      800,
+      353
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250308147-fig2/refinement/round-002/decision.json",
+      "sha256": "0bb24ecce576451025fe90b57fe7ae7299be1010c982aea36542f6da8cb13263"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250308147-fig2/refinement/round-002/assessment.json",
+      "sha256": "6b21da65044b8a74353b4b2f1f98ad8ec333d9c9d0960a5f0d9693fd1c1f5157"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-timeout3600-continuation-071-075/runs/cvpr-2025-250308147-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "945962bd68328153e7738937ef1433e35d6c7702d838c906fcdde5204a93e9db"
+    }
+  ],
+  "evidence_id": "ac1fae31c8ab96616c6363fc"
+}

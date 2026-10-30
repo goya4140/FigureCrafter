@@ -1,0 +1,15 @@
+{
+  "skill_id": "representation-text-color-set-to-none",
+  "memory_id": "representation-text-color-set-to-none",
+  "status": "candidate",
+  "instructions": [
+    "Require an explicit visible foreground color for editable text and verify caption visibility in the exported render before adjusting text metrics.",
+    "Preserve explicit visible foreground colors when converting recognized text into editable primitives, and verify text visibility after export.",
+    "Preserve explicit visible foreground colors when constructing editable text primitives, then verify caption visibility in the exported render."
+  ],
+  "evidence_ids": [
+    "271f77671dcf9b20de958ae0",
+    "d7c995041d1b29d0b99429dc",
+    "a402f91153677ea485be7be1"
+  ]
+}

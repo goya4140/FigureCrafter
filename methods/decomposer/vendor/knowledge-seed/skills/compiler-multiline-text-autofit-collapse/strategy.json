@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-multiline-text-autofit-collapse",
+  "memory_id": "compiler-multiline-text-autofit-collapse",
+  "status": "candidate",
+  "instructions": [
+    "Validate exported multiline font sizes and line-spacing units against scene styles; ensure autofit does not shrink correctly sized text boxes during export."
+  ],
+  "evidence_ids": [
+    "c849784e6e15118b4719f2d0"
+  ]
+}

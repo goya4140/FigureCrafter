@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-partial-object-source-crop",
+  "memory_id": "representation-partial-object-source-crop",
+  "status": "candidate",
+  "instructions": [
+    "Validate that localized raster crops cover the complete recognized object before fitting them to its bounds; reject single-part crops for composite image stacks."
+  ],
+  "evidence_ids": [
+    "bb48517c688b28e7f0c9a5a7"
+  ]
+}

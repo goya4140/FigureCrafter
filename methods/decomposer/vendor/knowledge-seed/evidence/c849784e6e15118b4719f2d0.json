@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241117662-fig9",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "multiline-text-autofit-collapse",
+  "label_ids": [
+    "roi_caption"
+  ],
+  "primitive_ids": [
+    "roi_caption/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    450,
+    284,
+    151
+  ],
+  "summary": "In tile-3-0, roi_caption renders as nearly illegible tiny text. Recognition and representation preserve its three lines, 223×64 bounds, and 18-unit font; layout retains those bounds with font_scale=1. The collapse appears during export/rendering and also affects other multiline text. Inspect multiline spacing conversion and autofit rather than enlarging upstream text.",
+  "strategy": "Validate exported multiline font sizes and line-spacing units against scene styles; ensure autofit does not shrink correctly sized text boxes during export.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241117662-fig9/refinement/round-001/decision.json",
+      "sha256": "732cc081956494db7bb551590d54ab670ad9a86e1ce8842dfbe99565d9bbcc71"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241117662-fig9/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "70144c49320bd4e137130ca6547c89a599eb209a8d41635446d71e1f9cf97113"
+    }
+  ],
+  "evidence_id": "c849784e6e15118b4719f2d0"
+}

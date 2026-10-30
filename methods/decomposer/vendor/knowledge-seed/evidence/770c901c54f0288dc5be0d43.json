@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "recognition",
+  "mechanism": "workflow-child-object-omission",
+  "label_ids": [
+    "panel_middle",
+    "panel_bottom"
+  ],
+  "primitive_ids": [],
+  "field": "objects",
+  "region": [
+    554,
+    1311,
+    554,
+    656
+  ],
+  "summary": "The selected tile shows largely empty middle and bottom workflow regions where the reference contains subquestion cards, evidence cards, and connecting arrows. Recognition collapses these regions into panel containers and records subquestions and evidence only at their top-panel positions; the omissions persist in the scene and OOXML. Repair requires adding missing semantic instances, which the supplied patch operations cannot express.",
+  "strategy": "Recognize each repeated panel's semantic children and connectors as separate instances, then verify per-panel content coverage before generating primitives.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "unresolved-rendered-text-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "unresolved-rendered-text-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-condensed-font-width-mismatch": "candidate",
+      "unresolved-rendered-text-omission": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/repeats/emnlp-2025-250306951-fig2/representation-fast/refinement/round-001/decision.json",
+      "sha256": "ee77b39e95b7c680e44751d6be770330d912fb37fc1bc086d7c66663a3280013"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/repeats/emnlp-2025-250306951-fig2/representation-fast/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "941e8455778c2a0ba819fad476925592e94b434df8f0a95d01355901bcb74001"
+    }
+  ],
+  "evidence_id": "770c901c54f0288dc5be0d43"
+}

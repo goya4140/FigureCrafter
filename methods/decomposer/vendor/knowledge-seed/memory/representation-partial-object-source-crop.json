@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-partial-object-source-crop",
+  "owner_stage": "representation",
+  "mechanism": "partial-object-source-crop",
+  "status": "candidate",
+  "evidence_ids": [
+    "bb48517c688b28e7f0c9a5a7"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Validate that localized raster crops cover the complete recognized object before fitting them to its bounds; reject single-part crops for composite image stacks."
+  ]
+}

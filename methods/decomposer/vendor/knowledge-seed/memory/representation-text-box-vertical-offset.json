@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-text-box-vertical-offset",
+  "owner_stage": "representation",
+  "mechanism": "text-box-vertical-offset",
+  "status": "candidate",
+  "evidence_ids": [
+    "15b9027b5b569524e356f9e1"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Check rendered multiline text against its enclosing row boundaries and adjust local text placement to preserve the reference's vertical padding."
+  ]
+}

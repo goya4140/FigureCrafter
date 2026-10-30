@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-equation-glyph-visibility-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "equation-glyph-visibility-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "54804fa683f99c908f286bd4"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-path-local-origin-translation-loss",
+  "owner_stage": "compiler",
+  "mechanism": "path-local-origin-translation-loss",
+  "status": "candidate",
+  "evidence_ids": [
+    "1d281007b0c351e9f9483f12"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Apply each path primitive's local bbox origin exactly once when converting its numeric coordinates to DrawingML, and verify alignment with colocated native rectangles in the rendered export."
+  ]
+}

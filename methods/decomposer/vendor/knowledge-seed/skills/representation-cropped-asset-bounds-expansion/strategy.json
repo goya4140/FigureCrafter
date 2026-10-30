@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-cropped-asset-bounds-expansion",
+  "memory_id": "representation-cropped-asset-bounds-expansion",
+  "status": "candidate",
+  "instructions": [
+    "Place cropped assets using their source-relative offsets and dimensions instead of stretching them to broader component bounds.",
+    "Place localized raster crops using their source dimensions and offsets relative to the owning recognition box, rather than stretching them to fill that box."
+  ],
+  "evidence_ids": [
+    "46e49277c17b878163dc4546",
+    "a59dc336c1a655471792fd0f"
+  ]
+}

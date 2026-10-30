@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-chart-lines-misclassified-as-arrows",
+  "owner_stage": "representation",
+  "mechanism": "chart-lines-misclassified-as-arrows",
+  "status": "candidate",
+  "evidence_ids": [
+    "dc77af5e8f6783e441bbc0a5"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Distinguish chart construction lines and point leaders from directional connectors; assign arrowheads only where visible in the reference."
+  ]
+}

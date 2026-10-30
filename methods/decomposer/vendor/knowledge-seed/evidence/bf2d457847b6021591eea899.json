@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250109695-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "dataset_title"
+  ],
+  "primitive_ids": [
+    "dataset_title/text"
+  ],
+  "field": "bbox",
+  "region": [
+    0,
+    0,
+    800,
+    758
+  ],
+  "summary": "The rendered dataset title is severely shrunken. Its local text box is only 74 units high for an 86-unit font, leaving insufficient line-height clearance. Expand the local box while preserving its center and font size.",
+  "strategy": "Size editable text boxes for full font line metrics, with sufficient clearance to prevent automatic shrinking; preserve the intended visual center.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.934555,
+      "edge_iou": 0.247918
+    },
+    "after_local": {
+      "pixel_similarity": 0.934555,
+      "edge_iou": 0.247918
+    },
+    "before_global": {
+      "pixel_similarity": 0.946064,
+      "edge_iou": 0.165067
+    },
+    "after_global": {
+      "pixel_similarity": 0.946064,
+      "edge_iou": 0.165067
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      0,
+      0,
+      800,
+      758
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/cvpr-2025-250109695-fig3/refinement/round-001/decision.json",
+      "sha256": "6373d68b88eaab4e721dc23c49b3c5dd399982d7c0b49a5d564ba39165943577"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/cvpr-2025-250109695-fig3/refinement/round-001/assessment.json",
+      "sha256": "b99d8d1769a693ec6c54a87da640f105ee9d2f3058ac386461420fbe14f17830"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/cvpr-2025-250109695-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "206e00a2e81075305f0fd6783bd3982ee9221e6f4a1d844e3d5e3d1a98b1aa55"
+    }
+  ],
+  "evidence_id": "bf2d457847b6021591eea899"
+}

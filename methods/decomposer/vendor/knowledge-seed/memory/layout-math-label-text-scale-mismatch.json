@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-math-label-text-scale-mismatch",
+  "owner_stage": "layout",
+  "mechanism": "math-label-text-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "840473caadbd9cb7fdcfe41e",
+    "b61fe915d36cd1d0d96e55a6"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 2,
+  "strategies": [
+    "Compare mathematical labels with reference glyph heights and adjust object text scale independently of neighboring vectors and connectors.",
+    "Compare rendered mathematical glyph heights and script legibility with the reference independently of textbox placement before calibrating text scale."
+  ]
+}

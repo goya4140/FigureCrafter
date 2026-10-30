@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-icon-internal-geometry-omitted",
+  "memory_id": "representation-icon-internal-geometry-omitted",
+  "status": "candidate",
+  "instructions": [
+    "Preserve distinguishing internal strokes when reconstructing small icons as editable paths; verify their silhouettes and internal details against the reference."
+  ],
+  "evidence_ids": [
+    "4eb6554bf932daf7658c3c3b"
+  ]
+}

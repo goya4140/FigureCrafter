@@ -1,0 +1,75 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast-geometry",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "path-bbox-offset-loss",
+  "label_ids": [
+    "top_supervisory"
+  ],
+  "primitive_ids": [
+    "top_supervisory/headers",
+    "top_supervisory/regulation_boxes",
+    "top_supervisory/conflict_grid"
+  ],
+  "field": "path placement transform",
+  "region": [
+    1662,
+    0,
+    554,
+    655
+  ],
+  "summary": "Detected in the current render: supervisory regulation boxes and conflict grid overlap the panel's upper-left corner instead of their intended rows. Their local primitive bboxes and composed scene bboxes specify the correct offsets, while ordinary rectangles retain their positions. This indicates path placement offsets are lost during export/rendering; a visual geometry workaround is inappropriate.",
+  "strategy": "Verify that exported custom paths apply both component placement and primitive bbox offsets exactly once, and compare rendered path bounds with canonical scene bounds.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-condensed-font-width-mismatch",
+      "unresolved-rendered-text-omission",
+      "unresolved-rotated-text-sizing-disagreement",
+      "unresolved-multiline-text-rendering-loss",
+      "unresolved-local-text-orientation-mismatch",
+      "representation-trailing-paragraph-text-clipping",
+      "recognition-text-punctuation-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-condensed-font-width-mismatch",
+      "unresolved-rendered-text-omission",
+      "unresolved-rotated-text-sizing-disagreement",
+      "unresolved-multiline-text-rendering-loss",
+      "unresolved-local-text-orientation-mismatch",
+      "representation-trailing-paragraph-text-clipping",
+      "recognition-text-punctuation-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-condensed-font-width-mismatch": "candidate",
+      "unresolved-rendered-text-omission": "candidate",
+      "unresolved-rotated-text-sizing-disagreement": "candidate",
+      "unresolved-multiline-text-rendering-loss": "candidate",
+      "unresolved-local-text-orientation-mismatch": "candidate",
+      "representation-trailing-paragraph-text-clipping": "candidate",
+      "recognition-text-punctuation-omission": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/representation-fast-geometry/refinement/round-001/decision.json",
+      "sha256": "7f1591b1a3513f224c77df7fb3065dda08bfb43bbf83f4127cc445a09fe4d4c4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/representation-fast-geometry/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "b66c2696a640d838674af363aa590e3f5eba01a49e40fc837b24b9fc8a0ff9b2"
+    }
+  ],
+  "evidence_id": "39210147d0dc44dfe887514e"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241114432-fig3",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "cropped-asset-bounds-expansion",
+  "label_ids": [
+    "question_bubble"
+  ],
+  "primitive_ids": [
+    "question_bubble/content"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    869,
+    0,
+    434,
+    252
+  ],
+  "summary": "The question bubble appears enlarged and shifted left in the current render. Its tightly cropped asset is stretched across the larger component bounds; restore its source-relative size and offset.",
+  "strategy": "Place cropped assets using their source-relative offsets and dimensions instead of stretching them to broader component bounds.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.947478,
+      "edge_iou": 0.307878
+    },
+    "after_local": {
+      "pixel_similarity": 0.961619,
+      "edge_iou": 0.377781
+    },
+    "before_global": {
+      "pixel_similarity": 0.963473,
+      "edge_iou": 0.323746
+    },
+    "after_global": {
+      "pixel_similarity": 0.964491,
+      "edge_iou": 0.329836
+    },
+    "local_pixel_delta": 0.014141,
+    "local_edge_delta": 0.069903,
+    "global_pixel_delta": 0.001018,
+    "evaluation_region": [
+      869,
+      0,
+      434,
+      252
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-002/decision.json",
+      "sha256": "98173faef34f69cd2d29064b79a0d686cc6d0f3a7043c10e7759e72338b561da"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-002/assessment.json",
+      "sha256": "f2500ffb1f5ab6f04f697e765a9190ef6f7e7fd85b492a5984cf3880ab3a2314"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "f35fbc075cb7eb2f1a44df645bc3d788a7990c78a21641b18a20a51b99f34575"
+    }
+  ],
+  "evidence_id": "46e49277c17b878163dc4546"
+}

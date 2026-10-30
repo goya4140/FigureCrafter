@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-local-text-orientation-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "local-text-orientation-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "c7023fa9d6e7e084e4ec7818"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Represent and verify text orientation independently from its containing shape, preserving a single readable word in rotated module labels."
+  ]
+}

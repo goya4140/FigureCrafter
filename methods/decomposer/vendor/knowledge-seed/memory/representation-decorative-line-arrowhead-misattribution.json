@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-decorative-line-arrowhead-misattribution",
+  "owner_stage": "representation",
+  "mechanism": "decorative-line-arrowhead-misattribution",
+  "status": "candidate",
+  "evidence_ids": [
+    "d10309eccef488e89219050b"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Distinguish geometric edges, construction guides, and point leaders from directed connectors; assign arrowheads only where the reference visibly indicates direction."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-mixed-script-text-vertical-offset",
+  "owner_stage": "representation",
+  "mechanism": "mixed-script-text-vertical-offset",
+  "status": "candidate",
+  "evidence_ids": [
+    "acef76828c5bcf0081d1921b",
+    "25407180335a089b3ec59394"
+  ],
+  "accepted_count": 2,
+  "rejected_count": 0,
+  "strategies": [
+    "Align mixed-script annotations using their rendered baseline and ink bounds rather than relying solely on text-box centering.",
+    "Align mixed-script annotations using rendered baselines and ink bounds, accounting for superscript and subscript extents within local text boxes."
+  ]
+}

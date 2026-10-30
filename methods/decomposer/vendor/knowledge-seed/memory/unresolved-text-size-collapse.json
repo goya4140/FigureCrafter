@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-text-size-collapse",
+  "owner_stage": "unresolved",
+  "mechanism": "text-size-collapse",
+  "status": "candidate",
+  "evidence_ids": [
+    "676b384a3103de841bcc3180"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

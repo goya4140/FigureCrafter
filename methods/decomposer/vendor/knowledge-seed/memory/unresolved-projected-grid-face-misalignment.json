@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-projected-grid-face-misalignment",
+  "owner_stage": "unresolved",
+  "mechanism": "projected-grid-face-misalignment",
+  "status": "candidate",
+  "evidence_ids": [
+    "13c043d2dfdd1cb49cf415c1"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Validate projected grid alignment in the rendered output against both scene coordinates and exported path transforms before assigning ownership."
+  ]
+}

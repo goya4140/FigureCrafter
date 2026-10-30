@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-trailing-newline-in-short-math-label",
+  "owner_stage": "representation",
+  "mechanism": "trailing-newline-in-short-math-label",
+  "status": "candidate",
+  "evidence_ids": [
+    "77cab14bae8d0134ac82c59c"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Remove unintended trailing paragraph breaks from compact mathematical annotations before generating editable runs, and verify all vertex labels in the exported render."
+  ]
+}

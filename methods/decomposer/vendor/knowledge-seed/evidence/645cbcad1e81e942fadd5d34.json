@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250416060-fig11",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-omission",
+  "label_ids": [
+    "human_prompt"
+  ],
+  "primitive_ids": [
+    "human_prompt/text"
+  ],
+  "field": null,
+  "region": [
+    1600,
+    968,
+    800,
+    323
+  ],
+  "summary": "The human response balloon's prompt is missing in the current render. Recognition, representation, layout, and OOXML provenance all retain the correct text and placement; the supplied evidence does not establish why it is invisible.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-003/decision.json",
+      "sha256": "1b69c750fea0682f62bb1067ec55528a0f6028de05025ccdae5c42c5a4602e58"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "5f6fbddaf5730479dff316bc044da89a49a60948a6aa7afe36ba870cddd59019"
+    }
+  ],
+  "evidence_id": "645cbcad1e81e942fadd5d34"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-math-annotation-size-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "math-annotation-size-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "cb881589c1676399585c9569"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

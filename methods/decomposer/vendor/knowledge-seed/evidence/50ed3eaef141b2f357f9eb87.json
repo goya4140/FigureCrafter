@@ -1,0 +1,90 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "075-final-native-owner-repair-qa",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "native-math-owner-complete-repair",
+  "label_ids": [
+    "buffer_warp_label",
+    "color_loss_label",
+    "current_label",
+    "loss_stage1",
+    "loss_stage2",
+    "mc_loss",
+    "me_loss",
+    "motion_hat",
+    "motion_label",
+    "motion_q",
+    "previous_label",
+    "quantized_residual_label",
+    "residual_entropy_label",
+    "residual_label",
+    "residual_q",
+    "sum_operator",
+    "trained_label",
+    "warp_operator",
+    "warped_label",
+    "warped_prime_label"
+  ],
+  "primitive_ids": [],
+  "field": null,
+  "region": null,
+  "summary": "Bounded native reconstruction of20math owners restored hats and loss-script content while preserving Recognition and all nonmath plans; Global75->90,text40->80,equation20->50.",
+  "strategy": "When a formula has split script objects, repair the complete formula owner rather than a single text primitive. Preserve the exact source partition across all fragments and keep letters as editable text. For demonstrated combining-hat render loss, a native caret polyline may replace only the visible combining mark while its glyph run retains full source_text. Compare exported crop, glyph family, weight, operators and script spacing; verify native edits. This 075 probe still has font and spacing errors and fails strict loss-ROI pixel nonregression, so keep it candidate and do not generalize or loosen patch acceptance thresholds.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "measurement_type": "qa_final_native_reconstruction",
+    "scores_before": {
+      "text": 40,
+      "equation": 20,
+      "image": 86.66666666666667,
+      "chart": null,
+      "arrow": 80,
+      "shape": 80,
+      "global": 75
+    },
+    "scores_after": {
+      "text": 80,
+      "equation": 50,
+      "image": 86.66666666666667,
+      "chart": null,
+      "arrow": 80,
+      "shape": 80,
+      "global": 90
+    },
+    "native_hard_validation_passed": true,
+    "editability_probe_passed": true,
+    "strict_local_visual_gate_passed": false,
+    "limitations": "Loss ROI pixel similarity -.006428 and edgeIoU +.074411. QA equation50 is incomplete fidelity. Success means final reconstruction QA and global fidelity improvement, not passing the existing strict local patch acceptance gate."
+  },
+  "knowledge_trace": {},
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/results.json",
+      "sha256": "086be1816eabc0246c70fef2355c751a08b4060bf8dccbb097e05f27cc32a106"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/math-final-assessment.json",
+      "sha256": "0a737123a4f21d3eda6450104ab13725b7ad83c45e0a6f2133f12138e95c2118"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/editability-probe/result.json",
+      "sha256": "ebea5dc260b4ad65595fd2699a032d5c4b826efa811494c1eed9429b4f8db4d9"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/math-final/runs/075-cvpr-2025-250318421-fig2/output/preview.png",
+      "sha256": "40a6407d5732b6953843da97037c405d7198c5ef1caf81f54a03c92dad355336"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/math-final/runs/075-cvpr-2025-250318421-fig2/qa/prepared/summary.json",
+      "sha256": "dcb15e9da206dab21503472962628f7099f81038424527a915239024a3ba6483"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/math-recipes/patch-provenance.json",
+      "sha256": "13cdd1ae63112d08df9c16b48123d4096deedf16f902069fd02f34e585804e5c"
+    }
+  ],
+  "evidence_id": "50ed3eaef141b2f357f9eb87"
+}

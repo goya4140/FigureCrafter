@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241112915-fig6",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "training_title"
+  ],
+  "primitive_ids": [
+    "training_title/text"
+  ],
+  "field": "bbox",
+  "region": [
+    0,
+    0,
+    637,
+    278
+  ],
+  "summary": "The rendered training title is visibly smaller than the reference. Its local two-line text box provides insufficient height for the specified 33-unit font. Increase local height around the existing center to avoid text shrinkage.",
+  "strategy": "Size multiline editable text boxes to accommodate the specified font's line metrics before export, preserving the intended text center and checking for automatic shrinkage.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.942069,
+      "edge_iou": 0.380147
+    },
+    "after_local": {
+      "pixel_similarity": 0.942069,
+      "edge_iou": 0.380147
+    },
+    "before_global": {
+      "pixel_similarity": 0.967041,
+      "edge_iou": 0.329324
+    },
+    "after_global": {
+      "pixel_similarity": 0.967041,
+      "edge_iou": 0.329324
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      0,
+      0,
+      637,
+      278
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241112915-fig6/refinement/round-001/decision.json",
+      "sha256": "8babc9cfc5d038a064fc2013c3f95de0677ef3ff7e3d32ccd219d24e5cccb584"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241112915-fig6/refinement/round-001/assessment.json",
+      "sha256": "591029cf21bb4d09b07e1991d6de0d40ad42a0edeba0d12429f96f4d31216289"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241112915-fig6/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "e96b89887c909e9ef233440a1ea74571bc23657230d60cea9d58148f7c14cd5a"
+    }
+  ],
+  "evidence_id": "0f25aae7a2231bb7524f4e72"
+}

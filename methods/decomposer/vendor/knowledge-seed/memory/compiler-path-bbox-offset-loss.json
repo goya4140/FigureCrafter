@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-path-bbox-offset-loss",
+  "owner_stage": "compiler",
+  "mechanism": "path-bbox-offset-loss",
+  "status": "candidate",
+  "evidence_ids": [
+    "39210147d0dc44dfe887514e"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Verify that exported custom paths apply both component placement and primitive bbox offsets exactly once, and compare rendered path bounds with canonical scene bounds."
+  ]
+}

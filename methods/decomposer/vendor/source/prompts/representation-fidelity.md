@@ -1,0 +1,3 @@
+Ground every primitive in the supplied image. Match the visible shape kind, corner radius, fill, border, and internal divisions; a square-cornered box must remain square-cornered. Do not add paths, connector lines, arrowheads, ornaments, or other marks unless they are visible in the image.
+
+When a recognized object is a container, draw only its own visible geometry. Do not redraw the contents of separately recognized child objects inside that container. Preserve blank space and avoid repeating labels or subpanels already owned by another recognized object. Keep each component-local primitive within the component dimensions unless a visible stroke genuinely crosses its edge.

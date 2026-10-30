@@ -1,0 +1,133 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-baseline-r2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "matching-band-geometry-overexpansion",
+  "label_ids": [
+    "transport_graph"
+  ],
+  "primitive_ids": [
+    "transport_graph/greenband"
+  ],
+  "field": "points",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "The render shows green fill covering the transport graph instead of a narrow diagonal matching band. The local greenband polygon incorrectly spans the entire component; its points, rather than global placement or export, own the error.",
+  "strategy": "Construct matching bands around their associated connector endpoints and verify that their filled area preserves the surrounding graph background and other bands.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.876655,
+      "edge_iou": 0.128969
+    },
+    "after_local": {
+      "pixel_similarity": 0.878693,
+      "edge_iou": 0.135379
+    },
+    "before_global": {
+      "pixel_similarity": 0.922788,
+      "edge_iou": 0.159599
+    },
+    "after_global": {
+      "pixel_similarity": 0.9235,
+      "edge_iou": 0.160138
+    },
+    "local_pixel_delta": 0.002038,
+    "local_edge_delta": 0.00641,
+    "global_pixel_delta": 0.000712,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "f9c5df314dd25c0f4fc0092683669cccd1f21cb8a023bb99357bb6df80127f5d",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "0546bcf5a13c6945fb96aa8fcd30babb42c5432b32bd1c8cccf1b850c6f18130"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-001/decision.json",
+      "sha256": "e9fcf17d3e770330dabb24356366ea07ce31f049024463598afff51f622a50c4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-001/assessment.json",
+      "sha256": "0da9c5795d7e828a89ed07ac1863de865f638ffd85abcb15dbb406be791d48eb"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "31063e2e86759412c7380334397f91527ee0c8ffda4396b663f6bcfe7f06341f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-001/before-preview.png",
+      "sha256": "76510b7d067d59414157c16b74410a0d34e3c9fbd607f189bfeaebf0fd526b37"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-001/output/preview.png",
+      "sha256": "1dd17c8f7c7d7694bb6d8420effef7142f8bb4fbdb624eac5938637568bd6cc4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-001/output/editable.pptx",
+      "sha256": "78e4d66598d0aab9b85c417d839cc0d1037da947b55fcfbaabf2fcca74da6229"
+    }
+  ],
+  "evidence_id": "5ece4e12d8f32594a81769e0"
+}

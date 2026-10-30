@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250614580-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "rich-text-rendering-loss",
+  "label_ids": [
+    "question"
+  ],
+  "primitive_ids": [
+    "question/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    0,
+    800,
+    442
+  ],
+  "summary": "The question text is absent in the current render within the selected tile. Recognition, editable text runs, placement, and OOXML all retain its content, while nearby plain text renders correctly. This localizes the failure to rich-text export or rendering; no visual workaround is appropriate.",
+  "strategy": "Validate rich-text export with rendered visibility checks as well as OOXML content checks; preserve run styling and line breaks through the renderer.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250614580-fig2/refinement/round-001/decision.json",
+      "sha256": "df0a4db7e21e2604c30ec125e73128d893935967861a2277ffca1027c575afc3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250614580-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "534aed7c5e8a072fe21a29ec98c5b1a7df68f5e3e694afb0b04dc080e3c6dc94"
+    }
+  ],
+  "evidence_id": "5a9f7f8fbd6bd89a56ee2690"
+}

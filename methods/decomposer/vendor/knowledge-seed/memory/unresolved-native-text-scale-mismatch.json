@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-native-text-scale-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "native-text-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "5a20d448b6a468a16e799e50"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare scene font sizes with exported run sizes and autofit settings before changing geometry for unexpectedly small native text."
+  ]
+}

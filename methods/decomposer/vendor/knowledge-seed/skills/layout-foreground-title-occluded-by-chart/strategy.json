@@ -1,0 +1,13 @@
+{
+  "skill_id": "layout-foreground-title-occluded-by-chart",
+  "memory_id": "layout-foreground-title-occluded-by-chart",
+  "status": "candidate",
+  "instructions": [
+    "When title blocks overlap chart containers, place the title above the container and verify both text lines remain visible in the exported render.",
+    "Order overlapping chart containers behind foreground title blocks, then verify that all title lines remain visible in the exported render."
+  ],
+  "evidence_ids": [
+    "cfafed58b16a47076c372112",
+    "83e934621e52dc20a88ed806"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309513-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "training_model_text"
+  ],
+  "primitive_ids": [
+    "training_model_text/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    0,
+    348,
+    698,
+    348
+  ],
+  "summary": "In tile-1-0, the training model's two-line label renders smaller than the reference inside an otherwise correctly positioned box. Increase its layout text scale.",
+  "strategy": "Calibrate text scale against reference glyph height and line width while preserving correctly aligned container geometry.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.959517,
+      "edge_iou": 0.243795
+    },
+    "after_local": {
+      "pixel_similarity": 0.958591,
+      "edge_iou": 0.237776
+    },
+    "before_global": {
+      "pixel_similarity": 0.969257,
+      "edge_iou": 0.287587
+    },
+    "after_global": {
+      "pixel_similarity": 0.969199,
+      "edge_iou": 0.287065
+    },
+    "local_pixel_delta": -0.000926,
+    "local_edge_delta": -0.006019,
+    "global_pixel_delta": -5.8e-05,
+    "evaluation_region": [
+      0,
+      348,
+      698,
+      348
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-003/decision.json",
+      "sha256": "ed675f2ada40aeb57004aa4570608bec3c6d0a1a158af5479f50fd1596681068"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-003/assessment.json",
+      "sha256": "b9e7adaab9c6ff1930bd7cf28d9e12b034cbdd58d9da97fb38b8e749d90ab29d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "37064eaa6e8558964068b419353a0cc5bed936acee8a0e2c22fb096b536b7df1"
+    }
+  ],
+  "evidence_id": "ab6414806e140aee248e0c82"
+}

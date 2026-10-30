@@ -1,0 +1,74 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240903634-fig3",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "view_legend",
+    "feature_legend"
+  ],
+  "primitive_ids": [
+    "view_legend/text",
+    "feature_legend/text"
+  ],
+  "field": "bbox",
+  "region": [
+    1600,
+    810,
+    800,
+    270
+  ],
+  "summary": "The rendered legend captions are severely shrunken relative to the reference. Their local text boxes are only 37 units high, leaving insufficient room for the scaled font. Increase local text-box height while preserving caption centers.",
+  "strategy": "Provide text boxes with sufficient vertical font-metric clearance before increasing font scale; verify that automatic fitting does not shrink otherwise correctly sized captions.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.944189,
+      "edge_iou": 0.269673
+    },
+    "after_local": {
+      "pixel_similarity": 0.944189,
+      "edge_iou": 0.269673
+    },
+    "before_global": {
+      "pixel_similarity": 0.967565,
+      "edge_iou": 0.353944
+    },
+    "after_global": {
+      "pixel_similarity": 0.967565,
+      "edge_iou": 0.353944
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      1600,
+      810,
+      800,
+      270
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-002/decision.json",
+      "sha256": "9a4b4f1cdae6061ed56e5a716420f293fec6c6ed2ad2857a2b8e0f3c52341bb6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-002/assessment.json",
+      "sha256": "294d2eb452c29f2d72e21a8a0fc9d0a4b6e0624169aaa43f2881e8a40d285a6a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240903634-fig3/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "c6a71284f790274027166cbde5f565506ac7bfdb7394f8f401559deecc28395a"
+    }
+  ],
+  "evidence_id": "fb9d6628e2429ce13d1f5510"
+}

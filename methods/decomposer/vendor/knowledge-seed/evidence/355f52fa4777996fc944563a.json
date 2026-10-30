@@ -1,0 +1,150 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-representation-fast-r4",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "clip_opinion_chart"
+  ],
+  "primitive_ids": [
+    "clip_opinion_chart/b1",
+    "clip_opinion_chart/b2",
+    "clip_opinion_chart/b3"
+  ],
+  "field": "bbox",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "The current render loses the clip-opinion vertex labels visible in the reference. Their local text boxes provide only 67 units of height for 57-unit mathematical text with scripts and a trailing paragraph. Increase local vertical clearance; the previous rejected attempt changed runs only.",
+  "strategy": "Reserve full font and script vertical extents in mathematical annotation boxes, then verify every vertex label in the exported render.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.882104,
+      "edge_iou": 0.142644
+    },
+    "after_local": {
+      "pixel_similarity": 0.880464,
+      "edge_iou": 0.141587
+    },
+    "before_global": {
+      "pixel_similarity": 0.92453,
+      "edge_iou": 0.165043
+    },
+    "after_global": {
+      "pixel_similarity": 0.924406,
+      "edge_iou": 0.164939
+    },
+    "local_pixel_delta": -0.00164,
+    "local_edge_delta": -0.001057,
+    "global_pixel_delta": -0.000124,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "e259c091b04444b47d644e6e5c730a324b17d2e74912610a2735b0bbf797b274",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "39e3c84fa3fdbf4723f9bac9ab6769b8ff7e54aa8044ff57e6478c78b25b6b49"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "e259c091b04444b47d644e6e5c730a324b17d2e74912610a2735b0bbf797b274",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "39e3c84fa3fdbf4723f9bac9ab6769b8ff7e54aa8044ff57e6478c78b25b6b49"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-trailing-newline-math-label-overflow",
+      "representation-text-box-font-metric-overflow",
+      "representation-math-script-size-inflates-text-width",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "representation-text-box-line-spacing-overflow",
+      "representation-separator-misrepresented-as-arrow"
+    ],
+    "retrieved_skill_ids": [
+      "representation-trailing-newline-math-label-overflow",
+      "representation-text-box-font-metric-overflow",
+      "representation-math-script-size-inflates-text-width",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "representation-text-box-line-spacing-overflow",
+      "representation-separator-misrepresented-as-arrow"
+    ],
+    "retrieved_statuses": {
+      "representation-trailing-newline-math-label-overflow": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-math-script-size-inflates-text-width": "candidate",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "representation-text-box-line-spacing-overflow": "candidate",
+      "representation-separator-misrepresented-as-arrow": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-trailing-newline-math-label-overflow",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "representation-trailing-newline-math-label-overflow",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [
+      "representation-text-box-font-metric-overflow"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-002/decision.json",
+      "sha256": "2079f6f660e8ca805218b726a48d63bfbc2904c5b553a20a97d13b811ebc2a0f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-002/assessment.json",
+      "sha256": "1c3e57f2d598a0baa9041ef2ff65267cf0739d95de2788eab27a29b1f258143e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "c240d6c106344f6201b1031dfcb51b6444538751085e84ac41d9c657d18fa8f2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-002/before-preview.png",
+      "sha256": "325c3d346bfe8fd41a63ad340f475791c3487fd20a987c3ea85935955f047838"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-002/output/preview.png",
+      "sha256": "6d2f0d1add6e988d17da7cc5b5aa5c044356cfc66f950b12b1f30a6f25fe44c7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-002/output/editable.pptx",
+      "sha256": "b4353b492ac77c44730092a33969ea5ed6fdc2d3599f77165d44bdc72caf6416"
+    }
+  ],
+  "evidence_id": "355f52fa4777996fc944563a"
+}

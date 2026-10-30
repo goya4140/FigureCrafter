@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-math-markup-rendered-literally",
+  "memory_id": "representation-math-markup-rendered-literally",
+  "status": "candidate",
+  "instructions": [
+    "Convert mathematical source markup into editable styled runs while preserving exact source-text concatenation and validating superscript and subscript baselines in the exported render.",
+    "Represent mathematical identifiers with editable styled runs whose source_text preserves the recognized source while visible text uses native subscript and superscript formatting; validate script baselines in the exported render."
+  ],
+  "evidence_ids": [
+    "d38c8468a5fc1196932436d6",
+    "a9e8a63869de2ad2f6219a8a"
+  ]
+}

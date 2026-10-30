@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-multiline-text-scale-collapse",
+  "memory_id": "unresolved-multiline-text-scale-collapse",
+  "status": "candidate",
+  "instructions": [
+    "Validate exported font sizes, line-spacing units, and autofit behavior for multiline text before applying visual font-scale compensation."
+  ],
+  "evidence_ids": [
+    "40c8c11e74e4ee280f2f56ff"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-caption-font-scale-mismatch",
+  "owner_stage": "layout",
+  "mechanism": "caption-font-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "b49229c664a1261757da1a48"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare caption glyph height and rendered width against the reference; correct text scale when box resizing does not change glyph metrics."
+  ]
+}

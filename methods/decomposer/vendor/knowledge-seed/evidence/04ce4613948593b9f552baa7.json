@@ -1,0 +1,77 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "path-local-offset-dropped",
+  "label_ids": [
+    "panel_bottom"
+  ],
+  "primitive_ids": [
+    "panel_bottom/agent_panels",
+    "panel_bottom/agent_headers",
+    "panel_bottom/supervisory_headers",
+    "panel_bottom/actions",
+    "panel_bottom/flow"
+  ],
+  "field": "path coordinate translation",
+  "region": [
+    554,
+    1311,
+    554,
+    656
+  ],
+  "summary": "The current render places bottom-panel path shapes at the panel origin instead of their individual offsets: headers and flow lines appear above their intended positions, and supervisory path shapes overlap the execution area. Canonical primitive bounds and provenance scene bounds retain those offsets. Correct path coordinate translation during export; do not compensate by moving canonical objects.",
+  "strategy": "Validate exported path origins against scene bounds, applying both component placement and primitive-local translation exactly once; compare paths with neighboring native rectangles in the rendered output.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "unresolved-rendered-text-omission",
+      "unresolved-rotated-text-sizing-disagreement"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-condensed-font-width-mismatch",
+      "unresolved-rendered-text-omission",
+      "unresolved-rotated-text-sizing-disagreement"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-condensed-font-width-mismatch": "candidate",
+      "unresolved-rendered-text-omission": "candidate",
+      "unresolved-rotated-text-sizing-disagreement": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/representation-fast/refinement/round-001/decision.json",
+      "sha256": "7bc37fffb74493a657ad5df731cd13fe3a7b8ab5d233aa2a6652a0847dc46dff"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/emnlp-2025-250306951-fig2/representation-fast/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "32ae73c116819908b4b73d826aa05679a5e479ce5e333ffd0add2d6fa45a5ba5"
+    }
+  ],
+  "evidence_id": "04ce4613948593b9f552baa7"
+}

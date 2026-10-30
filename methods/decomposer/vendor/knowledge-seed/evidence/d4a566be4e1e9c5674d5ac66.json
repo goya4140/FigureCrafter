@@ -1,0 +1,74 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250522079-fig3",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-font-size-underestimate",
+  "label_ids": [
+    "report_body",
+    "neg_report_body"
+  ],
+  "primitive_ids": [
+    "report_body/text",
+    "neg_report_body/text"
+  ],
+  "field": "primitives.style.font_size",
+  "region": [
+    0,
+    217,
+    467,
+    217
+  ],
+  "summary": "In tile-1-0, both report bodies render smaller and more compact than the reference. The local text primitive font sizes own this mismatch; enlarging their boxes previously produced no improvement.",
+  "strategy": "Compare rendered glyph height and line width with the reference before adjusting text boxes; correct local font size when the text fits but appears undersized.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.924188,
+      "edge_iou": 0.307324
+    },
+    "after_local": {
+      "pixel_similarity": 0.925142,
+      "edge_iou": 0.330257
+    },
+    "before_global": {
+      "pixel_similarity": 0.967013,
+      "edge_iou": 0.316986
+    },
+    "after_global": {
+      "pixel_similarity": 0.967058,
+      "edge_iou": 0.319917
+    },
+    "local_pixel_delta": 0.000954,
+    "local_edge_delta": 0.022933,
+    "global_pixel_delta": 4.5e-05,
+    "evaluation_region": [
+      0,
+      217,
+      467,
+      217
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250522079-fig3/refinement/round-003/decision.json",
+      "sha256": "f8a21732eeb5bcd05bcad61303af516c2f9ad24280a94093b4f52834f67aad68"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250522079-fig3/refinement/round-003/assessment.json",
+      "sha256": "e72addccec66568cebaf1abc67dae446715f02c4588a298de2c00c0cca9d3eed"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250522079-fig3/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "b9eed90d9247433043905d41df72e48bf81281879abae77c8d18c4962ac7d6b6"
+    }
+  ],
+  "evidence_id": "d4a566be4e1e9c5674d5ac66"
+}

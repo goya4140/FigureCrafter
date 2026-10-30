@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-text-style-invisible-and-undersized",
+  "memory_id": "representation-text-style-invisible-and-undersized",
+  "status": "candidate",
+  "instructions": [
+    "Validate that every visible reference heading has an explicit text color and a font size matching its reference ink bounds before export."
+  ],
+  "evidence_ids": [
+    "7240f9947f42f19f8ed5da48"
+  ]
+}

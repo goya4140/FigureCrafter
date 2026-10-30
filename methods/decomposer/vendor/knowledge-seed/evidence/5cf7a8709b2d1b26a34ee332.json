@@ -1,0 +1,160 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-representation-fast-r3",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "container-corner-radius-mismatch",
+  "label_ids": [
+    "panel_d"
+  ],
+  "primitive_ids": [
+    "panel_d/boundary"
+  ],
+  "field": "kind",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "In the current render, panel_d has substantially rounder upper corners than the reference, shortening the straight dashed border beside the matrix labels. The local boundary primitive owns this mismatch; its global placement matches the supplied source bounds.",
+  "strategy": "Compare container corners at final render scale; use rectangular geometry for nearly square boundaries when preset rounding substantially intrudes into the content area, then validate the exported render.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.880206,
+      "edge_iou": 0.139636
+    },
+    "after_local": {
+      "pixel_similarity": 0.880703,
+      "edge_iou": 0.14146
+    },
+    "before_global": {
+      "pixel_similarity": 0.923483,
+      "edge_iou": 0.162084
+    },
+    "after_global": {
+      "pixel_similarity": 0.923562,
+      "edge_iou": 0.161957
+    },
+    "local_pixel_delta": 0.000497,
+    "local_edge_delta": 0.001824,
+    "global_pixel_delta": 7.9e-05,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "frame_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "frame_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "7dbb273d9c361e785c1081f66d04acd2891289df66f0d0c24567d518b5749253",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "f59260b44d4958b8056c57ba12b58a1321d3c4c3ec7ea29327cfe4bf407c3217"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "7dbb273d9c361e785c1081f66d04acd2891289df66f0d0c24567d518b5749253",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "f59260b44d4958b8056c57ba12b58a1321d3c4c3ec7ea29327cfe4bf407c3217"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-container-corner-radius-mismatch"
+    ],
+    "referenced_skill_ids": [
+      "representation-container-corner-radius-mismatch"
+    ],
+    "patch_source_memory_ids": [
+      "representation-container-corner-radius-mismatch"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r3/refinement/round-003/decision.json",
+      "sha256": "402ca51ba8c2bfe6df1bbe82d4b15b0434daf8383c78ab9424d875cb12fa5feb"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r3/refinement/round-003/assessment.json",
+      "sha256": "707644cc35faa04ea24ff23ca856b17ecaf9f391597f53dc80d7ed70881d11c3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r3/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "4c17ac57cd2f2faa6ca1ea70eef68406dbbafa4fbf5b3b3661c28b672ec3ff3d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r3/refinement/round-003/before-preview.png",
+      "sha256": "87ff9f28c27e934643dd39cfadd76d0c7a486fb0a0fe36b9f2c3bc46845aa22b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r3/refinement/round-003/output/preview.png",
+      "sha256": "6d1ff3c4c343822f4ee64a91259ddef0a91d971d5ead1cdd71695158eb27231e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r3/refinement/round-003/output/editable.pptx",
+      "sha256": "e3ae329e1b24324e8318407f7a4c1b539e8c1ff64b9831b3a4c13027d7de1531"
+    }
+  ],
+  "evidence_id": "5cf7a8709b2d1b26a34ee332"
+}

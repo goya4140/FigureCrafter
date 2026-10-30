@@ -1,0 +1,56 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-240404913-fig1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "literal-math-markup-in-text-primitive",
+  "label_ids": [
+    "features_equation"
+  ],
+  "primitive_ids": [
+    "features_equation/equation"
+  ],
+  "field": "text",
+  "region": null,
+  "summary": "The rendered feature equation exposes LaTeX syntax and wraps below the canvas. Its ordinary text primitive contains unconverted LaTeX; replace it with editable mathematical characters.",
+  "strategy": "Convert mathematical markup to supported editable Unicode notation before placing it in ordinary text primitives; verify that commands and delimiters never render literally.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.92402,
+      "edge_iou": 0.203526
+    },
+    "after_local": {
+      "pixel_similarity": 0.929215,
+      "edge_iou": 0.205584
+    },
+    "before_global": {
+      "pixel_similarity": 0.957337,
+      "edge_iou": 0.221351
+    },
+    "after_global": {
+      "pixel_similarity": 0.957662,
+      "edge_iou": 0.221576
+    },
+    "local_pixel_delta": 0.005195,
+    "local_edge_delta": 0.002058,
+    "global_pixel_delta": 0.000325
+  },
+  "artifact_refs": [
+    {
+      "path": "../experiments/decomposer-v16-first100-sam-v16/runs/aaai-2025-240404913-fig1/refinement/round-002/decision.json",
+      "sha256": "87c093fab8acc9266b8232b6a05dfdc19460c0de554e49d96a6be6df82640a33"
+    },
+    {
+      "path": "../experiments/decomposer-v16-first100-sam-v16/runs/aaai-2025-240404913-fig1/refinement/round-002/assessment.json",
+      "sha256": "7a0e3c2e6bc207ba8c986db0b51f3b368a107146b6c14b7e2cb6fc9e55167886"
+    },
+    {
+      "path": "../experiments/decomposer-v16-first100-sam-v16/runs/aaai-2025-240404913-fig1/refinement/round-002/output/preview.png",
+      "sha256": "d45f2d5479c78ca6bf0aed81e70393abb188db923f2a3ccda15d7d7a5657463f"
+    }
+  ],
+  "evidence_id": "794661e0a862fd671cc6116a"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-object-rotation-mismatch",
+  "owner_stage": "layout",
+  "mechanism": "object-rotation-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "5001f6add83ac16c13bb3060"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Preserve each node's observed orientation by rotating its shape and text together during layout."
+  ]
+}

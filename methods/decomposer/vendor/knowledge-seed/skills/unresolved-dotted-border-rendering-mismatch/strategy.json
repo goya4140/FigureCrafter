@@ -1,0 +1,9 @@
+{
+  "skill_id": "unresolved-dotted-border-rendering-mismatch",
+  "memory_id": "unresolved-dotted-border-rendering-mismatch",
+  "status": "candidate",
+  "instructions": [],
+  "evidence_ids": [
+    "ad08fdc4ee92926bd969823d"
+  ]
+}

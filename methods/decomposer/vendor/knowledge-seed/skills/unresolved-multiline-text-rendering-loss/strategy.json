@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-multiline-text-rendering-loss",
+  "memory_id": "unresolved-multiline-text-rendering-loss",
+  "status": "candidate",
+  "instructions": [
+    "When multiline labels disappear despite preserved scene and OOXML text, establish the export or rendering cause before changing visual geometry or typography."
+  ],
+  "evidence_ids": [
+    "bf19f5f56638ebb8cafbce5c"
+  ]
+}

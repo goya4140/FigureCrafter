@@ -1,0 +1,82 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-omission",
+  "label_ids": [
+    "frame_opinion_chart"
+  ],
+  "primitive_ids": [
+    "frame_opinion_chart/u",
+    "frame_opinion_chart/b1",
+    "frame_opinion_chart/b2",
+    "frame_opinion_chart/b3"
+  ],
+  "field": null,
+  "region": [
+    3072,
+    485,
+    1024,
+    485
+  ],
+  "summary": "Detected in the current render: the frame opinion diagram lacks the reference's visible u and b vertex labels. Their editable text primitives and exported OOXML text are present. The supplied evidence does not establish whether text fitting, clipping, or rendering causes the omission, so no geometry workaround is proposed.",
+  "strategy": "Verify exported text bounds, font metrics, fitting, and visibility when labels disappear despite remaining present in canonical primitives and OOXML; establish ownership before patching.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "unresolved-rendered-text-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "unresolved-rendered-text-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "unresolved-rendered-text-omission": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-text-box-font-metric-overflow",
+      "unresolved-rendered-text-omission"
+    ],
+    "referenced_skill_ids": [
+      "representation-text-box-font-metric-overflow",
+      "unresolved-rendered-text-omission"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/edit-test-1-4k/refinement/round-001/decision.json",
+      "sha256": "406885d764164877e073ff3bb63180665212c0cb9df8df660b167545e56c27c2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/edit-test-1-4k/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "2c70920b8eb9d3c2d2240bcd9ce50d1ad2b6ee860ab386478f53e70a3226f1b1"
+    }
+  ],
+  "evidence_id": "07aad63f09d8b5fcd3249c19"
+}

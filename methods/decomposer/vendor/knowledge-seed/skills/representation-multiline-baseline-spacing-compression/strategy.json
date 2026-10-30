@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-multiline-baseline-spacing-compression",
+  "memory_id": "representation-multiline-baseline-spacing-compression",
+  "status": "candidate",
+  "instructions": [
+    "Compare baseline pitch across multiple lines independently of glyph size; correct cumulative vertical drift through line spacing rather than repeated font scaling."
+  ],
+  "evidence_ids": [
+    "cfc1a1f22528b8cfe7bc4bdd"
+  ]
+}

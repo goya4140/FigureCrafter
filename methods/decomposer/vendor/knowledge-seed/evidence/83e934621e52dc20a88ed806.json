@@ -1,0 +1,134 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-baseline-r2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "foreground-title-occluded-by-chart",
+  "label_ids": [
+    "identification_title"
+  ],
+  "primitive_ids": [
+    "identification_title/b",
+    "identification_title/t"
+  ],
+  "field": "component_order",
+  "region": [
+    1024,
+    0,
+    1024,
+    485
+  ],
+  "summary": "The current render clips the Identification title’s second line. The chart begins at y=428, overlaps the title through y=470, and is ordered above it. Bring the title forward to restore its complete text.",
+  "strategy": "Order overlapping chart containers behind foreground title blocks, then verify that all title lines remain visible in the exported render.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.911936,
+      "edge_iou": 0.181575
+    },
+    "after_local": {
+      "pixel_similarity": 0.914079,
+      "edge_iou": 0.202352
+    },
+    "before_global": {
+      "pixel_similarity": 0.9235,
+      "edge_iou": 0.160138
+    },
+    "after_global": {
+      "pixel_similarity": 0.923634,
+      "edge_iou": 0.16172
+    },
+    "local_pixel_delta": 0.002143,
+    "local_edge_delta": 0.020777,
+    "global_pixel_delta": 0.000134,
+    "evaluation_region": [
+      1024,
+      0,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "da8d892b8b7052de3f3c27b3e9b402b5fd067f17c1630adc2793117338b9f064",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "78e4d66598d0aab9b85c417d839cc0d1037da947b55fcfbaabf2fcca74da6229"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-matching-band-geometry-overexpansion",
+      "representation-text-box-font-metric-overflow",
+      "representation-text-bearing-object-category-drift",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-text-style-invisible-and-undersized",
+      "representation-node-text-local-placement-offset",
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "retrieved_skill_ids": [
+      "representation-matching-band-geometry-overexpansion",
+      "representation-text-box-font-metric-overflow",
+      "representation-text-bearing-object-category-drift",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-text-style-invisible-and-undersized",
+      "representation-node-text-local-placement-offset",
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "retrieved_statuses": {
+      "representation-matching-band-geometry-overexpansion": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-text-style-invisible-and-undersized": "candidate",
+      "representation-node-text-local-placement-offset": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-002/decision.json",
+      "sha256": "2a1e3c7c97173528f6124ffd0f393cb1bc474a85bbe3e443c6493d5dd628f6a0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-002/assessment.json",
+      "sha256": "67a56179753b873dd83256328b0ff1f5dffa9628c4f96fce64416210b4cc3178"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "eed96ccee14206f82d40d5d2a32d580d767ba8a5ec1893ecd6cb60689e291c5d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-002/before-preview.png",
+      "sha256": "1dd17c8f7c7d7694bb6d8420effef7142f8bb4fbdb624eac5938637568bd6cc4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-002/output/preview.png",
+      "sha256": "2620e0154b4b81d730ae7e38f1a09a471f96eab7014a4d55a957c26591b0c7d8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-baseline-r2/refinement/round-002/output/editable.pptx",
+      "sha256": "094410d11a187ee42ae1b7ba1d9fa1bf139575f1898e17ba4005cf6d99a62ebf"
+    }
+  ],
+  "evidence_id": "83e934621e52dc20a88ed806"
+}

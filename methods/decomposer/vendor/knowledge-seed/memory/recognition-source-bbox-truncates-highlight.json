@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "recognition-source-bbox-truncates-highlight",
+  "owner_stage": "recognition",
+  "mechanism": "source-bbox-truncates-highlight",
+  "status": "candidate",
+  "evidence_ids": [
+    "7a67128393106b2d5d1adc3b"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Measure highlight bounds from every visible vertex, including narrow tips, rather than only the broad filled region."
+  ]
+}

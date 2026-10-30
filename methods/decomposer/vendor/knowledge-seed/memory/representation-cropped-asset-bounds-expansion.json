@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-cropped-asset-bounds-expansion",
+  "owner_stage": "representation",
+  "mechanism": "cropped-asset-bounds-expansion",
+  "status": "candidate",
+  "evidence_ids": [
+    "46e49277c17b878163dc4546",
+    "a59dc336c1a655471792fd0f"
+  ],
+  "accepted_count": 2,
+  "rejected_count": 0,
+  "strategies": [
+    "Place cropped assets using their source-relative offsets and dimensions instead of stretching them to broader component bounds.",
+    "Place localized raster crops using their source dimensions and offsets relative to the owning recognition box, rather than stretching them to fill that box."
+  ]
+}

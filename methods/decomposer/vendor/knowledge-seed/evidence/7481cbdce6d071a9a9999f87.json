@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250407247-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-scale-mismatch",
+  "label_ids": [
+    "code"
+  ],
+  "primitive_ids": [
+    "code/text"
+  ],
+  "field": null,
+  "region": [
+    309,
+    229,
+    309,
+    114
+  ],
+  "summary": "The code text is nearly unreadable in the current render, whereas the reference has legible code filling the panel. Recognition and representation specify 13-point text, and layout preserves its bbox with font_scale=1. Export provenance omits font sizes and autofit settings, so the stage responsible for the shrinkage cannot be established.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250407247-fig1/refinement/round-001/decision.json",
+      "sha256": "8502207d8967190a5043ce8fa3044e07dc6075b86d241382ab173b54eb30b71f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250407247-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "7ccd6491987505384a942f9af1f973a2be125c1fcf8fba7a09abce96e2f7fa32"
+    }
+  ],
+  "evidence_id": "7481cbdce6d071a9a9999f87"
+}

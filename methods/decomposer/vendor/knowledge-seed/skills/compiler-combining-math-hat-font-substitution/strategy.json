@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-combining-math-hat-font-substitution",
+  "memory_id": "compiler-combining-math-hat-font-substitution",
+  "status": "candidate",
+  "instructions": [
+    "Do not treat a font-family substitution or retained combining mark in XML as proof of visible mathematical accents. Render a tight crop and check each hat. If the renderer loses a combining hat, test native caret geometry with the underlying glyph run retaining the full recognized source identity; keep letters as editable text and avoid formula screenshots."
+  ],
+  "evidence_ids": [
+    "a88adb28b0b7c82de7b0aa64"
+  ]
+}

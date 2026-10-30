@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "recognition-missing-workflow-object-decomposition",
+  "owner_stage": "recognition",
+  "mechanism": "missing-workflow-object-decomposition",
+  "status": "candidate",
+  "evidence_ids": [
+    "441b67e7de703613a917ea98"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Check each workflow region for complete node and connector coverage before generating primitives; recognizing a container and its text does not account for its internal semantic objects."
+  ]
+}

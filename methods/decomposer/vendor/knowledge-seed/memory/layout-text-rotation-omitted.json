@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-text-rotation-omitted",
+  "owner_stage": "layout",
+  "mechanism": "text-rotation-omitted",
+  "status": "candidate",
+  "evidence_ids": [
+    "f3fb4650a990cbe470bd02c7"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Preserve the reference orientation of tilted annotations in layout and verify their angle in the rendered output."
+  ]
+}

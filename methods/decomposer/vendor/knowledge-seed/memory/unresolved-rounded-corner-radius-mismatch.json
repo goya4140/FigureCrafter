@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-rounded-corner-radius-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "rounded-corner-radius-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "5dca93a4639b1e389ce509b9"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Preserve explicit corner-radius geometry for rounded shapes and record exported shape adjustments so rendering discrepancies can be attributed and repaired."
+  ]
+}

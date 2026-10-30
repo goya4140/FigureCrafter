@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-rotated-text-box-dimension-mismatch",
+  "owner_stage": "layout",
+  "mechanism": "rotated-text-box-dimension-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "be24857d81081f96e9ac9038",
+    "b1057a994097c06e576a14a1"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 1,
+  "strategies": [
+    "For quarter-turn text, size the unrotated text box to fit the horizontal string, then rotate around the intended visual center.",
+    "For quarter-turn text, size the unrotated box to fit the complete horizontal string, then rotate it around the intended visual center."
+  ]
+}

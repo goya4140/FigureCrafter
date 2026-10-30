@@ -1,0 +1,80 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "075-source-contract-structural-success",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "split-math-source-identity-loss",
+  "label_ids": [
+    "me_loss",
+    "mc_loss",
+    "loss_stage1",
+    "loss_stage2"
+  ],
+  "primitive_ids": [],
+  "field": null,
+  "region": null,
+  "summary": "Recipe main text owned the entire formula while separate superscript text was empty; silent canonical fallback discarded eight native run groups.",
+  "strategy": "For a native math owner, validate the concatenation of all run source_text fragments against exact recognized text. Only when it forms an exact partition, normalize each op text to its own run-source fragment; retain geometry, glyphs and styles. Reject missing, duplicated or conflicting source claims with owner IDs for bounded repair, and never silently discard invalid runs. This structural fix does not prove font fidelity or correct hat rendering.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.916418,
+      "edge_iou": 0.191252
+    },
+    "after_local": {
+      "pixel_similarity": 0.911808,
+      "edge_iou": 0.220872
+    },
+    "before_global": {
+      "pixel_similarity": 0.96046,
+      "edge_iou": 0.367969
+    },
+    "after_global": {
+      "pixel_similarity": 0.960113,
+      "edge_iou": 0.369621
+    },
+    "local_pixel_delta": -0.00461,
+    "local_edge_delta": 0.02962,
+    "global_pixel_delta": -0.000347,
+    "region": [
+      990,
+      65,
+      455,
+      180
+    ],
+    "measurement_scope": "Controlled same raw Recognition/Representation and image; pre-refinement renders; per-primitive source identity normalization only.",
+    "measurement_type": "structural_hard_gate",
+    "hard_gate": {
+      "name": "native_run_source_identity",
+      "failures_before": 8,
+      "failures_after": 0
+    },
+    "visual_thresholds": {
+      "minimum_pixel_similarity": 0.95,
+      "minimum_edge_iou": 0.3
+    },
+    "limitations": "Local pixel similarity decreased .004610 while local edge improved .029620. Accepted for exact source preservation and no global collapse; not a claim of full local visual fidelity."
+  },
+  "knowledge_trace": {},
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/identity-structural-assessment.json",
+      "sha256": "9da9cd6444e0ac2c9ba2bed8235f180bf00c5c84bec35cb36d7e54ca89155e5a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/identity-pass/runs/075-cvpr-2025-250318421-fig2/checkpoints/pre-refinement/scene.json",
+      "sha256": "6353f46a7b1fa6c36e099e5dc3370e9069c4a0453f50e09588b8c411d9b621bc"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/identity-pass/runs/075-cvpr-2025-250318421-fig2/checkpoints/pre-refinement/preview.png",
+      "sha256": "59c01a8fe46e907e9f61dd2e305ba42ac1abae6882f56b934f647f2e872b7a58"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/tests.log",
+      "sha256": "0f96cef34d87b403b81fa6cb6c32b9d07db505fd7c41a38d22380f96eb85e773"
+    }
+  ],
+  "evidence_id": "220b8a954ed7094cf9650349"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-241218811-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "recognition",
+  "mechanism": "source-bbox-truncates-highlight",
+  "label_ids": [
+    "rope_highlight"
+  ],
+  "primitive_ids": [
+    "rope_highlight/wedge"
+  ],
+  "field": "bbox",
+  "region": [
+    0,
+    558,
+    661,
+    279
+  ],
+  "summary": "Detected in the lower-left comparison tile: the blue spotlight begins too far right along Self-Attention. Its source bbox excludes the reference's left tip near the attention center; extend the bbox left while preserving its right edge and vertical extent.",
+  "strategy": "Measure highlight bounds from every visible vertex, including narrow tips, rather than only the broad filled region.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.945573,
+      "edge_iou": 0.300714
+    },
+    "after_local": {
+      "pixel_similarity": 0.945573,
+      "edge_iou": 0.300714
+    },
+    "before_global": {
+      "pixel_similarity": 0.963843,
+      "edge_iou": 0.280075
+    },
+    "after_global": {
+      "pixel_similarity": 0.963843,
+      "edge_iou": 0.280075
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      0,
+      558,
+      661,
+      279
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-002/decision.json",
+      "sha256": "c32b6afe98ce16d64627382da1f01f32fdecf4d44349c21887fba6754444ae13"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-002/assessment.json",
+      "sha256": "359288a98af2ad607d601b70a8766278c18301e5dbe9a524b1ec231929c467c3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "6bd1346011ff91a6257d9b5a8a22a4132dbc6bba576a37d9e723b2be49864916"
+    }
+  ],
+  "evidence_id": "7a67128393106b2d5d1adc3b"
+}

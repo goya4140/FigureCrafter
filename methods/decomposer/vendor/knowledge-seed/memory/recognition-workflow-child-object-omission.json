@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "recognition-workflow-child-object-omission",
+  "owner_stage": "recognition",
+  "mechanism": "workflow-child-object-omission",
+  "status": "candidate",
+  "evidence_ids": [
+    "770c901c54f0288dc5be0d43"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Recognize each repeated panel's semantic children and connectors as separate instances, then verify per-panel content coverage before generating primitives."
+  ]
+}

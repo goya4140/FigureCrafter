@@ -1,0 +1,139 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "reviewboundary-template-20261010",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-container-corner-rounding",
+  "label_ids": [
+    "stage2"
+  ],
+  "primitive_ids": [
+    "stage2/body"
+  ],
+  "field": "kind",
+  "region": [
+    972,
+    0,
+    486,
+    202
+  ],
+  "summary": "The current render shows an excessively rounded upper-right boundary on stage2, leaving its header disconnected from the panel outline. The reference has nearly square corners. Placement matches recognition; the incorrect geometry belongs to the local body primitive.",
+  "strategy": "Compare container corners at matched render scale; avoid rounded presets that substantially exceed reference curvature, and validate the exported result.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.907623,
+      "edge_iou": 0.278644
+    },
+    "after_local": {
+      "pixel_similarity": 0.908739,
+      "edge_iou": 0.299797
+    },
+    "before_global": {
+      "pixel_similarity": 0.942737,
+      "edge_iou": 0.377989
+    },
+    "after_global": {
+      "pixel_similarity": 0.942966,
+      "edge_iou": 0.37924
+    },
+    "local_pixel_delta": 0.001116,
+    "local_edge_delta": 0.021153,
+    "global_pixel_delta": 0.000229,
+    "evaluation_region": [
+      972,
+      0,
+      486,
+      202
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "771c902280c66fd96fdb63ab8dbc3cd3adb66e9e0a6db76b0c8a96fddfc5b3da",
+      "representation": "93d9a69a00aaa9cee5b18b8e3b43d359673ac7a2d0bd21d7d8d85ef858abd265",
+      "layout": "dcd1a4402f3d5c39b9a84c29a9fb319e58eeba8b142677cdbfb8b8b2fa6fd8e3",
+      "pptx": "37a610340b16e3ba458cbfbfcf5114de10886334f2875b988d987dbf6c4b24c5"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-corner-rounding",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-container-corner-radius-overestimation",
+      "representation-text-style-invisible-and-undersized"
+    ],
+    "retrieved_skill_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-corner-rounding",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-container-corner-radius-overestimation",
+      "representation-text-style-invisible-and-undersized"
+    ],
+    "retrieved_statuses": {
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-container-corner-radius-overestimation": "candidate",
+      "representation-text-style-invisible-and-undersized": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-excessive-container-corner-rounding"
+    ],
+    "referenced_skill_ids": [
+      "representation-excessive-container-corner-rounding"
+    ],
+    "patch_source_memory_ids": [
+      "representation-excessive-container-corner-rounding"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/reviewboundary-template-20261010/refinement/round-002/decision.json",
+      "sha256": "35d2054904e3210d1a3c7ae4bf76c45f7ce1abcf866a8cb86eb4588e086acb91"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/reviewboundary-template-20261010/refinement/round-002/assessment.json",
+      "sha256": "1d2cd9adabaed84ecabb70f52cbe6bc2f4fce07dc3a7e17164e87d254f6579e3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/reviewboundary-template-20261010/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "a3a26745e23a5893a39e7502f7af8d8154d5a7cc8411c98b4b2dfb7b4f7ed0fa"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/reviewboundary-template-20261010/refinement/round-002/before-preview.png",
+      "sha256": "0f403ee9d9a3a8fd417c50ea7e2b5ad168e908dab65fa4fd1d80f3edf00794d5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/reviewboundary-template-20261010/refinement/round-002/output/preview.png",
+      "sha256": "ae32428923b1ef706b55f0d8fd3ccdc8df919dfb6c3bd13ffb501e7812ef1bf9"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/reviewboundary-template-20261010/refinement/round-002/output/editable.pptx",
+      "sha256": "25af513670e4c1294fee02719ceb5e4c2b330c81cab87e0aa1174786044f9032"
+    }
+  ],
+  "evidence_id": "e87a4c8dc08f09b18556a9aa"
+}

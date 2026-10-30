@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250220785-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "condensed-font-width-mismatch",
+  "label_ids": [
+    "infilling_title"
+  ],
+  "primitive_ids": [
+    "infilling_title/t"
+  ],
+  "field": "style.font_family",
+  "region": [
+    1600,
+    0,
+    800,
+    292
+  ],
+  "summary": "The rendered infilling section title is visibly narrower than the reference. Its local text primitive uses Arial Narrow; the layout preserves the recognized bounds. Use Arial to restore the title's intended width and weight.",
+  "strategy": "Match text face and glyph proportions to the reference before adjusting placement or scaling; do not substitute condensed fonts merely to fit existing bounds.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.898957,
+      "edge_iou": 0.293366
+    },
+    "after_local": {
+      "pixel_similarity": 0.897974,
+      "edge_iou": 0.291884
+    },
+    "before_global": {
+      "pixel_similarity": 0.923297,
+      "edge_iou": 0.258859
+    },
+    "after_global": {
+      "pixel_similarity": 0.923236,
+      "edge_iou": 0.25877
+    },
+    "local_pixel_delta": -0.000983,
+    "local_edge_delta": -0.001482,
+    "global_pixel_delta": -6.1e-05,
+    "evaluation_region": [
+      1600,
+      0,
+      800,
+      292
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250220785-fig2/refinement/round-001/decision.json",
+      "sha256": "2c172d584df76c10d45386780105ef2c970d0776168be36bcca6744e107e7944"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250220785-fig2/refinement/round-001/assessment.json",
+      "sha256": "30cbe5f969180090d8d5c8e33f1103a067858b44a9ec41f7d23a45b7993b1465"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250220785-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "dadf5008bd2dbd704457601e694ec5f3db8eec928f5229a2b2ea2b9c36ad32b6"
+    }
+  ],
+  "evidence_id": "c0b1bdc843459bede9008bf1"
+}

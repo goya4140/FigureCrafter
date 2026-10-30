@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-trailing-paragraph-text-clipping",
+  "owner_stage": "representation",
+  "mechanism": "trailing-paragraph-text-clipping",
+  "status": "candidate",
+  "evidence_ids": [
+    "f90bde76a40b4fa39e1d5df9"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "For compact mathematical labels, avoid trailing empty display paragraphs and verify every vertex annotation remains visible after export while preserving source text in runs."
+  ]
+}

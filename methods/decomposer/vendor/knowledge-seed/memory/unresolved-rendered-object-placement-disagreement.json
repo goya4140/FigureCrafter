@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-rendered-object-placement-disagreement",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-object-placement-disagreement",
+  "status": "candidate",
+  "evidence_ids": [
+    "fbcae604dda553d0b4066056"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare rendered object positions with canonical scene bounds and exported OOXML transforms before changing geometry; repair the first stage where coordinates diverge."
+  ]
+}

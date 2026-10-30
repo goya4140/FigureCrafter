@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250215027-fig3",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "question_text"
+  ],
+  "primitive_ids": [
+    "question_text/t"
+  ],
+  "field": "font_scale",
+  "region": [
+    0,
+    253,
+    434,
+    253
+  ],
+  "summary": "In the rendered question tile, the question body is visibly smaller than the reference, while its enclosure matches. Increase this label's text scale to restore the reference's text size and line extent.",
+  "strategy": "Compare rendered text height and line extent against the reference independently of enclosure geometry, and adjust per-label text scale when both are undersized.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.908989,
+      "edge_iou": 0.245049
+    },
+    "after_local": {
+      "pixel_similarity": 0.902499,
+      "edge_iou": 0.242643
+    },
+    "before_global": {
+      "pixel_similarity": 0.930412,
+      "edge_iou": 0.295376
+    },
+    "after_global": {
+      "pixel_similarity": 0.929748,
+      "edge_iou": 0.295771
+    },
+    "local_pixel_delta": -0.00649,
+    "local_edge_delta": -0.002406,
+    "global_pixel_delta": -0.000664,
+    "evaluation_region": [
+      0,
+      253,
+      434,
+      253
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250215027-fig3/refinement/round-003/decision.json",
+      "sha256": "9c579d0516c1830b9af1d859b91f7f0f7bb16ef4fdcfad41df29cf7600c4cb03"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250215027-fig3/refinement/round-003/assessment.json",
+      "sha256": "fd1bd1fb9f78d4cdf46645d18f49796238c5eb9a7624a929a4d5c6567d8686c2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250215027-fig3/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "fb8dfb3fe8e2da2fe1868554343d63fd24a250129f76fdaaab9a9ca04b6d506f"
+    }
+  ],
+  "evidence_id": "6d9496c2aae766f5be063ba9"
+}

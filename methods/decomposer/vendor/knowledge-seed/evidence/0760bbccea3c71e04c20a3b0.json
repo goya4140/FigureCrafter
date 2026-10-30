@@ -1,0 +1,140 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-panel-corner-rounding",
+  "label_ids": [
+    "state_inference"
+  ],
+  "primitive_ids": [
+    "state_inference/outer",
+    "state_inference/inner"
+  ],
+  "field": "kind",
+  "region": [
+    475,
+    206,
+    475,
+    206
+  ],
+  "summary": "The rendered State Inference enclosure and its nested Visual Reasoning box have substantially rounder corners than the nearly square reference. Their placement matches; the incorrect fields are the local primitive kinds.",
+  "strategy": "Compare nested enclosure corners at matched render scale; use rectangular primitives when preset rounding substantially exceeds the reference curvature, then validate the exported render.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.907991,
+      "edge_iou": 0.266168
+    },
+    "after_local": {
+      "pixel_similarity": 0.90934,
+      "edge_iou": 0.262271
+    },
+    "before_global": {
+      "pixel_similarity": 0.960481,
+      "edge_iou": 0.303608
+    },
+    "after_global": {
+      "pixel_similarity": 0.960628,
+      "edge_iou": 0.303627
+    },
+    "local_pixel_delta": 0.001349,
+    "local_edge_delta": -0.003897,
+    "global_pixel_delta": 0.000147,
+    "evaluation_region": [
+      475,
+      206,
+      475,
+      206
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "aba5da62ff490658f1c8c04530fe4b34c6fb024c1b4aca5e95e2b6ffa85e6b38",
+      "representation": "853b6ca13b6a0ede0a7d559f3bfc9e30a033db265c88d98a097630833bcabc50",
+      "layout": "dae79954846fc0411875f709167335620287fba48111088f3d3ad9422cf8ebf2",
+      "pptx": "a9162377c6dc253658dcbbe76fe46e448e38dea150ebe55c45964e13fe5c0005"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-excessive-panel-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-cropped-asset-bounds-expansion",
+      "representation-text-bearing-object-category-drift"
+    ],
+    "retrieved_skill_ids": [
+      "representation-excessive-panel-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-corner-rounding",
+      "representation-container-corner-rounding-excess",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-cropped-asset-bounds-expansion",
+      "representation-text-bearing-object-category-drift"
+    ],
+    "retrieved_statuses": {
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed",
+      "representation-cropped-asset-bounds-expansion": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed"
+    },
+    "referenced_memory_ids": [
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "referenced_skill_ids": [
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "patch_source_memory_ids": [
+      "representation-excessive-panel-corner-rounding"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-230606272-fig14/representation-fast/refinement/round-002/decision.json",
+      "sha256": "b276ad0f93a4ddead2ea113e70cadc46cbd12b1383bb215c1fcfeec70fe170b8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-230606272-fig14/representation-fast/refinement/round-002/assessment.json",
+      "sha256": "6f9832ca7cfe5e8dd28ffb0225944db31f3bf04887983f06af8f01c493643835"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-230606272-fig14/representation-fast/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "faaf13e66e3cb1bceb9b0548e31a765cec527110e63f8da355a9e8199cfdf9ee"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-230606272-fig14/representation-fast/refinement/round-002/before-preview.png",
+      "sha256": "87468804be3653750038d3e2db126cc54fa389d192f0b55aa0dfe07eaddd49bf"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-230606272-fig14/representation-fast/refinement/round-002/output/preview.png",
+      "sha256": "fbb6a55db2574425ea1ab727c58b941bda45bbbe3d76e59b3ab6654bc66adcf5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-230606272-fig14/representation-fast/refinement/round-002/output/editable.pptx",
+      "sha256": "0a9a87eb991a7dc34e3b88743661334efaec83654e82bad6603192b5b1272db5"
+    }
+  ],
+  "evidence_id": "0760bbccea3c71e04c20a3b0"
+}

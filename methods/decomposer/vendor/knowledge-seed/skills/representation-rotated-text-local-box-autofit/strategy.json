@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-rotated-text-local-box-autofit",
+  "memory_id": "representation-rotated-text-local-box-autofit",
+  "status": "candidate",
+  "instructions": [
+    "Size rotated text primitives for their unrotated text flow, preserving their center, and verify rendered glyph size after rotation."
+  ],
+  "evidence_ids": [
+    "f54f1d650c9c834bdd79cca8"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-multiline-text-rendering-loss",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-rendering-loss",
+  "status": "candidate",
+  "evidence_ids": [
+    "bf19f5f56638ebb8cafbce5c"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "When multiline labels disappear despite preserved scene and OOXML text, establish the export or rendering cause before changing visual geometry or typography."
+  ]
+}

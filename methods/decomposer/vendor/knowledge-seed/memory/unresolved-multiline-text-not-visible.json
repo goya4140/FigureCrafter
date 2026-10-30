@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-multiline-text-not-visible",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-not-visible",
+  "status": "candidate",
+  "evidence_ids": [
+    "ad6158d9fd6a56c113c306ab"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "When text is absent from a render but preserved in scene and OOXML records, verify exported paragraph formatting and renderer behavior before changing visual geometry or text styling."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250416060-fig11",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rich-text-rendering-omission",
+  "label_ids": [
+    "annotation_legend"
+  ],
+  "primitive_ids": [
+    "annotation_legend/text"
+  ],
+  "field": null,
+  "region": [
+    1600,
+    645,
+    800,
+    323
+  ],
+  "summary": "The colored annotation legend beneath the Level 2 bubble is absent from the current render. Recognition, representation, layout, and OOXML provenance all retain its text; the supplied evidence does not establish why its colored runs are invisible.",
+  "strategy": "Verify rich-text run visibility and exported color inheritance before modifying correctly retained content or placement.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250416060-fig11/refinement/round-001/decision.json",
+      "sha256": "7b47e538c79bd23b5c2768d2681e6fc92fcdb0458ac39c810615a1c64275f1e4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250416060-fig11/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "166a99b2407c968d0831d5e726748c486f0caa3a8edbd6357bb898cf6b7e86fa"
+    }
+  ],
+  "evidence_id": "ab7a6d2417b0b74d1ff3d30a"
+}

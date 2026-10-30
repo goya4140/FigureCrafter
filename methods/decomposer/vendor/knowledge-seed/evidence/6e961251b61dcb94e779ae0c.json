@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240408031-fig4",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "loss"
+  ],
+  "primitive_ids": [
+    "loss/t"
+  ],
+  "field": "bbox",
+  "region": [
+    1799,
+    221,
+    600,
+    221
+  ],
+  "summary": "The rendered loss equation is visibly smaller than the reference. Its local text box is too short for the 58-unit calligraphic glyph and lowered subscript, forcing text shrinkage. Increase local vertical room while preserving its center.",
+  "strategy": "Size mathematical text boxes for the full font ascent, descent, and script offsets before export to avoid automatic shrinking.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.943631,
+      "edge_iou": 0.281675
+    },
+    "after_local": {
+      "pixel_similarity": 0.943631,
+      "edge_iou": 0.281675
+    },
+    "before_global": {
+      "pixel_similarity": 0.960944,
+      "edge_iou": 0.295298
+    },
+    "after_global": {
+      "pixel_similarity": 0.960944,
+      "edge_iou": 0.295298
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      1799,
+      221,
+      600,
+      221
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-002/decision.json",
+      "sha256": "a21bbde0a7f5c06fa19333f6ae0a5ee7ae96865bae7b977af30c65503689be60"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-002/assessment.json",
+      "sha256": "5278edd45953424826e515f5b1c7d6822d6b5fd02ffed82710a9fbed245062d8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "103960a3133f15274caa8983767f792caf70507b0c1e0fd8cba4ef9c326db89d"
+    }
+  ],
+  "evidence_id": "6e961251b61dcb94e779ae0c"
+}

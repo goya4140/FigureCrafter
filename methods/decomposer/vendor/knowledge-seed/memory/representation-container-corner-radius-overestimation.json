@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-container-corner-radius-overestimation",
+  "owner_stage": "representation",
+  "mechanism": "container-corner-radius-overestimation",
+  "status": "candidate",
+  "evidence_ids": [
+    "def382f36a0d21776ee13f32"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare rendered container corners with the reference at full container scale; avoid default rounded-rectangle geometry when its radius substantially intrudes into content."
+  ]
+}

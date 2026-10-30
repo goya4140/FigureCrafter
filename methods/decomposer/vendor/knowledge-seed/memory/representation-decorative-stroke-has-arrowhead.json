@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-decorative-stroke-has-arrowhead",
+  "owner_stage": "representation",
+  "mechanism": "decorative-stroke-has-arrowhead",
+  "status": "candidate",
+  "evidence_ids": [
+    "9db2a0bdb23eca060f918f53"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Keep decorative check strokes free of connector arrowheads, and verify their endpoint appearance in the exported render."
+  ]
+}

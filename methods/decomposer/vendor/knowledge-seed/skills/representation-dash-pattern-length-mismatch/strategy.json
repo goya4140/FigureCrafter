@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-dash-pattern-length-mismatch",
+  "memory_id": "representation-dash-pattern-length-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Match dashed enclosure patterns by comparing dash and gap lengths relative to stroke width before selecting a native dash preset."
+  ],
+  "evidence_ids": [
+    "3b5a423a37251a0b2e56890a"
+  ]
+}

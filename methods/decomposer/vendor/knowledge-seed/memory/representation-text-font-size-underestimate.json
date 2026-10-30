@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-text-font-size-underestimate",
+  "owner_stage": "representation",
+  "mechanism": "text-font-size-underestimate",
+  "status": "candidate",
+  "evidence_ids": [
+    "d4a566be4e1e9c5674d5ac66"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare rendered glyph height and line width with the reference before adjusting text boxes; correct local font size when the text fits but appears undersized."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-trailing-newline-math-label-overflow",
+  "owner_stage": "representation",
+  "mechanism": "trailing-newline-math-label-overflow",
+  "status": "candidate",
+  "evidence_ids": [
+    "324739c88ba46d37b8ba5fa5"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Keep single-line mathematical annotations free of visible trailing blank paragraphs, and verify every vertex label after export while preserving source-text identity."
+  ]
+}

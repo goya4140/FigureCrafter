@@ -1,0 +1,34 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-literal-math-markup-in-text-primitive",
+  "owner_stage": "representation",
+  "mechanism": "literal-math-markup-in-text-primitive",
+  "status": "downstreamed",
+  "evidence_ids": [
+    "e9ddda7e9ae10d56fe23d3cd",
+    "794661e0a862fd671cc6116a",
+    "b90e9f8e0cde399e97dff549",
+    "a9e8a63869de2ad2f6219a8a"
+  ],
+  "accepted_count": 3,
+  "rejected_count": 1,
+  "strategies": [
+    "Convert mathematical markup to supported editable Unicode notation before placing it in ordinary text primitives; verify that commands and delimiters never render literally.",
+    "Represent mixed prose and mathematical identifiers with editable styled text runs whose source_text preserves Recognition identity while visible text uses native italic and subscript/superscript properties; verify exported OOXML text and baselines."
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "version": "0.5.6",
+    "accepted": true,
+    "proof": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v18-styled-text-runs-proof-v2-20260920/sample-006-fixed/proof.json",
+    "affected_labels": [
+      "title1",
+      "title2"
+    ],
+    "validation_passed": true,
+    "validation_check_count": 14,
+    "tests_passed": 38,
+    "generation_guidance": "representation",
+    "operation": "primitive_text_runs"
+  }
+}

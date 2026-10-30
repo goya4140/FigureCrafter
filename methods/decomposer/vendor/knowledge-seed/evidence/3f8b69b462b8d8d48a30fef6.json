@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250410512-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-missing",
+  "label_ids": [
+    "mlm"
+  ],
+  "primitive_ids": [
+    "mlm/text"
+  ],
+  "field": null,
+  "region": [
+    728,
+    1173,
+    364,
+    392
+  ],
+  "summary": "The current render omits “Masked Language Modeling” in the selected tile. Recognition, representation, layout, and OOXML provenance all retain its text and expected placement. The supplied evidence does not establish which field causes its disappearance, so a visual workaround is not justified.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250410512-fig1/refinement/round-001/decision.json",
+      "sha256": "3aed562ec8a6e915bc7e4667774342dbe33a50e7d13826eae6a375c785c5a75a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250410512-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "d320ef7aa3fd6b445542635ef1d5756594dde025441003da25358e3ce84846d6"
+    }
+  ],
+  "evidence_id": "3f8b69b462b8d8d48a30fef6"
+}

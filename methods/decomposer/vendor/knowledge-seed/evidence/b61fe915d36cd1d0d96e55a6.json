@@ -1,0 +1,162 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-astra-fast-r1",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "math-label-text-scale-mismatch",
+  "label_ids": [
+    "clip_opinion_equation"
+  ],
+  "primitive_ids": [
+    "clip_opinion_equation/t"
+  ],
+  "field": "font_scale",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "In the current render, the clip-opinion equation has smaller glyphs and less prominent scripts than the reference. Its placement matches; increase its text scale while preserving the editable mathematical runs.",
+  "strategy": "Compare rendered mathematical glyph heights and script legibility with the reference independently of textbox placement before calibrating text scale.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.880941,
+      "edge_iou": 0.133268
+    },
+    "after_local": {
+      "pixel_similarity": 0.880695,
+      "edge_iou": 0.134766
+    },
+    "before_global": {
+      "pixel_similarity": 0.92479,
+      "edge_iou": 0.165538
+    },
+    "after_global": {
+      "pixel_similarity": 0.924775,
+      "edge_iou": 0.165647
+    },
+    "local_pixel_delta": -0.000246,
+    "local_edge_delta": 0.001498,
+    "global_pixel_delta": -1.5e-05,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "962299ff857752a7de8188c889d99d649e86c1ffad86e2a54a353eb76f1a709a",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "b152ab33777de9e8e87611d163144cb76e72b3affe558947df588d6e8f49e061"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "962299ff857752a7de8188c889d99d649e86c1ffad86e2a54a353eb76f1a709a",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "b152ab33777de9e8e87611d163144cb76e72b3affe558947df588d6e8f49e061"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-annotation-font-style-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "layout-math-label-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-scale-mismatch",
+      "representation-multiline-text-alignment-mismatch",
+      "layout-rotated-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-annotation-font-style-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "layout-math-label-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-scale-mismatch",
+      "representation-multiline-text-alignment-mismatch",
+      "layout-rotated-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-annotation-font-style-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "representation-multiline-text-alignment-mismatch": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-math-label-text-scale-mismatch",
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-math-label-text-scale-mismatch",
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [
+      "layout-math-label-text-scale-mismatch"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-003/decision.json",
+      "sha256": "072c1887ca0b5e5c019bac30b769119cded5a13efdcc85e0f18cfed90793d857"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-003/assessment.json",
+      "sha256": "9a5c22ac60277f28e46f18ef0bdf75aa457d66bab060774f4d735715b822958c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "cbcf0ee8f5370417583810a7ce7ae13fdd1293a2b750b12231106c6292e47f92"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-003/before-preview.png",
+      "sha256": "3ac170f22f4627551262f6b48df4c665a04bf610bd3abafdb5b95952911d60e4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-003/output/preview.png",
+      "sha256": "6ad7b0bc16ef5f039efa7d1ab1df59ddb7d9897023f41a361666afb9ca24605c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-003/output/editable.pptx",
+      "sha256": "99d5a7553dbc31b5bc3a745eaf52d64090ca6e885f7a00af45bb5957dd6e5fbb"
+    }
+  ],
+  "evidence_id": "b61fe915d36cd1d0d96e55a6"
+}

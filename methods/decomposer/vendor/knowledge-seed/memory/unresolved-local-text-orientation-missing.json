@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-local-text-orientation-missing",
+  "owner_stage": "unresolved",
+  "mechanism": "local-text-orientation-missing",
+  "status": "candidate",
+  "evidence_ids": [
+    "23d41b4ebf9650ef1ce521f9"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Preserve text orientation independently within composite objects and provide a local editable text rotation field before attempting orientation repairs."
+  ]
+}

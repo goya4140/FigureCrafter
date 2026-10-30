@@ -1,0 +1,34 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-bundled-libreoffice-fontconfig-cache",
+  "owner_stage": "compiler",
+  "mechanism": "bundled-libreoffice-fontconfig-cache",
+  "status": "downstreamed",
+  "evidence_ids": [
+    "670f7181116fd75f70122250"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "When rendering with the bundled LibreOfficeDev.app, pass its packaged FONTCONFIG_FILE and a per-render writable XDG_CACHE_HOME; keep CJK text native and validate the renderer environment before visual refinement."
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "accepted": true,
+    "assessment_path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v16-cjk-font-proof-20260920/fontconfig-assessment.json",
+    "validation_path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v16-cjk-font-proof-20260920/sample-005-fixed/output/validation.json",
+    "validation_passed": true,
+    "validation_check_count": 13,
+    "test_count": 33,
+    "implementation_sha256": "4ef9f650dd1844c1e489c99077144e31e86482296c8b748e9aa81eb50e8e1d85",
+    "before_global": {
+      "pixel_similarity": 0.969003,
+      "edge_iou": 0.359961
+    },
+    "after_global": {
+      "pixel_similarity": 0.969023,
+      "edge_iou": 0.361975
+    },
+    "local_edge_delta": 0.020784
+  }
+}

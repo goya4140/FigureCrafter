@@ -1,0 +1,252 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "075-original-refinement-1",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "math-markup-rendered-as-plain-text",
+  "label_ids": [
+    "loss_stage1"
+  ],
+  "primitive_ids": [
+    "loss_stage1/equation"
+  ],
+  "field": "runs",
+  "region": null,
+  "summary": "The first loss equation renders as tiny literal markup instead of the reference's readable mathematical notation. Its text primitive lacks scripted runs, and provenance confirms a single baseline. Encode subscripts and superscripts as editable runs.",
+  "strategy": "Observed failure: a single formula run patch can duplicate a separately owned superscript and alter neighboring script ink. Inspect every text fragment in the formula owner, preserve its exact source partition, and verify the exported render and neighboring ink; retain rollback when visual acceptance fails.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.871776,
+      "edge_iou": 0.215252
+    },
+    "after_local": {
+      "pixel_similarity": 0.858715,
+      "edge_iou": 0.203197
+    },
+    "before_global": {
+      "pixel_similarity": 0.96046,
+      "edge_iou": 0.367969
+    },
+    "after_global": {
+      "pixel_similarity": 0.960204,
+      "edge_iou": 0.367265
+    },
+    "local_pixel_delta": -0.013061,
+    "local_edge_delta": -0.012055,
+    "global_pixel_delta": -0.000256,
+    "evaluation_region": [
+      1112.0,
+      87.0,
+      328.0,
+      65.0
+    ],
+    "evaluation_region_source": "changed_elements_before_after_union",
+    "execution_preflight": {
+      "passed": true,
+      "changed_element_ids": [
+        "loss_stage1/equation"
+      ],
+      "unchanged_element_count": 96,
+      "region": [
+        1112.0,
+        87.0,
+        328.0,
+        65.0
+      ],
+      "region_source": "changed_elements_before_after_union"
+    },
+    "local_repair_guard": {
+      "passed": false,
+      "assessed": [
+        {
+          "element_id": "loss_box/shape",
+          "kind": "round_rect",
+          "changed": false,
+          "region": [
+            1086,
+            43,
+            377,
+            277
+          ],
+          "before": {
+            "pixel_similarity": 0.934417,
+            "edge_iou": 0.252335
+          },
+          "after": {
+            "pixel_similarity": 0.931751,
+            "edge_iou": 0.247498
+          }
+        },
+        {
+          "element_id": "loss_stage1/equation",
+          "kind": "text",
+          "changed": true,
+          "region": [
+            1118,
+            93,
+            316,
+            53
+          ],
+          "before": {
+            "pixel_similarity": 0.836772,
+            "edge_iou": 0.207797
+          },
+          "after": {
+            "pixel_similarity": 0.825966,
+            "edge_iou": 0.207361
+          },
+          "before_ink": {
+            "eligible": true,
+            "source_pixels": 2314,
+            "rendered_pixels": 896,
+            "source_ratio": 0.38720829732065687
+          },
+          "after_ink": {
+            "eligible": true,
+            "source_pixels": 2314,
+            "rendered_pixels": 1131,
+            "source_ratio": 0.4887640449438202
+          }
+        },
+        {
+          "element_id": "loss_stage1/sup",
+          "kind": "text",
+          "changed": false,
+          "region": [
+            1388,
+            93,
+            46,
+            27
+          ],
+          "before": {
+            "pixel_similarity": 0.72699,
+            "edge_iou": 0.312821
+          },
+          "after": {
+            "pixel_similarity": 0.705355,
+            "edge_iou": 0.335453
+          },
+          "before_ink": {
+            "eligible": true,
+            "source_pixels": 330,
+            "rendered_pixels": 58,
+            "source_ratio": 0.17575757575757575
+          },
+          "after_ink": {
+            "eligible": true,
+            "source_pixels": 330,
+            "rendered_pixels": 119,
+            "source_ratio": 0.3606060606060606
+          },
+          "reasons": [
+            "neighbor_reference_fidelity_regression"
+          ]
+        }
+      ],
+      "failures": [
+        {
+          "element_id": "changed_region",
+          "reasons": [
+            "target_metric_tradeoff_exceeds_tolerance"
+          ],
+          "pixel_delta": -0.01306099999999999,
+          "edge_delta": -0.01205500000000001
+        },
+        {
+          "element_id": "loss_stage1/sup",
+          "kind": "text",
+          "changed": false,
+          "region": [
+            1388,
+            93,
+            46,
+            27
+          ],
+          "before": {
+            "pixel_similarity": 0.72699,
+            "edge_iou": 0.312821
+          },
+          "after": {
+            "pixel_similarity": 0.705355,
+            "edge_iou": 0.335453
+          },
+          "before_ink": {
+            "eligible": true,
+            "source_pixels": 330,
+            "rendered_pixels": 58,
+            "source_ratio": 0.17575757575757575
+          },
+          "after_ink": {
+            "eligible": true,
+            "source_pixels": 330,
+            "rendered_pixels": 119,
+            "source_ratio": 0.3606060606060606
+          },
+          "reasons": [
+            "neighbor_reference_fidelity_regression"
+          ]
+        }
+      ],
+      "target_fidelity": {
+        "before": {
+          "pixel_similarity": 0.871776,
+          "edge_iou": 0.215252
+        },
+        "after": {
+          "pixel_similarity": 0.858715,
+          "edge_iou": 0.203197
+        },
+        "pixel_regression_tolerance": 0.002,
+        "edge_regression_tolerance": 0.02
+      },
+      "limitations": "Ink/fidelity guards do not establish OCR correctness or all text collisions."
+    },
+    "rejection_reason": "local_text_or_neighbor_regression",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "c14668e268435617b10cc1b2dccff071d984339a19d725d26a23af001dc03c8a",
+      "representation": "7fbe74e1e03448b20a2a33467790b2c8cbe50358cb7490680ff56136db240c23",
+      "layout": "89f32da17403862e50f5ea39f163f932c99f1b976bb87cca23c2f93ef670d6ea",
+      "pptx": "5c8aee8e5cbc1441a4fd2dea799bc66bc6ae768ae12bbc75a8f5c67f16f3ba18"
+    },
+    "canonical_after_hashes": {
+      "recognition": "c14668e268435617b10cc1b2dccff071d984339a19d725d26a23af001dc03c8a",
+      "representation": "7fbe74e1e03448b20a2a33467790b2c8cbe50358cb7490680ff56136db240c23",
+      "layout": "89f32da17403862e50f5ea39f163f932c99f1b976bb87cca23c2f93ef670d6ea",
+      "pptx": "5c8aee8e5cbc1441a4fd2dea799bc66bc6ae768ae12bbc75a8f5c67f16f3ba18"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {},
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-001/decision.json",
+      "sha256": "75c13f7a05d129dd06413d3e8f7c04a9df71f0b2c9da6228706f9bae54cf58fe"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-001/assessment.json",
+      "sha256": "d61ee58ff3c51183eeb35223ad84b74989f92699bb8c7f925678b25b445adaf1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-001/before-preview.png",
+      "sha256": "3669a7b0ac3254d285b5c489dc3a630b0846c589af4837bd900875f0334889b7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-001/output/preview.png",
+      "sha256": "a18157e3135ed7fcc5c87823235f0eb35df95c59c07776fc90081afe5a84d7d9"
+    }
+  ],
+  "evidence_id": "98baf540010e96c814c6ae68"
+}

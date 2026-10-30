@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250707307-fig1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "refined_text"
+  ],
+  "primitive_ids": [
+    "refined_text/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    1670,
+    0,
+    557,
+    252
+  ],
+  "summary": "The refined response text is visibly smaller and more vertically compressed than the reference, leaving excessive space below it. The mismatch is detected in tile-0-3; the owning field is the text placement's font_scale.",
+  "strategy": "Compare multiline text height and line widths against the reference within matching panel bounds, and calibrate text scale before accepting the layout.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.859372,
+      "edge_iou": 0.211324
+    },
+    "after_local": {
+      "pixel_similarity": 0.850214,
+      "edge_iou": 0.206978
+    },
+    "before_global": {
+      "pixel_similarity": 0.933853,
+      "edge_iou": 0.275329
+    },
+    "after_global": {
+      "pixel_similarity": 0.933131,
+      "edge_iou": 0.278729
+    },
+    "local_pixel_delta": -0.009158,
+    "local_edge_delta": -0.004346,
+    "global_pixel_delta": -0.000722,
+    "evaluation_region": [
+      1670,
+      0,
+      557,
+      252
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250707307-fig1/refinement/round-002/decision.json",
+      "sha256": "241e49bf7f6589a7b5269fb285511f3174f27e82ffa113d0554693c36558b67e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250707307-fig1/refinement/round-002/assessment.json",
+      "sha256": "d70e5c3735b0e7704a744538d6cc8b1c29db11ac93312760c7ca566bdafe7d95"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250707307-fig1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "6c2aa534ac774e605b90697b42d9c821b38aafd18e0d671942a6cdfe2c40fc62"
+    }
+  ],
+  "evidence_id": "f9f1201c88e788e5c4e1d906"
+}

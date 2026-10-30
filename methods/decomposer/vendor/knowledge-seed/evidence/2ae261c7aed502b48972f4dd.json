@@ -1,0 +1,40 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250109695-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "text-coordinate-export-mismatch",
+  "label_ids": [
+    "response_l1",
+    "response_l2",
+    "response_l3"
+  ],
+  "primitive_ids": [
+    "response_l1/text",
+    "response_l2/text",
+    "response_l3/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    1516,
+    800,
+    758
+  ],
+  "summary": "The rendered tile lacks the G.T., Gen., and G.T. response text. Recognition and representation preserve these strings, scene bounds place them inside the correct boxes, and provenance confirms their OOXML text exists. The visible failure occurs downstream during export or rendering; a visual geometry patch would mask it.",
+  "strategy": "Verify exported text transforms and rendered ink positions against scene bounds; repair coordinate conversion or renderer handling when native text exists but renders outside its assigned boxes.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250109695-fig3/refinement/round-001/decision.json",
+      "sha256": "8f6a555f7fa6572384d40f43ee0fd727ac4cf0f3b84b96c10bdf5f34fc9333b0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250109695-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "5245092ad7c71f1f59c0f7e0b02cfec8b5ad759d9871d882d251e42c90cf66a6"
+    }
+  ],
+  "evidence_id": "2ae261c7aed502b48972f4dd"
+}

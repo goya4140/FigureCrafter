@@ -1,0 +1,166 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-representation-fast-r1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "multiline-text-alignment-mismatch",
+  "label_ids": [
+    "query_sentence"
+  ],
+  "primitive_ids": [
+    "query_sentence/t"
+  ],
+  "field": "style.align",
+  "region": [
+    0,
+    1455,
+    1024,
+    486
+  ],
+  "summary": "The rendered query sentence centers each line, producing staggered left edges. The reference aligns all three lines to the card's left inset. The incorrect field is the local text primitive's alignment.",
+  "strategy": "Compare multiline annotation line starts against the reference and preserve paragraph alignment independently of container placement and font scale.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.903355,
+      "edge_iou": 0.178131
+    },
+    "after_local": {
+      "pixel_similarity": 0.90208,
+      "edge_iou": 0.176521
+    },
+    "before_global": {
+      "pixel_similarity": 0.923821,
+      "edge_iou": 0.16424
+    },
+    "after_global": {
+      "pixel_similarity": 0.923741,
+      "edge_iou": 0.164135
+    },
+    "local_pixel_delta": -0.001275,
+    "local_edge_delta": -0.00161,
+    "global_pixel_delta": -8e-05,
+    "evaluation_region": [
+      0,
+      1455,
+      1024,
+      486
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "ebc830046a1abd1b14c389c34df51f613a60a912217de61a9edd21493c4305b2",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "86c202872d2f4c4d3392ccee69b6587df81ebb5b288b10359bce9688a0e961b3"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "ebc830046a1abd1b14c389c34df51f613a60a912217de61a9edd21493c4305b2",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "86c202872d2f4c4d3392ccee69b6587df81ebb5b288b10359bce9688a0e961b3"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-multiline-text-alignment-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_statuses": {
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-multiline-text-alignment-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-multiline-text-alignment-mismatch"
+    ],
+    "referenced_skill_ids": [
+      "representation-container-corner-radius-mismatch",
+      "representation-multiline-text-alignment-mismatch"
+    ],
+    "patch_source_memory_ids": [
+      "representation-multiline-text-alignment-mismatch"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1/refinement/round-002/decision.json",
+      "sha256": "ad7b1c6942d099fa358e1eafaa6a2fc447a10c8b8a44bcf276c8e0e4bc4801b4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1/refinement/round-002/assessment.json",
+      "sha256": "a0ca109de82e3b711eafc8f9c332567c4cd26a114b38fd9c5a85b36b5134934f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "8da458f1a2a5ae68070b34a7c2e49e5819ad4d25997d9cd1c7174226f1321449"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1/refinement/round-002/before-preview.png",
+      "sha256": "5a670ce2ccc898a150f97ea9845c7d7031043b2525adb3ffeb78e2f675b81062"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1/refinement/round-002/output/preview.png",
+      "sha256": "0a18faf4783ac7f3f2a997eb8720aa5eb67f21d2b010df0ff21524b7415fdebe"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1/refinement/round-002/output/editable.pptx",
+      "sha256": "4722518b586b0b021db1ab5ed2031d173526be30d6a578614d98587fbcfc46cf"
+    }
+  ],
+  "evidence_id": "ad780d645a148e0cdec8b1dc"
+}

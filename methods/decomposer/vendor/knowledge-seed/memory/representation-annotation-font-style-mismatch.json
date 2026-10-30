@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-annotation-font-style-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "annotation-font-style-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "a79ab31a46ee951f61a00bb2"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare annotation letterforms and slant against the reference before adjusting text scale or placement."
+  ]
+}

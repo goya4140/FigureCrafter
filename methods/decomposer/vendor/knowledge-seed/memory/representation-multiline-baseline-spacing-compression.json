@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-multiline-baseline-spacing-compression",
+  "owner_stage": "representation",
+  "mechanism": "multiline-baseline-spacing-compression",
+  "status": "candidate",
+  "evidence_ids": [
+    "cfc1a1f22528b8cfe7bc4bdd"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare baseline pitch across multiple lines independently of glyph size; correct cumulative vertical drift through line spacing rather than repeated font scaling."
+  ]
+}

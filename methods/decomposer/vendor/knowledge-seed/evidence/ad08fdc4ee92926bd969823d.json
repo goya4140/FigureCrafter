@@ -1,0 +1,38 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241215119-fig4",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "dotted-border-rendering-mismatch",
+  "label_ids": [
+    "ig5",
+    "ig6"
+  ],
+  "primitive_ids": [
+    "ig5/border",
+    "ig6/border"
+  ],
+  "field": "style.dash_type",
+  "region": [
+    500,
+    235,
+    501,
+    118
+  ],
+  "summary": "In the selected render tile, the input-token group borders appear fainter and more continuous than the reference's distinct black dots. Representation already requests dotted strokes; supplied provenance does not establish whether export preserves that styling, so ownership remains uncertain.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241215119-fig4/refinement/round-001/decision.json",
+      "sha256": "0802bee75e928038ab2dc32465161611e91c408ae4696fabbbadc154c1afadc8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241215119-fig4/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "69e207d39b961344c4f55d9001796605400f35bdf31ca61ec25f239a8cb2a22c"
+    }
+  ],
+  "evidence_id": "ad08fdc4ee92926bd969823d"
+}

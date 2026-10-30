@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250215027-fig3",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "detail_text"
+  ],
+  "primitive_ids": [
+    "detail_text/t"
+  ],
+  "field": "font_scale",
+  "region": [
+    869,
+    506,
+    434,
+    253
+  ],
+  "summary": "The rendered detailed-feedback paragraph is smaller and more tightly packed than the reference. Increase its text scale while preserving its placement and content.",
+  "strategy": "Compare rendered paragraph glyph size and baseline spacing with the reference before accepting the final text scale.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.905473,
+      "edge_iou": 0.234764
+    },
+    "after_local": {
+      "pixel_similarity": 0.90451,
+      "edge_iou": 0.236332
+    },
+    "before_global": {
+      "pixel_similarity": 0.930412,
+      "edge_iou": 0.295376
+    },
+    "after_global": {
+      "pixel_similarity": 0.930162,
+      "edge_iou": 0.298591
+    },
+    "local_pixel_delta": -0.000963,
+    "local_edge_delta": 0.001568,
+    "global_pixel_delta": -0.00025,
+    "evaluation_region": [
+      869,
+      506,
+      434,
+      253
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250215027-fig3/refinement/round-002/decision.json",
+      "sha256": "9aeb05b001c93d9ba40fbce273e7d246028671982302b58f1c89d3e716d80eb2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250215027-fig3/refinement/round-002/assessment.json",
+      "sha256": "052bef65d4956aa30e4dd4565b7c0cb33acd6335009553816cc09c04fd59acdb"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/emnlp-2025-250215027-fig3/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "fb8dfb3fe8e2da2fe1868554343d63fd24a250129f76fdaaab9a9ca04b6d506f"
+    }
+  ],
+  "evidence_id": "5f1a62c0058df0b9a14e4358"
+}

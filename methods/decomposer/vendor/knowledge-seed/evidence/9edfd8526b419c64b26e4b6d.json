@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250413820-fig1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "mask2_label"
+  ],
+  "primitive_ids": [
+    "mask2_label/text"
+  ],
+  "field": "bbox",
+  "region": [
+    800,
+    1539,
+    800,
+    514
+  ],
+  "summary": "In the rendered lower branch, mask2 is effectively unreadable compared with the reference. Its local text box is only 37 units high for a 45-unit bold font. Increase vertical space while preserving its center and clearance above the arrow.",
+  "strategy": "Size editable text boxes to accommodate the font's full line metrics, including ascenders and descenders, before rendering.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.953021,
+      "edge_iou": 0.279706
+    },
+    "after_local": {
+      "pixel_similarity": 0.953021,
+      "edge_iou": 0.279706
+    },
+    "before_global": {
+      "pixel_similarity": 0.969265,
+      "edge_iou": 0.267921
+    },
+    "after_global": {
+      "pixel_similarity": 0.969265,
+      "edge_iou": 0.267921
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      800,
+      1539,
+      800,
+      514
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250413820-fig1/refinement/round-002/decision.json",
+      "sha256": "aa87e069160f773570234f2cb9267f9df60748cdf31ba3968605e518db0cd0b5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250413820-fig1/refinement/round-002/assessment.json",
+      "sha256": "f15168b10ba8b8ad665f09fc17f3518e0a7bd8eed92de0d1e9dadaddfa2d78f3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250413820-fig1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "0dc4e10a80ddd61c80058b7b731b45d3969b8c79734777a1c4e43c44e1d36e66"
+    }
+  ],
+  "evidence_id": "9edfd8526b419c64b26e4b6d"
+}

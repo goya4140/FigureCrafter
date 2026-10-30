@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-multiline-text-line-spacing-mismatch",
+  "memory_id": "representation-multiline-text-line-spacing-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Match multiline baseline intervals to the reference independently of font size and text-box placement."
+  ],
+  "evidence_ids": [
+    "94467276dc9ef4010adad316"
+  ]
+}

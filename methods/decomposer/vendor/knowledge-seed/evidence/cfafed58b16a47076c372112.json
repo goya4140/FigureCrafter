@@ -1,0 +1,152 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards4-r1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "foreground-title-occluded-by-chart",
+  "label_ids": [
+    "identification_title"
+  ],
+  "primitive_ids": [
+    "identification_title/box",
+    "identification_title/text"
+  ],
+  "field": "component_order",
+  "region": [
+    1024,
+    0,
+    1024,
+    485
+  ],
+  "summary": "The current render clips the lower line of the identification title where the scatter-chart container overlaps it. The layout draws identification_chart after identification_title. Bring the title forward to restore the reference overlap.",
+  "strategy": "When title blocks overlap chart containers, place the title above the container and verify both text lines remain visible in the exported render.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.908279,
+      "edge_iou": 0.153217
+    },
+    "after_local": {
+      "pixel_similarity": 0.909515,
+      "edge_iou": 0.154518
+    },
+    "before_global": {
+      "pixel_similarity": 0.921955,
+      "edge_iou": 0.157066
+    },
+    "after_global": {
+      "pixel_similarity": 0.922033,
+      "edge_iou": 0.157162
+    },
+    "local_pixel_delta": 0.001236,
+    "local_edge_delta": 0.001301,
+    "global_pixel_delta": 7.8e-05,
+    "evaluation_region": [
+      1024,
+      0,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "08ae4747104bf468012d3dd5e890c0b65fea9a636499370edd1232da166b680f",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "69f03579c2077e9118e56b634c6076ac4da951d8ee8ce7e6267164afec999d6c"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "unresolved-rendered-text-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "unresolved-rendered-text-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "unresolved-rendered-text-omission": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-001/decision.json",
+      "sha256": "dce3186870ba678a45c0155050e24e38f6b32eebfe3c8401f97d57584e938bb6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-001/assessment.json",
+      "sha256": "699ef387c74ad29dc8546d0842baaaee93b20960a9c05d2612201ad38286debf"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "dbaad6cc6b9d2800823b90272d57cd63a7ecfc4ac3a85593e32d64368173fa1b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-001/before-preview.png",
+      "sha256": "33129b302c5fc488fc4b0e44d4d532f1703cfccb207189bd61b9010767bb8d3b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-001/output/preview.png",
+      "sha256": "0fd619b3b1ebe94c0ebbbec916cc1875f9087ad60c223f8cfdbdda2010ee4dd4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-001/output/editable.pptx",
+      "sha256": "bd4d4d705781c2b70d17e1c8b13e4214c0bfa663f3b6d33c8e6b5be201416be5"
+    }
+  ],
+  "evidence_id": "cfafed58b16a47076c372112"
+}

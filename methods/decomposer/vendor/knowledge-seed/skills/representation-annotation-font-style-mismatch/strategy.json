@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-annotation-font-style-mismatch",
+  "memory_id": "representation-annotation-font-style-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare annotation letterforms and slant against the reference before adjusting text scale or placement."
+  ],
+  "evidence_ids": [
+    "a79ab31a46ee951f61a00bb2"
+  ]
+}

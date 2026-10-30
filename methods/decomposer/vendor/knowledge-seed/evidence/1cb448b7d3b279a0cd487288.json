@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "075-source-contract-failure",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "split-math-source-identity-loss",
+  "label_ids": [
+    "me_loss",
+    "mc_loss",
+    "loss_stage1",
+    "loss_stage2"
+  ],
+  "primitive_ids": [],
+  "field": null,
+  "region": null,
+  "summary": "Recipe main text owned the entire formula while separate superscript text was empty; silent canonical fallback discarded eight native run groups.",
+  "strategy": "For a native math owner, validate the concatenation of all run source_text fragments against exact recognized text. Only when it forms an exact partition, normalize each op text to its own run-source fragment; retain geometry, glyphs and styles. Reject missing, duplicated or conflicting source claims with owner IDs for bounded repair, and never silently discard invalid runs. This structural fix does not prove font fidelity or correct hat rendering.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "invalid_run_groups": 8
+  },
+  "knowledge_trace": {},
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/representation/model-output.json",
+      "sha256": "6dc1918ff6c2023d2b9bd51a6ef6ce8ea0b83d2c3a0ce573bd183d1e8db69e9e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/075-rich-text-evidence.json",
+      "sha256": "23d26a4ee9f35a734bbb73a49e2ddc334b27b895b98bf6f9d52c3cc7dd8ffeb9"
+    }
+  ],
+  "evidence_id": "1cb448b7d3b279a0cd487288"
+}

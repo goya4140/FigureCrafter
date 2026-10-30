@@ -1,0 +1,39 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250415362-fig11",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "photograph-replaced-by-vector-approximation",
+  "label_ids": [
+    "scene"
+  ],
+  "primitive_ids": [
+    "scene/window",
+    "scene/window_reflection",
+    "scene/plaid_fabric",
+    "scene/door_frame"
+  ],
+  "field": "primitives",
+  "region": [
+    0,
+    0,
+    614,
+    335
+  ],
+  "summary": "The selected tile shows the storefront photograph replaced by flat vector approximations, losing photographic detail. Recognition correctly identifies an image and layout preserves its bounds; the mismatch originates in representation. No supported small patch can restore the photograph: no scene image asset is supplied, and primitive_kind cannot convert shapes into images.",
+  "strategy": "Preserve recognized photographic regions as source image assets, with independently editable annotations layered above them; do not substitute schematic vector approximations.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250415362-fig11/refinement/round-001/decision.json",
+      "sha256": "920fc755e47dfaa742eb0be7e27af77d291e9b3a1b83652f39640be375641e7b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250415362-fig11/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "5625979c423ea52b1dafb1c557a6a929edf403f620006c236e4657e51e024a6d"
+    }
+  ],
+  "evidence_id": "9f924fcf2fa5ed63bb5913d9"
+}

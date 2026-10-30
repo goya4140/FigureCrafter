@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-photograph-replaced-by-vector-approximation",
+  "memory_id": "representation-photograph-replaced-by-vector-approximation",
+  "status": "candidate",
+  "instructions": [
+    "Preserve recognized photographic regions as source image assets, with independently editable annotations layered above them; do not substitute schematic vector approximations."
+  ],
+  "evidence_ids": [
+    "9f924fcf2fa5ed63bb5913d9"
+  ]
+}

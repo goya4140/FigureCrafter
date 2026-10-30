@@ -1,0 +1,70 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250308147-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-style-invisible-and-undersized",
+  "label_ids": [
+    "language_label",
+    "motion_label"
+  ],
+  "primitive_ids": [
+    "language_label/text",
+    "motion_label/text"
+  ],
+  "field": "primitives.style",
+  "region": [
+    800,
+    353,
+    800,
+    353
+  ],
+  "summary": "The rendered tile omits the Visual Language and Motion Description headings. Their editable text primitives exist, but use color 'none' and a 20-unit font instead of the reference's black, approximately 52-unit serif text.",
+  "strategy": "Validate that every visible reference heading has an explicit text color and a font size matching its reference ink bounds before export.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.931341,
+      "edge_iou": 0.147298
+    },
+    "after_local": {
+      "pixel_similarity": 0.924524,
+      "edge_iou": 0.160358
+    },
+    "before_global": {
+      "pixel_similarity": 0.957621,
+      "edge_iou": 0.168102
+    },
+    "after_global": {
+      "pixel_similarity": 0.956723,
+      "edge_iou": 0.170006
+    },
+    "local_pixel_delta": -0.006817,
+    "local_edge_delta": 0.01306,
+    "global_pixel_delta": -0.000898,
+    "evaluation_region": [
+      800,
+      353,
+      800,
+      353
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250308147-fig2/refinement/round-001/decision.json",
+      "sha256": "985f765b7757e3b681e7b542b5a519e7b5dcad83c8fe326d9f8e3c8635ffa5fe"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250308147-fig2/refinement/round-001/assessment.json",
+      "sha256": "5229ab4f3d6a3c63bf8ec8f437208345bb2568f2675fbc5b7aee07ae5f086de0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-250308147-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "2e61cacfdd883a29ab6b963164522b6c7727d1d835f8abb49987cc08c06d15ed"
+    }
+  ],
+  "evidence_id": "7240f9947f42f19f8ed5da48"
+}

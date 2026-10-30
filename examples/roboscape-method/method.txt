@@ -1,0 +1,74 @@
+Figure 1: Illustration of the proposed robotic data processing pipeline with physical priors annotation.
+
+2 Methodology
+
+2.1 Problem Formulation
+
+In this work, we focus on robot manipulation scenarios and learn an embodied world model f_\theta as a dynamics function that predicts the next visual observation o_{t+1} given past observations o_{1:t} and robotic actions a_{1:t}:
+
+o_{t+1} \sim f_\theta(o_{t+1}\mid o_{1:t}, a_{1:t}), \qquad (1)
+
+where o \in \mathbb{R}^{H\times W\times3} is a video frame and a \in \mathbb{R}^k is a k-degree continuous action control vector.
+
+2.2 Robotic Data Processing Pipeline with Physical Priors Annotation
+
+Learning a physics-informed embodied world model requires high-quality dataset covering high-resolution RGB and depth sequences, action sequences that control the robot, and state sequences that the robot executes. In this section, we present our data processing pipeline to construct a multi-modal embodied dataset with physical priors based on AGIBOT-World dataset [6], as shown in Fig. 1.
+
+Physical Property Annotating based on Depth Generation and Keypoint Tracking. We focus on two fundamental physical priors in videos: temporal depth consistency and keypoint motion trajectories. These features can be efficiently extracted using off-the-shelf pretrained models, enabling enhanced generalization while maintaining practical feasibility. Specifically, we utilize Video Depth Anything [31] to generate the depth map sequence of the video. Furthermore, we apply SpatialTracker [32] as the keypoint tracking model to sample the keypoint and track their trajectories.
+
+Video Slicing based on Camera Boundary Detection and Action Semantic. The original videos have different attributes, such as lengths and resolution, with camera jumps or editing traces, and a video may contain multiple action semantics. Thus, we slice the video into clips with normalized attributes, consistent motion, no camera jumps, and single action semantics. Specifically, we use TransNetV2 [33] to perform camera boundary detection and use Intern-VL [34] to generate the action semantic of a specific clip.
+
+Clip Filtering based on Key Frame and Clip Quality. The generated clips are highly heterogeneous in terms of quality, semantics, and presentation form. To ensure the validity and adaptability of the training data, we introduce a clip filtering mechanism including: (1) using FlowNet [35] to filter out clips with indistinct motion and disordered movement patterns, and (2) using Intern-VL [34] to label the key frame of the clip and filter out the frames without explicit relationship to the key frame.
+
+Clip Categorization based on Action Difficulty and Scenes. In this stage, we categorize and reorganize the dataset based on action difficulty and clip scenes to support the curriculum learning strategy [36], which trains the world model from easier to harder tasks.
+
+Figure 2: Overview of the physics-informed world model, where physical knowledge is integrated through joint learning of temporal depth estimation and adaptively sampled keypoint dynamics.
+
+2.3 RoboScape: A Physics-informed Embodied World Model
+
+RoboScape is designed to achieve frame-level action-controllable robot video generation, enabling interactive future frame prediction. At its core, we adopt an auto-regressive Transformer-based framework that iteratively predicts the next frame based on historical frames and the current robot action. To enhance the physical plausibility of generated videos, we introduce two physics-informed auxiliary training tasks in addition to the normal RGB image prediction: (1) temporal depth prediction, which enforces global geometric consistency across frames, and (2) adaptively sampled keypoint dynamics learning, which captures the motion and deformation details of local dynamic objects. The whole pipeline is illustrated in Figure 2. Joint training with these physics-aware regularizers provides an efficient approach to embed physical priors into world models, significantly reducing the reality gap between generated videos and real-world dynamics.
+
+Video Tokenization. To enable efficient video generation, we leverage MAGVIT-2 [37] to compress raw RGB frames o_{1:T} \in \mathbb{R}^{T\times H\times W\times3} into discrete latent tokens s_{1:T} \in \mathbb{R}^{T\times H^{\prime}\times W^{\prime}\times D}, where H^{\prime} = H/\alpha and W^{\prime} = W/\alpha denote the reduced spatial dimensions (\alpha being the downsampling factor), and D represents the latent channel dimension. Similarly, we tokenize temporal depth maps d_{1:T} \in \mathbb{R}^{T\times H\times W\times1} into latent depth tokens z_{1:T} \in \mathbb{R}^{T\times H^{\prime}\times W^{\prime}\times D}.
+
+Geometry Consistency Enhancement via Temporal Depth Prediction. While RGB-based video generation has achieved remarkable progress, it often suffers from inconsistent 3D geometry due to the lack of explicit spatial constraints. Considering that inter-frame depth variations encode crucial 3D structure information, we propose to jointly learn temporal RGB and depth information, leveraging depth features as geometric constraints to ensure spatially coherent video generation. For joint prediction of both RGB and depth images, we propose a dual-branch co-autoregressive Transformer (DCT). Each branch consists of stacked Spatial-Temporal Transformer (ST-Transformer) blocks, which implement a causal attention mechanism in the temporal attention layers for generation causality, and bidirectional attention in the spatial attention layers to enable full context modeling.
+
+At timestep t, the model processes historical latent tokens through parallel branches \mathcal{F}_{RGB} and \mathcal{F}_{Depth}, conditioned on learned action embeddings c_{1:t-1} \in \mathbb{R}^{(t-1)\times1\times1\times D}: E_a(a_{1:t-1}) and position embeddings e_{1:t-1} \in \mathbb{R}^{(t-1)\times H^{\prime}\times W^{\prime}\times D}, where E_a denotes the robot action encoder. The auto-regressive prediction of each branch is formulated as:
+
+\hat{s}_t = \mathcal{F}_{\mathrm{RGB}}(s_{1:t-1}\oplus c_{1:t-1}\oplus e_{1:t-1}),
+\hat{z}_t = \mathcal{F}_{\mathrm{Depth}}(z_{1:t-1}\oplus c_{1:t-1}\oplus e_{1:t-1}), \qquad (2)
+
+where \oplus denotes element-wise addition with broadcasting. Empirically, we find that simple additive fusion provides effective action control while maintaining model efficiency.
+
+To inject depth predictions as physical priors into the RGB branch and enhance spatial structure fidelity of rendered videos, we introduce cross-branch interaction pathways. Specifically, at each ST-Transformer block l, we project the depth branch’s intermediate features h_{depth}^l and fuse them additively with the corresponding RGB features:
+
+h_{\mathrm{RGB}}^l = h_{\mathrm{RGB}}^l + \mathcal{W}^l(h_{\mathrm{depth}}^l), \qquad (3)
+
+where \mathcal{W}^l is a learnable linear projection layer. This hierarchical feature fusion enables the RGB branch to maintain precise geometric structure while generating photorealistic video frames. Both RGB and depth branches are optimized using the cross-entropy loss of tokens:
+
+\mathcal{L}_{\mathrm{RGB}}=-\sum_{t=1}^T s_t\log p(\hat{s}_t), \quad \mathcal{L}_{\mathrm{Depth}}=-\sum_{t=1}^T z_t\log p(\hat{z}_t). \qquad (4)
+
+Implicit Material Understanding via Keypoint Dynamics Learning. Modeling physically plausible object deformations and motions in robot manipulation scenarios remains challenging for RGB-based world models, as material properties (e.g., rigidity, elasticity) cannot be effectively learned through RGB pixel fitting alone. While physics engines provide accurate simulations, their computational expense and scene-specific constraints limit practical applicability. To tackle this, we propose a keypoint-induced material learning approach, with the insight that physical material understanding can emerge from self-supervised tracking of contact-driven keypoint dynamics. For example, when a robot places an apple into a plastic bag, accurately capturing the motion of keypoints on the deforming bag implicitly captures the material properties. This method can be integrated naturally with video generation frameworks while maintaining strong generalization capabilities.
+
+Specifically, for each video V, we utilize SpatialTracker [32] to densely sample N_0 keypoints in the initial frame and track their temporal coordinate trajectories across T frames, yielding \mathcal{T}_{dense}=\{(\mathbf{p}_i^1,...,\mathbf{p}_i^T)\}_{i=1}^{N_0}, where the element \mathbf{p}_i^t \in \mathbb{R}^2 represents its coordinates in the tokenized feature map of frame t. Rather than relying on costly segmentation masks to identify contact regions and guide keypoint sampling, we observe that the most informative keypoints are empirically characterized by large motion magnitudes. Thus, we adaptively select the top-K most active keypoints based on their motion magnitudes \mathcal{M}_i = \sum_{t=1}^{T-1}\|\mathbf{p}_i^{t+1}-\mathbf{p}_i^t\|_2, \forall i\in 1,...,N_0, producing the sampled trajectory set \mathcal{T}_{sample}=\{(\mathbf{p}_i^1,...,\mathbf{p}_i^T)\}_{i=1}^{K}.
+
+To enhance the keypoint dynamic learning, we enforce temporal consistency between the visual tokens of sampled keypoints by aligning all frames to the initial frame (t = 1) through the following loss:
+
+\mathcal{L}_{\mathrm{Keypoint}}=\frac{1}{(T-1)K}\sum_{i=1}^{K}\sum_{t=2}^{T}\|\hat{s}_t(\mathbf{p}_i^t)-\hat{s}_1(\mathbf{p}_i^1)\|_2^2, \qquad (5)
+
+where \hat{s}_t(\mathbf{p}_i^t)\in\mathbb{R}^D denotes the i-th keypoint-located predicted token at frame t.
+
+Furthermore, we observe that these dynamically active keypoint regions often exhibit higher token errors due to their complex motion patterns. To address this, we propose a keypoint-guided attention mechanism that adaptively enhances token learning in regions intersected by keypoint trajectories. Specifically, we compute a spatiotemporal attention map \mathbf{A}\in\mathbb{R}^{T\times H^{\prime}\times W^{\prime}}, with each element defined as:
+
+A_{t,x,y}=\begin{cases}\gamma & \text{if }(t,x,y)\in\mathcal{T}_{\mathrm{sample}},\\1 & \text{otherwise},\end{cases}\qquad (6)
+
+where \gamma is a hyperparameter controlling the importance weight. The attention-augmented training objective is formulated as:
+
+\mathcal{L}_{\mathrm{Attention}}=-\sum_{t=1}^T A_t\odot s_t\log p(\hat{s}_t). \qquad (7)
+
+Figure 3: Qualitative results visualization of our model (only the subsequent 8 frames are shown). More results can be found in the appendix.
+
+Physics-informed Joint Training Objectives. By integrating the above designs, we train a unified physics-aware world model through multi-task learning, with the final objective formulated as:
+
+\mathcal{L}=\mathcal{L}_{\mathrm{RGB}}+\lambda_1\mathcal{L}_{\mathrm{Depth}}+\lambda_2\mathcal{L}_{\mathrm{Keypoint}}+\lambda_3\mathcal{L}_{\mathrm{Attention}}, \qquad (8)
+
+where \lambda_1,\lambda_2,\lambda_3\in\mathbb{R}^+ are are tunable coefficients balancing the loss terms.

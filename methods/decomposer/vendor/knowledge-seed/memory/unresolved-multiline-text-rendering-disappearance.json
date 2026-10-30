@@ -1,0 +1,13 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-multiline-text-rendering-disappearance",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-rendering-disappearance",
+  "status": "candidate",
+  "evidence_ids": [
+    "dd7b93c762a62d2fafa77c55"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": []
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-5.6-sol-r1",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-panel-corner-rounding",
+  "label_ids": [
+    "panel_d"
+  ],
+  "primitive_ids": [
+    "panel_d/p"
+  ],
+  "field": "kind",
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "In the selected lower-right tile, panel_d has visibly broader default corner curvature than the nearly rectangular reference enclosure, producing a prominent boundary mismatch. The local primitive kind owns the error.",
+  "strategy": "Match enclosure corner geometry to the reference at rendered scale; use rectangular geometry when default rounded-rectangle curvature materially exceeds the visible radius.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.871099,
+      "edge_iou": 0.135565
+    },
+    "after_local": {
+      "pixel_similarity": 0.871596,
+      "edge_iou": 0.137327
+    },
+    "before_global": {
+      "pixel_similarity": 0.909455,
+      "edge_iou": 0.122818
+    },
+    "after_global": {
+      "pixel_similarity": 0.909534,
+      "edge_iou": 0.122625
+    },
+    "local_pixel_delta": 0.000497,
+    "local_edge_delta": 0.001762,
+    "global_pixel_delta": 7.9e-05,
+    "evaluation_region": [
+      3072,
+      970,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "692d593452e0a44bad060650d570c511ba561b7289f8f9f31a6e7826a57adc67",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "f1ea72d6624ea2326dabb19ae67789d9046024297b60cb3735e4ad2d479304fd"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "692d593452e0a44bad060650d570c511ba561b7289f8f9f31a6e7826a57adc67",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "f1ea72d6624ea2326dabb19ae67789d9046024297b60cb3735e4ad2d479304fd"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-math-markup-rendered-literally",
+      "representation-text-box-font-metric-overflow",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-math-script-size-inflates-text-width",
+      "representation-subscript-font-double-reduction",
+      "representation-excessive-panel-corner-rounding",
+      "representation-separator-misrepresented-as-arrow",
+      "representation-excessive-corner-rounding"
+    ],
+    "retrieved_skill_ids": [
+      "representation-math-markup-rendered-literally",
+      "representation-text-box-font-metric-overflow",
+      "representation-literal-math-markup-in-text-primitive",
+      "representation-math-script-size-inflates-text-width",
+      "representation-subscript-font-double-reduction",
+      "representation-excessive-panel-corner-rounding",
+      "representation-separator-misrepresented-as-arrow",
+      "representation-excessive-corner-rounding"
+    ],
+    "retrieved_statuses": {
+      "representation-math-markup-rendered-literally": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed",
+      "representation-math-script-size-inflates-text-width": "candidate",
+      "representation-subscript-font-double-reduction": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-separator-misrepresented-as-arrow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed"
+    },
+    "referenced_memory_ids": [
+      "representation-excessive-panel-corner-rounding",
+      "representation-excessive-corner-rounding"
+    ],
+    "referenced_skill_ids": [
+      "representation-excessive-panel-corner-rounding",
+      "representation-excessive-corner-rounding"
+    ],
+    "patch_source_memory_ids": [
+      "representation-excessive-panel-corner-rounding",
+      "representation-excessive-corner-rounding"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-003/decision.json",
+      "sha256": "c6d54bd9ee6e75c763e4f888c8aa1e5aa0cdda585ccddf5b93dbc1d4d94d2649"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-003/assessment.json",
+      "sha256": "d5cbcbffaa6cdefbf7605c722fc9f07a314d300f9b868a4ec4bcccb02eb7a6d1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "917f8bd90ddf8c1ac81a9919f2eecf7f6dfdaae2bd13e57b10a6890fe8af05ca"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-003/before-preview.png",
+      "sha256": "15546dd4eb44a5f2ab4b56385c4e34bf5c3d2b855123973771dec3a50ce997f2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-003/output/preview.png",
+      "sha256": "757a5458422a47200f6de5d460bf0f9d51b2d14c14f4258ba7acd68c53316292"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-5.6-sol-r1/refinement/round-003/output/editable.pptx",
+      "sha256": "073d9fa98698b04ddcd700b6ff0c8d761d32ed3d57cc2d938e27e3f86abaa47f"
+    }
+  ],
+  "evidence_id": "c69b7c15308b97f4cd53af24"
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "same-manuscript-template-20261011",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-container-corner-rounding",
+  "label_ids": [
+    "left_panel"
+  ],
+  "primitive_ids": [
+    "left_panel/base",
+    "left_panel/border"
+  ],
+  "field": "kind",
+  "region": [
+    0,
+    202,
+    485,
+    202
+  ],
+  "summary": "The current render shows left-panel corners with roughly 30-pixel curvature versus about 4 pixels in the reference. Placement matches; the local rounded-rectangle primitives cause the border to intrude beside the robot. Replace the base and border with rectangular geometry.",
+  "strategy": "Compare container curvature at matched render scale; use rectangular geometry for nearly square boundaries when preset rounding is excessive and radius adjustment is unavailable.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.929009,
+      "edge_iou": 0.395642
+    },
+    "after_local": {
+      "pixel_similarity": 0.929978,
+      "edge_iou": 0.382791
+    },
+    "before_global": {
+      "pixel_similarity": 0.947975,
+      "edge_iou": 0.377301
+    },
+    "after_global": {
+      "pixel_similarity": 0.948309,
+      "edge_iou": 0.373084
+    },
+    "local_pixel_delta": 0.000969,
+    "local_edge_delta": -0.012851,
+    "global_pixel_delta": 0.000334,
+    "evaluation_region": [
+      0,
+      202,
+      485,
+      202
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "bf4b2d533e8589e62370bca0f7bb09f5002c14bc7d0bb2c628a80d7998dacbfc",
+      "representation": "0717a3f5ac89d1d5837e9d535d37278f4d51d0e51be66486dd8dbf194771afa4",
+      "layout": "8f9b5b7d18e69debf7aa704813635c093069f68bc786272e56b99e3875fde1b6",
+      "pptx": "2ec46b4c5c2521b1546de084c3b940333cf5fbbb0feb513bbe8419d029b9098c"
+    },
+    "canonical_after_hashes": {
+      "recognition": "bf4b2d533e8589e62370bca0f7bb09f5002c14bc7d0bb2c628a80d7998dacbfc",
+      "representation": "0717a3f5ac89d1d5837e9d535d37278f4d51d0e51be66486dd8dbf194771afa4",
+      "layout": "8f9b5b7d18e69debf7aa704813635c093069f68bc786272e56b99e3875fde1b6",
+      "pptx": "2ec46b4c5c2521b1546de084c3b940333cf5fbbb0feb513bbe8419d029b9098c"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-vertical-offset",
+      "representation-text-font-size-underestimation",
+      "representation-separator-misrepresented-as-arrow",
+      "layout-caption-font-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-text-box-vertical-offset",
+      "representation-text-font-size-underestimation",
+      "representation-separator-misrepresented-as-arrow",
+      "layout-caption-font-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-text-box-vertical-offset": "candidate",
+      "representation-text-font-size-underestimation": "candidate",
+      "representation-separator-misrepresented-as-arrow": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch"
+    ],
+    "referenced_skill_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch"
+    ],
+    "patch_source_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-001/decision.json",
+      "sha256": "d989fbdf71dc581ebda0e952ff221f8e4f88aefa1c116362b8fd0625a569fa2e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-001/assessment.json",
+      "sha256": "884b8ff9a1aa5d45728f060fc91761d386fc069ef0a13b4c72191ee4f19fcf31"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "3489f83d89cf57cc775912711bdc7975f59213976bdfebbc31c6d0bd7fb5b17e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-001/before-preview.png",
+      "sha256": "ed968b4d3f1c01be26bff4d5ca02b0dc6dbcdea757ea60bc685cae9b02f5fb88"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-001/output/preview.png",
+      "sha256": "a8070a6eb4f3cbc010f323bc18258de6249ce1ab2a1ccfb7c13e2b22841e8b9e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/same-manuscript-template-20261011/refinement/round-001/output/editable.pptx",
+      "sha256": "a1e6eecfe71cb4420a85ae42543cbf595301b338659e9e795b47e0041dd803f1"
+    }
+  ],
+  "evidence_id": "5351e578a6cab4b8460c7800"
+}

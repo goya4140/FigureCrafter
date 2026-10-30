@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250707307-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-scale-mismatch",
+  "label_ids": [
+    "initial_text"
+  ],
+  "primitive_ids": [
+    "initial_text/text"
+  ],
+  "field": null,
+  "region": [
+    1113,
+    504,
+    557,
+    252
+  ],
+  "summary": "Detected in tile-2-2: initial_text renders extremely small, leaving most of its response panel empty. Recognition and representation specify 23-unit text, and layout preserves the source bbox with font_scale=1. Export provenance omits font sizes and autofit settings, so the stage responsible for the shrinkage cannot be established.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250707307-fig1/refinement/round-001/decision.json",
+      "sha256": "71b03a6f770454187a64a1aa1e8cde12792aa939477798412c86cb4706125120"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250707307-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "9fac0c1d5a9c70229bc8804b190735be567732abd328947f146f71a71e0bcbda"
+    }
+  ],
+  "evidence_id": "bf9df5ed4a4b39d61de68d20"
+}

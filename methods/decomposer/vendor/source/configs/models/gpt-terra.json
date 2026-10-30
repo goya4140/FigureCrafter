@@ -1,0 +1,9 @@
+{
+  "model": {
+    "backend": "codex-cli",
+    "command": "codex",
+    "name": "gpt-5.6-terra",
+    "effort": "medium",
+    "timeout_seconds": 1800
+  }
+}

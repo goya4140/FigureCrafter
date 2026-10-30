@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250614580-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "border-dash-pattern-mismatch",
+  "label_ids": [
+    "input_group"
+  ],
+  "primitive_ids": [
+    "input_group/border"
+  ],
+  "field": "style.dash_type",
+  "region": [
+    0,
+    0,
+    800,
+    442
+  ],
+  "summary": "The rendered Input enclosure has short, nearly dotted strokes instead of the reference's longer dashes. Recognition specifies lgDash, but the local border primitive overrides it with dash.",
+  "strategy": "Preserve recognized dash patterns when constructing enclosure primitives and verify their rendered stroke cadence against the reference.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.878837,
+      "edge_iou": 0.211875
+    },
+    "after_local": {
+      "pixel_similarity": 0.878674,
+      "edge_iou": 0.211531
+    },
+    "before_global": {
+      "pixel_similarity": 0.912391,
+      "edge_iou": 0.217799
+    },
+    "after_global": {
+      "pixel_similarity": 0.912375,
+      "edge_iou": 0.218041
+    },
+    "local_pixel_delta": -0.000163,
+    "local_edge_delta": -0.000344,
+    "global_pixel_delta": -1.6e-05,
+    "evaluation_region": [
+      0,
+      0,
+      800,
+      442
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250614580-fig2/refinement/round-003/decision.json",
+      "sha256": "0bf4ba963968cb4a95db88173583e386a1d632f6bdbd7f2cbee80a57c817bc9e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250614580-fig2/refinement/round-003/assessment.json",
+      "sha256": "f2cb72b03cfb0702b17d8c4eed93d45831229c6d61f8e7329a87ad6c52e24747"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250614580-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "b06ba943eb316633ae492fb5ee662d9428562df57dcdd0236940be54c72aa8d2"
+    }
+  ],
+  "evidence_id": "00ff917d77120f789927d308"
+}

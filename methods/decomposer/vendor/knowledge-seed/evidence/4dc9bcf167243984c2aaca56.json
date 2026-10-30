@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309500-fig2",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-corner-rounding",
+  "label_ids": [
+    "identity_head"
+  ],
+  "primitive_ids": [
+    "identity_head/body"
+  ],
+  "field": "kind",
+  "region": [
+    585,
+    0,
+    292,
+    167
+  ],
+  "summary": "In tile-0-2, the identity prediction enclosure has conspicuously rounded corners compared with the nearly square reference. Its bounds agree; the local shape primitive owns the mismatch.",
+  "strategy": "Match enclosure corner geometry to the reference instead of applying default rounded rectangles to all modules.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.949075,
+      "edge_iou": 0.544508
+    },
+    "after_local": {
+      "pixel_similarity": 0.952234,
+      "edge_iou": 0.561091
+    },
+    "before_global": {
+      "pixel_similarity": 0.965483,
+      "edge_iou": 0.458226
+    },
+    "after_global": {
+      "pixel_similarity": 0.965859,
+      "edge_iou": 0.459898
+    },
+    "local_pixel_delta": 0.003159,
+    "local_edge_delta": 0.016583,
+    "global_pixel_delta": 0.000376,
+    "evaluation_region": [
+      585,
+      0,
+      292,
+      167
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309500-fig2/refinement/round-003/decision.json",
+      "sha256": "2845b35b3a0d26ba1a440eae4705ce4456424620bf56f7d6aaadd336b82523b1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309500-fig2/refinement/round-003/assessment.json",
+      "sha256": "6bb8a74ffed578e4517a7074164c4fa218dcc1855eea79e717a1c35802ad759f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240309500-fig2/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "8518a5304f023b0597fdf6d27ddebd58963f703dae1b191b2174e3e4835b5031"
+    }
+  ],
+  "evidence_id": "4dc9bcf167243984c2aaca56"
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards4-r2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "multiline-text-alignment-mismatch",
+  "label_ids": [
+    "query_sentence"
+  ],
+  "primitive_ids": [
+    "query_sentence/text"
+  ],
+  "field": "style.align",
+  "region": [
+    0,
+    1455,
+    1024,
+    486
+  ],
+  "summary": "In the rendered query card, the three sentence lines are centered; the reference aligns them to a common left edge. The incorrect field is the local text primitive's alignment, independent of the previously rejected text-scale adjustment.",
+  "strategy": "Compare individual line starts in multiline annotations with the reference and preserve their alignment independently of font scale and container geometry.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.89696,
+      "edge_iou": 0.187348
+    },
+    "after_local": {
+      "pixel_similarity": 0.895694,
+      "edge_iou": 0.185796
+    },
+    "before_global": {
+      "pixel_similarity": 0.924126,
+      "edge_iou": 0.185611
+    },
+    "after_global": {
+      "pixel_similarity": 0.924046,
+      "edge_iou": 0.185502
+    },
+    "local_pixel_delta": -0.001266,
+    "local_edge_delta": -0.001552,
+    "global_pixel_delta": -8e-05,
+    "evaluation_region": [
+      0,
+      1455,
+      1024,
+      486
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "caf67b78dc12077cf497897321952d9cb7bc656ca7b6fffaba9f90c69afc73b2",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "617b998793baebbc07e3ddff23ec8fc71fe924919bd6c25f6d2e2c62d70f817f"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "caf67b78dc12077cf497897321952d9cb7bc656ca7b6fffaba9f90c69afc73b2",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "617b998793baebbc07e3ddff23ec8fc71fe924919bd6c25f6d2e2c62d70f817f"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-text-rotation-omitted": "candidate",
+      "layout-object-rotation-omission": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r2/refinement/round-002/decision.json",
+      "sha256": "dd40a55742b3517c5e3a61bd0287f2533c3c40b4a3de29d193cf6b2fc1d80951"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r2/refinement/round-002/assessment.json",
+      "sha256": "e582248880d73ede1124c9984d10efc2169b0512aef1e63080f61475c8fe27b0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "2d9a56eacdd3a469f6a9c31ef8fe42d9acf367c4f1304b7cbb868d95317bac4e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r2/refinement/round-002/before-preview.png",
+      "sha256": "db841b14e3535e089783bec31fd9411ca08175e1340e90873312d00f4eb149ee"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r2/refinement/round-002/output/preview.png",
+      "sha256": "d034ac6fbe196ea319a649bd2a95e0bc930eb8f428927166336fac73c20e301c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r2/refinement/round-002/output/editable.pptx",
+      "sha256": "4ab82ed06b558745a378746b1531198b5bfd46eb2aee96d15e888cee81651f50"
+    }
+  ],
+  "evidence_id": "e6ca574b28fa65cc2987ef16"
+}

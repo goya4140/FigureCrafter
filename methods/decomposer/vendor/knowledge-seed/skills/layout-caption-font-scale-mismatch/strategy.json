@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-caption-font-scale-mismatch",
+  "memory_id": "layout-caption-font-scale-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare caption glyph height and rendered width against the reference; correct text scale when box resizing does not change glyph metrics."
+  ],
+  "evidence_ids": [
+    "b49229c664a1261757da1a48"
+  ]
+}

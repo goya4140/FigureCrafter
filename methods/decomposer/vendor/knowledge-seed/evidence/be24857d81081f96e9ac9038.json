@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240312965-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "rotated-text-box-dimension-mismatch",
+  "label_ids": [
+    "sca_text7"
+  ],
+  "primitive_ids": [
+    "sca_text7/text"
+  ],
+  "field": "bbox",
+  "region": [
+    1126,
+    573,
+    563,
+    286
+  ],
+  "summary": "In tile-2-2, sca_text7 is much smaller than the reference. Its portrait text box is rotated 270°, leaving insufficient width before rotation and shrinking the text. Swap the box dimensions while preserving its center.",
+  "strategy": "For quarter-turn text, size the unrotated text box to fit the horizontal string, then rotate around the intended visual center.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.958378,
+      "edge_iou": 0.263314
+    },
+    "after_local": {
+      "pixel_similarity": 0.958492,
+      "edge_iou": 0.263709
+    },
+    "before_global": {
+      "pixel_similarity": 0.970613,
+      "edge_iou": 0.346236
+    },
+    "after_global": {
+      "pixel_similarity": 0.970635,
+      "edge_iou": 0.346386
+    },
+    "local_pixel_delta": 0.000114,
+    "local_edge_delta": 0.000395,
+    "global_pixel_delta": 2.2e-05,
+    "evaluation_region": [
+      1126,
+      573,
+      563,
+      286
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-001/decision.json",
+      "sha256": "06f55eecc161410ebf733561b7874137cbb78b61ba02e672f4071dfaa152bbb1"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-001/assessment.json",
+      "sha256": "a6deeac879ad70909fed7e34b3b6b4387ae4954a7a7f6e7a894eb4073fcc5fdf"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "07323bd410ef5114e547c9d9d5318c9d081b1afb704c76d611e066c32471567f"
+    }
+  ],
+  "evidence_id": "be24857d81081f96e9ac9038"
+}

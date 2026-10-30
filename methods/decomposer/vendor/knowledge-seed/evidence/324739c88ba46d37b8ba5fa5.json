@@ -1,0 +1,147 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-representation-fast-r4",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "trailing-newline-math-label-overflow",
+  "label_ids": [
+    "frame_opinion_chart"
+  ],
+  "primitive_ids": [
+    "frame_opinion_chart/u",
+    "frame_opinion_chart/b1",
+    "frame_opinion_chart/b2",
+    "frame_opinion_chart/b3"
+  ],
+  "field": "runs",
+  "region": [
+    3072,
+    485,
+    1024,
+    485
+  ],
+  "summary": "The current render loses the frame opinion diagram's u and b vertex labels, while its M label remains visible. The affected local text primitives contain trailing newlines in single-line boxes. Suppress those visible blank lines while preserving source text and mathematical scripts.",
+  "strategy": "Keep single-line mathematical annotations free of visible trailing blank paragraphs, and verify every vertex label after export while preserving source-text identity.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.900472,
+      "edge_iou": 0.173303
+    },
+    "after_local": {
+      "pixel_similarity": 0.900472,
+      "edge_iou": 0.173303
+    },
+    "before_global": {
+      "pixel_similarity": 0.92453,
+      "edge_iou": 0.165043
+    },
+    "after_global": {
+      "pixel_similarity": 0.92453,
+      "edge_iou": 0.165043
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      3072,
+      485,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "e259c091b04444b47d644e6e5c730a324b17d2e74912610a2735b0bbf797b274",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "39e3c84fa3fdbf4723f9bac9ab6769b8ff7e54aa8044ff57e6478c78b25b6b49"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "e259c091b04444b47d644e6e5c730a324b17d2e74912610a2735b0bbf797b274",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "39e3c84fa3fdbf4723f9bac9ab6769b8ff7e54aa8044ff57e6478c78b25b6b49"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-001/decision.json",
+      "sha256": "074b4a6747189ca53728dc0d8d4c4195361b08f6721ac94129126cc55d4fd6ee"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-001/assessment.json",
+      "sha256": "1d3c4fa86b7a6a5a7194cc52b29b747bf131a584478a467c23b2d840cfb8b6ec"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "c240d6c106344f6201b1031dfcb51b6444538751085e84ac41d9c657d18fa8f2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-001/before-preview.png",
+      "sha256": "325c3d346bfe8fd41a63ad340f475791c3487fd20a987c3ea85935955f047838"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-001/output/preview.png",
+      "sha256": "325c3d346bfe8fd41a63ad340f475791c3487fd20a987c3ea85935955f047838"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r4/refinement/round-001/output/editable.pptx",
+      "sha256": "4f5d79a71908847fa3fcd40725ae984fa08c42a7c6997d8ec178c4f090ed258c"
+    }
+  ],
+  "evidence_id": "324739c88ba46d37b8ba5fa5"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250109695-fig3",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "text-render-scale-mismatch",
+  "label_ids": [
+    "plus_l4",
+    "plus_l5",
+    "preference_l2",
+    "preference_l3",
+    "delta_l"
+  ],
+  "primitive_ids": [
+    "plus_l4/text",
+    "plus_l5/text",
+    "preference_l2/text",
+    "preference_l3/text",
+    "delta_l/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    2274,
+    800,
+    758
+  ],
+  "summary": "In the lower-left DPO tile, plus signs, preference symbols, and δ render much smaller than the reference. Supplied primitive font sizes and layout scales do not explain the shrinkage; provenance omits exported font sizes and autofit settings, so ownership cannot be established reliably.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/cvpr-2025-250109695-fig3/refinement/round-002/decision.json",
+      "sha256": "afc93c0f847c4d2fae11d0afd92c0bc4a28590e30cb5c9f7a7a81c73027b0153"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/cvpr-2025-250109695-fig3/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "206e00a2e81075305f0fd6783bd3982ee9221e6f4a1d844e3d5e3d1a98b1aa55"
+    }
+  ],
+  "evidence_id": "b2ced058445347cc7bf06233"
+}

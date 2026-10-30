@@ -1,0 +1,151 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards4-r1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "excessive-container-corner-rounding",
+  "label_ids": [
+    "panel_a"
+  ],
+  "primitive_ids": [
+    "panel_a/boundary"
+  ],
+  "field": "kind",
+  "region": [
+    0,
+    1455,
+    1024,
+    486
+  ],
+  "summary": "The current render's lower-left panel boundary forms a broad arc around the query branch; the reference has an almost square corner. The local boundary primitive's round_rect kind causes this disagreement, while its global bounds match.",
+  "strategy": "Compare container corner curvature with the reference at full panel scale; use rectangular geometry when default rounded corners materially exceed the reference radius.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.893984,
+      "edge_iou": 0.171047
+    },
+    "after_local": {
+      "pixel_similarity": 0.895304,
+      "edge_iou": 0.174549
+    },
+    "before_global": {
+      "pixel_similarity": 0.922033,
+      "edge_iou": 0.157162
+    },
+    "after_global": {
+      "pixel_similarity": 0.922388,
+      "edge_iou": 0.158081
+    },
+    "local_pixel_delta": 0.00132,
+    "local_edge_delta": 0.003502,
+    "global_pixel_delta": 0.000355,
+    "evaluation_region": [
+      0,
+      1455,
+      1024,
+      486
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "08ae4747104bf468012d3dd5e890c0b65fea9a636499370edd1232da166b680f",
+      "layout": "71bb8c30fbe5478d9e49eb9cde005fae0549949ba1ea79bde4bd42e8c2a0cec2",
+      "pptx": "bd4d4d705781c2b70d17e1c8b13e4214c0bfa663f3b6d33c8e6b5be201416be5"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-text-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-rotated-text-scale-mismatch",
+      "layout-object-rotation-omission",
+      "layout-caption-font-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-text-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-rotated-text-scale-mismatch",
+      "layout-object-rotation-omission",
+      "layout-caption-font-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-text-scale-underestimation": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-text-rotation-omitted": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-object-rotation-omission": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-002/decision.json",
+      "sha256": "43b6e7fd10d951bdb91e3e846a9c4945c4bc723462299120b9e542d0043a92d6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-002/assessment.json",
+      "sha256": "c68784982b0bd36071591b4767f8751fc0ac0e8df0a414a93ffa1a5ed2638ad4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "97332263e2b3789b2b14c92fdc2171e09dbf374a60778112f408f510afbe6acb"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-002/before-preview.png",
+      "sha256": "0fd619b3b1ebe94c0ebbbec916cc1875f9087ad60c223f8cfdbdda2010ee4dd4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-002/output/preview.png",
+      "sha256": "e3bc0b7b2af25db596040e17d552e85bfb8890c803b3315eac4079c20af787a0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards4-r1/refinement/round-002/output/editable.pptx",
+      "sha256": "ec896bf81b9e97dc3370ab2ba5d385d84944d75fe1218b48d59eea66efc0aaa0"
+    }
+  ],
+  "evidence_id": "d77acf8be6f11845dd7a6b17"
+}

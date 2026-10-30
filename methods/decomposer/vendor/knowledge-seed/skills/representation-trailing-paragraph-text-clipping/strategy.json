@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-trailing-paragraph-text-clipping",
+  "memory_id": "representation-trailing-paragraph-text-clipping",
+  "status": "candidate",
+  "instructions": [
+    "For compact mathematical labels, avoid trailing empty display paragraphs and verify every vertex annotation remains visible after export while preserving source text in runs."
+  ],
+  "evidence_ids": [
+    "f90bde76a40b4fa39e1d5df9"
+  ]
+}

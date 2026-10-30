@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-foreground-title-occluded-by-chart",
+  "owner_stage": "layout",
+  "mechanism": "foreground-title-occluded-by-chart",
+  "status": "candidate",
+  "evidence_ids": [
+    "cfafed58b16a47076c372112",
+    "83e934621e52dc20a88ed806"
+  ],
+  "accepted_count": 2,
+  "rejected_count": 0,
+  "strategies": [
+    "When title blocks overlap chart containers, place the title above the container and verify both text lines remain visible in the exported render.",
+    "Order overlapping chart containers behind foreground title blocks, then verify that all title lines remain visible in the exported render."
+  ]
+}

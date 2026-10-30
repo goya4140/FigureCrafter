@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-240817064-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "raster-source-crop-mismatch",
+  "label_ids": [
+    "adversarial_image"
+  ],
+  "primitive_ids": [
+    "adversarial_image/content"
+  ],
+  "field": "assets.asset-35866f81161c4249.source_bbox",
+  "region": [
+    800,
+    0,
+    800,
+    329
+  ],
+  "summary": "The rendered adversarial eagle is enlarged and clipped. Its asset uses an inner crop [805.5477,224.4811,337.1833,336.3221], stretched into the correctly recognized image bounds [793,183,379,379]. The incorrect field belongs to representation asset extraction, not layout. No supported operation edits asset source crops.",
+  "strategy": "Extract rectangular image assets from their full recognized image bounds; validate source-crop bounds against destination bounds before scaling.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240817064-fig3/refinement/round-001/decision.json",
+      "sha256": "061630ddc54d7bfedbd49993441c3f2acc49a35fe30b7755d9bb5f860a9710e9"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240817064-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "9cdaadf71553ba270f54009855ff0e687091da276cfa278ee1dc0e199c0cabf9"
+    }
+  ],
+  "evidence_id": "d137dd9f89273f806c21de65"
+}

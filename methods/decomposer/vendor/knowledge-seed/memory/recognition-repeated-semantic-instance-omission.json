@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "recognition-repeated-semantic-instance-omission",
+  "owner_stage": "recognition",
+  "mechanism": "repeated-semantic-instance-omission",
+  "status": "candidate",
+  "evidence_ids": [
+    "a3b6e6907f13bbeaee0f2c24",
+    "0ad8e6cc89747e857233245e"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Recognize each repeated semantic instance separately with its own bounds and relationships, and verify content coverage within every repeated panel before generating primitives.",
+    "Recognize each repeated panel's semantic contents as distinct positioned instances; verify instance coverage before generating primitives."
+  ]
+}

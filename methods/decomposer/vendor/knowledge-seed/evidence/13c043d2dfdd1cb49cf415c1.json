@@ -1,0 +1,81 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-compact-colorfix-replay",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "projected-grid-face-misalignment",
+  "label_ids": [
+    "identification_cube"
+  ],
+  "primitive_ids": [
+    "identification_cube/grid"
+  ],
+  "field": "path",
+  "region": [
+    3072,
+    0,
+    1024,
+    485
+  ],
+  "summary": "Detected in the current render: the cube grid extends above and left of its colored faces, unlike the reference. The earlier local-path repair was rejected. Supplied provenance identifies the exported path but omits its OOXML geometry, so local geometry and export placement cannot be distinguished confidently.",
+  "strategy": "Validate projected grid alignment in the rendered output against both scene coordinates and exported path transforms before assigning ownership.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-grid-lines-exceed-projected-face",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-text-bearing-object-category-drift"
+    ],
+    "retrieved_skill_ids": [
+      "representation-excessive-container-corner-rounding",
+      "representation-grid-lines-exceed-projected-face",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-panel-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-container-corner-rounding-excess",
+      "representation-text-bearing-object-category-drift"
+    ],
+    "retrieved_statuses": {
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-grid-lines-exceed-projected-face": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed"
+    },
+    "referenced_memory_ids": [
+      "representation-grid-lines-exceed-projected-face",
+      "representation-excessive-container-corner-rounding",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "referenced_skill_ids": [
+      "representation-grid-lines-exceed-projected-face",
+      "representation-excessive-container-corner-rounding",
+      "representation-text-box-font-metric-overflow"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-003/decision.json",
+      "sha256": "a0c937a763719c413b2d7eb4bad6baa4765d377c3d9a275f0033d66258d56a84"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-colorfix-replay/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "a6829a69f863d3f9398ebfbb68ee1923d2f9f8e7b3980f4a80f6f11a8e661e97"
+    }
+  ],
+  "evidence_id": "13c043d2dfdd1cb49cf415c1"
+}

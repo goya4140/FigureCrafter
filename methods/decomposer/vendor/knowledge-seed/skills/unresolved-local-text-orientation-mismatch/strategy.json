@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-local-text-orientation-mismatch",
+  "memory_id": "unresolved-local-text-orientation-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Represent and verify text orientation independently from its containing shape, preserving a single readable word in rotated module labels."
+  ],
+  "evidence_ids": [
+    "c7023fa9d6e7e084e4ec7818"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-decorative-line-arrowhead-inheritance",
+  "owner_stage": "representation",
+  "mechanism": "decorative-line-arrowhead-inheritance",
+  "status": "candidate",
+  "evidence_ids": [
+    "f8ec1d199d6ad8d7baa2ccd3"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Assign arrowheads only to directional connectors; explicitly disable both endpoints on decorative underlines."
+  ]
+}

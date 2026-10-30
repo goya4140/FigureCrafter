@@ -1,0 +1,198 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "075-original-refinement-2",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "math-markup-rendered-as-plain-text",
+  "label_ids": [
+    "loss_stage2"
+  ],
+  "primitive_ids": [
+    "loss_stage2/equation"
+  ],
+  "field": "runs",
+  "region": null,
+  "summary": "The second loss equation renders small with literal markup instead of the reference's editable subscripts and superscript. Its text primitive lacks scripted runs; recognition and placement preserve the intended equation.",
+  "strategy": "Observed narrow success: source-preserving native runs repaired loss_stage2; do not infer that other formulas or combining hats are fixed. Inspect every formula and its exported baseline separately.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.871632,
+      "edge_iou": 0.221329
+    },
+    "after_local": {
+      "pixel_similarity": 0.871771,
+      "edge_iou": 0.237315
+    },
+    "before_global": {
+      "pixel_similarity": 0.96046,
+      "edge_iou": 0.367969
+    },
+    "after_global": {
+      "pixel_similarity": 0.960462,
+      "edge_iou": 0.368484
+    },
+    "local_pixel_delta": 0.000139,
+    "local_edge_delta": 0.015986,
+    "global_pixel_delta": 2e-06,
+    "evaluation_region": [
+      1112.0,
+      172.0,
+      332.0,
+      63.0
+    ],
+    "evaluation_region_source": "changed_elements_before_after_union",
+    "execution_preflight": {
+      "passed": true,
+      "changed_element_ids": [
+        "loss_stage2/equation"
+      ],
+      "unchanged_element_count": 96,
+      "region": [
+        1112.0,
+        172.0,
+        332.0,
+        63.0
+      ],
+      "region_source": "changed_elements_before_after_union"
+    },
+    "local_repair_guard": {
+      "passed": true,
+      "assessed": [
+        {
+          "element_id": "loss_box/shape",
+          "kind": "round_rect",
+          "changed": false,
+          "region": [
+            1086,
+            43,
+            377,
+            277
+          ],
+          "before": {
+            "pixel_similarity": 0.934417,
+            "edge_iou": 0.252335
+          },
+          "after": {
+            "pixel_similarity": 0.934445,
+            "edge_iou": 0.257526
+          }
+        },
+        {
+          "element_id": "loss_stage2/equation",
+          "kind": "text",
+          "changed": true,
+          "region": [
+            1118,
+            178,
+            320,
+            51
+          ],
+          "before": {
+            "pixel_similarity": 0.835481,
+            "edge_iou": 0.213932
+          },
+          "after": {
+            "pixel_similarity": 0.83566,
+            "edge_iou": 0.230247
+          },
+          "before_ink": {
+            "eligible": true,
+            "source_pixels": 2308,
+            "rendered_pixels": 898,
+            "source_ratio": 0.38908145580589254
+          },
+          "after_ink": {
+            "eligible": true,
+            "source_pixels": 2308,
+            "rendered_pixels": 1119,
+            "source_ratio": 0.4848353552859619
+          }
+        },
+        {
+          "element_id": "loss_stage2/sup",
+          "kind": "text",
+          "changed": false,
+          "region": [
+            1388,
+            178,
+            50,
+            27
+          ],
+          "before": {
+            "pixel_similarity": 0.771338,
+            "edge_iou": 0.305
+          },
+          "after": {
+            "pixel_similarity": 0.774527,
+            "edge_iou": 0.360927
+          },
+          "before_ink": {
+            "eligible": true,
+            "source_pixels": 313,
+            "rendered_pixels": 54,
+            "source_ratio": 0.17252396166134185
+          },
+          "after_ink": {
+            "eligible": true,
+            "source_pixels": 313,
+            "rendered_pixels": 68,
+            "source_ratio": 0.21725239616613418
+          }
+        }
+      ],
+      "failures": [],
+      "target_fidelity": {
+        "before": {
+          "pixel_similarity": 0.871632,
+          "edge_iou": 0.221329
+        },
+        "after": {
+          "pixel_similarity": 0.871771,
+          "edge_iou": 0.237315
+        },
+        "pixel_regression_tolerance": 0.002,
+        "edge_regression_tolerance": 0.02
+      },
+      "limitations": "Ink/fidelity guards do not establish OCR correctness or all text collisions."
+    },
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "c14668e268435617b10cc1b2dccff071d984339a19d725d26a23af001dc03c8a",
+      "representation": "7fbe74e1e03448b20a2a33467790b2c8cbe50358cb7490680ff56136db240c23",
+      "layout": "89f32da17403862e50f5ea39f163f932c99f1b976bb87cca23c2f93ef670d6ea",
+      "pptx": "5c8aee8e5cbc1441a4fd2dea799bc66bc6ae768ae12bbc75a8f5c67f16f3ba18"
+    }
+  },
+  "knowledge_trace": {},
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-002/decision.json",
+      "sha256": "b407e0f7acba9e410a2349eb479543a6947696f0010ae767fd4dcee282c12da5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-002/assessment.json",
+      "sha256": "78e2cc45926326daea4f383a659a1892f6240afce640757c6d11e8c6c5e68f3d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-002/before-preview.png",
+      "sha256": "3669a7b0ac3254d285b5c489dc3a630b0846c589af4837bd900875f0334889b7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1d2-low3-retest-20261022/retest3/runs/075-cvpr-2025-250318421-fig2/refinement/round-002/output/preview.png",
+      "sha256": "038b0b65fcc702378ff9fe4b945d951589387f92e1889da13fa5f40dec0a40a8"
+    }
+  ],
+  "evidence_id": "6676be9aaca5e9046882e775"
+}

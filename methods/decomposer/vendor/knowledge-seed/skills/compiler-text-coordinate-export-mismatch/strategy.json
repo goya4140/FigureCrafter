@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-text-coordinate-export-mismatch",
+  "memory_id": "compiler-text-coordinate-export-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Verify exported text transforms and rendered ink positions against scene bounds; repair coordinate conversion or renderer handling when native text exists but renders outside its assigned boxes."
+  ],
+  "evidence_ids": [
+    "2ae261c7aed502b48972f4dd"
+  ]
+}

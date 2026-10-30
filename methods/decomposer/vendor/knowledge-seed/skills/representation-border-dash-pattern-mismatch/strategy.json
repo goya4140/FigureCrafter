@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-border-dash-pattern-mismatch",
+  "memory_id": "representation-border-dash-pattern-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Preserve recognized dash patterns when constructing enclosure primitives and verify their rendered stroke cadence against the reference."
+  ],
+  "evidence_ids": [
+    "00ff917d77120f789927d308"
+  ]
+}

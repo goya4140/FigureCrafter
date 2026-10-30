@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-text-box-line-spacing-overflow",
+  "memory_id": "representation-text-box-line-spacing-overflow",
+  "status": "candidate",
+  "instructions": [
+    "Fit multiline editable text using font size, line spacing, and available box height; verify all lines remain visible after export."
+  ],
+  "evidence_ids": [
+    "1e37163bcf36bd4e3271f006"
+  ]
+}

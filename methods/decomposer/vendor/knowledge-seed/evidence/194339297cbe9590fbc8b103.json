@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250707140-fig6",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "native-text-rendering-loss",
+  "label_ids": [
+    "base_text"
+  ],
+  "primitive_ids": [
+    "base_text/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    0,
+    200,
+    80
+  ],
+  "summary": "The current render omits “Base model” inside the green label. Recognition and representation contain the correct black text, layout marks it visible above its background, and provenance confirms the text survives in OOXML. The discrepancy occurs at export/rendering; the supplied evidence does not identify the exact rendering fault.",
+  "strategy": "Verify that native text preserved in OOXML remains visible in the rendered output; investigate export and renderer text properties before changing correct scene content or geometry.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250707140-fig6/refinement/round-001/decision.json",
+      "sha256": "d8890e90886822354574682316227c41a801c3fce7f70cce061718fb66f5704a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250707140-fig6/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "224479b346f05609fe77832119ea3569d036192d31e74a8d6ac7b53b328f8bee"
+    }
+  ],
+  "evidence_id": "194339297cbe9590fbc8b103"
+}

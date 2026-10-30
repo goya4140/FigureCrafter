@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-text-scale-disagreement",
+  "memory_id": "unresolved-text-scale-disagreement",
+  "status": "candidate",
+  "instructions": [
+    "Verify effective exported font size and text autofit settings against scene typography before assigning ownership or changing geometry."
+  ],
+  "evidence_ids": [
+    "4e3801738ec463364990bd41"
+  ]
+}

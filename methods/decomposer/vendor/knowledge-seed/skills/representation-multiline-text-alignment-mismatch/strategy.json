@@ -1,0 +1,13 @@
+{
+  "skill_id": "representation-multiline-text-alignment-mismatch",
+  "memory_id": "representation-multiline-text-alignment-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare individual line starts in multiline annotations with the reference and preserve their alignment independently of font scale and container geometry.",
+    "Compare multiline annotation line starts against the reference and preserve paragraph alignment independently of container placement and font scale."
+  ],
+  "evidence_ids": [
+    "e6ca574b28fa65cc2987ef16",
+    "ad780d645a148e0cdec8b1dc"
+  ]
+}

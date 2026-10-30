@@ -1,0 +1,732 @@
+{
+  "method": "FigureCrafter-Image",
+  "date": "2026-10-30",
+  "scientific_input": "dataset Method text + three ordered visual references",
+  "reasoning_model": "GPT-6.1-sol",
+  "image_model": "Nano Banana Pro",
+  "image_edit_requests": 0,
+  "image_count": 52,
+  "planned_sample_count": 60,
+  "skipped_count": 8,
+  "acceptance_note": "Zero-edit initial outputs. Original44 self-review needs_edit; supplemental8 not scientifically/visually reviewed. Not final accepted figures.",
+  "images": [
+    {
+      "sample_id": "aaai-2025-240515758-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "aae2e8d6d08f60b7ee95f7a53d2e681a7d3b77b02bd8745fd8e160298a4cf922",
+      "preview_file": "images/aaai-2025-240515758-fig2.jpg",
+      "original_file": "images/aaai-2025-240515758-fig2.png"
+    },
+    {
+      "sample_id": "aaai-2025-240612292-fig2",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "c887ae7954e1caa4339161228f4045975cd7a09b9f99eb81a9e3bdc5ee45ce6d",
+      "preview_file": "images/aaai-2025-240612292-fig2.jpg",
+      "original_file": "images/aaai-2025-240612292-fig2.png"
+    },
+    {
+      "sample_id": "aaai-2025-240714078-fig1",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "57e46810dc6721713544c63151d4a3479f00094ad069849db7b5e65d2a52c75e",
+      "preview_file": "images/aaai-2025-240714078-fig1.jpg",
+      "original_file": "images/aaai-2025-240714078-fig1.png"
+    },
+    {
+      "sample_id": "aaai-2025-240918401-fig1",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "41fa214adf5ba7649e9f35d91185a89c35273a4eae7a6f5932dd8fbcd7ff4923",
+      "preview_file": "images/aaai-2025-240918401-fig1.jpg",
+      "original_file": "images/aaai-2025-240918401-fig1.png"
+    },
+    {
+      "sample_id": "aaai-2025-241004534-fig1",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "62d7c9814043b07c6067617c68c555724ff0b85fd5101c470d16b409bc4ef21e",
+      "preview_file": "images/aaai-2025-241004534-fig1.jpg",
+      "original_file": "images/aaai-2025-241004534-fig1.png"
+    },
+    {
+      "sample_id": "aaai-2025-241004749-fig1",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "b5a71a4c35f31d9ab110db57b15131e50289d68f4ba67a8670c9ffd6e48561a8",
+      "preview_file": "images/aaai-2025-241004749-fig1.jpg",
+      "original_file": "images/aaai-2025-241004749-fig1.png"
+    },
+    {
+      "sample_id": "aaai-2025-241211695-fig1",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "9585fc5de813ae8577c505c2387bed87f129cabfa0857b8e3efbb0045103e18f",
+      "preview_file": "images/aaai-2025-241211695-fig1.jpg",
+      "original_file": "images/aaai-2025-241211695-fig1.png"
+    },
+    {
+      "sample_id": "aaai-2025-241214535-fig2",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "14dd6cdb996c074e34a4c942375c44e9c0d2687ad476790a55f5d4073ac69149",
+      "preview_file": "images/aaai-2025-241214535-fig2.jpg",
+      "original_file": "images/aaai-2025-241214535-fig2.png"
+    },
+    {
+      "sample_id": "acl-2025-250601319-fig2",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "e3167ef76bf3d5436bf65d14c7e1a9e1dff32895b172c53f9c00f9dddb2c23ee",
+      "preview_file": "images/acl-2025-250601319-fig2.jpg",
+      "original_file": "images/acl-2025-250601319-fig2.png"
+    },
+    {
+      "sample_id": "colm-2025-250407247-fig1",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "56586e66a5fa2a605ab6c567e4209bf1469ef8dbec42fc4559bddea295831687",
+      "preview_file": "images/colm-2025-250407247-fig1.jpg",
+      "original_file": "images/colm-2025-250407247-fig1.png"
+    },
+    {
+      "sample_id": "colm-2025-250614580-fig2",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "7bb33637e28dc8704c08251d1ce02802438e1d235aeecc498c2be4d6c830b952",
+      "preview_file": "images/colm-2025-250614580-fig2.jpg",
+      "original_file": "images/colm-2025-250614580-fig2.png"
+    },
+    {
+      "sample_id": "cvpr-2025-240611643-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "be07d357b26c489bb9886f449b007eb07d75e1ad6cba1488409f0ea7764d11cf",
+      "preview_file": "images/cvpr-2025-240611643-fig2.jpg",
+      "original_file": "images/cvpr-2025-240611643-fig2.png"
+    },
+    {
+      "sample_id": "cvpr-2025-241117662-fig9",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "32e693f5585610ba8d340d4cbf00463bf5fe3609a867658b2cb27385f8ffc72d",
+      "preview_file": "images/cvpr-2025-241117662-fig9.jpg",
+      "original_file": "images/cvpr-2025-241117662-fig9.png"
+    },
+    {
+      "sample_id": "cvpr-2025-250413820-fig1",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "ce9f012bc054528b75fc578ddb078008f1b0cc4d0220763d96c9b0ae4cf6dde9",
+      "preview_file": "images/cvpr-2025-250413820-fig1.jpg",
+      "original_file": "images/cvpr-2025-250413820-fig1.png"
+    },
+    {
+      "sample_id": "eccv-2024-231200837-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "731fdbbb8fe8d8636f2f7ecfcd79440db654b926cf62e960e9c973a79fc0c5f1",
+      "preview_file": "images/eccv-2024-231200837-fig2.jpg",
+      "original_file": "images/eccv-2024-231200837-fig2.png"
+    },
+    {
+      "sample_id": "eccv-2024-240810614-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "232e6a0551b34d599bd95e1dc10d8f1a4423a5603f1cf84f1b8156b0d5397042",
+      "preview_file": "images/eccv-2024-240810614-fig2.jpg",
+      "original_file": "images/eccv-2024-240810614-fig2.png"
+    },
+    {
+      "sample_id": "eccv-2024-240903634-fig3",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "661cf43d2d3ae1fc5d9dd6413dc059e11e9c4f5b9d296cf36275e8383fe1d000",
+      "preview_file": "images/eccv-2024-240903634-fig3.jpg",
+      "original_file": "images/eccv-2024-240903634-fig3.png"
+    },
+    {
+      "sample_id": "emnlp-2025-241015017-fig2",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "7fa4b088c1433129d3c6811d77a52ce6e880cf0b8662dc64ffee2f7f830323b4",
+      "preview_file": "images/emnlp-2025-241015017-fig2.jpg",
+      "original_file": "images/emnlp-2025-241015017-fig2.png"
+    },
+    {
+      "sample_id": "emnlp-2025-241218811-fig2",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "9c996c813256f5b1741140e0a2ee5b3917845e268b845de5dafb8d0720b7aeea",
+      "preview_file": "images/emnlp-2025-241218811-fig2.jpg",
+      "original_file": "images/emnlp-2025-241218811-fig2.png"
+    },
+    {
+      "sample_id": "iccv-2025-250322668-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "a59c83331f9497de0a4702151a435adf70304ca800db2a157bd9be69e1dd353a",
+      "preview_file": "images/iccv-2025-250322668-fig2.jpg",
+      "original_file": "images/iccv-2025-250322668-fig2.png"
+    },
+    {
+      "sample_id": "iccv-2025-250604001-fig3",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "86d335ccd5574117c15ed8e1dbffe13234cd62e498f49fe9ed11c69893ed8e02",
+      "preview_file": "images/iccv-2025-250604001-fig3.jpg",
+      "original_file": "images/iccv-2025-250604001-fig3.png"
+    },
+    {
+      "sample_id": "iccv-2025-250801242-fig3",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "db81fb4c0dde5d5b2dd0491e1281fa865e0797df92f0fe20d0259ff9fc172138",
+      "preview_file": "images/iccv-2025-250801242-fig3.jpg",
+      "original_file": "images/iccv-2025-250801242-fig3.png"
+    },
+    {
+      "sample_id": "iclr-2025-240402573-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "fa295071e3bdff7e6d7966775192e81af5fdcde7b5af3cee5c4836127b856ad6",
+      "preview_file": "images/iclr-2025-240402573-fig2.jpg",
+      "original_file": "images/iclr-2025-240402573-fig2.png"
+    },
+    {
+      "sample_id": "iclr-2025-240901156-fig2",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "b9dc0246547263c7e1679356cca804d55a9d0c56054df93a0b9f3f8d87041a05",
+      "preview_file": "images/iclr-2025-240901156-fig2.jpg",
+      "original_file": "images/iclr-2025-240901156-fig2.png"
+    },
+    {
+      "sample_id": "iclr-2025-241004803-fig12",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "f57f3329dda23b8f4658d6e7eb498a5ec4368edfdaf5d10db71700fd30e57c5a",
+      "preview_file": "images/iclr-2025-241004803-fig12.jpg",
+      "original_file": "images/iclr-2025-241004803-fig12.png"
+    },
+    {
+      "sample_id": "iclr-2025-241009299-fig1",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "7cd4782b58ac3ad40b4cb257a6166e4e9ea846fd027920d2d0d371353035203c",
+      "preview_file": "images/iclr-2025-241009299-fig1.jpg",
+      "original_file": "images/iclr-2025-241009299-fig1.png"
+    },
+    {
+      "sample_id": "iclr-2025-241013085-fig2",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "4ffc33e6e1de00441fd0e87a96323f71179d1a2780f27b441b61752c490b7a31",
+      "preview_file": "images/iclr-2025-241013085-fig2.jpg",
+      "original_file": "images/iclr-2025-241013085-fig2.png"
+    },
+    {
+      "sample_id": "iclr-2025-250408840-fig1",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "e7f27a02710cce8f1d991ebba5818a4f7c7ec3648725df74000b9ee2cf6715d2",
+      "preview_file": "images/iclr-2025-250408840-fig1.jpg",
+      "original_file": "images/iclr-2025-250408840-fig1.png"
+    },
+    {
+      "sample_id": "iclr-2025-250418539-fig3",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "3e02b9fe33ab5c946262256a9c6a1ffe00cb33e2d845d5df10aba5c0e020026f",
+      "preview_file": "images/iclr-2025-250418539-fig3.jpg",
+      "original_file": "images/iclr-2025-250418539-fig3.png"
+    },
+    {
+      "sample_id": "icml-2025-241010112-fig1",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "00b0ecbf2a5c3525cd8dd129f43fc68ee6ddb971ed6a9db0c11d9af2f3fcdc90",
+      "preview_file": "images/icml-2025-241010112-fig1.jpg",
+      "original_file": "images/icml-2025-241010112-fig1.png"
+    },
+    {
+      "sample_id": "icml-2025-241013175-fig2",
+      "difficulty_level": 3,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "35d6a635fdc7c016c5eb815ae15d900d3caf2622632f3a5eaaa65fec502bb193",
+      "preview_file": "images/icml-2025-241013175-fig2.jpg",
+      "original_file": "images/icml-2025-241013175-fig2.png"
+    },
+    {
+      "sample_id": "icml-2025-241206141-fig2",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "77c54c79358a67a9b610b105a471c016295e49029944763d0338cb4c31a0f811",
+      "preview_file": "images/icml-2025-241206141-fig2.jpg",
+      "original_file": "images/icml-2025-241206141-fig2.png"
+    },
+    {
+      "sample_id": "icml-2025-250204322-fig3",
+      "difficulty_level": 3,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "68ec483cd04298bde700571b7aabb9d4be6d5700035ab7d0182e043925d8bfa1",
+      "preview_file": "images/icml-2025-250204322-fig3.jpg",
+      "original_file": "images/icml-2025-250204322-fig3.png"
+    },
+    {
+      "sample_id": "icml-2025-250307580-fig1",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "053e74b4ce2e52fba8dcc279bf22558d1ff57bd074385c15f4a056e582971f80",
+      "preview_file": "images/icml-2025-250307580-fig1.jpg",
+      "original_file": "images/icml-2025-250307580-fig1.png"
+    },
+    {
+      "sample_id": "icml-2025-250501343-fig2",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "6566b5cf562b0e10b25ec16007b788bc7de99e1d79f55faa42eb07af1e35dfc4",
+      "preview_file": "images/icml-2025-250501343-fig2.jpg",
+      "original_file": "images/icml-2025-250501343-fig2.png"
+    },
+    {
+      "sample_id": "icml-2025-250520704-fig5",
+      "difficulty_level": 2,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "a9ec6df961ef2dbe318938ef4e315102ae8f806c8ed9347ce6d91e5d143467eb",
+      "preview_file": "images/icml-2025-250520704-fig5.jpg",
+      "original_file": "images/icml-2025-250520704-fig5.png"
+    },
+    {
+      "sample_id": "icml-2025-250605196-fig4",
+      "difficulty_level": 1,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "44f1ac2f4b494381d24d69ad73944acb1b1884a2731be0ce54b24d5504e7076c",
+      "preview_file": "images/icml-2025-250605196-fig4.jpg",
+      "original_file": "images/icml-2025-250605196-fig4.png"
+    },
+    {
+      "sample_id": "icml-2025-250606021-fig2",
+      "difficulty_level": 1,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "6d6fbc81ec8e279cec6ac636eceba19d02b2c4a58fde8667eb0cf3e5719b9d68",
+      "preview_file": "images/icml-2025-250606021-fig2.jpg",
+      "original_file": "images/icml-2025-250606021-fig2.png"
+    },
+    {
+      "sample_id": "icml-2025-250607049-fig1",
+      "difficulty_level": 3,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "750a719874a3ada984b4bc6b125b401fca123a77e9b922a66ed917e9d27d13d5",
+      "preview_file": "images/icml-2025-250607049-fig1.jpg",
+      "original_file": "images/icml-2025-250607049-fig1.png"
+    },
+    {
+      "sample_id": "ijcai-2025-240805901-fig4",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "aad87316a547b6058a2556cc40446387e2543ec9974c889d20b267766b56b220",
+      "preview_file": "images/ijcai-2025-240805901-fig4.jpg",
+      "original_file": "images/ijcai-2025-240805901-fig4.png"
+    },
+    {
+      "sample_id": "ijcai-2025-250501755-fig3",
+      "difficulty_level": 3,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "5557597635d0752fe48b738d9f4444fc84e173eddb156a79a69191dc81eba1f1",
+      "preview_file": "images/ijcai-2025-250501755-fig3.jpg",
+      "original_file": "images/ijcai-2025-250501755-fig3.png"
+    },
+    {
+      "sample_id": "naacl-2025-240405083-fig1",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "ba41c8293193100e5293b1363f6aaac2403f4d379885aad977189b2a2818f4a2",
+      "preview_file": "images/naacl-2025-240405083-fig1.jpg",
+      "original_file": "images/naacl-2025-240405083-fig1.png"
+    },
+    {
+      "sample_id": "naacl-2025-241022782-fig1",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "0ef06458becf7c33bdc750f5a8f6dde2499382199f80b26ab158ac5c9477db78",
+      "preview_file": "images/naacl-2025-241022782-fig1.jpg",
+      "original_file": "images/naacl-2025-241022782-fig1.png"
+    },
+    {
+      "sample_id": "naacl-2025-250501255-fig5",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "ecca36cbef955aaada174783f931594d71f2038d29fbfd69a5dc68bfbc83fbe4",
+      "preview_file": "images/naacl-2025-250501255-fig5.jpg",
+      "original_file": "images/naacl-2025-250501255-fig5.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-113",
+      "difficulty_level": 3,
+      "origin": "supplemental8",
+      "quality_status": "not_reviewed",
+      "original_dimensions": [
+        5504,
+        3072
+      ],
+      "original_png_sha256": "df790de6ff4d2c4cf75ac60283c319ae81d2085e07646b3112d704a2a02df54b",
+      "preview_file": "images/paperbanana-diagram-ref-113.jpg",
+      "original_file": "images/paperbanana-diagram-ref-113.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-182",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "4ed8328ededd18034d2b528b400fba692ada554c9095cb727552dda3d2b49c31",
+      "preview_file": "images/paperbanana-diagram-ref-182.jpg",
+      "original_file": "images/paperbanana-diagram-ref-182.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-19",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "a85d03477ce48c5516625c84e41a2ea01bad96dd762c3bfbd0adc57342767d9b",
+      "preview_file": "images/paperbanana-diagram-ref-19.jpg",
+      "original_file": "images/paperbanana-diagram-ref-19.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-223",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "001a8515ab106758c8c202293e24fd6d56220f2d60e3dbb694ac977f067ca3a0",
+      "preview_file": "images/paperbanana-diagram-ref-223.jpg",
+      "original_file": "images/paperbanana-diagram-ref-223.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-231",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "3a8954feb571e1202bcccd4a7aa255779d988b32c04db151f77c2d83c4e654e6",
+      "preview_file": "images/paperbanana-diagram-ref-231.jpg",
+      "original_file": "images/paperbanana-diagram-ref-231.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-246",
+      "difficulty_level": 3,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "0c78277bf5f67365208ce40f05e15b7cc294d64d0c7cae7cbc1878d923d7b606",
+      "preview_file": "images/paperbanana-diagram-ref-246.jpg",
+      "original_file": "images/paperbanana-diagram-ref-246.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-305",
+      "difficulty_level": 1,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "6f774c4eb5c94aa256f2c0234be5aab488a6f64191f85fd805b46ea3f9323089",
+      "preview_file": "images/paperbanana-diagram-ref-305.jpg",
+      "original_file": "images/paperbanana-diagram-ref-305.png"
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-77",
+      "difficulty_level": 2,
+      "origin": "original44",
+      "quality_status": "needs_edit",
+      "original_dimensions": [
+        5504,
+        3096
+      ],
+      "original_png_sha256": "6f64210de8ae34d590b658fc22aa04cd272e47b4a1d28c7bb70226510ac18013",
+      "preview_file": "images/paperbanana-diagram-ref-77.jpg",
+      "original_file": "images/paperbanana-diagram-ref-77.png"
+    }
+  ],
+  "skipped": [
+    {
+      "sample_id": "aaai-2025-240404913-fig1",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 25273
+    },
+    {
+      "sample_id": "aaai-2025-241212416-fig3",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 28306
+    },
+    {
+      "sample_id": "eccv-2024-240309500-fig2",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 25029
+    },
+    {
+      "sample_id": "iclr-2025-240614878-figx",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 26884
+    },
+    {
+      "sample_id": "iclr-2025-241018403-fig2",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 30618
+    },
+    {
+      "sample_id": "iclr-2025-241209584-fig1",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 30508
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-124",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 25172
+    },
+    {
+      "sample_id": "paperbanana-diagram-ref-263",
+      "status": "skipped_prompt_over_25000",
+      "prompt_characters": 26646
+    }
+  ]
+}

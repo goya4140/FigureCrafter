@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-231213303-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "local-text-orientation-mismatch",
+  "label_ids": [
+    "encoder_query"
+  ],
+  "primitive_ids": [
+    "encoder_query/t"
+  ],
+  "field": null,
+  "region": [
+    1600,
+    953,
+    800,
+    318
+  ],
+  "summary": "The rendered query Encoder label wraps horizontally inside the narrow teal module; the reference shows a single rotated word. This is visible in tile-3-2, but the supplied schema exposes no local text rotation field, so ownership between representation and export cannot be established reliably.",
+  "strategy": "Represent and verify text orientation independently from its containing shape, preserving a single readable word in rotated module labels.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231213303-fig1/refinement/round-001/decision.json",
+      "sha256": "8333f07ac11b0b7059b9649d398cb27cdb434bf31488876c23e6b15011d03de6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231213303-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "6162f6899efe14ffdad3f850c1bce455331f04266783613336c47bc5b8916877"
+    }
+  ],
+  "evidence_id": "c7023fa9d6e7e084e4ec7818"
+}

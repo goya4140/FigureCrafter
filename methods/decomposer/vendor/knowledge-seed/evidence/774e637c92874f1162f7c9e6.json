@@ -1,0 +1,139 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "centrality_encoding"
+  ],
+  "primitive_ids": [
+    "centrality_encoding/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    785,
+    896,
+    786,
+    299
+  ],
+  "summary": "In tile-3-1, the Centrality Encoding caption is visibly smaller than the reference despite matching enclosure dimensions. Increase its text scale by approximately 50%, preserving the box and placement.",
+  "strategy": "Compare caption ink width and glyph height against the reference independently of enclosure size; calibrate text scale and verify that the caption remains within its box.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.912796,
+      "edge_iou": 0.215866
+    },
+    "after_local": {
+      "pixel_similarity": 0.912946,
+      "edge_iou": 0.21894
+    },
+    "before_global": {
+      "pixel_similarity": 0.932898,
+      "edge_iou": 0.113867
+    },
+    "after_global": {
+      "pixel_similarity": 0.932907,
+      "edge_iou": 0.114157
+    },
+    "local_pixel_delta": 0.00015,
+    "local_edge_delta": 0.003074,
+    "global_pixel_delta": 9e-06,
+    "evaluation_region": [
+      785,
+      896,
+      786,
+      299
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "925fd9a4fd5d2ae1a65c7c942ff1aafb5408fa60d095b5e33e958d2cdf1aca0f",
+      "representation": "4a79605245beccc987e0be2a7ef32fcfa63e72e61c6d7013cafffb2ed65b7935",
+      "layout": "284608afe4b96913aa7cb8abe6e90fcf7c925e5ac386e9b88460c303499a1e10",
+      "pptx": "14f592af54deba34ba358843031354f6b713f1112ef3a499da79423e420d6cfe"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-axis-tick-label-placement-offset",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-text-box-vertical-offset",
+      "representation-node-text-local-placement-offset",
+      "representation-annotation-font-style-mismatch",
+      "representation-text-line-spacing-underestimation"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-axis-tick-label-placement-offset",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-box-font-metric-overflow",
+      "representation-text-box-vertical-offset",
+      "representation-node-text-local-placement-offset",
+      "representation-annotation-font-style-mismatch",
+      "representation-text-line-spacing-underestimation"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-axis-tick-label-placement-offset": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-text-box-vertical-offset": "candidate",
+      "representation-node-text-local-placement-offset": "candidate",
+      "representation-annotation-font-style-mismatch": "candidate",
+      "representation-text-line-spacing-underestimation": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-003/decision.json",
+      "sha256": "c7fe72b3598ee6973b7942f1d5c71e8895e7fb97a43fce1de020bf83229151b3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-003/assessment.json",
+      "sha256": "1a4022921ba1f0469ae8ceacb8984d4bee6887f16c8eda1ed1c4f5a67f5c0ae2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "65b84f327f73eb6a3f8914f713ac38bf6b6a527f21dd6a4d8c863abb34a267d6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-003/before-preview.png",
+      "sha256": "1a0abc9f108f8734323ee702e1686d5b0eda2c6dbd6e4bac4c7da696d0f0440c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-003/output/preview.png",
+      "sha256": "13d88c83b3424f0988efcb2d3f4ef4c3f8adbd4cbcf73407680204a4e5d1bb49"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-003/output/editable.pptx",
+      "sha256": "68750c3645a7e2b42c9607fcc1ce5ceb1a1e209cbac5df5c190807657a626d58"
+    }
+  ],
+  "evidence_id": "774e637c92874f1162f7c9e6"
+}

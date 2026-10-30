@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-border-dash-pattern-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "border-dash-pattern-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "00ff917d77120f789927d308"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Preserve recognized dash patterns when constructing enclosure primitives and verify their rendered stroke cadence against the reference."
+  ]
+}

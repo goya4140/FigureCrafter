@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-subscript-font-size-mismatch",
+  "memory_id": "representation-subscript-font-size-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Size mathematical subscripts relative to the reference glyph proportions, accounting for the renderer's script scaling separately from baseline placement."
+  ],
+  "evidence_ids": [
+    "d401d2dc409cf139b29a720a"
+  ]
+}

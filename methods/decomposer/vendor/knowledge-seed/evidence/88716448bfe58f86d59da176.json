@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241114432-fig3",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "plus_symbol"
+  ],
+  "primitive_ids": [
+    "plus_symbol/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    869,
+    505,
+    434,
+    252
+  ],
+  "summary": "The reference plus sign above the inference arrow renders as a tiny fragment. Its local text box is too small for the 54-point Arial glyph; enlarge it around the existing center.",
+  "strategy": "Size single-symbol text boxes to accommodate font line metrics and internal margins, preserving the intended glyph center and checking for clipping after export.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.954121,
+      "edge_iou": 0.391293
+    },
+    "after_local": {
+      "pixel_similarity": 0.954121,
+      "edge_iou": 0.391293
+    },
+    "before_global": {
+      "pixel_similarity": 0.963473,
+      "edge_iou": 0.323746
+    },
+    "after_global": {
+      "pixel_similarity": 0.963473,
+      "edge_iou": 0.323746
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      869,
+      505,
+      434,
+      252
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-001/decision.json",
+      "sha256": "c74e867db87a25a60f1f374bcbdab5f6b5133c4f3ab502c91a863132caf9c253"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-001/assessment.json",
+      "sha256": "de1e33f79a5db3423d31dc5c55f9153aaca51137845994237f142abbd018e177"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "f35fbc075cb7eb2f1a44df645bc3d788a7990c78a21641b18a20a51b99f34575"
+    }
+  ],
+  "evidence_id": "88716448bfe58f86d59da176"
+}

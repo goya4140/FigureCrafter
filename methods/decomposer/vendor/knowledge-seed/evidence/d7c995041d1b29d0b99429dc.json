@@ -1,0 +1,339 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-compact-r1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-color-set-to-none",
+  "label_ids": [
+    "query_sentence"
+  ],
+  "primitive_ids": [
+    "query_sentence/text"
+  ],
+  "field": "style.color",
+  "region": [
+    0,
+    1455,
+    1024,
+    486
+  ],
+  "summary": "In the current render, the query cards are visible but their three-line sentence is missing. Recognition preserves the correct sentence and specifies #111111; the existing text primitive instead sets color to none. Restore its foreground color without changing geometry or content.",
+  "strategy": "Preserve explicit visible foreground colors when converting recognized text into editable primitives, and verify text visibility after export.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.915373,
+      "edge_iou": 0.149269
+    },
+    "after_local": {
+      "pixel_similarity": 0.907601,
+      "edge_iou": 0.165059
+    },
+    "before_global": {
+      "pixel_similarity": 0.928856,
+      "edge_iou": 0.134816
+    },
+    "after_global": {
+      "pixel_similarity": 0.92837,
+      "edge_iou": 0.136041
+    },
+    "local_pixel_delta": -0.007772,
+    "local_edge_delta": 0.01579,
+    "global_pixel_delta": -0.000486,
+    "evaluation_region": [
+      0,
+      1455,
+      1024,
+      486
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "native-text-invisible",
+          [
+            "aggregated_label",
+            "aggregator_clip_label",
+            "aggregator_frame_label",
+            "aleatoric",
+            "attention",
+            "calibration_title",
+            "caption_b",
+            "caption_c",
+            "caption_d",
+            "clip_dirichlet_label",
+            "clip_embedding_label",
+            "clip_encoder",
+            "clip_evidence",
+            "clip_fc",
+            "clip_max",
+            "clip_opinion_chart",
+            "clip_title",
+            "cnn",
+            "consistency",
+            "dense_label",
+            "dustbin_bucket_label",
+            "dustbin_label",
+            "epistemic",
+            "fot_label",
+            "frame_dirichlet_label",
+            "frame_embedding_label",
+            "frame_encoder",
+            "frame_evidence",
+            "frame_fc",
+            "frame_max",
+            "frame_opinion_chart",
+            "frame_title",
+            "fusion_title",
+            "identification_cube",
+            "identification_title",
+            "legend_polysemous",
+            "legend_precise",
+            "legend_underdetermined",
+            "output_opinion_chart",
+            "polysemous_matrix",
+            "precise_matrix",
+            "query_embedding_label",
+            "query_fc",
+            "query_sentence",
+            "query_title",
+            "query_token_label",
+            "roberta",
+            "sparse_label",
+            "text_queries_label",
+            "transformer",
+            "transport_graph",
+            "underdetermined_matrix",
+            "video_label",
+            "video_token_label"
+          ]
+        ],
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "polysemous_matrix",
+            "precise_matrix",
+            "underdetermined_matrix"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "native-text-invisible",
+          [
+            "aggregated_label",
+            "aggregator_clip_label",
+            "aggregator_frame_label",
+            "aleatoric",
+            "attention",
+            "calibration_title",
+            "caption_b",
+            "caption_c",
+            "caption_d",
+            "clip_dirichlet_label",
+            "clip_embedding_label",
+            "clip_encoder",
+            "clip_evidence",
+            "clip_fc",
+            "clip_max",
+            "clip_opinion_chart",
+            "clip_title",
+            "cnn",
+            "consistency",
+            "dense_label",
+            "dustbin_bucket_label",
+            "dustbin_label",
+            "epistemic",
+            "fot_label",
+            "frame_dirichlet_label",
+            "frame_embedding_label",
+            "frame_encoder",
+            "frame_evidence",
+            "frame_fc",
+            "frame_max",
+            "frame_opinion_chart",
+            "frame_title",
+            "fusion_title",
+            "identification_cube",
+            "identification_title",
+            "legend_polysemous",
+            "legend_precise",
+            "legend_underdetermined",
+            "output_opinion_chart",
+            "polysemous_matrix",
+            "precise_matrix",
+            "query_embedding_label",
+            "query_fc",
+            "query_title",
+            "query_token_label",
+            "roberta",
+            "sparse_label",
+            "text_queries_label",
+            "transformer",
+            "transport_graph",
+            "underdetermined_matrix",
+            "video_label",
+            "video_token_label"
+          ]
+        ],
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "polysemous_matrix",
+            "precise_matrix",
+            "underdetermined_matrix"
+          ]
+        ]
+      ],
+      "new_failure_keys": [
+        [
+          "native-text-invisible",
+          [
+            "aggregated_label",
+            "aggregator_clip_label",
+            "aggregator_frame_label",
+            "aleatoric",
+            "attention",
+            "calibration_title",
+            "caption_b",
+            "caption_c",
+            "caption_d",
+            "clip_dirichlet_label",
+            "clip_embedding_label",
+            "clip_encoder",
+            "clip_evidence",
+            "clip_fc",
+            "clip_max",
+            "clip_opinion_chart",
+            "clip_title",
+            "cnn",
+            "consistency",
+            "dense_label",
+            "dustbin_bucket_label",
+            "dustbin_label",
+            "epistemic",
+            "fot_label",
+            "frame_dirichlet_label",
+            "frame_embedding_label",
+            "frame_encoder",
+            "frame_evidence",
+            "frame_fc",
+            "frame_max",
+            "frame_opinion_chart",
+            "frame_title",
+            "fusion_title",
+            "identification_cube",
+            "identification_title",
+            "legend_polysemous",
+            "legend_precise",
+            "legend_underdetermined",
+            "output_opinion_chart",
+            "polysemous_matrix",
+            "precise_matrix",
+            "query_embedding_label",
+            "query_fc",
+            "query_title",
+            "query_token_label",
+            "roberta",
+            "sparse_label",
+            "text_queries_label",
+            "transformer",
+            "transport_graph",
+            "underdetermined_matrix",
+            "video_label",
+            "video_token_label"
+          ]
+        ]
+      ],
+      "passed": false
+    },
+    "rejection_reason": "new_hard_validation_failure",
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "bad57e4f4f214e67248e31d4c358cd3d65ecc9d3c197205704b31e61425b2189",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "08636ac2256fe576b95206c4eb82ada8a9d12c23183e689d09101b42ce724be4"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "bad57e4f4f214e67248e31d4c358cd3d65ecc9d3c197205704b31e61425b2189",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "08636ac2256fe576b95206c4eb82ada8a9d12c23183e689d09101b42ce724be4"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-text-color-set-to-none",
+      "representation-text-box-font-metric-overflow",
+      "representation-text-bearing-object-category-drift",
+      "representation-text-style-invisible-and-undersized",
+      "representation-node-text-local-placement-offset",
+      "representation-math-script-size-inflates-text-width",
+      "representation-emoji-glyph-contrast-mismatch",
+      "representation-literal-math-markup-in-text-primitive"
+    ],
+    "retrieved_skill_ids": [
+      "representation-text-color-set-to-none",
+      "representation-text-box-font-metric-overflow",
+      "representation-text-bearing-object-category-drift",
+      "representation-text-style-invisible-and-undersized",
+      "representation-node-text-local-placement-offset",
+      "representation-math-script-size-inflates-text-width",
+      "representation-emoji-glyph-contrast-mismatch",
+      "representation-literal-math-markup-in-text-primitive"
+    ],
+    "retrieved_statuses": {
+      "representation-text-color-set-to-none": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-text-style-invisible-and-undersized": "candidate",
+      "representation-node-text-local-placement-offset": "candidate",
+      "representation-math-script-size-inflates-text-width": "candidate",
+      "representation-emoji-glyph-contrast-mismatch": "candidate",
+      "representation-literal-math-markup-in-text-primitive": "downstreamed"
+    },
+    "referenced_memory_ids": [
+      "representation-text-color-set-to-none"
+    ],
+    "referenced_skill_ids": [
+      "representation-text-color-set-to-none"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-r1/refinement/round-002/decision.json",
+      "sha256": "38a3ec0c591d00ddd11d55431fc082ca9f9ac1ef3316560e3706bc6b399687c6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-r1/refinement/round-002/assessment.json",
+      "sha256": "26f134c50ff0f6db0b31962935876edb2f7826611ad411e0a1aa84320dba1483"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-r1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "b8bf74beecb022bc684a693bb752a85b37751f5596d8c5685b7b6e9b5ccfd83f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-r1/refinement/round-002/before-preview.png",
+      "sha256": "d118d68fd7e6afc5f3cd9a7ad3fe2ef6f21f19d9b227e4df6b9f7e2e4b96b046"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-r1/refinement/round-002/output/preview.png",
+      "sha256": "cd5b327028890f6ca34843a03dfe9a79833b59e83cb429aafbcef55b5e717f84"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-compact-r1/refinement/round-002/output/editable.pptx",
+      "sha256": "140d3c33d30fa133c4fb245cec216eb90258597941e01a63a6ea0c5cc1e7b11a"
+    }
+  ],
+  "evidence_id": "d7c995041d1b29d0b99429dc"
+}

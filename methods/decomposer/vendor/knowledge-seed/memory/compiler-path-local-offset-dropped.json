@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-path-local-offset-dropped",
+  "owner_stage": "compiler",
+  "mechanism": "path-local-offset-dropped",
+  "status": "candidate",
+  "evidence_ids": [
+    "04ce4613948593b9f552baa7"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Validate exported path origins against scene bounds, applying both component placement and primitive-local translation exactly once; compare paths with neighboring native rectangles in the rendered output."
+  ]
+}

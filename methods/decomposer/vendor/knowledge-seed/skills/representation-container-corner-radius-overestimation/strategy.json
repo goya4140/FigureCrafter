@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-container-corner-radius-overestimation",
+  "memory_id": "representation-container-corner-radius-overestimation",
+  "status": "candidate",
+  "instructions": [
+    "Compare rendered container corners with the reference at full container scale; avoid default rounded-rectangle geometry when its radius substantially intrudes into content."
+  ],
+  "evidence_ids": [
+    "def382f36a0d21776ee13f32"
+  ]
+}

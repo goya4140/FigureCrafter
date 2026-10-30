@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240408031-fig4",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "rotated-text-box-dimension-mismatch",
+  "label_ids": [
+    "mapping_shared_label"
+  ],
+  "primitive_ids": [
+    "mapping_shared_label/t"
+  ],
+  "field": "bbox",
+  "region": [
+    1199,
+    221,
+    600,
+    221
+  ],
+  "summary": "The rendered Shared label between mapping modules breaks into tiny fragments. Its narrow text box is rotated 270° without swapping its pre-rotation dimensions. Use a horizontal text box centered at the same position before rotation.",
+  "strategy": "For quarter-turn text, size the unrotated box to fit the complete horizontal string, then rotate it around the intended visual center.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.930852,
+      "edge_iou": 0.285479
+    },
+    "after_local": {
+      "pixel_similarity": 0.931395,
+      "edge_iou": 0.290162
+    },
+    "before_global": {
+      "pixel_similarity": 0.960893,
+      "edge_iou": 0.294391
+    },
+    "after_global": {
+      "pixel_similarity": 0.960944,
+      "edge_iou": 0.295298
+    },
+    "local_pixel_delta": 0.000543,
+    "local_edge_delta": 0.004683,
+    "global_pixel_delta": 5.1e-05,
+    "evaluation_region": [
+      1199,
+      221,
+      600,
+      221
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-001/decision.json",
+      "sha256": "9634f5e1a5013d77f3d4fb8cad6d8b4823e91a91912be59488beb4ce9bdf521b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-001/assessment.json",
+      "sha256": "245d03daab1dbc1f7f41aef2bb517e1e2c636f05939a6a11895bfead7af288be"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240408031-fig4/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "326ba1ef84260aaf320c7de5c8cd97ffee0a9f9955e159c743056e193e1568d3"
+    }
+  ],
+  "evidence_id": "b1057a994097c06e576a14a1"
+}

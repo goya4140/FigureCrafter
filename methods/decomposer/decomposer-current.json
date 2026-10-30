@@ -1,0 +1,13 @@
+{
+  "version": "v1.2-rc1h1-method2.2",
+  "source": "vendor/source",
+  "config": "vendor/config.json",
+  "knowledge_seed": "vendor/knowledge-seed",
+  "runtime_fonts": "vendor/runtime-fonts",
+  "source_manifest": "hashes.json",
+  "known_limits": [
+    "Uniform fresh Recognition/Representation validation incomplete upstream",
+    "Reconstruction fidelity and scientific acceptance are separate",
+    "Recorded server SAM adapter supplied boxes, not pixel masks"
+  ]
+}

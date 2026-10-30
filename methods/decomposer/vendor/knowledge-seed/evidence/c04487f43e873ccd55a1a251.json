@@ -1,0 +1,38 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240705342-fig1",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "text-render-scale-mismatch",
+  "label_ids": [
+    "zscl_clip_text",
+    "reference_label"
+  ],
+  "primitive_ids": [
+    "zscl_clip_text/t",
+    "reference_label/t"
+  ],
+  "field": null,
+  "region": [
+    1884,
+    0,
+    629,
+    407
+  ],
+  "summary": "In the selected tile, CLIP and Reference Dataset render much smaller than in the reference despite plausible primitive font sizes and unit layout scales. The earlier local text-box patch produced no measured change. Supplied provenance confirms text presence but omits exported font sizes and autofit settings, so ownership cannot be established reliably.",
+  "strategy": "When rendered text is unexpectedly small and geometry edits have no effect, compare scene font sizes with exported run sizes and autofit settings before assigning ownership or applying further visual patches.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-003/decision.json",
+      "sha256": "38277f30e50b7df079e7d8150054d520801d9c923b8ade0c2e5ee31c27021fdc"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240705342-fig1/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "403c6358d8bd40b35d41b3f636bffb5088b54e573f137fddab6d6572784dbcd7"
+    }
+  ],
+  "evidence_id": "c04487f43e873ccd55a1a251"
+}

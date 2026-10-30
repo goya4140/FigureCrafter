@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-231200837-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "warped_label"
+  ],
+  "primitive_ids": [
+    "warped_label/label"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    2400,
+    444,
+    800,
+    444
+  ],
+  "summary": "The rendered warped-source caption is visibly smaller than the reference. Its tight local text box leaves insufficient height for the mathematical subscript, causing text fitting to reduce the caption. Increase the local text-box height.",
+  "strategy": "Allow sufficient text-box height for mixed-font mathematical runs and subscript descenders before applying automatic font fitting.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.955475,
+      "edge_iou": 0.258997
+    },
+    "after_local": {
+      "pixel_similarity": 0.955475,
+      "edge_iou": 0.258997
+    },
+    "before_global": {
+      "pixel_similarity": 0.973906,
+      "edge_iou": 0.265743
+    },
+    "after_global": {
+      "pixel_similarity": 0.973906,
+      "edge_iou": 0.265743
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      2400,
+      444,
+      800,
+      444
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231200837-fig2/refinement/round-001/decision.json",
+      "sha256": "83546deaaa558f2905cec82f4e529e2a3d047b106786a8a317f3406ac3322c51"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231200837-fig2/refinement/round-001/assessment.json",
+      "sha256": "138b39f6acb56652aca1bc86736e88765e9c65da9e81032fba8d90fd884ba655"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/eccv-2024-231200837-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "95045327c88154a06518764ba2c4a053d6be5f83f193923a06669c1c19c7bd12"
+    }
+  ],
+  "evidence_id": "2b63146cec7bb3aa5a8de7ac"
+}

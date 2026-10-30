@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-rich-text-rendering-omission",
+  "memory_id": "unresolved-rich-text-rendering-omission",
+  "status": "candidate",
+  "instructions": [
+    "Verify rich-text run visibility and exported color inheritance before modifying correctly retained content or placement."
+  ],
+  "evidence_ids": [
+    "ab7a6d2417b0b74d1ff3d30a"
+  ]
+}

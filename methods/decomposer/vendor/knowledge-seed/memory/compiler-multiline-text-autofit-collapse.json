@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-multiline-text-autofit-collapse",
+  "owner_stage": "compiler",
+  "mechanism": "multiline-text-autofit-collapse",
+  "status": "candidate",
+  "evidence_ids": [
+    "c849784e6e15118b4719f2d0"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Validate exported multiline font sizes and line-spacing units against scene styles; ensure autofit does not shrink correctly sized text boxes during export."
+  ]
+}

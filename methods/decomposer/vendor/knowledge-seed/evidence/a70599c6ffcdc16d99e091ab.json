@@ -1,0 +1,147 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "neighbor_selection_text"
+  ],
+  "primitive_ids": [
+    "neighbor_selection_text/positive",
+    "neighbor_selection_text/negative"
+  ],
+  "field": "font_scale",
+  "region": [
+    1571,
+    896,
+    786,
+    299
+  ],
+  "summary": "The neighbor-selection captions are visibly undersized in the current render: corresponding lines occupy roughly two-thirds of their reference width despite matching panel placement. Increase this label's text scale while preserving its styled runs and line breaks.",
+  "strategy": "Compare caption glyph heights and line widths against the reference independently of panel geometry, then calibrate per-label text scale while preserving styled runs and checking wrapping.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.914908,
+      "edge_iou": 0.137229
+    },
+    "after_local": {
+      "pixel_similarity": 0.9077,
+      "edge_iou": 0.135286
+    },
+    "before_global": {
+      "pixel_similarity": 0.932898,
+      "edge_iou": 0.113867
+    },
+    "after_global": {
+      "pixel_similarity": 0.932534,
+      "edge_iou": 0.114947
+    },
+    "local_pixel_delta": -0.007208,
+    "local_edge_delta": -0.001943,
+    "global_pixel_delta": -0.000364,
+    "evaluation_region": [
+      1571,
+      896,
+      786,
+      299
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "925fd9a4fd5d2ae1a65c7c942ff1aafb5408fa60d095b5e33e958d2cdf1aca0f",
+      "representation": "4a79605245beccc987e0be2a7ef32fcfa63e72e61c6d7013cafffb2ed65b7935",
+      "layout": "284608afe4b96913aa7cb8abe6e90fcf7c925e5ac386e9b88460c303499a1e10",
+      "pptx": "14f592af54deba34ba358843031354f6b713f1112ef3a499da79423e420d6cfe"
+    },
+    "canonical_after_hashes": {
+      "recognition": "925fd9a4fd5d2ae1a65c7c942ff1aafb5408fa60d095b5e33e958d2cdf1aca0f",
+      "representation": "4a79605245beccc987e0be2a7ef32fcfa63e72e61c6d7013cafffb2ed65b7935",
+      "layout": "284608afe4b96913aa7cb8abe6e90fcf7c925e5ac386e9b88460c303499a1e10",
+      "pptx": "14f592af54deba34ba358843031354f6b713f1112ef3a499da79423e420d6cfe"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-foreground-title-occluded-by-chart",
+      "unresolved-rendered-text-omission",
+      "unresolved-rotated-text-sizing-disagreement",
+      "unresolved-multiline-text-rendering-loss",
+      "unresolved-local-text-orientation-mismatch",
+      "recognition-text-punctuation-omission",
+      "layout-rotated-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-foreground-title-occluded-by-chart",
+      "unresolved-rendered-text-omission",
+      "unresolved-rotated-text-sizing-disagreement",
+      "unresolved-multiline-text-rendering-loss",
+      "unresolved-local-text-orientation-mismatch",
+      "recognition-text-punctuation-omission",
+      "layout-rotated-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "unresolved-rendered-text-omission": "candidate",
+      "unresolved-rotated-text-sizing-disagreement": "candidate",
+      "unresolved-multiline-text-rendering-loss": "candidate",
+      "unresolved-local-text-orientation-mismatch": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-001/decision.json",
+      "sha256": "591d0ea580f02fe2205684a9b0a6944de0b7c020930cda219659382ccb5cbf48"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-001/assessment.json",
+      "sha256": "c6a3765f293fe097188f8271eaa2b8bf7667fc66ffcd87f287b433a5325a6992"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "65b84f327f73eb6a3f8914f713ac38bf6b6a527f21dd6a4d8c863abb34a267d6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-001/before-preview.png",
+      "sha256": "1a0abc9f108f8734323ee702e1686d5b0eda2c6dbd6e4bac4c7da696d0f0440c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-001/output/preview.png",
+      "sha256": "874b8f081bcfd369dc11be57939ec89e136e652eb26f65f4312d17de3dabcb6e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/aaai-2025-240808754-fig3/representation-fast/refinement/round-001/output/editable.pptx",
+      "sha256": "2e10fedb80a254c7c5146f9411220f15ccc7ca2b8639964dfb57543263691502"
+    }
+  ],
+  "evidence_id": "a70599c6ffcdc16d99e091ab"
+}

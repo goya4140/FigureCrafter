@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-text-font-size-underestimate",
+  "memory_id": "representation-text-font-size-underestimate",
+  "status": "candidate",
+  "instructions": [
+    "Compare rendered glyph height and line width with the reference before adjusting text boxes; correct local font size when the text fits but appears undersized."
+  ],
+  "evidence_ids": [
+    "d4a566be4e1e9c5674d5ac66"
+  ]
+}

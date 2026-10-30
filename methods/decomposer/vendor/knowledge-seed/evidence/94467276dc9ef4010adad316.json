@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250215027-fig3",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "multiline-text-line-spacing-mismatch",
+  "label_ids": [
+    "detail_text"
+  ],
+  "primitive_ids": [
+    "detail_text/text"
+  ],
+  "field": "style.line_spacing",
+  "region": [
+    869,
+    506,
+    434,
+    253
+  ],
+  "summary": "The rendered detailed feedback has tighter line spacing than the reference: its first line sits lower and its last line higher. The discrepancy is detected in the render; the local text primitive owns the spacing.",
+  "strategy": "Match multiline baseline intervals to the reference independently of font size and text-box placement.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.907185,
+      "edge_iou": 0.255601
+    },
+    "after_local": {
+      "pixel_similarity": 0.907185,
+      "edge_iou": 0.255601
+    },
+    "before_global": {
+      "pixel_similarity": 0.93023,
+      "edge_iou": 0.293119
+    },
+    "after_global": {
+      "pixel_similarity": 0.93023,
+      "edge_iou": 0.293119
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      869,
+      506,
+      434,
+      253
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-003/decision.json",
+      "sha256": "dcb506495f33bfad6d09af43ad510d08ce51997b976cc88553d574d7bc8673e8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-003/assessment.json",
+      "sha256": "32aa74684fe750e2977ed2826fd0b2ff8bb5a4ca92473a6c810a6238640da5c9"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "06c19813cf26958930f868189dd37caf95969ee1768536ac9b2e1c66ad9e3df1"
+    }
+  ],
+  "evidence_id": "94467276dc9ef4010adad316"
+}

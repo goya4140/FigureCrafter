@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-grid-lines-exceed-projected-face",
+  "owner_stage": "representation",
+  "mechanism": "grid-lines-exceed-projected-face",
+  "status": "candidate",
+  "evidence_ids": [
+    "73f541c9accc6c17725128dd"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Validate projected grid endpoints against their owning face edges before export; internal dividers must terminate on the face boundary."
+  ]
+}

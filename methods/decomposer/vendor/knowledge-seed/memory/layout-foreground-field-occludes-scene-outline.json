@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-foreground-field-occludes-scene-outline",
+  "owner_stage": "layout",
+  "mechanism": "foreground-field-occludes-scene-outline",
+  "status": "candidate",
+  "evidence_ids": [
+    "62283a41508f4a1ea55987c7"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Place viewing fields behind scene geometry so opaque field primitives do not obscure object outlines."
+  ]
+}

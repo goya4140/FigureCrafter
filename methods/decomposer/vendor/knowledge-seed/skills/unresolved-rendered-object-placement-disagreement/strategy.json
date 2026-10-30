@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-rendered-object-placement-disagreement",
+  "memory_id": "unresolved-rendered-object-placement-disagreement",
+  "status": "candidate",
+  "instructions": [
+    "Compare rendered object positions with canonical scene bounds and exported OOXML transforms before changing geometry; repair the first stage where coordinates diverge."
+  ],
+  "evidence_ids": [
+    "fbcae604dda553d0b4066056"
+  ]
+}

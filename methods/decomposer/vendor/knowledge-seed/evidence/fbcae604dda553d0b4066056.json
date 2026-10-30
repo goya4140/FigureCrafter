@@ -1,0 +1,74 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-object-placement-disagreement",
+  "label_ids": [
+    "transport_graph"
+  ],
+  "primitive_ids": [
+    "transport_graph/box",
+    "transport_graph/videos"
+  ],
+  "field": null,
+  "region": [
+    8640,
+    4094,
+    2880,
+    1365
+  ],
+  "summary": "The current render leaves the token assignment graph absent from the right side of panel (d), with its content appearing near the figure's left edge. Recognition, layout, and scene provenance all place transport_graph at [10018,3943,1435,891]. Supplied OOXML records do not include positions, so the faulty stage cannot be established safely; changing canonical geometry would risk compensating for an export error.",
+  "strategy": "Compare rendered object positions with canonical scene bounds and exported OOXML transforms before changing geometry; repair the first stage where coordinates diverge.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-object-rotation-omission",
+      "representation-text-bearing-object-category-drift",
+      "infrastructure-qualified-primitive-id-resolution",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "representation-subscript-font-double-reduction"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-object-rotation-omission",
+      "representation-text-bearing-object-category-drift",
+      "infrastructure-qualified-primitive-id-resolution",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch",
+      "representation-subscript-font-double-reduction"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-object-rotation-omission": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "infrastructure-qualified-primitive-id-resolution": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "representation-subscript-font-double-reduction": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/edit-test-1/refinement/round-001/decision.json",
+      "sha256": "667dbcfc5887c2e99e2bcac895b4e5b7c463189f20cb23447a61a74f83f538fa"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/edit-test-1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "723ca0402c2dfe9076f5ed046c968d41487a8b1f1ad03cc7c6459ea3faec56a9"
+    }
+  ],
+  "evidence_id": "fbcae604dda553d0b4066056"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240312965-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "rotated-text-local-box-autofit",
+  "label_ids": [
+    "sca_text7"
+  ],
+  "primitive_ids": [
+    "sca_text7/text"
+  ],
+  "field": "bbox",
+  "region": [
+    1126,
+    573,
+    563,
+    286
+  ],
+  "summary": "In tile-2-2, the SCA label is much smaller than the reference. Its local text box is only 39 units wide before rotation, forcing text shrinkage. Widen the local box about its center while preserving the layout placement and rotation; the earlier global-bbox adjustment was rejected.",
+  "strategy": "Size rotated text primitives for their unrotated text flow, preserving their center, and verify rendered glyph size after rotation.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.958378,
+      "edge_iou": 0.263314
+    },
+    "after_local": {
+      "pixel_similarity": 0.958492,
+      "edge_iou": 0.263709
+    },
+    "before_global": {
+      "pixel_similarity": 0.970613,
+      "edge_iou": 0.346236
+    },
+    "after_global": {
+      "pixel_similarity": 0.970635,
+      "edge_iou": 0.346386
+    },
+    "local_pixel_delta": 0.000114,
+    "local_edge_delta": 0.000395,
+    "global_pixel_delta": 2.2e-05,
+    "evaluation_region": [
+      1126,
+      573,
+      563,
+      286
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-002/decision.json",
+      "sha256": "4247986fa9fb048719754d7f9cae2047ba9f85b12bb928ebd10df361fa08fab3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-002/assessment.json",
+      "sha256": "a6deeac879ad70909fed7e34b3b6b4387ae4954a7a7f6e7a894eb4073fcc5fdf"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-fast-stage-04-continuation-082-100/runs/eccv-2024-240312965-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "07323bd410ef5114e547c9d9d5318c9d081b1afb704c76d611e066c32471567f"
+    }
+  ],
+  "evidence_id": "f54f1d650c9c834bdd79cca8"
+}

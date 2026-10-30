@@ -1,0 +1,18 @@
+{
+  "skill_id": "infrastructure-qualified-primitive-id-resolution",
+  "memory_id": "infrastructure-qualified-primitive-id-resolution",
+  "status": "downstreamed",
+  "instructions": [
+    "Resolve both local and label-qualified primitive IDs, and reject qualified IDs whose owner does not match the operation label."
+  ],
+  "evidence_ids": [
+    "791208e8820ab787b72b94b4"
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "version": "0.4.4",
+    "proof": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v7-qualified-id-proof-20260920/proof.json",
+    "tests": "17 passed",
+    "guard": "qualified owner must equal operation label"
+  }
+}

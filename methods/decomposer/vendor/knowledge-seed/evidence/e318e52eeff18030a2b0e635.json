@@ -1,0 +1,39 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "acl-2025-241212201-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rounded-corner-geometry-mismatch",
+  "label_ids": [
+    "graph_layers"
+  ],
+  "primitive_ids": [
+    "graph_layers/back4",
+    "graph_layers/back3",
+    "graph_layers/back2",
+    "graph_layers/front"
+  ],
+  "field": null,
+  "region": [
+    260,
+    137,
+    260,
+    138
+  ],
+  "summary": "The rendered graph cards have substantially larger corner radii than the reference, visibly changing their lower outlines in this tile. The supplied primitives specify round_rect but expose no radius, and provenance does not identify exported corner adjustments; ownership cannot be resolved reliably.",
+  "strategy": "Preserve explicit corner radii for rounded shapes and record exported geometry adjustments so radius mismatches can be attributed and repaired without changing shape families.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/acl-2025-241212201-fig2/refinement/round-001/decision.json",
+      "sha256": "64a6af70c99105dd9e2eb92afc4c74638cb532ebd480fcdb338bf459a145c00e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/acl-2025-241212201-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "c8bd316e98397dcca9ccd17772ebf8c121ad3294cadb76e9c57d94311ae46b6a"
+    }
+  ],
+  "evidence_id": "e318e52eeff18030a2b0e635"
+}

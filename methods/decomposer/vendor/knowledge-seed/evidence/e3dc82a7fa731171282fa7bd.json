@@ -1,0 +1,148 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "baseline",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "ground_truth",
+    "mixed_domain"
+  ],
+  "primitive_ids": [
+    "ground_truth/t",
+    "mixed_domain/t"
+  ],
+  "field": "bbox",
+  "region": [
+    364,
+    391,
+    364,
+    391
+  ],
+  "summary": "The rendered captions are nearly illegible despite their increased layout font scale. Their local text boxes remain only 41 units high against an effective 57.19-unit font size, consistent with fitting-induced shrinkage. Increase local vertical space while preserving caption centers and text.",
+  "strategy": "Check text-box capacity against effective font metrics before increasing text scale; verify rendered glyph size and wrapping after adjusting local bounds.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.934924,
+      "edge_iou": 0.245242
+    },
+    "after_local": {
+      "pixel_similarity": 0.934924,
+      "edge_iou": 0.245242
+    },
+    "before_global": {
+      "pixel_similarity": 0.973471,
+      "edge_iou": 0.291185
+    },
+    "after_global": {
+      "pixel_similarity": 0.973471,
+      "edge_iou": 0.291185
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      364,
+      391,
+      364,
+      391
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "e807a35051e9d1f10338362dc9d041cf92d65cca060d195b4e99285cef03dbb4",
+      "representation": "020ed44537e26b668350325a5a3d3fad62a96718dca30d9351e2c6d8a8334438",
+      "layout": "6d48ee8354ef7460ef8272326cd90d7796820280360cc9c81ce492a2248945c4",
+      "pptx": "bebc0873873504f1fb3e6ab2b6be85a05d7a3c1bbc409a78369a17cb5026f68d"
+    },
+    "canonical_after_hashes": {
+      "recognition": "e807a35051e9d1f10338362dc9d041cf92d65cca060d195b4e99285cef03dbb4",
+      "representation": "020ed44537e26b668350325a5a3d3fad62a96718dca30d9351e2c6d8a8334438",
+      "layout": "6d48ee8354ef7460ef8272326cd90d7796820280360cc9c81ce492a2248945c4",
+      "pptx": "bebc0873873504f1fb3e6ab2b6be85a05d7a3c1bbc409a78369a17cb5026f68d"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-caption-font-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-explicit-text-rotation-hint",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-box-dimension-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-math-label-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-caption-font-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-explicit-text-rotation-hint",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-box-dimension-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-math-label-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-explicit-text-rotation-hint": "downstreamed",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-rotated-text-box-dimension-mismatch": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-caption-font-scale-mismatch"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-caption-font-scale-mismatch"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-002/decision.json",
+      "sha256": "d3486427ac8607738b650bbd92d9284b828d5479aee2e1deba264c945d217fad"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-002/assessment.json",
+      "sha256": "bac11f82b1c7bb70fe1fa5e02fb4a4c531a24a2a56a80736660aefc189221add"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "c1e9b854c72676f1b00af9d4c7c6389846eecc42fb2c154c3b5817dd07ab8864"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-002/before-preview.png",
+      "sha256": "076e282f39eabe592aeb573db25d2a5df8c9ae7ad768be1d4bfb72eb3d38c141"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-002/output/preview.png",
+      "sha256": "076e282f39eabe592aeb573db25d2a5df8c9ae7ad768be1d4bfb72eb3d38c141"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-002/output/editable.pptx",
+      "sha256": "e8c7926a25e7963da663041c1a5e87146fe89871d0a4acd0547dc77b224eaaa8"
+    }
+  ],
+  "evidence_id": "e3dc82a7fa731171282fa7bd"
+}

@@ -1,0 +1,54 @@
+{
+  "skill_id": "representation-excessive-corner-rounding",
+  "memory_id": "representation-excessive-corner-rounding",
+  "status": "downstreamed",
+  "instructions": [
+    "Match enclosure corner geometry to the reference instead of defaulting containers to rounded rectangles.",
+    "Match enclosure corner geometry to the reference; use a rectangle when default rounded-rectangle curvature substantially exceeds the visible corner radius.",
+    "Match enclosure corner geometry to the reference instead of applying default rounded rectangles to all modules.",
+    "Match container corner geometry to the reference; use rectangular primitives when corner rounding is negligible at output scale.",
+    "Match enclosure corner geometry to the reference; use a rectangle when default rounded-rectangle curvature substantially exceeds the visible corner radius, then validate the exported render."
+  ],
+  "evidence_ids": [
+    "8276db7fb97c70d4b4acbee6",
+    "d849f6d28050e4910be8ebcf",
+    "fc49d6e77d52bc0b52c0e2ba",
+    "4dc9bcf167243984c2aaca56",
+    "d3bbbbdd11979dcdcbb40ad7",
+    "c69b7c15308b97f4cd53af24",
+    "72c92a902da3ab7fa7151cbc"
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "version": "0.4.4",
+    "operation": "primitive_kind",
+    "primitive_id_forms": [
+      "local",
+      "label/primitive"
+    ],
+    "proof": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v7-qualified-id-proof-20260920/proof.json",
+    "assessment": {
+      "accepted": true,
+      "before_local": {
+        "pixel_similarity": 0.954095,
+        "edge_iou": 0.304951
+      },
+      "after_local": {
+        "pixel_similarity": 0.956858,
+        "edge_iou": 0.328437
+      },
+      "before_global": {
+        "pixel_similarity": 0.962517,
+        "edge_iou": 0.345301
+      },
+      "after_global": {
+        "pixel_similarity": 0.962824,
+        "edge_iou": 0.348701
+      },
+      "local_pixel_delta": 0.002763,
+      "local_edge_delta": 0.023486,
+      "global_pixel_delta": 0.000307
+    },
+    "tests": "python -m unittest discover -s Decomposer/tests -q (17 passed)"
+  }
+}

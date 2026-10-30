@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-text-rotation-omitted",
+  "memory_id": "layout-text-rotation-omitted",
+  "status": "candidate",
+  "instructions": [
+    "Preserve the reference orientation of tilted annotations in layout and verify their angle in the rendered output."
+  ],
+  "evidence_ids": [
+    "f3fb4650a990cbe470bd02c7"
+  ]
+}

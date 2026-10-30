@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240720657-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "cliplegendtitle"
+  ],
+  "primitive_ids": [
+    "cliplegendtitle/t"
+  ],
+  "field": "bbox",
+  "region": [
+    2179,
+    1594,
+    727,
+    532
+  ],
+  "summary": "Detected in the rendered legend: “CLIP Features” is nearly illegible compared with the reference. Its local text box is only 42 units high for a 48-unit font, causing excessive fitting shrinkage. Increase its height while preserving its center.",
+  "strategy": "Size text primitive boxes to accommodate the font's full line metrics before export; verify that fitting does not shrink legend headings below neighboring labels.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.937185,
+      "edge_iou": 0.270643
+    },
+    "after_local": {
+      "pixel_similarity": 0.937185,
+      "edge_iou": 0.270643
+    },
+    "before_global": {
+      "pixel_similarity": 0.954119,
+      "edge_iou": 0.233922
+    },
+    "after_global": {
+      "pixel_similarity": 0.954119,
+      "edge_iou": 0.233922
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      2179,
+      1594,
+      727,
+      532
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240720657-fig2/refinement/round-001/decision.json",
+      "sha256": "c55af5eec9d75f5e0412209b8dec50ef372f109f1d297ba59563b98197d20f43"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240720657-fig2/refinement/round-001/assessment.json",
+      "sha256": "5bf593afa719008084263050037eef5f997317600d5d8f697f305067ffabe83c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240720657-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "4c359f763139bc51183b70625fb5503316761fd5bbd4415c69c3f8072b6c5cdb"
+    }
+  ],
+  "evidence_id": "2acc55af90651c1c650ec5ee"
+}

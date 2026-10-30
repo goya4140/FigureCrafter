@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250323033-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "document_text"
+  ],
+  "primitive_ids": [
+    "document_text/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    0,
+    310,
+    800,
+    311
+  ],
+  "summary": "In the rendered document excerpt, body text is smaller and vertically compressed relative to the reference, progressively misaligning lines with the pink highlights. Increase the document body's text scale while retaining its placement.",
+  "strategy": "Validate multiline text scale against both glyph height and first-to-last baseline span, including alignment with background highlights.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.729392,
+      "edge_iou": 0.142367
+    },
+    "after_local": {
+      "pixel_similarity": 0.741588,
+      "edge_iou": 0.144936
+    },
+    "before_global": {
+      "pixel_similarity": 0.838595,
+      "edge_iou": 0.178023
+    },
+    "after_global": {
+      "pixel_similarity": 0.840174,
+      "edge_iou": 0.177688
+    },
+    "local_pixel_delta": 0.012196,
+    "local_edge_delta": 0.002569,
+    "global_pixel_delta": 0.001579,
+    "evaluation_region": [
+      0,
+      310,
+      800,
+      311
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250323033-fig2/refinement/round-001/decision.json",
+      "sha256": "bcd3e7c5313c311385e23d2e087d2b95faf8f629c46517b1651b551e40528471"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250323033-fig2/refinement/round-001/assessment.json",
+      "sha256": "14a3b5b4679e8ce9d8ea8393bef1c041f3cd704f45139418cfedbdbf2fb4e2c3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250323033-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "9589240826a794c39efc3dc53de1947a1c7c535cb11ac2f3701ad269c800c3b7"
+    }
+  ],
+  "evidence_id": "4d39ba7cc3cd52d4736a3798"
+}

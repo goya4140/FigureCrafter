@@ -1,0 +1,40 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250318421-fig2",
+  "round_id": "075-cambria-font-probe-failed",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "combining-math-hat-font-substitution",
+  "label_ids": [
+    "current_label",
+    "previous_label",
+    "buffer_warp_label",
+    "warped_label"
+  ],
+  "primitive_ids": [],
+  "field": null,
+  "region": null,
+  "summary": "Cambria Math substitution alone still failed to display the hat over Unicode mathematical-script G in the exported render.",
+  "strategy": "Do not treat a font-family substitution or retained combining mark in XML as proof of visible mathematical accents. Render a tight crop and check each hat. If the renderer loses a combining hat, test native caret geometry with the underlying glyph run retaining the full recognized source identity; keep letters as editable text and avoid formula screenshots.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "observed": "Combining G hats still absent in rendered output; font-only strategy failed."
+  },
+  "knowledge_trace": {},
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/font-probe/scene.json",
+      "sha256": "4604db1b28c150a4c3c475daba69aaf33a4576c713d8cbb08cae37fc3ae31f64"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/font-probe/preview.png",
+      "sha256": "44f4c28009fef79f2d6fcb288e70f4dd8ec85073c14a885857619a549d956458"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/output/decomposer-v12rc1e-math075-20261022/probe_fonts.py",
+      "sha256": "e3bfebec0ea140028b7a40686ed663d4cd5843cd0f922583000a0f5b24c79bef"
+    }
+  ],
+  "evidence_id": "a88adb28b0b7c82de7b0aa64"
+}

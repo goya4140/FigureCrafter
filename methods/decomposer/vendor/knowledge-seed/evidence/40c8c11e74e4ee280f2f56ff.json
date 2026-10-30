@@ -1,0 +1,38 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241215213-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-scale-collapse",
+  "label_ids": [
+    "prompt",
+    "llm_examples"
+  ],
+  "primitive_ids": [
+    "prompt/text",
+    "llm_examples/text"
+  ],
+  "field": null,
+  "region": [
+    0,
+    80,
+    442,
+    81
+  ],
+  "summary": "The prompt and LLM examples render as tiny marks instead of readable multiline text. Recognition and representation preserve the correct content and plausible font sizes, and layout uses unit font scale. The supplied OOXML provenance lacks font-size, line-spacing, and autofit details needed to distinguish export-induced shrinkage from a representation spacing error.",
+  "strategy": "Validate exported font sizes, line-spacing units, and autofit behavior for multiline text before applying visual font-scale compensation.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241215213-fig1/refinement/round-001/decision.json",
+      "sha256": "8555fa4d2cc4e602fa9d7cb361f947d704a6cd5d43d6de09ee12cc85592cee00"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241215213-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "7b13465b9721cf791a3adebb453816f09d2a9c5c47c9ca33e8f402a196fd5a56"
+    }
+  ],
+  "evidence_id": "40c8c11e74e4ee280f2f56ff"
+}

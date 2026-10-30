@@ -1,0 +1,81 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "baseline",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-size-mismatch",
+  "label_ids": [
+    "ground_truth",
+    "mixed_domain"
+  ],
+  "primitive_ids": [
+    "ground_truth/t",
+    "mixed_domain/t"
+  ],
+  "field": null,
+  "region": [
+    364,
+    391,
+    364,
+    391
+  ],
+  "summary": "The rendered Groud-truth and Mixed-domain captions are roughly one-third of their reference widths. Their canonical font sizes and layout scales do not explain this severe shrinkage, and the previous local-bbox repair produced no rendered change. Supplied provenance lacks exported font-size and autofit settings, so ownership cannot be established reliably.",
+  "strategy": "When rendered text size contradicts canonical font settings and bbox edits have no effect, inspect exported run sizes and autofit settings before assigning ownership or applying further scaling.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-text-box-font-metric-overflow",
+      "layout-text-scale-underestimation",
+      "representation-text-font-size-underestimation",
+      "representation-text-box-line-spacing-overflow",
+      "layout-caption-font-scale-mismatch",
+      "representation-mixed-script-text-vertical-offset",
+      "representation-annotation-font-style-mismatch",
+      "representation-text-line-spacing-underestimation"
+    ],
+    "retrieved_skill_ids": [
+      "representation-text-box-font-metric-overflow",
+      "layout-text-scale-underestimation",
+      "representation-text-font-size-underestimation",
+      "representation-text-box-line-spacing-overflow",
+      "layout-caption-font-scale-mismatch",
+      "representation-mixed-script-text-vertical-offset",
+      "representation-annotation-font-style-mismatch",
+      "representation-text-line-spacing-underestimation"
+    ],
+    "retrieved_statuses": {
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-font-size-underestimation": "candidate",
+      "representation-text-box-line-spacing-overflow": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "representation-mixed-script-text-vertical-offset": "candidate",
+      "representation-annotation-font-style-mismatch": "candidate",
+      "representation-text-line-spacing-underestimation": "candidate"
+    },
+    "referenced_memory_ids": [
+      "representation-text-box-font-metric-overflow",
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "representation-text-box-font-metric-overflow",
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-003/decision.json",
+      "sha256": "762d1b9e38b0555feede38d4ca000778de46fd6f140761005bc48b66628b805a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/baseline/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "c1e9b854c72676f1b00af9d4c7c6389846eecc42fb2c154c3b5817dd07ab8864"
+    }
+  ],
+  "evidence_id": "c04b695db59e01f33444e233"
+}

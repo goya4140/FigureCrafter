@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-trailing-newline-math-label-overflow",
+  "memory_id": "representation-trailing-newline-math-label-overflow",
+  "status": "candidate",
+  "instructions": [
+    "Keep single-line mathematical annotations free of visible trailing blank paragraphs, and verify every vertex label after export while preserving source-text identity."
+  ],
+  "evidence_ids": [
+    "324739c88ba46d37b8ba5fa5"
+  ]
+}

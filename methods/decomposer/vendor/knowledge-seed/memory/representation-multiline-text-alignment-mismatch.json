@@ -1,0 +1,17 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-multiline-text-alignment-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "multiline-text-alignment-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "e6ca574b28fa65cc2987ef16",
+    "ad780d645a148e0cdec8b1dc"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 2,
+  "strategies": [
+    "Compare individual line starts in multiline annotations with the reference and preserve their alignment independently of font scale and container geometry.",
+    "Compare multiline annotation line starts against the reference and preserve paragraph alignment independently of container placement and font scale."
+  ]
+}

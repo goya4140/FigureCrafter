@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-rotated-text-scale-mismatch",
+  "owner_stage": "layout",
+  "mechanism": "rotated-text-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "90fa8df453164dffbf6247e7"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Compare rotated labels against reference glyph height and occupied length, and adjust text scale independently of the enclosing module."
+  ]
+}

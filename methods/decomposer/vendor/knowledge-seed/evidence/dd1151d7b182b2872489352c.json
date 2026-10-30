@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250405625-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-scale-mismatch",
+  "label_ids": [
+    "observation_text"
+  ],
+  "primitive_ids": [
+    "observation_text/text"
+  ],
+  "field": null,
+  "region": [
+    720,
+    0,
+    721,
+    172
+  ],
+  "summary": "In tile-0-1, Observation renders substantially smaller than the reference. Recognition and representation specify 49-point text, and layout specifies font_scale=1.0. Supplied provenance omits exported font sizes and autofit settings, so the incorrect field cannot be reliably localized.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250405625-fig1/refinement/round-001/decision.json",
+      "sha256": "9e54355338e9fcff1176ab3a5224ca2cf0ff9293af1d9fdee751ac0a7b00202b"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250405625-fig1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "5607586ddf318881e00b5f395b6ac8b09263d259dcc58df3dc08de388dd9d584"
+    }
+  ],
+  "evidence_id": "dd1151d7b182b2872489352c"
+}

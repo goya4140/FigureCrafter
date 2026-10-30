@@ -1,0 +1,74 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250319868-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-vertical-offset",
+  "label_ids": [
+    "query_change_text",
+    "query_instruction_text"
+  ],
+  "primitive_ids": [
+    "query_change_text/text",
+    "query_instruction_text/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    0,
+    708,
+    516,
+    237
+  ],
+  "summary": "In the current render, both query text rows sit too high against their dashed row boundaries. The source boxes and global placements match; adjust the local text primitives downward.",
+  "strategy": "Check rendered multiline text against its enclosing row boundaries and adjust local text placement to preserve the reference's vertical padding.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.908168,
+      "edge_iou": 0.268229
+    },
+    "after_local": {
+      "pixel_similarity": 0.911478,
+      "edge_iou": 0.279542
+    },
+    "before_global": {
+      "pixel_similarity": 0.93663,
+      "edge_iou": 0.268447
+    },
+    "after_global": {
+      "pixel_similarity": 0.936837,
+      "edge_iou": 0.269393
+    },
+    "local_pixel_delta": 0.00331,
+    "local_edge_delta": 0.011313,
+    "global_pixel_delta": 0.000207,
+    "evaluation_region": [
+      0,
+      708,
+      516,
+      237
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250319868-fig2/refinement/round-001/decision.json",
+      "sha256": "e9b16b2865a11fdcdf0447c0c11b42f2e0ab29a0f79b2983282704d0dd355c68"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250319868-fig2/refinement/round-001/assessment.json",
+      "sha256": "20b5dbecf9bbd1ed978d0f52ae6e3016e32eb36a5d2d0604c7ad5d0f351229a6"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250319868-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "e759af981003e814ba7c09f127f49ff8132ae17ab070ca11f3532f6d438a7a4e"
+    }
+  ],
+  "evidence_id": "15b9027b5b569524e356f9e1"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-241114432-fig3",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "cropped-asset-bounds-expansion",
+  "label_ids": [
+    "summary_final"
+  ],
+  "primitive_ids": [
+    "summary_final/content"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    1303,
+    757,
+    435,
+    253
+  ],
+  "summary": "The judge image appears enlarged in the current render. Its tighter source crop is stretched across the full recognition box; restore the crop's original size and offset within the component.",
+  "strategy": "Place localized raster crops using their source dimensions and offsets relative to the owning recognition box, rather than stretching them to fill that box.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.92669,
+      "edge_iou": 0.330495
+    },
+    "after_local": {
+      "pixel_similarity": 0.979377,
+      "edge_iou": 0.67692
+    },
+    "before_global": {
+      "pixel_similarity": 0.964491,
+      "edge_iou": 0.329836
+    },
+    "after_global": {
+      "pixel_similarity": 0.968992,
+      "edge_iou": 0.37792
+    },
+    "local_pixel_delta": 0.052687,
+    "local_edge_delta": 0.346425,
+    "global_pixel_delta": 0.004501,
+    "evaluation_region": [
+      1303,
+      757,
+      435,
+      253
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-003/decision.json",
+      "sha256": "61155f7418e7cb7918b7de19d0dbc55be1c77436a247636b3cb8adf5aef418a8"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-003/assessment.json",
+      "sha256": "8390302c55fcd1325eea406e4b9ca109fc3111d105e4d2da7d96a07fabc740a7"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-241114432-fig3/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "4a7091a2f4f6028109475ebb852617fe2535648a3aea7a00a513008207d68f7a"
+    }
+  ],
+  "evidence_id": "a59dc336c1a655471792fd0f"
+}

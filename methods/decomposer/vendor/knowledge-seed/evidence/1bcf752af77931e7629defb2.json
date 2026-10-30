@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-250215027-fig3",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-font-size-underestimation",
+  "label_ids": [
+    "question_text"
+  ],
+  "primitive_ids": [
+    "question_text/text"
+  ],
+  "field": "style.font_size",
+  "region": [
+    0,
+    253,
+    434,
+    253
+  ],
+  "summary": "The rendered question text is visibly smaller and occupies less horizontal space than the reference. Adjust its local font size; the earlier bbox-only patch produced no measured change.",
+  "strategy": "Compare rendered glyph height and line extent with the reference when calibrating text styles; if resizing the text box has no effect, correct the local font size.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.912908,
+      "edge_iou": 0.287619
+    },
+    "after_local": {
+      "pixel_similarity": 0.908143,
+      "edge_iou": 0.289715
+    },
+    "before_global": {
+      "pixel_similarity": 0.93023,
+      "edge_iou": 0.293119
+    },
+    "after_global": {
+      "pixel_similarity": 0.929669,
+      "edge_iou": 0.293939
+    },
+    "local_pixel_delta": -0.004765,
+    "local_edge_delta": 0.002096,
+    "global_pixel_delta": -0.000561,
+    "evaluation_region": [
+      0,
+      253,
+      434,
+      253
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-002/decision.json",
+      "sha256": "8528cd850b56867246ae1cd42946e628aa3b1f56d0aef6693ad0fb9437c7c6dc"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-002/assessment.json",
+      "sha256": "169f32c2ab20f653570285510b19d79eaf68b2042d6289113c1dde6da55e3669"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-250215027-fig3/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "06c19813cf26958930f868189dd37caf95969ee1768536ac9b2e1c66ad9e3df1"
+    }
+  ],
+  "evidence_id": "1bcf752af77931e7629defb2"
+}

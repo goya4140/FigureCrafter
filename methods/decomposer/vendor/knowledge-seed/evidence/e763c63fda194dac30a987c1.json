@@ -1,0 +1,153 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards3-r1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "container-corner-radius-mismatch",
+  "label_ids": [
+    "panel_a"
+  ],
+  "primitive_ids": [
+    "panel_a/boundary"
+  ],
+  "field": "kind",
+  "region": [
+    2048,
+    0,
+    1024,
+    485
+  ],
+  "summary": "The current render shows a broad rounded upper-right corner on panel_a, while the reference boundary is nearly square with only slight rounding. The local round_rect primitive owns this discrepancy; placement matches the canonical bbox. Use a rectangular boundary to remove the excessive curvature.",
+  "strategy": "Compare exported container corner curvature with the reference; use rectangular geometry when native rounded rectangles introduce disproportionately large corner radii.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.906894,
+      "edge_iou": 0.192439
+    },
+    "after_local": {
+      "pixel_similarity": 0.909242,
+      "edge_iou": 0.194043
+    },
+    "before_global": {
+      "pixel_similarity": 0.92304,
+      "edge_iou": 0.167499
+    },
+    "after_global": {
+      "pixel_similarity": 0.923389,
+      "edge_iou": 0.168491
+    },
+    "local_pixel_delta": 0.002348,
+    "local_edge_delta": 0.001604,
+    "global_pixel_delta": 0.000349,
+    "evaluation_region": [
+      2048,
+      0,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "fusion_rows",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "602e35020dc0d9d965db87d3af42edf1629585284a27a3c8cffd7301f857cdd4",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "219973e0b5342b3d1b8ddc3d1a425de1ac4ce04574ea87c0f2375c5b01ab7762"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "representation-text-box-font-metric-overflow",
+      "layout-foreground-title-occluded-by-chart",
+      "recognition-text-punctuation-omission",
+      "layout-math-label-text-scale-mismatch",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset",
+      "layout-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "recognition-text-punctuation-omission": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate",
+      "layout-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1/refinement/round-001/decision.json",
+      "sha256": "7fcdac10c72391685c6a3fc21ed5613a6b1153c404ac8cd66c75b1505888df8f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1/refinement/round-001/assessment.json",
+      "sha256": "390851673ea812f0cb07da3e6fa607638aca4796e6bf9c4b9846a408c91d7f88"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "ffd89cab3468f4432b03945de49336bbf38e7e5be865f8b0936f1366ac04fb1e"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1/refinement/round-001/before-preview.png",
+      "sha256": "30c08a5da5c81c60ea67ee779eab72bae7a629511aad2408c8027dce47e2abfe"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1/refinement/round-001/output/preview.png",
+      "sha256": "55963900a4c0e5e6a546902340cf817a294aa134273fae626df7659431012256"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards3-r1/refinement/round-001/output/editable.pptx",
+      "sha256": "f95b33a7e3cfefe7334ae8fde520f33fadb387124cf80d89f0b8540367b80ff2"
+    }
+  ],
+  "evidence_id": "e763c63fda194dac30a987c1"
+}

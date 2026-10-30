@@ -1,0 +1,40 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-excessive-container-corner-rounding",
+  "owner_stage": "representation",
+  "mechanism": "excessive-container-corner-rounding",
+  "status": "candidate",
+  "evidence_ids": [
+    "d77acf8be6f11845dd7a6b17",
+    "f8d2231054b00f4500090a09",
+    "787d8dc3637a94792129251f",
+    "cb98554e0af37f135e327775",
+    "bc8ba3fc6885be6d91e37d89",
+    "0b04d8739725de63762aa04b",
+    "18a363fd9ea1b83cb9312b0a",
+    "0d332549dcc852ab31589dac",
+    "80794041379fa2864bcf744c",
+    "da6885b419121acab760be2a",
+    "e87a4c8dc08f09b18556a9aa",
+    "f32a510f081f8b348c73c73d",
+    "5351e578a6cab4b8460c7800",
+    "3b3bdf41745e85efc9ddb6ba"
+  ],
+  "accepted_count": 9,
+  "rejected_count": 5,
+  "strategies": [
+    "Compare container corner curvature with the reference at full panel scale; use rectangular geometry when default rounded corners materially exceed the reference radius.",
+    "Compare rendered container corners with the reference; use rectangular geometry when default rounding substantially exceeds the reference radius and no radius control is available.",
+    "Compare rendered container corner radii against the reference; use rectangular primitives when default rounded corners substantially distort a nearly square boundary.",
+    "Compare rendered corner curvature with the reference independently of enclosure bounds; use rectangular primitives when preset rounding substantially exceeds the source.",
+    "Compare enclosure corners at rendered scale; use rectangular primitives when preset rounding substantially exceeds the reference curvature, then validate the exported render.",
+    "Compare enclosure corners at final render scale; use rectangular geometry when preset rounding substantially exceeds the reference curvature, then validate the exported render.",
+    "Compare container corner curvature with the reference at full panel scale; use rectangular primitives for nearly square boundaries when adjustable corner radii are unavailable.",
+    "Compare enclosure curvature at matched render scale; avoid rounded presets whose corners substantially exceed the reference curvature, and validate the exported result.",
+    "Compare rendered container corner curvature with the reference independently of its bounding box; avoid default rounded rectangles when their radius is disproportionate to the reference.",
+    "Compare container corners at matched render scale; avoid rounded presets that substantially exceed reference curvature, and validate the exported result.",
+    "Compare exported panel corners with the reference at matched scale; avoid rounded presets whose curvature substantially exceeds the source, then validate the exported result.",
+    "Compare container curvature at matched render scale; use rectangular geometry for nearly square boundaries when preset rounding is excessive and radius adjustment is unavailable.",
+    "Compare enclosure curvature at matched render scale; avoid rounded presets that substantially exceed reference curvature, and validate the exported result."
+  ]
+}

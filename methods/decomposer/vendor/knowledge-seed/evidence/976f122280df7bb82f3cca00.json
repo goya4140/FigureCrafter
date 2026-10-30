@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240609272-fig8",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "title_right"
+  ],
+  "primitive_ids": [
+    "title_right/text"
+  ],
+  "field": "placements.font_scale",
+  "region": [
+    2400,
+    0,
+    800,
+    236
+  ],
+  "summary": "The rendered right-panel title is visibly smaller than the reference. Correct its layout text scale while preserving its placement.",
+  "strategy": "Compare rendered heading size with the reference and calibrate each heading's layout font scale while checking for automatic shrinking or wrapping.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.903038,
+      "edge_iou": 0.198294
+    },
+    "after_local": {
+      "pixel_similarity": 0.913469,
+      "edge_iou": 0.198684
+    },
+    "before_global": {
+      "pixel_similarity": 0.948691,
+      "edge_iou": 0.253003
+    },
+    "after_global": {
+      "pixel_similarity": 0.949544,
+      "edge_iou": 0.253587
+    },
+    "local_pixel_delta": 0.010431,
+    "local_edge_delta": 0.00039,
+    "global_pixel_delta": 0.000853,
+    "evaluation_region": [
+      2400,
+      0,
+      800,
+      236
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240609272-fig8/refinement/round-003/decision.json",
+      "sha256": "fd81b2a154583408938c6c2600419c16d438f39e01c1ba79bd07486c26ca92bd"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240609272-fig8/refinement/round-003/assessment.json",
+      "sha256": "ee09b248529201471dd248b23a5f2e7c59cd9352417a307c812bd490b04b2546"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240609272-fig8/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "1c84da96ad6057af2203df74f98583c9494c79d614015415501283a31f5c7d06"
+    }
+  ],
+  "evidence_id": "976f122280df7bb82f3cca00"
+}

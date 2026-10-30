@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-object-rotation-omission",
+  "memory_id": "layout-object-rotation-omission",
+  "status": "candidate",
+  "instructions": [
+    "Preserve each node's reference orientation, rotating its outline and label together rather than defaulting all graph nodes to horizontal."
+  ],
+  "evidence_ids": [
+    "c0d02a8495e1a6b628e222c1"
+  ]
+}

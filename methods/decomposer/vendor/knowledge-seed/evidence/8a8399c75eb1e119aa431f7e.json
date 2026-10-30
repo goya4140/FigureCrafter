@@ -1,0 +1,82 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-omission",
+  "label_ids": [
+    "frame_opinion"
+  ],
+  "primitive_ids": [
+    "frame_opinion/u",
+    "frame_opinion/b1",
+    "frame_opinion/b2",
+    "frame_opinion/b3"
+  ],
+  "field": null,
+  "region": [
+    8640,
+    1364,
+    2880,
+    1365
+  ],
+  "summary": "In the current render, the frame-opinion simplex lacks the reference's visible u and b vertex labels. These text primitives remain present in the representation, scene, and OOXML, with superscript baselines retained. The supplied evidence does not establish whether clipping, font handling, or another rendering issue causes their disappearance.",
+  "strategy": "Verify exported text bounds, font sizes, autofit, and run visibility against the canonical scene before changing geometry for missing mathematical labels.",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "unresolved-rendered-object-placement-disagreement",
+      "unresolved-rendered-text-scale-mismatch",
+      "unresolved-text-render-scale-mismatch",
+      "unresolved-text-scale-disagreement",
+      "unresolved-rotated-text-sizing-disagreement",
+      "unresolved-rich-text-rendering-omission",
+      "unresolved-rendered-text-omission",
+      "unresolved-rendered-text-missing"
+    ],
+    "retrieved_skill_ids": [
+      "unresolved-rendered-object-placement-disagreement",
+      "unresolved-rendered-text-scale-mismatch",
+      "unresolved-text-render-scale-mismatch",
+      "unresolved-text-scale-disagreement",
+      "unresolved-rotated-text-sizing-disagreement",
+      "unresolved-rich-text-rendering-omission",
+      "unresolved-rendered-text-omission",
+      "unresolved-rendered-text-missing"
+    ],
+    "retrieved_statuses": {
+      "unresolved-rendered-object-placement-disagreement": "candidate",
+      "unresolved-rendered-text-scale-mismatch": "candidate",
+      "unresolved-text-render-scale-mismatch": "candidate",
+      "unresolved-text-scale-disagreement": "candidate",
+      "unresolved-rotated-text-sizing-disagreement": "candidate",
+      "unresolved-rich-text-rendering-omission": "candidate",
+      "unresolved-rendered-text-omission": "candidate",
+      "unresolved-rendered-text-missing": "candidate"
+    },
+    "referenced_memory_ids": [
+      "unresolved-rich-text-rendering-omission",
+      "unresolved-rendered-text-omission"
+    ],
+    "referenced_skill_ids": [
+      "unresolved-rich-text-rendering-omission",
+      "unresolved-rendered-text-omission"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/edit-test-1/refinement/round-002/decision.json",
+      "sha256": "275990408cd793563b3d856118809f12c28b9c6426266b7a86d03082bffdd28a"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/edit-test-1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "c3285f1857cef18eef25564753ce9f062ef3321047213cb41346be525cb3de0a"
+    }
+  ],
+  "evidence_id": "8a8399c75eb1e119aa431f7e"
+}

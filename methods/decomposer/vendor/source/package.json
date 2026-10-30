@@ -1,0 +1,8 @@
+{
+  "name": "figure2pptx-next-method",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  }
+}

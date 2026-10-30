@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309513-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "initial_prompt_text"
+  ],
+  "primitive_ids": [
+    "initial_prompt_text/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    698,
+    0,
+    698,
+    348
+  ],
+  "summary": "In the selected top tile, the initial defense prompt text renders smaller than the reference within an otherwise correctly sized card. Increase this label's text scale while preserving its placement and editable runs.",
+  "strategy": "Compare rendered text size against the reference independently of its enclosing shape, and calibrate text scale without resizing the container.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.948366,
+      "edge_iou": 0.261524
+    },
+    "after_local": {
+      "pixel_similarity": 0.948481,
+      "edge_iou": 0.265409
+    },
+    "before_global": {
+      "pixel_similarity": 0.969276,
+      "edge_iou": 0.287403
+    },
+    "after_global": {
+      "pixel_similarity": 0.969257,
+      "edge_iou": 0.287587
+    },
+    "local_pixel_delta": 0.000115,
+    "local_edge_delta": 0.003885,
+    "global_pixel_delta": -1.9e-05,
+    "evaluation_region": [
+      698,
+      0,
+      698,
+      348
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-002/decision.json",
+      "sha256": "928bf775e226f9c37e86a11545d29401aeca7517e325d32b1fe5c2e090fd41a5"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-002/assessment.json",
+      "sha256": "bd89174e7e4c535cfad696082f637cd55a084a0610c4b97c5679fa572ba22ab2"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "b4949cc29e159537d216c9cca8ebcdc478625a2f4fd711743f349bdfe3258773"
+    }
+  ],
+  "evidence_id": "ef78af37a7fa44ebc813d649"
+}

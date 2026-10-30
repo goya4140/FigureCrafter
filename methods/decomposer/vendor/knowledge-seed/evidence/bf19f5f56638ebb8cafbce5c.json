@@ -1,0 +1,38 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-240611643-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "multiline-text-rendering-loss",
+  "label_ids": [
+    "title_diffusion",
+    "txt_new_cross"
+  ],
+  "primitive_ids": [
+    "title_diffusion/text",
+    "txt_new_cross/text"
+  ],
+  "field": null,
+  "region": [
+    1692,
+    308,
+    565,
+    308
+  ],
+  "summary": "The current render omits “Diffusion Model” and “Newly Added Cross Attn” within this tile. Both labels retain correct text, visible placements, and OOXML text records. The supplied evidence does not distinguish text-fitting failure from compiler or renderer failure; the earlier line-spacing patch produced no measured change.",
+  "strategy": "When multiline labels disappear despite preserved scene and OOXML text, establish the export or rendering cause before changing visual geometry or typography.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240611643-fig2/refinement/round-002/decision.json",
+      "sha256": "650767baca92bd3256420443f21b26d59912df32bbe58f781eb43b64cde47e8f"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/cvpr-2025-240611643-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "c86b38ee65094e0e9829c1fbdd9f4930e6162bb9071416cc1173ef58c4472716"
+    }
+  ],
+  "evidence_id": "bf19f5f56638ebb8cafbce5c"
+}

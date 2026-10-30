@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-node-text-local-placement-offset",
+  "owner_stage": "representation",
+  "mechanism": "node-text-local-placement-offset",
+  "status": "candidate",
+  "evidence_ids": [
+    "80b2ee73dff46486f260eb3a"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Give text inside composite nodes explicit local bounds aligned with the reference text baseline and reserved icon area, rather than reusing the entire node rectangle."
+  ]
+}

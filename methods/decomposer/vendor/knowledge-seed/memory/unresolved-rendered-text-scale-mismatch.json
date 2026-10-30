@@ -1,0 +1,18 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-rendered-text-scale-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "dd1151d7b182b2872489352c",
+    "7481cbdce6d071a9a9999f87",
+    "bf9df5ed4a4b39d61de68d20",
+    "215542d875e2b36faed4e4f1"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare effective exported font sizes and autofit settings with representation and layout values before patching unexpectedly small text."
+  ]
+}

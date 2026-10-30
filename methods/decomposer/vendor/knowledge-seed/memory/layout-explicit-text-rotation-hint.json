@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-explicit-text-rotation-hint",
+  "owner_stage": "layout",
+  "mechanism": "explicit-text-rotation-hint",
+  "status": "downstreamed",
+  "evidence_ids": [
+    "b5a3db0824dcfaa5ad440034"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Preserve explicit 90/270-degree source orientation as editable OOXML text rotation; do not infer an angle from an ambiguous vertical box alone."
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "version": "0.6.21-candidate",
+    "scope": "Recognition-grounded explicit 90/270-degree native text rotation",
+    "evidence_id": "b5a3db0824dcfaa5ad440034",
+    "counterexamples": [
+      "Ambiguous vertical boxes without explicit directional evidence remain unrotated.",
+      "Several short 270-degree labels have non-improving owner-local edge or pixel metrics: sl_v/text, cl_v/text, sr_v/text, cr_v/text."
+    ],
+    "artifact_refs": [
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-rotation-memory-reattest/attestation.json",
+        "sha256": "362c9116f6821306f519bf89c63a9ce28b0a3ffde62c07043c51052d6831813a"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-rotation-memory-reattest/multi-orientation-control-v2/probe-report.json",
+        "sha256": "ff66cf7c93e7a973b3117e0f1fdfa588e2b9b9ba9256c5c85d1926fe8da438d7"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-rotation-memory-reattest/probe-report.json",
+        "sha256": "c4de840a2cea8b1ff8cccf2fbd22b295d99e0ca5dea3787a0059005693cffe3d"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0618-stage-01-cumulative-regression/sample-004-audit.json",
+        "sha256": "adec10bbf8c40ae321050952f7c65fa558228b30b1236754512d086ca5eb0901"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0618-stage-01-cumulative-regression/sample-002-audit.json",
+        "sha256": "901405b4e6231c73919c07e58ff668d67ebbbea024466ab62faac07b673f7bbb"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0618-stage-01-cumulative-regression/runs/aaai-2025-240612292-fig2/input/normalized.png",
+        "sha256": "13bfe71c454352b747ecd714421adb16219054802c6d8bb4ea571053f7833b29"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0618-stage-01-cumulative-regression/runs/aaai-2025-240612292-fig2/output/editable.pptx",
+        "sha256": "ff35d6edee8c9c390742705a6c28b73a3b4a5899540d93f5979153e2d0f06586"
+      },
+      {
+        "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-rotation-memory-reattest/multi-orientation-control-v2/unrotated-output/editable.pptx",
+        "sha256": "a46c0d5e68186cef2631bba8c193c617e9df581095fc4973b1252db65d31737c"
+      }
+    ],
+    "code_artifact": {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/Decomposer-v0621-candidate/backend/compile.mjs",
+      "sha256": "434f00f8ae85522ec70a9615ef9099a6fd882c6071a4a883cd06d030aa27404a"
+    },
+    "related_code_artifact": {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/Decomposer-v0621-candidate/decomposer/layout.py",
+      "sha256": "3d1290bd9947a0ce1f3e8fc6db4abd032b0601161db8cce97cd14bda5651b01d"
+    },
+    "regression_test_artifact": {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/Decomposer-v0621-candidate/tests/test_pipeline.py",
+      "sha256": "25bb95fe5abfb22c544fecf7f9aa82229c80d68195bc8d51d7b9f8c5c27c9bda"
+    },
+    "supersession": null
+  }
+}

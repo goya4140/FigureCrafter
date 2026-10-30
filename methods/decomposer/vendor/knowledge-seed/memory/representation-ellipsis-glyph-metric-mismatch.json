@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-ellipsis-glyph-metric-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "ellipsis-glyph-metric-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "5b02e7d8ffc605d9b2f7d8dc"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Match ellipsis glyph size and spacing to the reference, using consistent editable dot sequences when a single mathematical ellipsis has incompatible font metrics."
+  ]
+}

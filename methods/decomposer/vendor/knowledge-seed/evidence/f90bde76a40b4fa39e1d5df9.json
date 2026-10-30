@@ -1,0 +1,179 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-shards2-linefix-replay",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "trailing-paragraph-text-clipping",
+  "label_ids": [
+    "frame_opinion_chart"
+  ],
+  "primitive_ids": [
+    "frame_opinion_chart/u",
+    "frame_opinion_chart/b1",
+    "frame_opinion_chart/b2",
+    "frame_opinion_chart/b3"
+  ],
+  "field": "runs",
+  "region": [
+    3072,
+    485,
+    1024,
+    485
+  ],
+  "summary": "Detected in the current render: the frame opinion tetrahedron lacks the reference's visible vertex labels, while M remains visible. Its four vertex text primitives contain trailing newlines inside short boxes; provenance confirms these newlines reach OOXML. Remove the visible empty paragraphs while preserving exact source text in editable runs.",
+  "strategy": "For compact mathematical labels, avoid trailing empty display paragraphs and verify every vertex annotation remains visible after export while preserving source text in runs.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.906046,
+      "edge_iou": 0.164368
+    },
+    "after_local": {
+      "pixel_similarity": 0.906046,
+      "edge_iou": 0.164368
+    },
+    "before_global": {
+      "pixel_similarity": 0.925638,
+      "edge_iou": 0.172181
+    },
+    "after_global": {
+      "pixel_similarity": 0.925638,
+      "edge_iou": 0.172181
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      3072,
+      485,
+      1024,
+      485
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "clip_opinion_chart",
+            "frame_opinion_chart",
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "533b119c5551fbd26b24b016fb07dd32e77c334196b58a898efd1bc204c46745",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "2b22044191a66eb36aac7150394d44b4175283e1f1d1c672e925c40d89441c17"
+    },
+    "canonical_after_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "533b119c5551fbd26b24b016fb07dd32e77c334196b58a898efd1bc204c46745",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "2b22044191a66eb36aac7150394d44b4175283e1f1d1c672e925c40d89441c17"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-text-rotation-omitted": "candidate",
+      "layout-object-rotation-omission": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-linefix-replay/refinement/round-002/decision.json",
+      "sha256": "14615805aab3fd246d2ea7f51f2ea7e525e6e12b7892a74e3c72f9d0cb999f93"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-linefix-replay/refinement/round-002/assessment.json",
+      "sha256": "ade22bb1eb397cb1f71f0fa934dd31be323d9f8654ed2eb1979c8fd5d9134c28"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-linefix-replay/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "7d7128211b99a9bcc80ddad28f64e1a386d1c9e127fb8d47019e49ccecf8366c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-linefix-replay/refinement/round-002/before-preview.png",
+      "sha256": "08e3990735c1e86380631944a7eb80c0279c9305a5ff3a0d489f5ecaacc00c49"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-linefix-replay/refinement/round-002/output/preview.png",
+      "sha256": "08e3990735c1e86380631944a7eb80c0279c9305a5ff3a0d489f5ecaacc00c49"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-shards2-linefix-replay/refinement/round-002/output/editable.pptx",
+      "sha256": "c51cf8a0f3f92487cacfa4d4e46b7e39d48f075445c136da16bb1b1bb6b72c07"
+    }
+  ],
+  "evidence_id": "f90bde76a40b4fa39e1d5df9"
+}

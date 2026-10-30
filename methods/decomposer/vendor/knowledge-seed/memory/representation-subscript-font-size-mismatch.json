@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "representation-subscript-font-size-mismatch",
+  "owner_stage": "representation",
+  "mechanism": "subscript-font-size-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "d401d2dc409cf139b29a720a"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 1,
+  "strategies": [
+    "Size mathematical subscripts relative to the reference glyph proportions, accounting for the renderer's script scaling separately from baseline placement."
+  ]
+}

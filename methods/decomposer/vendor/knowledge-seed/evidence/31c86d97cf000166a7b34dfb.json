@@ -1,0 +1,69 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250416060-fig11",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "separator-lines-overlap-heading",
+  "label_ids": [
+    "level3_title"
+  ],
+  "primitive_ids": [
+    "level3_title/left_rule",
+    "level3_title/right_rule"
+  ],
+  "field": "points",
+  "region": [
+    800,
+    968,
+    800,
+    323
+  ],
+  "summary": "The rendered Level 3 heading is struck through by two overlapping dashed rules. Their local endpoints span the text instead of flanking it, as in the reference.",
+  "strategy": "Place heading separator endpoints outside the text bounds with a clear gap; verify that neither rule intersects the heading.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.875164,
+      "edge_iou": 0.246644
+    },
+    "after_local": {
+      "pixel_similarity": 0.874985,
+      "edge_iou": 0.246771
+    },
+    "before_global": {
+      "pixel_similarity": 0.923648,
+      "edge_iou": 0.218358
+    },
+    "after_global": {
+      "pixel_similarity": 0.923607,
+      "edge_iou": 0.218413
+    },
+    "local_pixel_delta": -0.000179,
+    "local_edge_delta": 0.000127,
+    "global_pixel_delta": -4.1e-05,
+    "evaluation_region": [
+      800,
+      968,
+      800,
+      323
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-001/decision.json",
+      "sha256": "d9758f96f6c77cc24f558c1fff735283f28ca51a130709b64aa2b0cbff1cae8c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-001/assessment.json",
+      "sha256": "370d1163abc56f6c3d76c3015f48f962e644ddd27c1f260343dc72f567943f86"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colm-2025-250416060-fig11/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "5f6fbddaf5730479dff316bc044da89a49a60948a6aa7afe36ba870cddd59019"
+    }
+  ],
+  "evidence_id": "31c86d97cf000166a7b34dfb"
+}

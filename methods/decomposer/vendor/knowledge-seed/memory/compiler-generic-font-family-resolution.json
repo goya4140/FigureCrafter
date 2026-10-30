@@ -1,0 +1,21 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "compiler-generic-font-family-resolution",
+  "owner_stage": "compiler",
+  "mechanism": "generic-font-family-resolution",
+  "status": "downstreamed",
+  "evidence_ids": [
+    "2d9b2e77aceeadade09e5f6d"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Canonicalize CSS generic families to concrete Office fonts before scene assembly and again defensively in the PPTX compiler."
+  ],
+  "code_status": "integrated_and_measured",
+  "downstream_proof": {
+    "a_b_proof": "experiments/decomposer-v7-first100-sam-v3/runs/aaai-2025-230606272-fig14/font-a-b/proof.json",
+    "tests": "15/15 passed",
+    "compiler_fallbacks_after": 0
+  }
+}

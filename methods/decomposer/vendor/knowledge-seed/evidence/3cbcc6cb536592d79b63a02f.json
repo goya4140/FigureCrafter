@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "emnlp-2025-241218811-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "rotated-text-box-line-wrap",
+  "label_ids": [
+    "rope_label"
+  ],
+  "primitive_ids": [
+    "rope_label/text"
+  ],
+  "field": "primitives.bbox",
+  "region": [
+    0,
+    558,
+    661,
+    279
+  ],
+  "summary": "The render wraps DCIS-RoPE onto two rotated lines, whereas the reference uses one diagonal line. Widen the local text box while preserving its center and existing rotation.",
+  "strategy": "Size rotated text in its unrotated local coordinate system to fit the intended line count before applying rotation.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.942774,
+      "edge_iou": 0.287545
+    },
+    "after_local": {
+      "pixel_similarity": 0.945573,
+      "edge_iou": 0.300714
+    },
+    "before_global": {
+      "pixel_similarity": 0.963596,
+      "edge_iou": 0.278311
+    },
+    "after_global": {
+      "pixel_similarity": 0.963843,
+      "edge_iou": 0.280075
+    },
+    "local_pixel_delta": 0.002799,
+    "local_edge_delta": 0.013169,
+    "global_pixel_delta": 0.000247,
+    "evaluation_region": [
+      0,
+      558,
+      661,
+      279
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-001/decision.json",
+      "sha256": "2d317315a8bb5734143ae6928cc3bff310234d3f258044524985c4a9645bdc51"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-001/assessment.json",
+      "sha256": "f019edb81caedd29746516440dfcd31f5150df5b2768798b6f4dfcf53ed8eeea"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/emnlp-2025-241218811-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "d9aeef1f5efd3185e635d6f409ed36f2a66ad506a7bdfa4c80bb9c35e4c0dd93"
+    }
+  ],
+  "evidence_id": "3cbcc6cb536592d79b63a02f"
+}

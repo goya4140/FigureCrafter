@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "cvpr-2025-250522079-fig3",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "dash-pattern-length-mismatch",
+  "label_ids": [
+    "report_group"
+  ],
+  "primitive_ids": [
+    "report_group/border"
+  ],
+  "field": "primitives.style.dash_type",
+  "region": [
+    0,
+    217,
+    467,
+    217
+  ],
+  "summary": "In the report tile, the current enclosure uses visibly longer, more widely spaced dashes than the reference. The discrepancy belongs to the border primitive's local stroke style.",
+  "strategy": "Match dashed enclosure patterns by comparing dash and gap lengths relative to stroke width before selecting a native dash preset.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.9211,
+      "edge_iou": 0.294934
+    },
+    "after_local": {
+      "pixel_similarity": 0.924188,
+      "edge_iou": 0.307324
+    },
+    "before_global": {
+      "pixel_similarity": 0.966772,
+      "edge_iou": 0.314965
+    },
+    "after_global": {
+      "pixel_similarity": 0.967013,
+      "edge_iou": 0.316986
+    },
+    "local_pixel_delta": 0.003088,
+    "local_edge_delta": 0.01239,
+    "global_pixel_delta": 0.000241,
+    "evaluation_region": [
+      0,
+      217,
+      467,
+      217
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250522079-fig3/refinement/round-002/decision.json",
+      "sha256": "7c0b32f75903c637b868da3d46893d45e6ea6c9c4caed60f2419f7919054e28c"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250522079-fig3/refinement/round-002/assessment.json",
+      "sha256": "549db9cdad5ba0d828341eba0b620516d452acaa4d9514057c59946ee105f719"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-stage-04-provisional-samples-076-100/runs/cvpr-2025-250522079-fig3/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "e6ec2e282e51d8090bcdf415d434667a66254f3b3309d3a6e9c02a53895bf8b3"
+    }
+  ],
+  "evidence_id": "3b5a423a37251a0b2e56890a"
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colt-2025-250523683-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "ellipsis-glyph-metric-mismatch",
+  "label_ids": [
+    "l1_leftdots1",
+    "l1_leftdots2",
+    "l1_middots1",
+    "l1_middots2"
+  ],
+  "primitive_ids": [
+    "l1_leftdots1/text",
+    "l1_leftdots2/text",
+    "l1_middots1/text",
+    "l1_middots2/text"
+  ],
+  "field": "primitives.text",
+  "region": [
+    0,
+    964,
+    800,
+    482
+  ],
+  "summary": "In the Layer 1 tile, the gray-cell ellipses render smaller and more tightly spaced than the reference. The local text primitives use a single ellipsis glyph; use three editable middle dots, consistent with the figure's other ellipses.",
+  "strategy": "Match ellipsis glyph size and spacing to the reference, using consistent editable dot sequences when a single mathematical ellipsis has incompatible font metrics.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.95592,
+      "edge_iou": 0.234356
+    },
+    "after_local": {
+      "pixel_similarity": 0.956433,
+      "edge_iou": 0.235411
+    },
+    "before_global": {
+      "pixel_similarity": 0.965429,
+      "edge_iou": 0.204633
+    },
+    "after_global": {
+      "pixel_similarity": 0.965461,
+      "edge_iou": 0.204728
+    },
+    "local_pixel_delta": 0.000513,
+    "local_edge_delta": 0.001055,
+    "global_pixel_delta": 3.2e-05,
+    "evaluation_region": [
+      0,
+      964,
+      800,
+      482
+    ],
+    "evaluation_region_source": "selected_difference_tile"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colt-2025-250523683-fig2/refinement/round-001/decision.json",
+      "sha256": "2c98d24e488a13b664b521d2746ab8b9c044c4239e09fdd2c8865e5215d93a64"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colt-2025-250523683-fig2/refinement/round-001/assessment.json",
+      "sha256": "b5da54d683c7b420e2fc0f706265ec39dd927faf5d7c36f0f7a89f25d6b50ee3"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0621-stage-03-provisional-samples-051-075/runs/colt-2025-250523683-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "db4d2c655ba9e8955dd7e53574ef8966eb2e9256b017da57b38633e8b4903b68"
+    }
+  ],
+  "evidence_id": "5b02e7d8ffc605d9b2f7d8dc"
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-raster-source-crop-mismatch",
+  "memory_id": "representation-raster-source-crop-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Extract rectangular image assets from their full recognized image bounds; validate source-crop bounds against destination bounds before scaling."
+  ],
+  "evidence_ids": [
+    "d137dd9f89273f806c21de65"
+  ]
+}

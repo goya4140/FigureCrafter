@@ -1,0 +1,36 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240720657-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "text-scale-disagreement",
+  "label_ids": [
+    "cliplegendtitle"
+  ],
+  "primitive_ids": [
+    "cliplegendtitle/t"
+  ],
+  "field": null,
+  "region": [
+    2179,
+    1594,
+    727,
+    532
+  ],
+  "summary": "Detected in the rendered tile: the CLIP Features heading is nearly illegible compared with the reference. The supplied primitive specifies font size 48 and layout scale 1, while the previous bbox adjustment produced no measured change. The supplied export facts do not establish which stage caused the shrinkage.",
+  "strategy": "Verify effective exported font size and text autofit settings against scene typography before assigning ownership or changing geometry.",
+  "accepted": null,
+  "assessment": null,
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240720657-fig2/refinement/round-002/decision.json",
+      "sha256": "cee88eaf43f2f5fe0bb2002b3375204e038c9617b112e7bb28ad64516d2bd2a4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240720657-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "4c359f763139bc51183b70625fb5503316761fd5bbd4415c69c3f8072b6c5cdb"
+    }
+  ],
+  "evidence_id": "4e3801738ec463364990bd41"
+}

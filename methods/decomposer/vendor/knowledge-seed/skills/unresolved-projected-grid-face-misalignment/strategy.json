@@ -1,0 +1,11 @@
+{
+  "skill_id": "unresolved-projected-grid-face-misalignment",
+  "memory_id": "unresolved-projected-grid-face-misalignment",
+  "status": "candidate",
+  "instructions": [
+    "Validate projected grid alignment in the rendered output against both scene coordinates and exported path transforms before assigning ownership."
+  ],
+  "evidence_ids": [
+    "13c043d2dfdd1cb49cf415c1"
+  ]
+}

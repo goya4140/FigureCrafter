@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "unresolved-rendered-text-size-mismatch",
+  "owner_stage": "unresolved",
+  "mechanism": "rendered-text-size-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "c04b695db59e01f33444e233"
+  ],
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "strategies": [
+    "When rendered text size contradicts canonical font settings and bbox edits have no effect, inspect exported run sizes and autofit settings before assigning ownership or applying further scaling."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240309513-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "training_caption"
+  ],
+  "primitive_ids": [
+    "training_caption/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    698,
+    1044,
+    698,
+    349
+  ],
+  "summary": "In tile-3-1, the training caption renders smaller than the reference despite matching text and placement. Increase its layout text scale.",
+  "strategy": "Compare rendered caption glyph height and text width against the reference, and calibrate text scale while preserving the caption's anchor.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.960707,
+      "edge_iou": 0.323253
+    },
+    "after_local": {
+      "pixel_similarity": 0.959404,
+      "edge_iou": 0.315193
+    },
+    "before_global": {
+      "pixel_similarity": 0.969276,
+      "edge_iou": 0.287403
+    },
+    "after_global": {
+      "pixel_similarity": 0.969194,
+      "edge_iou": 0.286877
+    },
+    "local_pixel_delta": -0.001303,
+    "local_edge_delta": -0.00806,
+    "global_pixel_delta": -8.2e-05,
+    "evaluation_region": [
+      698,
+      1044,
+      698,
+      349
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-001/decision.json",
+      "sha256": "a4d538c313136af70b7750f94aa0422ff5ad26dd3bfe5fd47c91d7b5474921bc"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-001/assessment.json",
+      "sha256": "03cc7292539c720e9b87eeac1732c7e247479fa1b7eae6d7dba0bcf18dd13dde"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/eccv-2024-240309513-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "b4949cc29e159537d216c9cca8ebcdc478625a2f4fd711743f349bdfe3258773"
+    }
+  ],
+  "evidence_id": "769e9e35dd08dc9196c2d51e"
+}

@@ -1,0 +1,11 @@
+{
+  "skill_id": "representation-text-box-vertical-offset",
+  "memory_id": "representation-text-box-vertical-offset",
+  "status": "candidate",
+  "instructions": [
+    "Check rendered multiline text against its enclosing row boundaries and adjust local text placement to preserve the reference's vertical padding."
+  ],
+  "evidence_ids": [
+    "15b9027b5b569524e356f9e1"
+  ]
+}

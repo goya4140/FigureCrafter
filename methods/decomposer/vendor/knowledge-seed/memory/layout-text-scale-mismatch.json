@@ -1,0 +1,15 @@
+{
+  "schema_version": "decomposer.memory.v1",
+  "memory_id": "layout-text-scale-mismatch",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-mismatch",
+  "status": "candidate",
+  "evidence_ids": [
+    "e179361bf027bd95432d0610"
+  ],
+  "accepted_count": 1,
+  "rejected_count": 0,
+  "strategies": [
+    "Compare rendered legend text height and width against the reference and calibrate text scale consistently across adjacent entries."
+  ]
+}

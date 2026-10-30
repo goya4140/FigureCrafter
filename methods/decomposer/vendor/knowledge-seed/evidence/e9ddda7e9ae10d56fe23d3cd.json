@@ -1,0 +1,56 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-240404913-fig1",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "literal-math-markup-in-text-primitive",
+  "label_ids": [
+    "camera_equation"
+  ],
+  "primitive_ids": [
+    "camera_equation/equation"
+  ],
+  "field": "text",
+  "region": null,
+  "summary": "The camera equation displays literal LaTeX commands in the PowerPoint render. Its representation stores LaTeX in an ordinary text primitive; replace it with editable mathematical characters.",
+  "strategy": "Convert mathematical markup to supported editable Unicode notation before placing it in ordinary text primitives; verify that commands and delimiters never render literally.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.923743,
+      "edge_iou": 0.230688
+    },
+    "after_local": {
+      "pixel_similarity": 0.927337,
+      "edge_iou": 0.24114
+    },
+    "before_global": {
+      "pixel_similarity": 0.957112,
+      "edge_iou": 0.220507
+    },
+    "after_global": {
+      "pixel_similarity": 0.957337,
+      "edge_iou": 0.221351
+    },
+    "local_pixel_delta": 0.003594,
+    "local_edge_delta": 0.010452,
+    "global_pixel_delta": 0.000225
+  },
+  "artifact_refs": [
+    {
+      "path": "../experiments/decomposer-v16-first100-sam-v16/runs/aaai-2025-240404913-fig1/refinement/round-001/decision.json",
+      "sha256": "a2ed36301eb987708e57c311f9fcfa06d2679cf9233296e6748366c2220edd1c"
+    },
+    {
+      "path": "../experiments/decomposer-v16-first100-sam-v16/runs/aaai-2025-240404913-fig1/refinement/round-001/assessment.json",
+      "sha256": "9b8b4aceddffe6279d7c165b95528cd0c0cb9bc93c61a79ab28b111a329d9861"
+    },
+    {
+      "path": "../experiments/decomposer-v16-first100-sam-v16/runs/aaai-2025-240404913-fig1/refinement/round-001/output/preview.png",
+      "sha256": "dc392ead8573973b02333f3f5ef4a4a90ddb89a671cdbc134cbd2f5622c00306"
+    }
+  ],
+  "evidence_id": "e9ddda7e9ae10d56fe23d3cd"
+}

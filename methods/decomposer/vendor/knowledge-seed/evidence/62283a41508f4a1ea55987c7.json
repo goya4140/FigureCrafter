@@ -1,0 +1,70 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240514868-fig2",
+  "round_id": "round-001",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "foreground-field-occludes-scene-outline",
+  "label_ids": [
+    "camera_view_fields"
+  ],
+  "primitive_ids": [],
+  "field": "component_order",
+  "region": [
+    960,
+    140,
+    480,
+    141
+  ],
+  "summary": "The rendered cyan viewing fields cover the cube’s lower outline, unlike the reference. The layout places these fields after the cube; move them behind it.",
+  "strategy": "Place viewing fields behind scene geometry so opaque field primitives do not obscure object outlines.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.971151,
+      "edge_iou": 0.467269
+    },
+    "after_local": {
+      "pixel_similarity": 0.972557,
+      "edge_iou": 0.473811
+    },
+    "before_global": {
+      "pixel_similarity": 0.978897,
+      "edge_iou": 0.364119
+    },
+    "after_global": {
+      "pixel_similarity": 0.979498,
+      "edge_iou": 0.369005
+    },
+    "local_pixel_delta": 0.001406,
+    "local_edge_delta": 0.006542,
+    "global_pixel_delta": 0.000601,
+    "evaluation_region": [
+      960,
+      140,
+      480,
+      141
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240514868-fig2/refinement/round-001/decision.json",
+      "sha256": "2dbfaade10db3f18e9129b5caf9bf21c54817d635fc41c0b23f9df6b76348fa0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240514868-fig2/refinement/round-001/assessment.json",
+      "sha256": "198379540e2deb7d9d70b037486a751a3aa9922baa229731fc8a00ee39585115"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240514868-fig2/refinement/round-001/diagnostic-sheet.png",
+      "sha256": "51e49ef91a50fe6ecc0bf3f6448a595b25b7d07e54a8778120470077aaee0fed"
+    }
+  ],
+  "evidence_id": "62283a41508f4a1ea55987c7"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "eccv-2024-240514868-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "subscript-font-double-reduction",
+  "label_ids": [
+    "source_pose_label"
+  ],
+  "primitive_ids": [
+    "source_pose_label/equation"
+  ],
+  "field": "runs",
+  "region": [
+    480,
+    140,
+    480,
+    141
+  ],
+  "summary": "The rendered source-pose subscript is visibly smaller than the reference. Its text run specifies a reduced font size and subscript formatting, compounding the size reduction.",
+  "strategy": "When subscript formatting already reduces glyph size, use the parent font size for the run and verify the rendered subscript against the reference.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.974612,
+      "edge_iou": 0.454948
+    },
+    "after_local": {
+      "pixel_similarity": 0.975894,
+      "edge_iou": 0.467622
+    },
+    "before_global": {
+      "pixel_similarity": 0.979498,
+      "edge_iou": 0.369005
+    },
+    "after_global": {
+      "pixel_similarity": 0.979532,
+      "edge_iou": 0.369344
+    },
+    "local_pixel_delta": 0.001282,
+    "local_edge_delta": 0.012674,
+    "global_pixel_delta": 3.4e-05,
+    "evaluation_region": [
+      480,
+      140,
+      480,
+      141
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240514868-fig2/refinement/round-002/decision.json",
+      "sha256": "5d41669424e5b08a189b256b4725dcc903a2224597875ed5696589b0adc1373d"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240514868-fig2/refinement/round-002/assessment.json",
+      "sha256": "0375ca53a2b980f1120cce703f6eb91c80b628f9773b40c8b2fdfa28bc798b68"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0622-standard-stage-04-continuation-086-100/runs/eccv-2024-240514868-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "a85e61fde298a37ba7a217f8530c1553a6f19ad56996723c9279f0ebd5395dce"
+    }
+  ],
+  "evidence_id": "7d56b3a00340c77afb695b55"
+}

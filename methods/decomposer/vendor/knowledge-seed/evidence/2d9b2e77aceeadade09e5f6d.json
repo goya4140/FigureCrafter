@@ -1,0 +1,66 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "aaai-2025-230606272-fig14",
+  "round_id": "compiler-recovery-font-001",
+  "detected_in": "render_audit",
+  "owner_stage": "compiler",
+  "mechanism": "generic-font-family-resolution",
+  "label_ids": [
+    "visual",
+    "state_label",
+    "recognition",
+    "facts"
+  ],
+  "primitive_ids": [
+    "visual/text",
+    "state_label/text",
+    "recognition/text",
+    "facts/text"
+  ],
+  "field": "font_family",
+  "region": null,
+  "summary": "CSS generic sans-serif was serialized as a literal PowerPoint typeface and LibreOffice substituted a serif font.",
+  "strategy": "Canonicalize CSS generic families to concrete Office fonts before scene assembly and again defensively in the PPTX compiler.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.925279,
+      "edge_iou": 0.331685
+    },
+    "after_local": {
+      "pixel_similarity": 0.923814,
+      "edge_iou": 0.352465
+    },
+    "before_global": {
+      "pixel_similarity": 0.964097,
+      "edge_iou": 0.338456
+    },
+    "after_global": {
+      "pixel_similarity": 0.963006,
+      "edge_iou": 0.343917
+    },
+    "local_pixel_delta": -0.001465,
+    "local_edge_delta": 0.02078,
+    "global_pixel_delta": -0.001091
+  },
+  "artifact_refs": [
+    {
+      "path": "experiments/decomposer-v7-first100-sam-v3/runs/aaai-2025-230606272-fig14/refinement/round-001/decision.json",
+      "sha256": "b6359cae3b0d709554e87aeae65617993fb5e85c509e99754dae702bff8873dd"
+    },
+    {
+      "path": "experiments/decomposer-v7-first100-sam-v3/runs/aaai-2025-230606272-fig14/font-a-b/proof.json",
+      "sha256": "e9d319b9c5c86ba8a8a44f38079bc9d28b1b01fc0e2341c782a9ea1ab61a9285"
+    },
+    {
+      "path": "experiments/decomposer-v7-first100-sam-v3/runs/aaai-2025-230606272-fig14/font-a-b/before.png",
+      "sha256": "e2e2662ebd87b9290e7bf738d18a8f1b58a40f5d8ad4ab249df9c285f38613ca"
+    },
+    {
+      "path": "experiments/decomposer-v7-first100-sam-v3/runs/aaai-2025-230606272-fig14/font-a-b/after-output/preview.png",
+      "sha256": "1c1688182015d0696dd6eb0c9371f82263e800006eea61de272f8012aeb1e94a"
+    }
+  ],
+  "evidence_id": "2d9b2e77aceeadade09e5f6d"
+}

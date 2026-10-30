@@ -1,0 +1,11 @@
+{
+  "skill_id": "recognition-missing-workflow-object-decomposition",
+  "memory_id": "recognition-missing-workflow-object-decomposition",
+  "status": "candidate",
+  "instructions": [
+    "Check each workflow region for complete node and connector coverage before generating primitives; recognizing a container and its text does not account for its internal semantic objects."
+  ],
+  "evidence_ids": [
+    "441b67e7de703613a917ea98"
+  ]
+}

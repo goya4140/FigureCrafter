@@ -1,0 +1,72 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "colm-2025-250323033-fig2",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "layout",
+  "mechanism": "text-scale-underestimation",
+  "label_ids": [
+    "document_text"
+  ],
+  "primitive_ids": [
+    "document_text/text"
+  ],
+  "field": "font_scale",
+  "region": [
+    0,
+    310,
+    800,
+    311
+  ],
+  "summary": "In the selected render tile, document body text remains smaller and more vertically compressed than the reference, causing lines to drift above their highlights. Increase its layout font scale from 1.10 to 1.22.",
+  "strategy": "Calibrate multiline text scale against both glyph size and cumulative baseline spacing, checking alignment with fixed highlights across the entire paragraph.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.741588,
+      "edge_iou": 0.144936
+    },
+    "after_local": {
+      "pixel_similarity": 0.715844,
+      "edge_iou": 0.142586
+    },
+    "before_global": {
+      "pixel_similarity": 0.840174,
+      "edge_iou": 0.177688
+    },
+    "after_global": {
+      "pixel_similarity": 0.837396,
+      "edge_iou": 0.178167
+    },
+    "local_pixel_delta": -0.025744,
+    "local_edge_delta": -0.00235,
+    "global_pixel_delta": -0.002778,
+    "evaluation_region": [
+      0,
+      310,
+      800,
+      311
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250323033-fig2/refinement/round-002/decision.json",
+      "sha256": "915b695c352e267cfbb69f849a05ff4e7162f40a895155a1b5208332fd99edba"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250323033-fig2/refinement/round-002/assessment.json",
+      "sha256": "24f122e22826342da58da9396625229e438e2483d2f3ed7497c139ee3b878469"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX/experiments/decomposer-v20-v0625-stage5-baseline-011-failures/runs/colm-2025-250323033-fig2/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "29834922ac55d722acc85e342ef0db07708566bba9b09e29619cc9baafa0c3a8"
+    }
+  ],
+  "evidence_id": "4fdc0d78f9ed27bc7c4c7d08"
+}

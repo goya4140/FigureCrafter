@@ -1,0 +1,151 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-astra-fast-r1",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "annotation-font-style-mismatch",
+  "label_ids": [
+    "query_sentence"
+  ],
+  "primitive_ids": [
+    "query_sentence/t"
+  ],
+  "field": "style",
+  "region": [
+    0,
+    1455,
+    1024,
+    486
+  ],
+  "summary": "The rendered query sentence uses slanted Arial, whereas the reference has upright, handwritten-style lettering. Correct the local text style while preserving its wording and placement.",
+  "strategy": "Compare annotation letterforms and slant against the reference before adjusting text scale or placement.",
+  "accepted": true,
+  "assessment": {
+    "accepted": true,
+    "before_local": {
+      "pixel_similarity": 0.900075,
+      "edge_iou": 0.17529
+    },
+    "after_local": {
+      "pixel_similarity": 0.901112,
+      "edge_iou": 0.175092
+    },
+    "before_global": {
+      "pixel_similarity": 0.924725,
+      "edge_iou": 0.165553
+    },
+    "after_global": {
+      "pixel_similarity": 0.92479,
+      "edge_iou": 0.165538
+    },
+    "local_pixel_delta": 0.001037,
+    "local_edge_delta": -0.000198,
+    "global_pixel_delta": 6.5e-05,
+    "evaluation_region": [
+      0,
+      1455,
+      1024,
+      486
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "candidate_failure_keys": [
+        [
+          "rendered-native-text-ink-collapse",
+          [
+            "output_opinion_chart"
+          ]
+        ]
+      ],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "5a046fa707b23842512f6d5867c2b91e6f4d3389abd9d866d3aed627a25b1784",
+      "representation": "7c1d0e5f590d9624b49fc195a405b0fd368d79220b1d02281d96d4775d4ca8d3",
+      "layout": "4964895db1ae3a4baf219ffe7679e9296ed3c9591c8313f9656cc87cadebb9b4",
+      "pptx": "1b37f2eb40994b6df18f17b12b115729b41f4839b47e9b5764edc079b58725ed"
+    }
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-math-label-text-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-caption-font-scale-mismatch",
+      "layout-text-rotation-omitted",
+      "layout-object-rotation-omission"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-text-rotation-omitted": "candidate",
+      "layout-object-rotation-omission": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_accepted"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-002/decision.json",
+      "sha256": "14e275789f73211051140b46b6fc74e287aa55c2eecafcabfd8e17b8882b3b01"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-002/assessment.json",
+      "sha256": "d9f89e5310d64bbcdbcbc2ff22f0f4010bdb8e976b33f72433597a80b890e1ed"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "3b4a0a2620ffd6611ac9eb370a411157786077407f14c24ad1a617876fcdd1c0"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-002/before-preview.png",
+      "sha256": "7d572eb644be43a7fded1b12f81a5cbcfe419b06244647313a2e1b13641b75df"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-002/output/preview.png",
+      "sha256": "3ac170f22f4627551262f6b48df4c665a04bf610bd3abafdb5b95952911d60e4"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-astra-fast-r1/refinement/round-002/output/editable.pptx",
+      "sha256": "b152ab33777de9e8e87611d163144cb76e72b3affe558947df588d6e8f49e061"
+    }
+  ],
+  "evidence_id": "a79ab31a46ee951f61a00bb2"
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "representation-fast",
+  "round_id": "round-002",
+  "detected_in": "render_audit",
+  "owner_stage": "representation",
+  "mechanism": "text-box-font-metric-overflow",
+  "label_ids": [
+    "ground_truth",
+    "mixed_domain"
+  ],
+  "primitive_ids": [
+    "ground_truth/t",
+    "mixed_domain/t"
+  ],
+  "field": "bbox",
+  "region": [
+    364,
+    391,
+    364,
+    391
+  ],
+  "summary": "The current render shows both captions beneath the item boxes at tiny sizes. Their local text boxes are only 41 units high despite an effective font size of 57.19 after layout scaling. Increase local text-box height to accommodate font metrics; another font-scale increase risks further shrinking.",
+  "strategy": "Allow text boxes sufficient height for font metrics, then verify rendered caption ink dimensions before increasing font scale.",
+  "accepted": false,
+  "assessment": {
+    "accepted": false,
+    "before_local": {
+      "pixel_similarity": 0.935068,
+      "edge_iou": 0.242731
+    },
+    "after_local": {
+      "pixel_similarity": 0.935068,
+      "edge_iou": 0.242731
+    },
+    "before_global": {
+      "pixel_similarity": 0.973144,
+      "edge_iou": 0.282011
+    },
+    "after_global": {
+      "pixel_similarity": 0.973144,
+      "edge_iou": 0.282011
+    },
+    "local_pixel_delta": 0.0,
+    "local_edge_delta": 0.0,
+    "global_pixel_delta": 0.0,
+    "evaluation_region": [
+      364,
+      391,
+      364,
+      391
+    ],
+    "evaluation_region_source": "selected_difference_tile",
+    "native_text_visibility_guard": {
+      "passed": true,
+      "regressions": []
+    },
+    "hard_validation": {
+      "baseline_failure_keys": [],
+      "candidate_failure_keys": [],
+      "new_failure_keys": [],
+      "passed": true
+    },
+    "canonical_before_hashes": {
+      "recognition": "e807a35051e9d1f10338362dc9d041cf92d65cca060d195b4e99285cef03dbb4",
+      "representation": "0a4729660fe7145912d54bbcc1b4b8e778b52a97f61f2862cceafe4f7975678d",
+      "layout": "6d48ee8354ef7460ef8272326cd90d7796820280360cc9c81ce492a2248945c4",
+      "pptx": "3371b5c768dcf2241662aa8792d1dcac76d7ab22173dbfdccd9ab407d74f8e0c"
+    },
+    "canonical_after_hashes": {
+      "recognition": "e807a35051e9d1f10338362dc9d041cf92d65cca060d195b4e99285cef03dbb4",
+      "representation": "0a4729660fe7145912d54bbcc1b4b8e778b52a97f61f2862cceafe4f7975678d",
+      "layout": "6d48ee8354ef7460ef8272326cd90d7796820280360cc9c81ce492a2248945c4",
+      "pptx": "3371b5c768dcf2241662aa8792d1dcac76d7ab22173dbfdccd9ab407d74f8e0c"
+    },
+    "rollback_intact": true
+  },
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "layout-text-scale-underestimation",
+      "layout-caption-font-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-explicit-text-rotation-hint",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-box-dimension-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-math-label-text-scale-mismatch"
+    ],
+    "retrieved_skill_ids": [
+      "layout-text-scale-underestimation",
+      "layout-caption-font-scale-mismatch",
+      "layout-foreground-title-occluded-by-chart",
+      "layout-explicit-text-rotation-hint",
+      "layout-text-scale-mismatch",
+      "layout-rotated-text-box-dimension-mismatch",
+      "layout-rotated-text-scale-mismatch",
+      "layout-math-label-text-scale-mismatch"
+    ],
+    "retrieved_statuses": {
+      "layout-text-scale-underestimation": "candidate",
+      "layout-caption-font-scale-mismatch": "candidate",
+      "layout-foreground-title-occluded-by-chart": "candidate",
+      "layout-explicit-text-rotation-hint": "downstreamed",
+      "layout-text-scale-mismatch": "candidate",
+      "layout-rotated-text-box-dimension-mismatch": "candidate",
+      "layout-rotated-text-scale-mismatch": "candidate",
+      "layout-math-label-text-scale-mismatch": "candidate"
+    },
+    "referenced_memory_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "referenced_skill_ids": [
+      "layout-text-scale-underestimation"
+    ],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "patch_rejected"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-002/decision.json",
+      "sha256": "e8aa5e03303e4bcd0b7b869c9e2c447c8b9dc382e1c3b7117e6b7515e008ac19"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-002/assessment.json",
+      "sha256": "fe2b023d0e5f814e0d2aba84191f1a0bdd0a1962c515118ab9dc571a5d7ff450"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-002/diagnostic-sheet.png",
+      "sha256": "a527660557002a767d82054d721e6d41b43e7f418c5e957d251713ab57445413"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-002/before-preview.png",
+      "sha256": "737f0a30b516d38a6ffd06510d7465a3d4ea5ad096818305dffaa17d28657627"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-002/output/preview.png",
+      "sha256": "737f0a30b516d38a6ffd06510d7465a3d4ea5ad096818305dffaa17d28657627"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/holdouts/colm-2025-250410512-fig1/representation-fast/refinement/round-002/output/editable.pptx",
+      "sha256": "85ac3a59bda800ebadd0f9f84f36c102bd889a1409a79d56aae89249f93615f2"
+    }
+  ],
+  "evidence_id": "8554947493f1db7193fc6f32"
+}

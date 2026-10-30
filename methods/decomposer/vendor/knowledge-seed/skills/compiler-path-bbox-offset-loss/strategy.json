@@ -1,0 +1,11 @@
+{
+  "skill_id": "compiler-path-bbox-offset-loss",
+  "memory_id": "compiler-path-bbox-offset-loss",
+  "status": "candidate",
+  "instructions": [
+    "Verify that exported custom paths apply both component placement and primitive bbox offsets exactly once, and compare rendered path bounds with canonical scene bounds."
+  ],
+  "evidence_ids": [
+    "39210147d0dc44dfe887514e"
+  ]
+}

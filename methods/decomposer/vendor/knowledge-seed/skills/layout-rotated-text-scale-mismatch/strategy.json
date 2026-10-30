@@ -1,0 +1,11 @@
+{
+  "skill_id": "layout-rotated-text-scale-mismatch",
+  "memory_id": "layout-rotated-text-scale-mismatch",
+  "status": "candidate",
+  "instructions": [
+    "Compare rotated labels against reference glyph height and occupied length, and adjust text scale independently of the enclosing module."
+  ],
+  "evidence_ids": [
+    "90fa8df453164dffbf6247e7"
+  ]
+}

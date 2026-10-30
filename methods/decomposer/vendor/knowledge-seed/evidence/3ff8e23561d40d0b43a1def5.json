@@ -1,0 +1,75 @@
+{
+  "schema_version": "decomposer.evidence.v1",
+  "sample_id": "edit-test-1-4k-representation-fast-r1-font-replay",
+  "round_id": "round-003",
+  "detected_in": "render_audit",
+  "owner_stage": "unresolved",
+  "mechanism": "math-text-render-size-mismatch",
+  "label_ids": [
+    "output_opinion_equation",
+    "clip_opinion_equation"
+  ],
+  "primitive_ids": [
+    "output_opinion_equation/t",
+    "clip_opinion_equation/t"
+  ],
+  "field": null,
+  "region": [
+    3072,
+    970,
+    1024,
+    485
+  ],
+  "summary": "In the current render, the opinion equations appear smaller and more compressed than in the reference, especially beneath the aggregated opinion. The supplied artifacts preserve the text and script baselines but do not establish whether local text sizing or renderer fitting causes the discrepancy; a precise patch is not sufficiently supported.",
+  "strategy": "",
+  "accepted": null,
+  "assessment": null,
+  "knowledge_trace": {
+    "retrieved_memory_ids": [
+      "representation-container-corner-rounding-excess",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_skill_ids": [
+      "representation-container-corner-rounding-excess",
+      "representation-text-box-font-metric-overflow",
+      "representation-excessive-corner-rounding",
+      "representation-excessive-container-corner-rounding",
+      "representation-container-corner-radius-mismatch",
+      "representation-excessive-panel-corner-rounding",
+      "representation-text-bearing-object-category-drift",
+      "representation-node-text-local-placement-offset"
+    ],
+    "retrieved_statuses": {
+      "representation-container-corner-rounding-excess": "candidate",
+      "representation-text-box-font-metric-overflow": "candidate",
+      "representation-excessive-corner-rounding": "downstreamed",
+      "representation-excessive-container-corner-rounding": "candidate",
+      "representation-container-corner-radius-mismatch": "candidate",
+      "representation-excessive-panel-corner-rounding": "candidate",
+      "representation-text-bearing-object-category-drift": "downstreamed",
+      "representation-node-text-local-placement-offset": "candidate"
+    },
+    "referenced_memory_ids": [],
+    "referenced_skill_ids": [],
+    "patch_source_memory_ids": [],
+    "invalid_reference_ids": [],
+    "outcome": "no_supported_patch"
+  },
+  "artifact_refs": [
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1-font-replay/refinement/round-003/decision.json",
+      "sha256": "8c4c24f1bd7a20df3097d69c227473703e641299957ca22250398e02f0267076"
+    },
+    {
+      "path": "/Users/wlh/Documents/【ICLR】Figure2PPTX-next/method/runs/representation-benchmark/edit-test-1-4k-representation-fast-r1-font-replay/refinement/round-003/diagnostic-sheet.png",
+      "sha256": "bb78aecf07600c048f530bf15ee108b9c5dff6ea819d91392bca013072ab4b2e"
+    }
+  ],
+  "evidence_id": "3ff8e23561d40d0b43a1def5"
+}
