@@ -14,6 +14,8 @@
 | `methods/decomposer/vendor/runtime-fonts` | 该版本附带字体及各自许可证，不替代实际字体审查 |
 | `methods/decomposer/server` | 经原运行哈希核对的SAM3 / PP-OCRv5服务器worker；模型权重及第三方框架另行安装 |
 | `figurecrafter.py` | 可移植派发、真实检测器调用与重建运行时适配；不添加科学设计控制器 |
+| `runtime/image_loop.py` | 当前Image的独立HTTP工具循环，复用原Session和providers，不改绘图方法 |
+| `runtime/decomposer_http.py` | 原external-json协议的HTTP传输，复用固定适配器构造，显式模型与effort |
 
 Decomposer的Composition以确定性布局、编译及文字校准为主；阶段职责不等于每个阶段必须单独调用大模型。SAM/OCR只提供证据。当前服务器SAM worker返回框，不能宣称返回了像素掩膜。
 
@@ -35,3 +37,5 @@ Decomposer的Composition以确定性布局、编译及文字校准为主；阶�
 历史文档可能保留旧模型选择与旧机器路径，只作为版本记录。当前使用说明以仓库根README和`docs/`为准；正式输入以操作者选定实验的合同为准。展示目录不能作为生产模型的检索库或teacher。
 
 本仓库没有主动运行FigureEvolver或定时任务。下载、环境检查、prepare和离线测试都不会自动开始批量生产。
+
+2026-11-03起根入口开放 `run`，重建可用 `--model-config` 选择独立HTTP传输；Codex为可选路径。`runtime/portable.py`与`runtime/runtime.example.json`属于历史v2.5，不用于当前安装。冻结内容中的历史私有路径保留来源哈希，当前入口通过运行级配置覆盖。详见[独立运行审查](STANDALONE.zh-CN.md)。

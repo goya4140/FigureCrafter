@@ -4,11 +4,13 @@
 
 FigureCrafter provides three scientific figure generation workflows: **Native**, **Image**, and **Hybrid**. The model makes the scientific and visual decisions; the harness executes tools and preserves evidence.
 
+当前三条主路径可通过兼容模型 HTTP API 独立运行，**不需要安装 Codex、Codex skills 或私有 `@oai/artifact-tool`**。仍需自备模型服务与凭据，以及各方法所需的公开工具。历史内置 Image 分支另需其实际图像工具环境，不属于独立运行路径。具体依赖与验证边界见 [独立运行审查](docs/STANDALONE.zh-CN.md)。
+
 | 入口 | 内容 |
 | --- | --- |
 | [三方法介绍](docs/THREE_METHODS.zh-CN.md) | 各自流程、共同点、区别、实验能回答什么 |
 | [安装与运行](docs/QUICKSTART.zh-CN.md) | Method 输入、模型工具闭环、图像生成、Decomposer 与原生接续 |
-| [给 Codex 的启动说明](docs/CODEX_START_PROMPT.md) | 在隔离的单样例工作目录执行完整流程 |
+| [通用模型启动说明](docs/MODEL_START_PROMPT.md) | 在单样例工作目录执行完整流程；手动工具桥接时使用 |
 | [案例与状态](showcases/figurecrafter/README.md) | RoboScape 三条流程、Hybrid 三阶段、52 张 Nano 零 edit 初稿 |
 | [代码与版本](docs/CODE_MAP.zh-CN.md) | 完整方法源码、固定 Decomposer、哈希与适配边界 |
 | [历史 Native 300 例](showcases/formal300-v2.5.1/README.md) | 保留的历史展示，单独标明条件 |
@@ -56,11 +58,11 @@ Hybrid 的实际接续过程：
 
 **当前 Image 零 edit 实验：52/60 张初稿已生成；8 篇因提示词超过 25,000 字符暂缓。** 原 44 张自审为 `needs_edit`，补跑 8 张尚未科学/视觉审查。生成完成与质量通过分别统计。[查看全部 52 张](showcases/figurecrafter/image52/index.html)。
 
-下载仓库后双击 [离线画廊](showcases/figurecrafter/index.html) 可浏览图片和下载 PPTX。GitHub 网页不执行仓库里的 HTML，仓库保持私有，未启用公开 Pages。
+下载仓库后双击 [离线画廊](showcases/figurecrafter/index.html) 可浏览图片和下载 PPTX。GitHub 网页不执行仓库里的 HTML。本仓库目前公开，未启用 GitHub Pages。
 
 ## 开始使用
 
-Python 3.13 为已使用的环境。另安装 LibreOffice；Hybrid 还需要 Node、Poppler、可调用的 GPT-6.1-sol，以及实际 SAM3 / PP-OCRv5 服务。
+Python 3.13 为已使用的环境。另安装 LibreOffice与支持视觉和工具调用的兼容模型 API；Hybrid 还需要 Node、Poppler、结构化视觉模型 API，以及实际 SAM3 / PP-OCRv5 服务。
 
 ```sh
 python3 -m venv .venv
@@ -71,7 +73,14 @@ python3 -m venv .venv
   --model gpt-6.1-sol
 ```
 
-这一步准备隔离工作目录，**不会代替模型完成科研绘图**。将该目录交给支持文件、代码和实际图像查看的模型环境，按 [启动说明](docs/CODEX_START_PROMPT.md) 执行完整工具闭环。
+这一步准备隔离工作目录，**不会代替模型完成科研绘图**。将 `configs/model.example.json` 复制为 `configs/model.local.json`，填入已有模型 API 地址；密钥通过该配置的 `api_key_env` 对应环境变量提供。随后直接运行完整模型工具循环：
+
+```sh
+.venv/bin/python figurecrafter.py run --method native \
+  --workspace /absolute/path/to/native-case --config configs/model.local.json
+```
+
+配置模型必须与 `prepare --model` 一致，模型服务须实际支持图像输入与工具调用。也可按 [通用启动说明](docs/MODEL_START_PROMPT.md) 手动桥接同一工具接口。
 
 当前 Nano 零 edit 后端用 `--method image`；历史内置 image 的最多 3 次 edit 后端用 `--method image-builtin`。配置与完整 Hybrid 操作见 [Quickstart](docs/QUICKSTART.zh-CN.md)。API 凭据由使用者在本地配置，不随仓库分发。
 
@@ -86,3 +95,5 @@ python3 -m venv .venv
 **通用 image edit 上限为每样例累计 3 次；零 edit 实验上限为 0。** 初稿不计 edit；失败及分支共享累计预算。Hybrid 的原生对象修订不等于 image edit。
 
 本仓库保留 `framework/`、`versions/`、`production-guides/` 等历史目录。新增入口不会覆盖它们，也不会自动启动批量或 FigureEvolver。正式生产不向模型开放其他样例产物、展示页、目标原图或参考 PDF/PPTX。
+
+历史 `runtime/portable.py` 属于 v2.5，仍要求私有 artifact-tool 与技能文档；当前独立入口是 `figurecrafter.py`，不要将历史环境检查当成当前安装要求。冻结源码中的旧绝对路径保留用于来源核验，主入口通过显式运行级配置覆盖；这不是一份删除所有历史 Codex 字样的仓库。

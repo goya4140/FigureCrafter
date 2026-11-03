@@ -27,6 +27,8 @@ environment-check.json
 *.otf
 *.node
 node_modules/
+.codex/
+.workbuddy/
 *.local.json
 configs/*private*
 !showcases/figurecrafter/**

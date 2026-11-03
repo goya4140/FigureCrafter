@@ -22,6 +22,36 @@ METHODS = {
     'hybrid-builtin': 'methods/builtin-image/figurecrafter-v251-hybrid/run.py',
     'native-pdf-historical': 'methods/drawing-v2.5.1/run.py',
 }
+HTTP_METHODS = tuple(m for m in METHODS if m != 'image-builtin')
+
+
+def reconstruction_model(config_path=None, codex=None, timeout=1800):
+    """Resolve an explicit transport; never choose another model or backend."""
+    if codex:
+        return {'backend': 'codex-cli', 'command': str(Path(codex).expanduser().resolve()),
+                'name': 'gpt-6.1-sol', 'effort': 'medium', 'timeout_seconds': timeout}
+    config = json.loads(Path(config_path).expanduser().read_text())
+    model = dict(config['model'])
+    if model.get('backend') != 'external-json' or not model.get('name'):
+        raise ValueError('--model-config requires an explicit external-json backend and model.name')
+    command = model.get('command')
+    if not command or not isinstance(command, (str, list)):
+        raise ValueError('model.command must be a nonempty string or string array')
+    if isinstance(command, list) and not all(isinstance(v, str) and v for v in command):
+        raise ValueError('model.command entries must be nonempty strings')
+    values = {'{python}': sys.executable, '{repo}': str(ROOT)}
+    def resolve(value):
+        for marker, replacement in values.items():
+            value = value.replace(marker, replacement)
+        return value
+    model['command'] = [resolve(v) for v in command] if isinstance(command, list) else resolve(command)
+    if isinstance(model['command'], list) and str(ROOT / 'runtime/decomposer_http.py') in model['command']:
+        arguments = model.get('arguments', [])
+        for flag, expected in [('--model', model['name']), ('--reasoning-effort', model.get('effort'))]:
+            if flag not in arguments or arguments.index(flag) + 1 >= len(arguments) or arguments[arguments.index(flag) + 1] != expected:
+                raise ValueError(f'{flag} must match the explicit model configuration')
+    model.setdefault('timeout_seconds', timeout)
+    return model
 
 
 def dispatch(method, arguments, soffice=None):
@@ -47,12 +77,19 @@ def main():
         a.add_argument('--method', choices=METHODS, required=True)
         if name != 'tools': a.add_argument('--workspace', required=True)
         if name == 'call': a.add_argument('--json', required=True)
+    a = sub.add_parser('run', help='Run the full model/tool loop over a configured HTTP API, without Codex')
+    a.add_argument('--method', choices=HTTP_METHODS, required=True)
+    a.add_argument('--workspace', required=True)
+    a.add_argument('--config', required=True, help='Existing vision/tool model HTTP configuration; keys stay in environment')
+    a.add_argument('--max-turns', type=int, default=80)
     sub.add_parser('doctor')
     a = sub.add_parser('detectors')
     for name in ['image','config','cache-root','sample-id','preflight']: a.add_argument('--'+name, required=True)
     a = sub.add_parser('reconstruct')
     for name in ['image','cache-root','sample-id','review','output','handoff']: a.add_argument('--'+name, required=True)
-    a.add_argument('--codex', required=True, help='Actual local Codex CLI supporting gpt-6.1-sol')
+    backend = a.add_mutually_exclusive_group(required=True)
+    backend.add_argument('--model-config', help='Explicit external-json Decomposer model configuration; no Codex required')
+    backend.add_argument('--codex', help='Optional historical Codex CLI transport supporting gpt-6.1-sol')
     a.add_argument('--node', required=True)
     a.add_argument('--pdftoppm', required=True)
     a.add_argument('--model-timeout', type=int, default=1800)
@@ -61,7 +98,10 @@ def main():
     if args.command == 'doctor':
         print(json.dumps({'python':sys.version,'python_executable':sys.executable,
             'soffice':os.environ.get('DRAWING_SOFFICE') or shutil.which('soffice') or shutil.which('libreoffice'),
-            'node':shutil.which('node'),'pdftoppm':shutil.which('pdftoppm'),'codex':shutil.which('codex'),
+            'node':shutil.which('node'),'pdftoppm':shutil.which('pdftoppm'),'codex_optional':shutil.which('codex'),
+            'codex_required':False,'private_package_required':False,
+            'standalone_methods':['native','image','hybrid'],
+            'historical_private_runtime':'runtime/portable.py is not the current entry point',
             'nano_key_configured':bool(os.environ.get('NANO_API_KEY')) or (ROOT/'configs/nano.local.json').is_file(),
             'note':'Read-only inventory; does not test model availability or figure quality. No model calls.'},indent=2))
         return
@@ -102,10 +142,11 @@ def main():
             raise ValueError('Use fresh reconstruction and handoff directories')
         overlay=output.parent/(output.name+'-runtime.json');overlay.parent.mkdir(parents=True,exist_ok=True)
         if overlay.exists():raise ValueError('Existing runtime overlay: retain and inspect previous attempt')
-        overlay.write_text(json.dumps({'model':{'backend':'codex-cli','command':str(Path(args.codex).resolve()),
-            'name':'gpt-6.1-sol','effort':'medium','timeout_seconds':args.model_timeout},
+        model = reconstruction_model(args.model_config, args.codex, args.model_timeout)
+        overlay.write_text(json.dumps({'model': model,
             'runtime':{'node':str(Path(args.node).resolve()),'soffice':soffice,
-            'pdftoppm':str(Path(args.pdftoppm).resolve()),'timeout_seconds':180}},indent=2))
+            'pdftoppm':str(Path(args.pdftoppm).resolve()),'timeout_seconds':180},
+            'refinement': {'max_rounds': 3}},indent=2))
         argv=[sys.executable,str(ROOT/'methods/decomposer/reconstruct.py')]
         for n in ['image','cache_root','sample_id','review','output','handoff']:
             argv+=['--'+n.replace('_','-'),str(getattr(args,n))]
@@ -122,6 +163,21 @@ def main():
             'validation_failures':status.get('validation_failures'),'scientific_acceptance':'not established by reconstruction fidelity'}
         (handoff/'handoff.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2))
         return
+    if args.command == 'run':
+        if args.max_turns < 1: p.error('--max-turns must be positive')
+        workspace = Path(args.workspace).expanduser().resolve()
+        if (workspace / 'freeze.json').exists():
+            raise ValueError('Cannot run or alter a frozen session')
+        config = json.loads(Path(args.config).expanduser().read_text())
+        session = json.loads((workspace / 'session.json').read_text())
+        if config.get('model') != session['model']:
+            raise ValueError('Configured model differs from the prepared session; prepare a new workspace with the intended model')
+        if args.method == 'image':
+            raise SystemExit(subprocess.run([sys.executable, str(ROOT / 'runtime/image_loop.py'),
+                '--workspace', str(workspace), '--config', str(Path(args.config).expanduser().resolve()),
+                '--max-turns', str(args.max_turns)]).returncode)
+        raise SystemExit(dispatch(args.method, ['run', '--workspace', str(workspace),
+            '--config', str(Path(args.config).expanduser().resolve()), '--max-turns', str(args.max_turns)], args.soffice))
     argv=[args.command]
     if args.command=='prepare':
         for n in ['inputs','workspace','model']:argv+=['--'+n,getattr(args,n)]

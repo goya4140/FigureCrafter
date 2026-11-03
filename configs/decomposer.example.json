@@ -1,0 +1,17 @@
+{
+  "model": {
+    "backend": "external-json",
+    "name": "gpt-6.1-sol",
+    "effort": "medium",
+    "command": ["{python}", "{repo}/runtime/decomposer_http.py"],
+    "arguments": [
+      "--stage", "{stage}",
+      "--schema", "{schema_file}",
+      "--image", "{image_file}",
+      "--model", "gpt-6.1-sol",
+      "--reasoning-effort", "medium"
+    ],
+    "environment_allowlist": ["MODEL_BASE_URL", "MODEL_API_KEY", "MODEL_NAME"],
+    "timeout_seconds": 1800
+  }
+}

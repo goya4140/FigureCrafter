@@ -1,4 +1,21 @@
-# 分享版本验证 · 2026-10-30
+# 独立HTTP入口验证 · 2026-11-03
+
+在新建的Python 3.13虚拟环境中，仅通过公开 `requirements.txt` 安装依赖，实际渲染使用单独安装的系统LibreOffice。未安装Codex技能或artifact-tool。Native/Hybrid接续测试的子进程PATH仅含普通系统目录，不包含Codex和Codex运行时工具目录。
+
+| 验证 | 结果 | 证据边界 |
+| --- | --- | --- |
+| 发布合同与新增独立入口检查 | 12项通过 | Native/Hybrid实际CLI、HTTP、图片、PPTX渲染与冻结；Image断点与唯一初稿；Decomposer HTTP及有效配置3轮 |
+| 原版Native合同 | 31项通过 | 原版工具闭环、实际PPTX渲染、输入/审查/冻结门禁，HTTP使用本地fixture |
+| 历史内置Image合同与预算 | 17项通过 | 原样保留累计预算和后端边界；不表示该分支已脱离内置图像环境 |
+| 冻结来源 | 通过 | 原版19文件、四指南、逐文件来源与799个Decomposer vendor文件未修改 |
+
+共60项通过，无真实远端模型或Nano生成、GPU SAM/OCR、全链Decomposer重建或新科研图实验。这些检查证明本次入口与传输的工程行为，不证明任意真实API兼容性或图像质量。[审查及仍保留的历史依赖](STANDALONE.zh-CN.md)。
+
+复核命令沿用下文；如需运行实际渲染检查，将 `DRAWING_SOFFICE` 设置为公开安装的LibreOffice，不能留空后把跳过误报为通过。
+
+---
+
+## 历史分享版本验证 · 2026-10-30
 
 验证针对可移植包装与已有真实案例，没有启动新的科研图生成、image edit、GPU识别或批量任务，也没有改动正在运行的Hybrid实验。
 
